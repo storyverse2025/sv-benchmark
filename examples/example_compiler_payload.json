@@ -1,0 +1,66 @@
+{
+  "id": 1,
+  "difficulty": "S1",
+  "difficulty_desc": "单物品/单人物 + 单场景 + 单镜头",
+  "style": "realistic",
+  "scenes": ["outdoor"],
+  "subjects": ["animal"],
+  "physical_state": "solid",
+  "physical_rule": "sci-fi",
+  "texture": "smooth",
+  "opacity": "opaque",
+  "spatial_layout": "inside-outside relation",
+  "action": "none",
+  "emotion": "subtle anger",
+  "effect": "explosion",
+  "lighting_tone": "cool",
+  "lighting_direction": "backlight",
+  "camera_angle": "low angle",
+  "camera_movement": ["pan"],
+  "composition": "symmetrical",
+  "time_mode": "real-time",
+  "shot_size": ["long shot"],
+  "primary_tags": [
+    "subjects",
+    "scenes",
+    "action",
+    "camera_movement",
+    "shot_size",
+    "camera_angle",
+    "time_mode"
+  ],
+  "secondary_tags": [
+    "effect",
+    "emotion",
+    "spatial_layout",
+    "lighting_tone",
+    "lighting_direction",
+    "composition"
+  ],
+  "stylistic_tags": [
+    "style",
+    "physical_state",
+    "physical_rule",
+    "texture",
+    "opacity"
+  ],
+  "cinematic_feasibility": {
+    "issues": [],
+    "warnings": [
+      "subtle emotion may be hard to verify in long/full shots",
+      "explosion with no subject action is valid but needs clear staging to remain coherent"
+    ],
+    "suggestions": [
+      "express weak emotion through posture, silhouette, or gaze rather than face detail",
+      "make the explosion distant or environmental while the subject stays still"
+    ],
+    "promptability_score": 0.84,
+    "promptability_bucket": "easy_to_visualize"
+  },
+  "compiler_notes": {
+    "language": "English",
+    "target_duration_seconds": [10, 15],
+    "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+    "rule": "preserve primary tags first, then secondary tags, then stylistic tags"
+  }
+}

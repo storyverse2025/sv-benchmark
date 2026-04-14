@@ -1,0 +1,14 @@
+{
+  "total_samples": 25,
+  "levels": {
+    "S1": 5,
+    "S2": 5,
+    "S3": 5,
+    "S4": 5,
+    "S5": 5
+  },
+  "promptability_distribution": {
+    "easy_to_visualize": 24,
+    "borderline": 1
+  }
+}

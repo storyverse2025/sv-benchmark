@@ -1,0 +1,38 @@
+Convert the following compiler payload into an evaluable 10–15 second video testcase.
+
+Requirements:
+- Language: English
+- Duration: 10–15 seconds
+- The result must be a coherent visual micro-scene or micro-story.
+- Respect the difficulty definition.
+- Make the key tags visually testable, not merely implied.
+- Avoid unnecessary inventions.
+- If the payload includes cinematic warnings, resolve them by simplifying staging rather than dropping core tags.
+
+Compiler payload:
+{{COMPILER_PAYLOAD_JSON}}
+
+Output JSON schema:
+{
+  "testcase_id": "",
+  "core_intent": "",
+  "duration_seconds": 0,
+  "story_logic": "",
+  "shot_plan": [
+    {
+      "shot_id": 1,
+      "time_range": "",
+      "visual_goal": "",
+      "what_happens": "",
+      "camera_and_framing": "",
+      "lighting_and_mood": ""
+    }
+  ],
+  "final_video_prompt": "",
+  "negative_prompt": "",
+  "coverage_notes": {
+    "must_show": [],
+    "soft_interpretations": [],
+    "tradeoffs": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "testcase_id": "S1_001",
+  "core_intent": "A single-subject, single-scene, single-shot realism testcase that measures whether the model can preserve a motionless sci-fi animal as the visual anchor while supporting subtle anger, backlit cool lighting, symmetrical framing, and a distant explosion within one coherent outdoor shot.",
+  "duration_seconds": 12,
+  "story_logic": "A solitary sci-fi animal stands watch at the threshold of a ruined outdoor structure. The shot begins with tense stillness, then a distant explosion breaks the silence without changing the animal's restrained posture, creating a clear contrast between environmental disruption and controlled emotional presence.",
+  "shot_plan": [
+    {
+      "shot_id": 1,
+      "time_range": "0s-12s",
+      "visual_goal": "Preserve one readable subject in a single continuous wide shot while making the spatial framing, lighting, emotion, and distant effect all visible.",
+      "what_happens": "From inside a dark ruined archway looking outward, a lone sleek sci-fi wolf-like creature stands still in the open landscape. It remains motionless, staring forward with restrained anger. Around the final third of the shot, a distant explosion blooms in the far background sky, briefly illuminating the horizon while the creature does not move.",
+      "camera_and_framing": "Single continuous long shot from a low angle, symmetrical composition, slow horizontal pan that keeps the creature centered within the interior-to-exterior framing.",
+      "lighting_and_mood": "Cool backlighting creates a sharp silhouette and a tense, controlled atmosphere."
+    }
+  ],
+  "final_video_prompt": "A 12-second realistic cinematic video in real-time, single continuous shot. A symmetrical long shot from a low angle slowly pans across a ruined outdoor sci-fi structure, framed from inside a dark archway looking outward. At the center stands one sleek wolf-like sci-fi animal, solid, smooth-textured, fully opaque, perfectly still, with subtle anger visible in its posture and gaze. Cool backlighting shapes a sharp silhouette against the open landscape. The creature remains motionless throughout. In the far background near the end of the shot, a distant explosion suddenly blooms across the horizon, adding tension without breaking the stillness of the subject. No cuts, no extra subjects, no gore, realistic visual style.",
+  "negative_prompt": "multiple animals, human characters, subject motion, aggressive attack, close-up face shot, warm lighting, front lighting, cluttered asymmetrical framing, fantasy magic, cartoon look, exaggerated anger, foreground explosion, camera cuts, shaky camera, blurred silhouette, transparent body, furry texture, text, watermark, logo, gore",
+  "coverage_notes": {
+    "must_show": [
+      "one animal subject only",
+      "outdoor setting",
+      "realistic style",
+      "smooth opaque solid body",
+      "sci-fi rule set",
+      "inside-outside spatial framing",
+      "no subject action",
+      "subtle anger",
+      "explosion",
+      "cool backlight",
+      "low-angle long shot",
+      "pan",
+      "symmetrical composition",
+      "real-time"
+    ],
+    "soft_interpretations": [
+      "subtle anger should be conveyed mainly by posture, head angle, and eye focus rather than exaggerated facial animation",
+      "the sci-fi property may be expressed through subtle biomechanical design rather than heavy worldbuilding"
+    ],
+    "tradeoffs": [
+      "because the shot is a long shot, emotion should remain subtle and body-language based rather than relying on detailed facial acting",
+      "the explosion should remain distant so the motionless subject stays the visual anchor"
+    ]
+  }
+}

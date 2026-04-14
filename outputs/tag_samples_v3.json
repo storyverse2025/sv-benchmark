@@ -1,0 +1,1820 @@
+[
+  {
+    "id": 1,
+    "难度等级": "S1 最简",
+    "难度描述": "单物品/单人物 + 单场景 + 单镜头",
+    "画风": "写实",
+    "场景": [
+      "室外"
+    ],
+    "主体": [
+      "动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "科幻",
+      "纹理": "光滑",
+      "透光度": "不透明"
+    },
+    "空间布局": "内外关系",
+    "动作": "无",
+    "表情": "怒:弱",
+    "特效": "爆炸",
+    "灯光": {
+      "色调": "冷光",
+      "方向": "逆光"
+    },
+    "相机": {
+      "角度": "仰拍",
+      "运镜": [
+        "摇"
+      ],
+      "构图": "对称",
+      "时间": "常规速度",
+      "景别": [
+        "远景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "subtle emotion may be hard to verify in long/full shots",
+        "explosion with no subject action is valid but needs clear staging to remain coherent"
+      ],
+      "suggestions": [
+        "express weak emotion through posture, silhouette, or gaze rather than face detail",
+        "make the explosion distant or environmental while the subject stays still"
+      ],
+      "promptability_score": 0.84,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "难度等级": "S1 最简",
+    "难度描述": "单物品/单人物 + 单场景 + 单镜头",
+    "画风": "哥特",
+    "场景": [
+      "室外"
+    ],
+    "主体": [
+      "物体"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "光滑",
+      "透光度": "不透明"
+    },
+    "空间布局": "左右",
+    "动作": "无",
+    "表情": "无",
+    "特效": "无",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "侧光"
+    },
+    "相机": {
+      "角度": "俯拍",
+      "运镜": [
+        "移"
+      ],
+      "构图": "三分法",
+      "时间": "倒放",
+      "景别": [
+        "全景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [],
+      "suggestions": [],
+      "promptability_score": 1.0,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "难度等级": "S1 最简",
+    "难度描述": "单物品/单人物 + 单场景 + 单镜头",
+    "画风": "卡通",
+    "场景": [
+      "室内"
+    ],
+    "主体": [
+      "动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "科幻",
+      "纹理": "毛发",
+      "透光度": "不透明"
+    },
+    "空间布局": "前后",
+    "动作": "走路",
+    "表情": "哀:弱",
+    "特效": "爆炸",
+    "灯光": {
+      "色调": "中性",
+      "方向": "顺光"
+    },
+    "相机": {
+      "角度": "俯拍",
+      "运镜": [
+        "拉"
+      ],
+      "构图": "对称",
+      "时间": "常规速度",
+      "景别": [
+        "近景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [],
+      "suggestions": [],
+      "promptability_score": 1.0,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "难度等级": "S1 最简",
+    "难度描述": "单物品/单人物 + 单场景 + 单镜头",
+    "画风": "哥特",
+    "场景": [
+      "室内"
+    ],
+    "主体": [
+      "人类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "毛发",
+      "透光度": "不透明"
+    },
+    "空间布局": "上下",
+    "动作": "跳跃",
+    "表情": "喜:中",
+    "特效": "光效",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "顶光"
+    },
+    "相机": {
+      "角度": "平拍",
+      "运镜": [
+        "推"
+      ],
+      "构图": "引导线",
+      "时间": "延时摄影",
+      "景别": [
+        "中景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "timelapse can reduce readable emotional acting"
+      ],
+      "suggestions": [
+        "use environmental motion to signal timelapse and keep character motion simple"
+      ],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "难度等级": "S1 最简",
+    "难度描述": "单物品/单人物 + 单场景 + 单镜头",
+    "画风": "写实",
+    "场景": [
+      "室内"
+    ],
+    "主体": [
+      "人类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "光滑",
+      "透光度": "不透明"
+    },
+    "空间布局": "上下",
+    "动作": "打斗",
+    "表情": "喜:弱",
+    "特效": "光效",
+    "灯光": {
+      "色调": "冷光",
+      "方向": "顺光"
+    },
+    "相机": {
+      "角度": "仰拍",
+      "运镜": [
+        "跟"
+      ],
+      "构图": "三分法",
+      "时间": "慢动作",
+      "景别": [
+        "远景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "subtle emotion may be hard to verify in long/full shots"
+      ],
+      "suggestions": [
+        "express weak emotion through posture, silhouette, or gaze rather than face detail"
+      ],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "难度等级": "S2 简单",
+    "难度描述": "单物品/单人物 + 多场景 + 单镜头",
+    "画风": "写实",
+    "场景": [
+      "室内",
+      "室外"
+    ],
+    "主体": [
+      "动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "毛发",
+      "透光度": "不透明"
+    },
+    "空间布局": "上下",
+    "动作": "打斗",
+    "表情": "喜:弱",
+    "特效": "爆炸",
+    "灯光": {
+      "色调": "冷光",
+      "方向": "顶光"
+    },
+    "相机": {
+      "角度": "平拍",
+      "运镜": [
+        "跟"
+      ],
+      "构图": "三分法",
+      "时间": "常规速度",
+      "景别": [
+        "近景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "single-shot multi-scene cases are hard and should rely on continuous traversal or threshold framing"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "难度等级": "S2 简单",
+    "难度描述": "单物品/单人物 + 多场景 + 单镜头",
+    "画风": "哥特",
+    "场景": [
+      "室内",
+      "室外"
+    ],
+    "主体": [
+      "人类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "科幻",
+      "纹理": "光滑",
+      "透光度": "不透明"
+    },
+    "空间布局": "内外关系",
+    "动作": "后空翻",
+    "表情": "喜:中",
+    "特效": "无",
+    "灯光": {
+      "色调": "冷光",
+      "方向": "侧光"
+    },
+    "相机": {
+      "角度": "仰拍",
+      "运镜": [
+        "拉"
+      ],
+      "构图": "三分法",
+      "时间": "慢动作",
+      "景别": [
+        "远景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "single-shot multi-scene cases are hard and should rely on continuous traversal or threshold framing"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "难度等级": "S2 简单",
+    "难度描述": "单物品/单人物 + 多场景 + 单镜头",
+    "画风": "卡通",
+    "场景": [
+      "室内",
+      "室外"
+    ],
+    "主体": [
+      "人类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "光滑",
+      "透光度": "不透明"
+    },
+    "空间布局": "前后",
+    "动作": "跳跃",
+    "表情": "怒:中",
+    "特效": "光效",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "顺光"
+    },
+    "相机": {
+      "角度": "俯拍",
+      "运镜": [
+        "移"
+      ],
+      "构图": "引导线",
+      "时间": "延时摄影",
+      "景别": [
+        "全景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "timelapse can reduce readable emotional acting",
+        "single-shot multi-scene cases are hard and should rely on continuous traversal or threshold framing"
+      ],
+      "suggestions": [
+        "use environmental motion to signal timelapse and keep character motion simple"
+      ],
+      "promptability_score": 0.84,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "难度等级": "S2 简单",
+    "难度描述": "单物品/单人物 + 多场景 + 单镜头",
+    "画风": "哥特",
+    "场景": [
+      "室内",
+      "室外"
+    ],
+    "主体": [
+      "动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "科幻",
+      "纹理": "毛发",
+      "透光度": "不透明"
+    },
+    "空间布局": "左右",
+    "动作": "走路",
+    "表情": "怒:弱",
+    "特效": "爆炸",
+    "灯光": {
+      "色调": "中性",
+      "方向": "逆光"
+    },
+    "相机": {
+      "角度": "仰拍",
+      "运镜": [
+        "摇"
+      ],
+      "构图": "对称",
+      "时间": "倒放",
+      "景别": [
+        "中景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "single-shot multi-scene cases are hard and should rely on continuous traversal or threshold framing"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "难度等级": "S2 简单",
+    "难度描述": "单物品/单人物 + 多场景 + 单镜头",
+    "画风": "写实",
+    "场景": [
+      "室外",
+      "室内"
+    ],
+    "主体": [
+      "物体"
+    ],
+    "物理属性": {
+      "状态": "刚体",
+      "规则": "现实",
+      "纹理": "光滑",
+      "透光度": "不透明"
+    },
+    "空间布局": "上下",
+    "动作": "无",
+    "表情": "无",
+    "特效": "光效",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "顺光"
+    },
+    "相机": {
+      "角度": "俯拍",
+      "运镜": [
+        "推"
+      ],
+      "构图": "对称",
+      "时间": "常规速度",
+      "景别": [
+        "远景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "single-shot multi-scene cases are hard and should rely on continuous traversal or threshold framing"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "难度等级": "S3 中等",
+    "难度描述": "多物品/多人物 + 单场景 + 单镜头",
+    "画风": "写实",
+    "场景": [
+      "室内"
+    ],
+    "主体": [
+      "动物",
+      "物体",
+      "人类"
+    ],
+    "物理属性": {
+      "状态": "非刚体",
+      "规则": "现实",
+      "纹理": "毛发",
+      "透光度": "不透明"
+    },
+    "空间布局": "前后",
+    "动作": "打斗",
+    "表情": "喜:中",
+    "特效": "无",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "顺光"
+    },
+    "相机": {
+      "角度": "俯拍",
+      "运镜": [
+        "推"
+      ],
+      "构图": "对称",
+      "时间": "倒放",
+      "景别": [
+        "全景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [],
+      "suggestions": [],
+      "promptability_score": 1.0,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "难度等级": "S3 中等",
+    "难度描述": "多物品/多人物 + 单场景 + 单镜头",
+    "画风": "哥特",
+    "场景": [
+      "室内"
+    ],
+    "主体": [
+      "人类",
+      "物体"
+    ],
+    "物理属性": {
+      "状态": "液体",
+      "规则": "现实",
+      "纹理": "光滑",
+      "透光度": "半透明"
+    },
+    "空间布局": "内外关系",
+    "动作": "走路",
+    "表情": "怒:中",
+    "特效": "光效",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "顺光"
+    },
+    "相机": {
+      "角度": "平拍",
+      "运镜": [
+        "跟"
+      ],
+      "构图": "三分法",
+      "时间": "延时摄影",
+      "景别": [
+        "远景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "timelapse can reduce readable emotional acting"
+      ],
+      "suggestions": [
+        "use environmental motion to signal timelapse and keep character motion simple"
+      ],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "难度等级": "S3 中等",
+    "难度描述": "多物品/多人物 + 单场景 + 单镜头",
+    "画风": "写实",
+    "场景": [
+      "室内"
+    ],
+    "主体": [
+      "物体",
+      "动物"
+    ],
+    "物理属性": {
+      "状态": "气体",
+      "规则": "科幻",
+      "纹理": "光滑",
+      "透光度": "透明"
+    },
+    "空间布局": "上下",
+    "动作": "无",
+    "表情": "喜:弱",
+    "特效": "爆炸",
+    "灯光": {
+      "色调": "中性",
+      "方向": "侧光"
+    },
+    "相机": {
+      "角度": "仰拍",
+      "运镜": [
+        "拉"
+      ],
+      "构图": "对称",
+      "时间": "常规速度",
+      "景别": [
+        "中景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "explosion with no subject action is valid but needs clear staging to remain coherent"
+      ],
+      "suggestions": [
+        "make the explosion distant or environmental while the subject stays still"
+      ],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "难度等级": "S3 中等",
+    "难度描述": "多物品/多人物 + 单场景 + 单镜头",
+    "画风": "哥特",
+    "场景": [
+      "室外"
+    ],
+    "主体": [
+      "人类",
+      "物体",
+      "动物"
+    ],
+    "物理属性": {
+      "状态": "刚体",
+      "规则": "科幻",
+      "纹理": "毛发",
+      "透光度": "透明"
+    },
+    "空间布局": "左右",
+    "动作": "跳跃",
+    "表情": "怒:强",
+    "特效": "爆炸",
+    "灯光": {
+      "色调": "冷光",
+      "方向": "逆光"
+    },
+    "相机": {
+      "角度": "仰拍",
+      "运镜": [
+        "摇"
+      ],
+      "构图": "三分法",
+      "时间": "慢动作",
+      "景别": [
+        "远景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "hair/fur texture may be weakly visible in long-shot backlit compositions"
+      ],
+      "suggestions": [
+        "keep texture secondary unless the model can render clear silhouette detail"
+      ],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "难度等级": "S3 中等",
+    "难度描述": "多物品/多人物 + 单场景 + 单镜头",
+    "画风": "卡通",
+    "场景": [
+      "室外"
+    ],
+    "主体": [
+      "人类",
+      "动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "光滑",
+      "透光度": "不透明"
+    },
+    "空间布局": "上下",
+    "动作": "跑步",
+    "表情": "喜:强",
+    "特效": "光效",
+    "灯光": {
+      "色调": "冷光",
+      "方向": "顶光"
+    },
+    "相机": {
+      "角度": "俯拍",
+      "运镜": [
+        "移"
+      ],
+      "构图": "引导线",
+      "时间": "常规速度",
+      "景别": [
+        "近景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [],
+      "suggestions": [],
+      "promptability_score": 1.0,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "难度等级": "S4 复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 单镜头",
+    "画风": "哥特",
+    "场景": [
+      "室内",
+      "室外"
+    ],
+    "主体": [
+      "人类",
+      "物体"
+    ],
+    "物理属性": {
+      "状态": "非刚体",
+      "规则": "现实",
+      "纹理": "光滑",
+      "透光度": "透明"
+    },
+    "空间布局": "上下",
+    "动作": "跳跃",
+    "表情": "怒:中",
+    "特效": "爆炸",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "逆光"
+    },
+    "相机": {
+      "角度": "俯拍",
+      "运镜": [
+        "拉"
+      ],
+      "构图": "三分法",
+      "时间": "倒放",
+      "景别": [
+        "近景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "single-shot multi-scene cases are hard and should rely on continuous traversal or threshold framing"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "难度等级": "S4 复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 单镜头",
+    "画风": "卡通",
+    "场景": [
+      "室内",
+      "室外"
+    ],
+    "主体": [
+      "动物",
+      "人类",
+      "物体"
+    ],
+    "物理属性": {
+      "状态": "气体",
+      "规则": "现实",
+      "纹理": "光滑",
+      "透光度": "半透明"
+    },
+    "空间布局": "前后",
+    "动作": "后空翻",
+    "表情": "喜:弱",
+    "特效": "无",
+    "灯光": {
+      "色调": "冷光",
+      "方向": "顺光"
+    },
+    "相机": {
+      "角度": "仰拍",
+      "运镜": [
+        "摇"
+      ],
+      "构图": "对称",
+      "时间": "延时摄影",
+      "景别": [
+        "全景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "subtle emotion may be hard to verify in long/full shots",
+        "timelapse can reduce readable emotional acting",
+        "single-shot multi-scene cases are hard and should rely on continuous traversal or threshold framing"
+      ],
+      "suggestions": [
+        "express weak emotion through posture, silhouette, or gaze rather than face detail",
+        "use environmental motion to signal timelapse and keep character motion simple"
+      ],
+      "promptability_score": 0.76,
+      "promptability_bucket": "borderline",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "难度等级": "S4 复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 单镜头",
+    "画风": "写实",
+    "场景": [
+      "室内",
+      "室外"
+    ],
+    "主体": [
+      "动物",
+      "人类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "科幻",
+      "纹理": "光滑",
+      "透光度": "不透明"
+    },
+    "空间布局": "上下",
+    "动作": "打斗",
+    "表情": "怒:强",
+    "特效": "光效",
+    "灯光": {
+      "色调": "冷光",
+      "方向": "顶光"
+    },
+    "相机": {
+      "角度": "平拍",
+      "运镜": [
+        "跟"
+      ],
+      "构图": "引导线",
+      "时间": "常规速度",
+      "景别": [
+        "远景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "single-shot multi-scene cases are hard and should rely on continuous traversal or threshold framing"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "难度等级": "S4 复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 单镜头",
+    "画风": "哥特",
+    "场景": [
+      "室外",
+      "室内"
+    ],
+    "主体": [
+      "物体",
+      "动物"
+    ],
+    "物理属性": {
+      "状态": "液体",
+      "规则": "现实",
+      "纹理": "毛发",
+      "透光度": "透明"
+    },
+    "空间布局": "内外关系",
+    "动作": "跑步",
+    "表情": "无",
+    "特效": "爆炸",
+    "灯光": {
+      "色调": "中性",
+      "方向": "顺光"
+    },
+    "相机": {
+      "角度": "仰拍",
+      "运镜": [
+        "推"
+      ],
+      "构图": "对称",
+      "时间": "慢动作",
+      "景别": [
+        "中景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "single-shot multi-scene cases are hard and should rely on continuous traversal or threshold framing"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "难度等级": "S4 复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 单镜头",
+    "画风": "写实",
+    "场景": [
+      "室外",
+      "室内"
+    ],
+    "主体": [
+      "人类",
+      "物体",
+      "动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "科幻",
+      "纹理": "毛发",
+      "透光度": "半透明"
+    },
+    "空间布局": "左右",
+    "动作": "走路",
+    "表情": "喜:强",
+    "特效": "光效",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "侧光"
+    },
+    "相机": {
+      "角度": "俯拍",
+      "运镜": [
+        "移"
+      ],
+      "构图": "三分法",
+      "时间": "常规速度",
+      "景别": [
+        "远景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "single-shot multi-scene cases are hard and should rely on continuous traversal or threshold framing"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "难度等级": "S5 极复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 多镜头",
+    "画风": "写实",
+    "场景": [
+      "室外",
+      "室内"
+    ],
+    "主体": [
+      "物体",
+      "人类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "光滑",
+      "透光度": "半透明"
+    },
+    "空间布局": "上下",
+    "动作": "走路",
+    "表情": "喜:弱",
+    "特效": "爆炸",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "侧光"
+    },
+    "相机": {
+      "角度": "仰拍",
+      "运镜": [
+        "推",
+        "摇"
+      ],
+      "构图": "引导线",
+      "时间": "延时摄影",
+      "景别": [
+        "远景",
+        "近景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "subtle emotion may be hard to verify in long/full shots",
+        "timelapse can reduce readable emotional acting"
+      ],
+      "suggestions": [
+        "express weak emotion through posture, silhouette, or gaze rather than face detail",
+        "use environmental motion to signal timelapse and keep character motion simple"
+      ],
+      "promptability_score": 0.84,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "难度等级": "S5 极复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 多镜头",
+    "画风": "写实",
+    "场景": [
+      "室内",
+      "室外"
+    ],
+    "主体": [
+      "动物",
+      "物体",
+      "人类"
+    ],
+    "物理属性": {
+      "状态": "液体",
+      "规则": "科幻",
+      "纹理": "毛发",
+      "透光度": "透明"
+    },
+    "空间布局": "左右",
+    "动作": "跳跃",
+    "表情": "怒:中",
+    "特效": "光效",
+    "灯光": {
+      "色调": "冷光",
+      "方向": "顺光"
+    },
+    "相机": {
+      "角度": "俯拍",
+      "运镜": [
+        "推",
+        "移"
+      ],
+      "构图": "三分法",
+      "时间": "常规速度",
+      "景别": [
+        "远景",
+        "中景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [],
+      "suggestions": [],
+      "promptability_score": 1.0,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "难度等级": "S5 极复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 多镜头",
+    "画风": "卡通",
+    "场景": [
+      "室外",
+      "室内"
+    ],
+    "主体": [
+      "物体",
+      "动物",
+      "人类"
+    ],
+    "物理属性": {
+      "状态": "气体",
+      "规则": "科幻",
+      "纹理": "毛发",
+      "透光度": "透明"
+    },
+    "空间布局": "内外关系",
+    "动作": "跑步",
+    "表情": "喜:中",
+    "特效": "爆炸",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "逆光"
+    },
+    "相机": {
+      "角度": "平拍",
+      "运镜": [
+        "推",
+        "拉"
+      ],
+      "构图": "对称",
+      "时间": "常规速度",
+      "景别": [
+        "远景",
+        "全景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "hair/fur texture may be weakly visible in long-shot backlit compositions"
+      ],
+      "suggestions": [
+        "keep texture secondary unless the model can render clear silhouette detail"
+      ],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "难度等级": "S5 极复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 多镜头",
+    "画风": "哥特",
+    "场景": [
+      "室内",
+      "室外"
+    ],
+    "主体": [
+      "人类",
+      "动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "光滑",
+      "透光度": "不透明"
+    },
+    "空间布局": "上下",
+    "动作": "打斗",
+    "表情": "喜:强",
+    "特效": "无",
+    "灯光": {
+      "色调": "中性",
+      "方向": "顶光"
+    },
+    "相机": {
+      "角度": "仰拍",
+      "运镜": [
+        "推",
+        "拉",
+        "移"
+      ],
+      "构图": "三分法",
+      "时间": "慢动作",
+      "景别": [
+        "远景",
+        "全景",
+        "中景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [],
+      "suggestions": [],
+      "promptability_score": 1.0,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "难度等级": "S5 极复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 多镜头",
+    "画风": "哥特",
+    "场景": [
+      "室外",
+      "室内"
+    ],
+    "主体": [
+      "动物",
+      "物体"
+    ],
+    "物理属性": {
+      "状态": "非刚体",
+      "规则": "现实",
+      "纹理": "光滑",
+      "透光度": "半透明"
+    },
+    "空间布局": "前后",
+    "动作": "无",
+    "表情": "怒:弱",
+    "特效": "光效",
+    "灯光": {
+      "色调": "冷光",
+      "方向": "顺光"
+    },
+    "相机": {
+      "角度": "俯拍",
+      "运镜": [
+        "推",
+        "拉",
+        "摇"
+      ],
+      "构图": "对称",
+      "时间": "倒放",
+      "景别": [
+        "远景",
+        "全景",
+        "近景"
+      ]
+    },
+    "v3_meta": {
+      "issues": [],
+      "warnings": [
+        "subtle emotion may be hard to verify in long/full shots"
+      ],
+      "suggestions": [
+        "express weak emotion through posture, silhouette, or gaze rather than face detail"
+      ],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "composition"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity"
+      ]
+    }
+  }
+]
