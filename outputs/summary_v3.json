@@ -1,14 +1,13 @@
 {
-  "total_samples": 25,
+  "total_samples": 5,
   "levels": {
-    "S1": 5,
-    "S2": 5,
-    "S3": 5,
-    "S4": 5,
-    "S5": 5
+    "S1": 1,
+    "S2": 1,
+    "S3": 1,
+    "S4": 1,
+    "S5": 1
   },
   "promptability_distribution": {
-    "easy_to_visualize": 24,
-    "borderline": 1
+    "easy_to_visualize": 5
   }
 }

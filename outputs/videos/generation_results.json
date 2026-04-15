@@ -1,0 +1,42 @@
+[
+  {
+    "testcase_id": "S3-3-animal-human-indoor-explosion-walking-joy",
+    "prompt": "A realistic long shot from a high angle shows a human and a dog walking joyfully together in a warmly lit indoor space. The human is upright and smiling, the dog walks close by their feet, showing strong joy. As they move, a burst of confetti explodes behind them, adding excitement. The camera smoothly pushes in, following the action. The scene is well-lit from the front with a warm tone.",
+    "kling_task_id": "873310019189108797",
+    "seedance_task_id": "cgt-20260415163052-nhvdc",
+    "kling_video": "/Users/liuxinyuan/Documents/side_projects/storyverse/sv-benchmark/outputs/videos/S3-3-animal-human-indoor-explosion-walking-joy_kling.mp4",
+    "seedance_video": "/Users/liuxinyuan/Documents/side_projects/storyverse/sv-benchmark/outputs/videos/S3-3-animal-human-indoor-explosion-walking-joy_seedance.mp4"
+  },
+  {
+    "testcase_id": "S1-1-realistic-indoor-human-explosion-walk",
+    "prompt": "A realistic, single long shot from a high angle inside a warm-lit indoor space. A human walks forward energetically, showing strong joy. As they walk, a bright explosion effect bursts upward above or behind them, emphasizing vertical relation. The camera pushes in smoothly, following the rule of thirds composition, with warm frontal lighting throughout.",
+    "kling_task_id": "873310018941644876",
+    "seedance_task_id": "cgt-20260415163052-vdzkz",
+    "kling_video": "/Users/liuxinyuan/Documents/side_projects/storyverse/sv-benchmark/outputs/videos/S1-1-realistic-indoor-human-explosion-walk_kling.mp4",
+    "seedance_video": "/Users/liuxinyuan/Documents/side_projects/storyverse/sv-benchmark/outputs/videos/S1-1-realistic-indoor-human-explosion-walk_seedance.mp4"
+  },
+  {
+    "testcase_id": "S4-4-realistic-multisubject-multiscene-single-shot",
+    "prompt": "A realistic single-shot long take from a high angle shows a woman and her dog walking together from a sunlit outdoor park into a warmly lit house interior. As they step inside, a vibrant confetti explosion erupts from above, and both react with clear joyful excitement. The camera pushes in smoothly, maintaining a rule of thirds composition and showing a clear vertical transition from outdoors to indoors. Lighting stays warm and front-facing throughout.",
+    "kling_task_id": "873310018983448580",
+    "seedance_task_id": "cgt-20260415163053-fq4cg",
+    "kling_video": "/Users/liuxinyuan/Documents/side_projects/storyverse/sv-benchmark/outputs/videos/S4-4-realistic-multisubject-multiscene-single-shot_kling.mp4",
+    "seedance_video": "/Users/liuxinyuan/Documents/side_projects/storyverse/sv-benchmark/outputs/videos/S4-4-realistic-multisubject-multiscene-single-shot_seedance.mp4"
+  },
+  {
+    "testcase_id": "S5-005",
+    "prompt": "A realistic, warmly lit video follows a joyful human and a happy dog walking together outdoors. The human walks on a path while the dog is on a lower grassy area, both smiling. The camera pushes in from a high angle as they approach and enter a building. Inside, they continue walking together, maintaining their cheerful mood. Suddenly, a visible but safe explosion effect (like a burst of confetti) happens in the background. The camera pulls out in a full, high-angle shot, capturing their surprised yet joyful reactions. The scene uses rule of thirds composition, smooth opaque textures, and follows real-world physics.",
+    "kling_task_id": "873310018966806588",
+    "seedance_task_id": "cgt-20260415163052-n8grv",
+    "kling_video": "/Users/liuxinyuan/Documents/side_projects/storyverse/sv-benchmark/outputs/videos/S5-005_kling.mp4",
+    "seedance_video": "/Users/liuxinyuan/Documents/side_projects/storyverse/sv-benchmark/outputs/videos/S5-005_seedance.mp4"
+  },
+  {
+    "testcase_id": "S2-realistic-single-human-walk-explosion-vertical-multiscene",
+    "prompt": "A realistic long shot from a high angle shows a joyful person walking from an outdoor path toward a building entrance. The camera slowly pushes in, maintaining rule of thirds composition. As the person steps inside, a dramatic explosion erupts vertically below them, with debris flying outward. The person remains joyful and unhurt, bathed in warm front lighting, and the single shot continues smoothly from outdoors to indoors.",
+    "kling_task_id": "873310018966822955",
+    "seedance_task_id": "cgt-20260415163052-cmbjt",
+    "kling_video": "/Users/liuxinyuan/Documents/side_projects/storyverse/sv-benchmark/outputs/videos/S2-realistic-single-human-walk-explosion-vertical-multiscene_kling.mp4",
+    "seedance_video": "/Users/liuxinyuan/Documents/side_projects/storyverse/sv-benchmark/outputs/videos/S2-realistic-single-human-walk-explosion-vertical-multiscene_seedance.mp4"
+  }
+]
