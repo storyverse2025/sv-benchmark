@@ -1,0 +1,200 @@
+[
+  {
+    "testcase_id": "S1-1-realistic-indoor-human-explosion-walk",
+    "core_intent": "Test the generation of a realistic, visually clear indoor scene with a single human walking with strong joy, as an explosion effect occurs, using a high-angle, push-in long shot with warm, frontal lighting.",
+    "duration_seconds": 12,
+    "story_logic": "A single human walks energetically across a spacious indoor setting, expressing strong joy. As they move, a sudden explosion effect occurs vertically above or behind them, all captured in a single smooth shot with the camera pushing in from a high angle, under warm, front lighting.",
+    "shot_plan": [
+      {
+        "shot_id": 1,
+        "time_range": "0-12s",
+        "visual_goal": "Show a human subject walking indoors with joyful energy as an explosion occurs in the background or above, emphasizing vertical spatial relation. Maintain a realistic style and highlight the explosion's visual clarity.",
+        "what_happens": "A person walks forward along a well-lit indoor corridor or open room, smiling broadly and moving with energetic joy. As they approach the center of frame, a bright, non-lethal explosion effect erupts above or behind them, sending a visible burst upward while the person keeps walking with joy, unbothered. The vertical relation between human and explosion is clearly visible.",
+        "camera_and_framing": "Single long shot from a high angle, using a smooth push-in movement toward the subject, following the rule of thirds for composition. The human stays in the lower third, the explosion occupies the upper third.",
+        "lighting_and_mood": "Warm, frontal lighting creates a positive, inviting mood; the explosion provides a sudden, bright visual effect but does not disrupt the lighting tone. Overall, the mood remains joyful and energetic."
+      }
+    ],
+    "final_video_prompt": "A realistic, single long shot from a high angle inside a warm-lit indoor space. A human walks forward energetically, showing strong joy. As they walk, a bright explosion effect bursts upward above or behind them, emphasizing vertical relation. The camera pushes in smoothly, following the rule of thirds composition, with warm frontal lighting throughout.",
+    "negative_prompt": "No outdoor settings. No multiple people. No fantasy or surreal elements. No gore or injury. Avoid dark, cold, or harsh lighting. Explosion must be visually clear but not destructive.",
+    "coverage_notes": {
+      "must_show": [
+        "single human subject walking",
+        "indoor environment",
+        "strong joy on subject's face and movement",
+        "explosion effect visible above or behind, with clear vertical spatial relation",
+        "high angle, long shot with push-in camera movement",
+        "warm, frontal lighting"
+      ],
+      "soft_interpretations": [
+        "Explosion effect is dramatic but non-lethal to keep the scene testable and safe.",
+        "Exact indoor setting can be a corridor, hall, or open room as long as vertical relation is clear."
+      ],
+      "tradeoffs": [
+        "Explosion shown as a visual effect for clarity and safety, rather than as a destructive force."
+      ]
+    }
+  },
+  {
+    "testcase_id": "S2-realistic-single-human-walk-explosion-vertical-multiscene",
+    "core_intent": "Test a continuous single-shot, long shot sequence of a joyful human walking from outdoors into an indoor space, with a visible explosion effect, observing vertical spatial layout and all specified cinematography and style.",
+    "duration_seconds": 12,
+    "story_logic": "A person, visibly joyful, walks along a path outdoors, approaches a building, and enters through the doorway. As they step inside, an explosion effect occurs vertically below in the scene (e.g., outside the doorway or through a window), while the camera pushes in from a high angle, maintaining a long shot and rule of thirds composition.",
+    "shot_plan": [
+      {
+        "shot_id": 1,
+        "time_range": "0s-12s",
+        "visual_goal": "Show a single human subject transitioning smoothly from an outdoor to an indoor setting, walking with strong joy, while a visually clear explosion effect erupts below their vertical position, all captured in a single, continuous long shot.",
+        "what_happens": "A joyful person walks along a sunlit outdoor path toward a building entrance. The camera, from a high angle, follows in a slow push-in as the person enters the doorway. As they cross the threshold, an explosion erupts below their feet (e.g., from the ground or just outside the doorway), sending debris outward but leaving the person unharmed. The person reacts with continued joy, possibly raising their arms in delight.",
+        "camera_and_framing": "Single continuous shot, long shot size, high angle looking down at the subject, slow push-in movement as the person walks from outdoors into the building. Rule of thirds composition is maintained throughout.",
+        "lighting_and_mood": "Warm front lighting creates a cheerful and inviting atmosphere. Lighting remains consistent as the subject moves from outside to inside, ensuring realism and continuity."
+      }
+    ],
+    "final_video_prompt": "A realistic long shot from a high angle shows a joyful person walking from an outdoor path toward a building entrance. The camera slowly pushes in, maintaining rule of thirds composition. As the person steps inside, a dramatic explosion erupts vertically below them, with debris flying outward. The person remains joyful and unhurt, bathed in warm front lighting, and the single shot continues smoothly from outdoors to indoors.",
+    "negative_prompt": "No sudden cuts; no supernatural elements; avoid implausible physics; do not show injury or distress; keep all surfaces and effects opaque and smooth.",
+    "coverage_notes": {
+      "must_show": [
+        "Single human subject",
+        "Walks continuously from outdoor to indoor",
+        "Strong, visible joy",
+        "Explosion effect appears vertically below",
+        "Single continuous long shot",
+        "High angle with camera push-in",
+        "Warm front lighting",
+        "Rule of thirds composition",
+        "Realistic style"
+      ],
+      "soft_interpretations": [
+        "Explosion is staged for visual clarity but without harm",
+        "Vertical spatial layout is shown by explosion being below the subject",
+        "Indoor and outdoor transition is through a doorway for natural flow"
+      ],
+      "tradeoffs": [
+        "Explosion timing is coordinated with entry for maximum vertical relation and scene clarity; debris is contained to avoid harm and maintain joyful emotion"
+      ]
+    }
+  },
+  {
+    "testcase_id": "S3-3-animal-human-indoor-explosion-walking-joy",
+    "core_intent": "Evaluate a realistic, indoor scene showing a human and an animal walking together in strong joy, with a visually clear vertical relationship, a sudden explosion effect, and covering a high-angle, warm-lit, push-in long shot.",
+    "duration_seconds": 12,
+    "story_logic": "A human and a dog are indoors, with the human walking joyfully while the dog trots at their feet. As they move, a small, safe visual explosion (like confetti or a theatrical flash) occurs in the background, heightening their visible joy. The scene is shot from a high angle, with the camera pushing in smoothly, and warm, front lighting fills the space.",
+    "shot_plan": [
+      {
+        "shot_id": 1,
+        "time_range": "0s-12s",
+        "visual_goal": "Clearly show both the human and animal in a joyful walk, with an explosion effect and vertical spatial relation, in a realistic indoor setting.",
+        "what_happens": "A human, smiling broadly, walks forward across an indoor space. A dog walks close by their side, occasionally glancing up at the human. As they pass beneath a high window, a burst of confetti explodes behind them, startling neither but increasing their shared excitement. The human laughs and the dog wags its tail vigorously.",
+        "camera_and_framing": "High angle long shot, following the rule of thirds with the human and dog in the lower third. The camera smoothly pushes in toward them as they walk, maintaining the vertical relationship (human upright, dog at their feet).",
+        "lighting_and_mood": "Warm, front-facing indoor lighting, emphasizing the joyful mood and keeping all action well-lit and visible."
+      }
+    ],
+    "final_video_prompt": "A realistic long shot from a high angle shows a human and a dog walking joyfully together in a warmly lit indoor space. The human is upright and smiling, the dog walks close by their feet, showing strong joy. As they move, a burst of confetti explodes behind them, adding excitement. The camera smoothly pushes in, following the action. The scene is well-lit from the front with a warm tone.",
+    "negative_prompt": "No fantasy elements, no outdoor scenery, no violence or dangerous explosions, no sad or neutral faces, no low angles, no cold lighting, no invisibility or transparency.",
+    "coverage_notes": {
+      "must_show": [
+        "Human and animal (dog) together, both clearly visible and walking",
+        "Indoor setting with realistic, opaque, smooth-textured subjects",
+        "Vertical relation: human upright, animal below",
+        "Strong joy on both faces/bodies",
+        "Explosion effect (confetti/theatrical, not dangerous)",
+        "High angle, long shot, camera pushing in",
+        "Warm, front lighting"
+      ],
+      "soft_interpretations": [
+        "Explosion interpreted as safe, indoor-appropriate effect (confetti burst)",
+        "Dog chosen as recognizable animal for visual clarity"
+      ],
+      "tradeoffs": [
+        "Explosion rendered as confetti or a safe flash to avoid impractical or unsafe effects indoors"
+      ]
+    }
+  },
+  {
+    "testcase_id": "S4-4-realistic-multisubject-multiscene-single-shot",
+    "core_intent": "Demonstrate a realistic, joyful interaction between a human and an animal, traversing from an outdoor to an indoor setting in a single, continuous high-angle push-in shot, culminating in a visually clear explosion effect.",
+    "duration_seconds": 13,
+    "story_logic": "A person and their dog, both visibly happy and energetic, walk together from a sunlit park (outdoors) into a cozy house (indoors). As they step inside, a burst of confetti explodes above them, emphasizing their shared joy. The camera remains in a single long shot, using a high angle and pushing in to follow their movement seamlessly through the two environments.",
+    "shot_plan": [
+      {
+        "shot_id": 1,
+        "time_range": "0-13s",
+        "visual_goal": "Show clear transition from outdoor to indoor, human-animal walking interaction, explosion effect, strong joyful expressions, vertical relationship, and realistic warm lighting.",
+        "what_happens": "A woman and her medium-sized dog walk side by side along a path in a sunlit park. As they approach a house entrance, the camera follows above them. The pair crosses the threshold into the warmly lit interior. Immediately as they enter, a burst of colorful confetti explodes down from above, both react with laughter and excitement.",
+        "camera_and_framing": "Single continuous long shot from a high angle, pushing in slowly as the subjects move from outside to inside. The composition follows the rule of thirds, keeping the subjects in the lower third as the camera tracks their movement vertically through the doorway.",
+        "lighting_and_mood": "Warm, front-lit sunlight outdoors transitions smoothly to warm, inviting indoor lighting. The mood is strongly joyful, seen in the subjects' body language and expressions."
+      }
+    ],
+    "final_video_prompt": "A realistic single-shot long take from a high angle shows a woman and her dog walking together from a sunlit outdoor park into a warmly lit house interior. As they step inside, a vibrant confetti explosion erupts from above, and both react with clear joyful excitement. The camera pushes in smoothly, maintaining a rule of thirds composition and showing a clear vertical transition from outdoors to indoors. Lighting stays warm and front-facing throughout.",
+    "negative_prompt": "No fantasy elements, no surreal effects, no violence, no gore, no magical creatures, no artificial lighting tones, no multiple camera cuts.",
+    "coverage_notes": {
+      "must_show": [
+        "human and animal subjects walking together",
+        "continuous transition from outdoor to indoor setting",
+        "visible joyful expressions",
+        "explosion effect (confetti) in real-world context",
+        "high angle camera",
+        "push-in camera movement",
+        "long shot framing"
+      ],
+      "soft_interpretations": [
+        "Explosion effect is interpreted as a burst of confetti for safety and realism.",
+        "Vertical relation is shown by the camera angle and by subjects moving from lower to upper space through a doorway."
+      ],
+      "tradeoffs": [
+        "To keep the shot single and continuous, the outdoor-to-indoor transition is performed in real time by following subjects through a threshold instead of using a hard cut.",
+        "The explosion is visually clear but non-destructive (confetti) to maintain the joyful mood and realism."
+      ]
+    }
+  },
+  {
+    "testcase_id": "S5-005",
+    "core_intent": "Demonstrate a realistic multi-subject, multi-location scene involving a joyful human and animal walking together, with a vertical spatial relationship, culminating in a visually evident explosion effect, using dynamic camera movement and warm frontal lighting.",
+    "duration_seconds": 13,
+    "story_logic": "A person and a dog joyfully walk together outdoors, with the human on a path and the dog on a slightly lower grassy level. The camera pushes in as they approach a building. They enter the building (transition to indoor), walking side by side. Suddenly, an explosion effect occurs in the background. The camera pulls out, capturing their surprised but still joyful reactions.",
+    "shot_plan": [
+      {
+        "shot_id": 1,
+        "time_range": "0s-6s",
+        "visual_goal": "Establish outdoor setting with both subjects walking in a vertical relation, expressing strong joy.",
+        "what_happens": "A human and a dog walk together along a sunny outdoor path. The human is on a paved path, the dog on a lower grassy verge. Both are smiling and energetic, visibly happy. The camera, in a long shot from a high angle, pushes in as they approach a building entrance.",
+        "camera_and_framing": "Long shot, high angle, push-in movement, rule of thirds composition, front light.",
+        "lighting_and_mood": "Warm, natural, frontal lighting; cheerful atmosphere."
+      },
+      {
+        "shot_id": 2,
+        "time_range": "6s-10s",
+        "visual_goal": "Transition to indoor scene, maintain joyful mood, show vertical relation persists.",
+        "what_happens": "The pair enters the building (interior now visible), continuing to walk side by side. The dog is slightly behind and lower than the human due to a shallow step.",
+        "camera_and_framing": "Full shot, high angle, steady at first, then pulls out as they move inside, rule of thirds.",
+        "lighting_and_mood": "Warm indoor lighting, frontal, maintains joyful feeling."
+      },
+      {
+        "shot_id": 3,
+        "time_range": "10s-13s",
+        "visual_goal": "Explosion effect occurs indoors, subjects react but retain joyful demeanor.",
+        "what_happens": "A visible (safe, non-gory) explosion effect—such as a burst of confetti or a sudden flash—erupts in the background. The human and dog react with surprise but laugh and continue smiling.",
+        "camera_and_framing": "Full shot, high angle, pull out to capture both subjects and explosion effect.",
+        "lighting_and_mood": "Explosion briefly intensifies lighting; mood remains upbeat."
+      }
+    ],
+    "final_video_prompt": "A realistic, warmly lit video follows a joyful human and a happy dog walking together outdoors. The human walks on a path while the dog is on a lower grassy area, both smiling. The camera pushes in from a high angle as they approach and enter a building. Inside, they continue walking together, maintaining their cheerful mood. Suddenly, a visible but safe explosion effect (like a burst of confetti) happens in the background. The camera pulls out in a full, high-angle shot, capturing their surprised yet joyful reactions. The scene uses rule of thirds composition, smooth opaque textures, and follows real-world physics.",
+    "negative_prompt": "No cartoonish elements, no fantasy effects, no flying, no gore, no horror, no low-quality textures, no surreal lighting, no implied actions—everything must be visually explicit and realistic.",
+    "coverage_notes": {
+      "must_show": [
+        "Human and animal (dog) both clearly visible and joyful",
+        "Outdoor and indoor scenes both present",
+        "Walking action observed in both scenes",
+        "Explosion effect clearly visible",
+        "High angle camera, push in and pull out movements",
+        "Warm, frontal lighting",
+        "Rule of thirds composition"
+      ],
+      "soft_interpretations": [
+        "Explosion effect interpreted as safe and visually clear (e.g., confetti burst) for realism and safety"
+      ],
+      "tradeoffs": [
+        "Explosion rendered as non-dangerous to maintain family-friendly realism while still being visually explicit"
+      ]
+    }
+  }
+]

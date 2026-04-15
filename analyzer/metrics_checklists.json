@@ -1,0 +1,741 @@
+[
+  {
+    "testcase_id": "S1-1-realistic-indoor-human-explosion-walk",
+    "difficulty": "S1",
+    "num_metrics": 14,
+    "metrics": [
+      {
+        "metric": "画风",
+        "en_field": "style",
+        "detected_values": [
+          "realistic"
+        ],
+        "active": true
+      },
+      {
+        "metric": "场景",
+        "en_field": "scenes",
+        "detected_values": [
+          "indoor"
+        ],
+        "active": true
+      },
+      {
+        "metric": "主体",
+        "en_field": "subjects",
+        "detected_values": [
+          "human"
+        ],
+        "active": true
+      },
+      {
+        "metric": "物理属性.状态",
+        "en_field": "physical_state",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "物理属性.规则",
+        "en_field": "physical_rule",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "物理属性.纹理",
+        "en_field": "texture",
+        "detected_values": [
+          "smooth"
+        ],
+        "active": true
+      },
+      {
+        "metric": "物理属性.透光度",
+        "en_field": "opacity",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "空间布局",
+        "en_field": "spatial_layout",
+        "detected_values": [
+          "vertical relation"
+        ],
+        "active": true
+      },
+      {
+        "metric": "动作",
+        "en_field": "action",
+        "detected_values": [
+          "walking"
+        ],
+        "active": true
+      },
+      {
+        "metric": "表情",
+        "en_field": "emotion",
+        "detected_values": [
+          "joy"
+        ],
+        "active": true
+      },
+      {
+        "metric": "特效",
+        "en_field": "effect",
+        "detected_values": [
+          "explosion"
+        ],
+        "active": true
+      },
+      {
+        "metric": "灯光.色调",
+        "en_field": "lighting_tone",
+        "detected_values": [
+          "warm"
+        ],
+        "active": true
+      },
+      {
+        "metric": "灯光.方向",
+        "en_field": "lighting_direction",
+        "detected_values": [
+          "front light"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.角度",
+        "en_field": "camera_angle",
+        "detected_values": [
+          "high angle"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.运镜",
+        "en_field": "camera_movement",
+        "detected_values": [
+          "push in"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.构图",
+        "en_field": "composition",
+        "detected_values": [
+          "rule of thirds"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.时间",
+        "en_field": "time_mode",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "相机.景别",
+        "en_field": "shot_size",
+        "detected_values": [
+          "long shot"
+        ],
+        "active": true
+      }
+    ]
+  },
+  {
+    "testcase_id": "S2-realistic-single-human-walk-explosion-vertical-multiscene",
+    "difficulty": "S2",
+    "num_metrics": 12,
+    "metrics": [
+      {
+        "metric": "画风",
+        "en_field": "style",
+        "detected_values": [
+          "realistic"
+        ],
+        "active": true
+      },
+      {
+        "metric": "场景",
+        "en_field": "scenes",
+        "detected_values": [
+          "indoor",
+          "outdoor"
+        ],
+        "active": true
+      },
+      {
+        "metric": "主体",
+        "en_field": "subjects",
+        "detected_values": [
+          "human"
+        ],
+        "active": true
+      },
+      {
+        "metric": "物理属性.状态",
+        "en_field": "physical_state",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "物理属性.规则",
+        "en_field": "physical_rule",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "物理属性.纹理",
+        "en_field": "texture",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "物理属性.透光度",
+        "en_field": "opacity",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "空间布局",
+        "en_field": "spatial_layout",
+        "detected_values": [
+          "vertical relation",
+          "inside-outside relation"
+        ],
+        "active": true
+      },
+      {
+        "metric": "动作",
+        "en_field": "action",
+        "detected_values": [
+          "walking"
+        ],
+        "active": true
+      },
+      {
+        "metric": "表情",
+        "en_field": "emotion",
+        "detected_values": [
+          "joy",
+          "delight"
+        ],
+        "active": true
+      },
+      {
+        "metric": "特效",
+        "en_field": "effect",
+        "detected_values": [
+          "explosion"
+        ],
+        "active": true
+      },
+      {
+        "metric": "灯光.色调",
+        "en_field": "lighting_tone",
+        "detected_values": [
+          "warm"
+        ],
+        "active": true
+      },
+      {
+        "metric": "灯光.方向",
+        "en_field": "lighting_direction",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "相机.角度",
+        "en_field": "camera_angle",
+        "detected_values": [
+          "high angle"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.运镜",
+        "en_field": "camera_movement",
+        "detected_values": [
+          "push in"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.构图",
+        "en_field": "composition",
+        "detected_values": [
+          "rule of thirds"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.时间",
+        "en_field": "time_mode",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "相机.景别",
+        "en_field": "shot_size",
+        "detected_values": [
+          "long shot"
+        ],
+        "active": true
+      }
+    ]
+  },
+  {
+    "testcase_id": "S3-3-animal-human-indoor-explosion-walking-joy",
+    "difficulty": "S3",
+    "num_metrics": 15,
+    "metrics": [
+      {
+        "metric": "画风",
+        "en_field": "style",
+        "detected_values": [
+          "realistic"
+        ],
+        "active": true
+      },
+      {
+        "metric": "场景",
+        "en_field": "scenes",
+        "detected_values": [
+          "indoor"
+        ],
+        "active": true
+      },
+      {
+        "metric": "主体",
+        "en_field": "subjects",
+        "detected_values": [
+          "human",
+          "animal"
+        ],
+        "active": true
+      },
+      {
+        "metric": "物理属性.状态",
+        "en_field": "physical_state",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "物理属性.规则",
+        "en_field": "physical_rule",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "物理属性.纹理",
+        "en_field": "texture",
+        "detected_values": [
+          "smooth"
+        ],
+        "active": true
+      },
+      {
+        "metric": "物理属性.透光度",
+        "en_field": "opacity",
+        "detected_values": [
+          "opaque"
+        ],
+        "active": true
+      },
+      {
+        "metric": "空间布局",
+        "en_field": "spatial_layout",
+        "detected_values": [
+          "vertical relation"
+        ],
+        "active": true
+      },
+      {
+        "metric": "动作",
+        "en_field": "action",
+        "detected_values": [
+          "walking"
+        ],
+        "active": true
+      },
+      {
+        "metric": "表情",
+        "en_field": "emotion",
+        "detected_values": [
+          "joy",
+          "delight"
+        ],
+        "active": true
+      },
+      {
+        "metric": "特效",
+        "en_field": "effect",
+        "detected_values": [
+          "explosion",
+          "light effect"
+        ],
+        "active": true
+      },
+      {
+        "metric": "灯光.色调",
+        "en_field": "lighting_tone",
+        "detected_values": [
+          "warm"
+        ],
+        "active": true
+      },
+      {
+        "metric": "灯光.方向",
+        "en_field": "lighting_direction",
+        "detected_values": [
+          "front light"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.角度",
+        "en_field": "camera_angle",
+        "detected_values": [
+          "high angle"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.运镜",
+        "en_field": "camera_movement",
+        "detected_values": [
+          "push in"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.构图",
+        "en_field": "composition",
+        "detected_values": [
+          "rule of thirds"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.时间",
+        "en_field": "time_mode",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "相机.景别",
+        "en_field": "shot_size",
+        "detected_values": [
+          "long shot"
+        ],
+        "active": true
+      }
+    ]
+  },
+  {
+    "testcase_id": "S4-4-realistic-multisubject-multiscene-single-shot",
+    "difficulty": "S4",
+    "num_metrics": 15,
+    "metrics": [
+      {
+        "metric": "画风",
+        "en_field": "style",
+        "detected_values": [
+          "realistic"
+        ],
+        "active": true
+      },
+      {
+        "metric": "场景",
+        "en_field": "scenes",
+        "detected_values": [
+          "indoor",
+          "outdoor"
+        ],
+        "active": true
+      },
+      {
+        "metric": "主体",
+        "en_field": "subjects",
+        "detected_values": [
+          "human",
+          "animal"
+        ],
+        "active": true
+      },
+      {
+        "metric": "物理属性.状态",
+        "en_field": "physical_state",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "物理属性.规则",
+        "en_field": "physical_rule",
+        "detected_values": [
+          "real-world"
+        ],
+        "active": true
+      },
+      {
+        "metric": "物理属性.纹理",
+        "en_field": "texture",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "物理属性.透光度",
+        "en_field": "opacity",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "空间布局",
+        "en_field": "spatial_layout",
+        "detected_values": [
+          "vertical relation",
+          "left-right relation",
+          "inside-outside relation"
+        ],
+        "active": true
+      },
+      {
+        "metric": "动作",
+        "en_field": "action",
+        "detected_values": [
+          "walking"
+        ],
+        "active": true
+      },
+      {
+        "metric": "表情",
+        "en_field": "emotion",
+        "detected_values": [
+          "joy",
+          "delight"
+        ],
+        "active": true
+      },
+      {
+        "metric": "特效",
+        "en_field": "effect",
+        "detected_values": [
+          "explosion"
+        ],
+        "active": true
+      },
+      {
+        "metric": "灯光.色调",
+        "en_field": "lighting_tone",
+        "detected_values": [
+          "warm"
+        ],
+        "active": true
+      },
+      {
+        "metric": "灯光.方向",
+        "en_field": "lighting_direction",
+        "detected_values": [
+          "front light"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.角度",
+        "en_field": "camera_angle",
+        "detected_values": [
+          "high angle"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.运镜",
+        "en_field": "camera_movement",
+        "detected_values": [
+          "push in",
+          "tracking shot"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.构图",
+        "en_field": "composition",
+        "detected_values": [
+          "rule of thirds"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.时间",
+        "en_field": "time_mode",
+        "detected_values": [
+          "real-time"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.景别",
+        "en_field": "shot_size",
+        "detected_values": [
+          "long shot"
+        ],
+        "active": true
+      }
+    ]
+  },
+  {
+    "testcase_id": "S5-005",
+    "difficulty": "S5",
+    "num_metrics": 16,
+    "metrics": [
+      {
+        "metric": "画风",
+        "en_field": "style",
+        "detected_values": [
+          "realistic"
+        ],
+        "active": true
+      },
+      {
+        "metric": "场景",
+        "en_field": "scenes",
+        "detected_values": [
+          "indoor",
+          "outdoor"
+        ],
+        "active": true
+      },
+      {
+        "metric": "主体",
+        "en_field": "subjects",
+        "detected_values": [
+          "human",
+          "animal"
+        ],
+        "active": true
+      },
+      {
+        "metric": "物理属性.状态",
+        "en_field": "physical_state",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "物理属性.规则",
+        "en_field": "physical_rule",
+        "detected_values": [
+          "real-world"
+        ],
+        "active": true
+      },
+      {
+        "metric": "物理属性.纹理",
+        "en_field": "texture",
+        "detected_values": [
+          "smooth"
+        ],
+        "active": true
+      },
+      {
+        "metric": "物理属性.透光度",
+        "en_field": "opacity",
+        "detected_values": [
+          "opaque"
+        ],
+        "active": true
+      },
+      {
+        "metric": "空间布局",
+        "en_field": "spatial_layout",
+        "detected_values": [
+          "vertical relation",
+          "left-right relation",
+          "inside-outside relation"
+        ],
+        "active": true
+      },
+      {
+        "metric": "动作",
+        "en_field": "action",
+        "detected_values": [
+          "walking"
+        ],
+        "active": true
+      },
+      {
+        "metric": "表情",
+        "en_field": "emotion",
+        "detected_values": [
+          "joy",
+          "delight"
+        ],
+        "active": true
+      },
+      {
+        "metric": "特效",
+        "en_field": "effect",
+        "detected_values": [
+          "explosion",
+          "light effect"
+        ],
+        "active": true
+      },
+      {
+        "metric": "灯光.色调",
+        "en_field": "lighting_tone",
+        "detected_values": [
+          "warm"
+        ],
+        "active": true
+      },
+      {
+        "metric": "灯光.方向",
+        "en_field": "lighting_direction",
+        "detected_values": [
+          "front light"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.角度",
+        "en_field": "camera_angle",
+        "detected_values": [
+          "high angle"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.运镜",
+        "en_field": "camera_movement",
+        "detected_values": [
+          "push in",
+          "pull out"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.构图",
+        "en_field": "composition",
+        "detected_values": [
+          "rule of thirds"
+        ],
+        "active": true
+      },
+      {
+        "metric": "相机.时间",
+        "en_field": "time_mode",
+        "detected_values": [],
+        "active": false
+      },
+      {
+        "metric": "相机.景别",
+        "en_field": "shot_size",
+        "detected_values": [
+          "long shot",
+          "full shot"
+        ],
+        "active": true
+      }
+    ]
+  }
+]
