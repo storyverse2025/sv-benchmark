@@ -1,6 +1,10 @@
-# 对方团队操作指南 — sv-benchmark 下一步
+# Hi Team! sv-benchmark 协作指南
 
-## 1. Repo 概述
+感谢大家参与这个项目的协作！这份文档整理了基于这个 repo 的下一步操作流程，方便大家快速上手。如果有任何疑问，随时联系我们。
+
+---
+
+## 1. Repo 简介
 
 sv-benchmark 是一个**视频生成 benchmark 测试用例流水线**，包含 4 个阶段：
 
@@ -13,9 +17,11 @@ sv-benchmark 是一个**视频生成 benchmark 测试用例流水线**，包含 
 
 ---
 
-## 2. 核心任务：Scale 生成 + 人工打标
+## 2. 你们的核心任务：Scale 生成 Testcase + 人工验证可行性
 
-**输入文件：** `outputs/compiled_testcases.json`（目前有 5 个示例 testcase，覆盖 S1–S5 难度）
+目标是**大规模生成 testcase，并由人工验证这些机器生成的 case 是否可行、合理**。不需要生成视频，重点在于确保 testcase 本身的质量。
+
+**输入文件：** `outputs/compiled_testcases.json`（目前有 5 个示例 testcase，覆盖 S1–S5 难度，供参考）
 
 ### Step 1: 大规模生成 testcase
 
@@ -34,43 +40,44 @@ python sampling_v3.py --n_per_level 200 --seed 42 --out_dir ../outputs
 
 > **模型选择：GPT 5.4 是我们的优选模型**，用于 testcase 编译（Stage 2）。它在结构化输出稳定性和 creativity / hallucination 平衡上表现最好。
 
-### Step 2: 用生成的 testcase 生成视频
+### Step 2: 人工验证可行性（核心交付）
 
-参考 `generate_videos.py` 的模式，用每个 testcase 的 `final_video_prompt` 字段调用视频生成模型。目前已支持：
+对每个 LLM 生成的 testcase，需要人工审核以下内容：
 
-- **Kling v3**（快影 API）
-- **Seedance 2.0**（火山引擎 API）
+**A. 整体可行性判断**
 
-可以按同样模式接入其他待测模型。
+- 这个 testcase 描述的场景是否能在 10–15 秒视频中合理呈现？
+- story_logic 是否连贯、不矛盾？
+- final_video_prompt 是否清晰、可被视频生成模型理解？
 
-### Step 3: 人工打标（核心交付）
+**B. 18 维度 Checklist 审核**
 
-对每个生成的视频，基于 `analyzer/metrics_checklists.json` 中的 **18 个维度 checklist** 进行人工评测：
+基于 `analyzer/metrics_checklists.json`，对每个 testcase 中 **active 的维度** 逐条检查：
 
-| 维度 | 对应字段 | 评测内容 |
+| 维度 | 对应字段 | 审核内容 |
 |------|---------|---------|
-| 画风 | style | 视频是否符合指定风格（写实/哥特/卡通） |
-| 场景 | scenes | 场景是否正确（室内/室外） |
-| 主体 | subjects | 主体是否出现且类型正确（人类/动物/物体） |
-| 物理状态 | physical_state | 固体/液体/气体/刚体/非刚体表现是否合理 |
+| 画风 | style | testcase 是否正确体现了指定风格（写实/哥特/卡通） |
+| 场景 | scenes | 场景设定是否合理（室内/室外） |
+| 主体 | subjects | 主体描述是否清晰且类型正确（人类/动物/物体） |
+| 物理状态 | physical_state | 物理状态描述是否合理（固体/液体/气体/刚体/非刚体） |
 | 物理规则 | physical_rule | 是否符合现实/科幻设定 |
-| 纹理 | texture | 光滑/毛发纹理是否正确 |
-| 透光度 | opacity | 透明/半透明/不透明是否正确 |
-| 空间布局 | spatial_layout | 上下/左右/前后/内外关系是否正确 |
-| 动作 | action | 指定动作是否被执行 |
-| 表情 | emotion | 表情是否可见且强度匹配 |
-| 特效 | effect | 爆炸/光效等特效是否呈现 |
-| 灯光色调 | lighting_tone | 暖光/冷光/中性是否符合 |
-| 灯光方向 | lighting_direction | 顺光/侧光/逆光/顶光是否正确 |
-| 相机角度 | camera_angle | 俯拍/仰拍/平拍是否正确 |
-| 相机运镜 | camera_movement | 推/拉/摇/移/跟/升降/静止是否正确 |
-| 构图 | composition | 三分法/对称/引导线是否体现 |
-| 时间模式 | time_mode | 常规/慢动作/延时/倒放是否正确 |
-| 景别 | shot_size | 远景/全景/中景/近景是否正确 |
+| 纹理 | texture | 纹理描述是否正确（光滑/毛发） |
+| 透光度 | opacity | 透光度描述是否正确（透明/半透明/不透明） |
+| 空间布局 | spatial_layout | 空间关系是否清晰可视化（上下/左右/前后/内外） |
+| 动作 | action | 动作描述是否明确、可执行 |
+| 表情 | emotion | 表情描述是否可视化、强度匹配 |
+| 特效 | effect | 特效描述是否合理可呈现 |
+| 灯光色调 | lighting_tone | 灯光色调是否明确（暖光/冷光/中性） |
+| 灯光方向 | lighting_direction | 灯光方向是否明确（顺光/侧光/逆光/顶光） |
+| 相机角度 | camera_angle | 相机角度是否明确（俯拍/仰拍/平拍） |
+| 相机运镜 | camera_movement | 运镜描述是否可执行（推/拉/摇/移/跟/升降/静止） |
+| 构图 | composition | 构图要求是否可实现（三分法/对称/引导线） |
+| 时间模式 | time_mode | 时间模式是否合理（常规/慢动作/延时/倒放） |
+| 景别 | shot_size | 景别是否明确（远景/全景/中景/近景） |
 
-每个 testcase 的 `coverage_notes.must_show` 字段中已列明具体检查项，标注人员需要**逐条检查**。
+每个 testcase 的 `coverage_notes.must_show` 字段中已列明具体检查项，方便标注人员对照。
 
-### Step 4: 跑 metrics 分析验证覆盖率
+### Step 3: 跑 metrics 分析验证覆盖率
 
 ```bash
 cd analyzer
@@ -96,16 +103,21 @@ python metrics_analyzer.py --testcases ../outputs/compiled_testcases.json
 
 ---
 
-## 4. 人工打标交付格式
+## 4. 人工验证交付格式
 
-每个视频标注完成后，按以下 JSON 格式输出：
+每个 testcase 审核完成后，请按以下 JSON 格式输出：
 
 ```json
 {
   "testcase_id": "S1-1-realistic-indoor-human-explosion-walk",
-  "model": "kling-v3",
-  "video_path": "outputs/videos/S1-1-..._kling.mp4",
-  "human_scores": {
+  "feasibility": {
+    "is_feasible": true,
+    "duration_ok": true,
+    "story_coherent": true,
+    "prompt_clear": true,
+    "issues": []
+  },
+  "metric_review": {
     "style":              { "pass": true,  "note": "" },
     "scenes":             { "pass": true,  "note": "" },
     "subjects":           { "pass": true,  "note": "" },
@@ -114,7 +126,7 @@ python metrics_analyzer.py --testcases ../outputs/compiled_testcases.json
     "texture":            { "pass": true,  "note": "" },
     "opacity":            { "pass": true,  "note": "" },
     "spatial_layout":     { "pass": true,  "note": "" },
-    "action":             { "pass": false, "note": "walking not clearly visible" },
+    "action":             { "pass": false, "note": "backflip and walking simultaneously is unrealistic in 12s" },
     "emotion":            { "pass": true,  "note": "" },
     "effect":             { "pass": true,  "note": "" },
     "lighting_tone":      { "pass": true,  "note": "" },
@@ -133,7 +145,8 @@ python metrics_analyzer.py --testcases ../outputs/compiled_testcases.json
 
 **说明：**
 - 仅对该 testcase 中 **active 的维度** 需要评测（参考 `metrics_checklists.json` 中 `active: true` 的项）
-- `note` 字段在 `pass: false` 时**必须填写**失败原因
+- `note` 字段在 `pass: false` 时**必须填写**具体问题描述
+- `feasibility.issues` 记录整体层面的问题（如场景矛盾、时长不够等）
 - 所有标注结果汇总为一个 JSON 数组文件提交
 
 ---
@@ -145,6 +158,7 @@ python metrics_analyzer.py --testcases ../outputs/compiled_testcases.json
 - [ ] 跑一遍 `sampler/sampling_v3.py` 确认 tag 采样正常
 - [ ] 用 GPT 5.4 对 `compiler_payloads_v3.json` 批量编译 testcase
 - [ ] 用 `testcase_output_schema.json` 校验每个输出
-- [ ] 调用视频生成模型，生成视频
-- [ ] 按 18 维度 checklist 进行人工打标
+- [ ] 按 18 维度 checklist + 可行性维度进行人工审核
 - [ ] 提交标注结果 JSON
+
+如果在操作过程中遇到任何问题，欢迎随时沟通！
