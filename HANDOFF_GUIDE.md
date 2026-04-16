@@ -6,7 +6,7 @@
 
 ## 1. Repo 简介
 
-sv-benchmark 是一个**视频生成 benchmark 测试用例流水线**，包含 5 个阶段：
+sv-benchmark 是一个**视频生成 benchmark 测试用例流水线**，包含 6 个阶段：
 
 | 阶段 | 说明 | 关键文件 |
 |------|------|---------|
@@ -15,6 +15,7 @@ sv-benchmark 是一个**视频生成 benchmark 测试用例流水线**，包含 
 | Stage 2: Testcase 编译 | 用 LLM 将标签组合编译成可评测的视频 storyboard | `prompts/testcase_compiler_*.txt` + `schemas/testcase_output_schema.json` |
 | Stage 3: 质量打分 | LLM 对生成的 testcase 做 8 维度评分 | `prompts/testcase_judge_prompt.txt` |
 | Stage 4: Metrics 分析 | 从 compiled testcase 的 `active_dimensions` 推导维度覆盖率 | `analyzer/metrics_analyzer.py` |
+| Stage 5: 视频生成 | 调用 Kling v3 + Seedance 2.0 API，生成对比视频 | `generate_videos.py` |
 
 > **注意：** v3 的 `sampling_v3.py`（18 维度）仍保留作为 legacy baseline。新工作请使用 v4。
 
@@ -108,6 +109,37 @@ python metrics_analyzer.py --payloads ../outputs/compiler_payloads_v4.json
 - `metrics_checklists.json` — 每个 testcase 激活了哪些维度（标注 `source: compiled` 或 `payload_fallback`）
 - `tag_distribution_by_level.json` — 各难度级别的维度覆盖分布
 
+### Step 4: 生成对比视频（Stage 5）
+
+对 compiled testcase 中的 `final_video_prompt` 调用视频生成 API，同时提交到两个 provider 进行对比：
+
+```bash
+# 配置 .env 文件（项目根目录）
+KLING_ACCESS_KEY=your_key
+KLING_SECRET_KEY=your_secret
+ARK_API_KEY=your_key
+
+# 安装依赖并运行
+pip install httpx pyjwt python-dotenv
+python generate_videos.py
+```
+
+**支持的 Provider：**
+
+| Provider | 模型 | 时长范围 | 认证方式 |
+|----------|------|----------|----------|
+| Kling | v3-omni | 3–15s | JWT (HS256) |
+| Seedance | doubao-seedance-2-0 | 4–15s | Bearer token |
+
+**运行逻辑：**
+- 读取 `outputs/compiled_testcases.json` 中所有 testcase
+- 对每个 testcase 的 `final_video_prompt` **并发**提交到两个 provider
+- 自动轮询等待完成，下载 mp4 到 `outputs/videos/`
+- 输出文件命名：`{testcase_id}_kling.mp4` / `{testcase_id}_seedance.mp4`
+- 汇总结果写入 `outputs/videos/generation_results.json`
+
+> **注意：** 如果只需要重跑 Seedance（例如调整时长），使用 `rerun_seedance.py` 即可，无需重跑 Kling。
+
 ---
 
 ## 3. 关键约定
@@ -191,6 +223,7 @@ python metrics_analyzer.py --payloads ../outputs/compiler_payloads_v4.json
 - [ ] 用 `testcase_output_schema.json` 校验每个输出
 - [ ] 按 27 维度 checklist + 可行性维度进行人工审核
 - [ ] 提交标注结果 JSON
+- [ ] （可选）配置 `.env` 后运行 `generate_videos.py` 生成 Kling + Seedance 对比视频
 
 ---
 
@@ -211,11 +244,18 @@ v4 是 tag schema 的影视级扩展，核心变化如下：
 - 核心发现：naive 随机采样有 **99.52%** 的组合违反约束；constraint repair 降至 **0%**，仅损失 2.75% 熵值
 - 输出在 `analysis/` 文件夹下
 
+**视频生成（Stage 5 新增）**
+- 新增 `generate_videos.py`：读取 compiled testcase，并发提交到 Kling v3-omni 和 Seedance 2.0
+- 新增 `rerun_seedance.py`：单独重跑 Seedance（如需调整时长）
+- 输出到 `outputs/videos/`，每个 testcase 生成两个 mp4（kling + seedance）
+- 需要配置 `.env` 文件（Kling access key/secret + ARK API key）
+
 **对协作的影响**
 - 人工审核从 18 维度扩展到 **27 维度**（新增的 9 个维度标 ★，见上方 checklist）
 - 标注 JSON 格式已更新，新增 9 个字段
 - 使用 `sampling_v4.py` 替代 `sampling_v3.py` 进行采样
 - Compiled testcase 新增 `active_dimensions` 字段（required）和 `environment_and_color` 字段（optional），标注时以 `active_dimensions` 为评测范围的 ground truth
 - `metrics_analyzer.py` 不再使用关键词正则检测，改为直接读取 `active_dimensions`（双源策略：compiled testcase 优先，payload fallback）
+- 可通过 `generate_videos.py` 直接生成视频进行跨模型对比
 
 如果在操作过程中遇到任何问题，欢迎随时沟通！

@@ -1,19 +1,21 @@
 # sv-benchmark
 
-Benchmark testcase generation pipeline for video generation models.
+Benchmark testcase generation & evaluation pipeline for video generation models.
 
-**v2 was a sampler. v3 is a full pipeline: sampler + testcase compiler + judge. v4 is a cinema-grade taxonomy expansion with constraint-aware sampling analysis.**
+**v2 was a sampler. v3 added the full pipeline (sampler + compiler + judge). v4 expanded to a cinema-grade 27-dimension taxonomy with constraint-aware sampling. Now includes end-to-end video generation via Kling v3 and Seedance 2.0.**
 
 ---
 
 ## What This Repo Does
 
-Generates standardized, evaluable video testcases by:
-1. Sampling structured tag combinations across difficulty levels
+Generates standardized, evaluable video testcases and benchmarks video generation models by:
+1. Sampling structured tag combinations across difficulty levels (27 dimensions, 205 values)
 2. Compiling them into storyboard-style testcases via LLM
 3. Judging testcase quality via LLM
+4. Analyzing metric coverage via `active_dimensions`
+5. **Generating actual videos** via Kling v3-omni and Volcengine Seedance 2.0, then comparing outputs
 
-This enables fair, repeatable comparison of video generation models.
+This enables fair, repeatable comparison of video generation models across multiple providers.
 
 ---
 
@@ -22,10 +24,10 @@ This enables fair, repeatable comparison of video generation models.
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                    STAGE 1: Tag Sampling  (local, no API)                    │
-│                    sampler/sampling_v3.py                                    │
+│                    sampler/sampling_v4.py  (27 dimensions, 205 values)       │
 │                                                                             │
 │  TAG_SCHEMA ──▶ Balanced Sampling ──▶ Dependency Repair ──▶ Feasibility    │
-│  (CN tags)      (per S1–S5)           (matrix-based)       Check + Score   │
+│  (CN tags)      (per S1–S5)           (10×6 matrix)        Check + Score   │
 │                                                                             │
 │                         ┌─────────────────────┐                             │
 │                         │  CN → EN Translation │                             │
@@ -33,10 +35,10 @@ This enables fair, repeatable comparison of video generation models.
 │                         └──────────┬──────────┘                             │
 │                                    ▼                                        │
 │                     outputs/                                                │
-│                     ├── tag_samples_v3.json      (CN raw samples)           │
-│                     ├── tag_samples_v3.csv       (CN flat for review)       │
-│                     ├── compiler_payloads_v3.json (EN, LLM-ready)          │
-│                     └── summary_v3.json          (stats)                   │
+│                     ├── tag_samples_v4.json      (CN raw samples)           │
+│                     ├── tag_samples_v4.csv       (CN flat for review)       │
+│                     ├── compiler_payloads_v4.json (EN, LLM-ready)          │
+│                     └── summary_v4.json          (stats)                   │
 └────────────────────────────────┬────────────────────────────────────────────┘
                                  │  Feed each payload object
                                  ▼
@@ -71,6 +73,37 @@ This enables fair, repeatable comparison of video generation models.
 │                                                                             │
 │  Hard-fail: invalid schema | not 10–15s | wrong shot count |               │
 │             missing primary tags | prose-only output                        │
+└────────────────────────────────┬────────────────────────────────────────────┘
+                                 │  compiled_testcases.json
+                                 ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    STAGE 4: Metrics Analysis  (local)                        │
+│                    analyzer/metrics_analyzer.py                              │
+│                                                                             │
+│  Dual-source: active_dimensions (primary) + payload tags (fallback)        │
+│                                                                             │
+│  Output:                                                                    │
+│  ├── metrics_checklists.json        (per-testcase active metrics)          │
+│  └── tag_distribution_by_level.json (per-difficulty coverage)              │
+└────────────────────────────────┬────────────────────────────────────────────┘
+                                 │  final_video_prompt from each testcase
+                                 ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    STAGE 5: Video Generation  (API)                          │
+│                    generate_videos.py                                        │
+│                                                                             │
+│  Reads compiled_testcases.json, submits final_video_prompt to:             │
+│  ├── Kling v3-omni  (api-beijing.klingai.com, JWT auth)                    │
+│  └── Seedance 2.0   (ark.cn-beijing.volces.com, Bearer token)             │
+│                                                                             │
+│  - All testcases submitted concurrently to both providers                  │
+│  - Polls for completion, downloads mp4 files                               │
+│  - Supports configurable duration (Kling: 3-15s, Seedance: 4-15s)         │
+│                                                                             │
+│  Output:  outputs/videos/                                                   │
+│  ├── {testcase_id}_kling.mp4                                               │
+│  ├── {testcase_id}_seedance.mp4                                            │
+│  └── generation_results.json                                               │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -85,7 +118,9 @@ sv-benchmark/
 │   ├── sampling_v4.py              # v4 cinema-grade sampling (27 dimensions)
 │   └── constraint_analysis.py      # Constraint-aware sampling ablation
 ├── analyzer/
-│   └── metrics_analyzer.py         # Metric detection (active_dimensions + payload)
+│   ├── metrics_analyzer.py         # Metric detection (active_dimensions + payload)
+│   ├── metrics_checklists.json     # Per-testcase active metrics + tag values
+│   └── tag_distribution_by_level.json
 ├── prompts/
 │   ├── testcase_compiler_system_prompt.txt
 │   ├── testcase_compiler_user_prompt.txt
@@ -95,14 +130,22 @@ sv-benchmark/
 ├── examples/
 │   ├── example_compiler_payload.json
 │   └── example_compiled_testcase.json
-├── outputs/                         # Generated data (gitignored for large runs)
-│   ├── tag_samples_v4.json
-│   ├── tag_samples_v4.csv
-│   ├── compiler_payloads_v4.json
-│   └── summary_v4.json
+├── outputs/
+│   ├── tag_samples_v4.json          # CN raw samples
+│   ├── tag_samples_v4.csv           # CN flat for review
+│   ├── compiler_payloads_v4.json    # EN, LLM-ready
+│   ├── summary_v4.json              # Stats
+│   ├── compiled_testcases.json      # 5 compiled testcases (S1–S5)
+│   └── videos/                      # Generated benchmark videos
+│       ├── {testcase_id}_kling.mp4
+│       ├── {testcase_id}_seedance.mp4
+│       └── generation_results.json
 ├── analysis/                        # Constraint analysis outputs
 │   ├── constraint_graph.json
 │   └── ablation_report.json
+├── generate_videos.py               # Stage 5: Kling + Seedance video generation
+├── rerun_seedance.py                # Re-run Seedance only (e.g., fix duration)
+├── HANDOFF_GUIDE.md
 └── README.md
 ```
 
@@ -114,12 +157,15 @@ sv-benchmark/
 
 ```bash
 cd sampler
-python sampling_v3.py --n_per_level 40 --seed 42 --out_dir ../outputs
+python sampling_v4.py --n_per_level 40 --seed 42 --out_dir ../outputs
+
+# (Optional) Run constraint analysis for ablation data
+python constraint_analysis.py --n_per_level 200 --seed 42
 ```
 
 ### Step 2 — Compile testcases (LLM)
 
-For each object in `outputs/compiler_payloads_v3.json`:
+For each object in `outputs/compiler_payloads_v4.json`:
 1. Load `prompts/testcase_compiler_system_prompt.txt` as system message
 2. Substitute the payload into `{{COMPILER_PAYLOAD_JSON}}` in `prompts/testcase_compiler_user_prompt.txt`
 3. Send to LLM
@@ -128,6 +174,31 @@ For each object in `outputs/compiler_payloads_v3.json`:
 ### Step 3 — Judge quality (LLM)
 
 Feed the compiler payload + generated testcase into `prompts/testcase_judge_prompt.txt`.
+
+### Step 4 — Analyze metrics
+
+```bash
+cd analyzer
+python metrics_analyzer.py --payloads ../outputs/compiler_payloads_v4.json \
+                           --compiled ../outputs/compiled_testcases.json
+```
+
+### Step 5 — Generate videos
+
+```bash
+# Create .env with API keys (see below), then:
+pip install httpx pyjwt python-dotenv
+python generate_videos.py
+```
+
+Required `.env` file:
+```
+KLING_ACCESS_KEY=your_key
+KLING_SECRET_KEY=your_secret
+ARK_API_KEY=your_key
+```
+
+This submits all testcases to Kling v3-omni and Seedance 2.0 concurrently, polls for completion, and downloads the resulting mp4 files to `outputs/videos/`.
 
 ---
 
@@ -162,13 +233,13 @@ Feed the compiler payload + generated testcase into `prompts/testcase_judge_prom
 | `borderline` | 0.55–0.79 | May need stronger model or manual review |
 | `conflict_heavy` | < 0.55 | Route to human review or strongest model |
 
-#### Tag Priorities
+#### Tag Priorities (v4)
 
 | Priority | Rule | Fields |
 |----------|------|--------|
-| **primary** | Do not drop | subject(s), scene(s), action, camera_movement, shot_size, camera_angle, time_mode |
-| **secondary** | Preserve if visually testable | effect, emotion, spatial_layout, lighting_tone, lighting_direction, composition |
-| **stylistic** | Keep if no harm to clarity | style, physical_state, physical_rule, texture, opacity |
+| **primary** | Do not drop | subjects, scenes, action, camera_movement, shot_size, camera_angle, time_mode |
+| **secondary** | Preserve if visually testable | effect, emotion, spatial_layout, lighting_tone, lighting_direction, lighting_intensity, composition, depth_of_field, focal_length |
+| **stylistic** | Keep if no harm to clarity | style, physical_state, physical_rule, texture, opacity, scale, color_saturation, color_palette, time_of_day, weather, transition |
 
 ### Stage 2: Testcase Compilation
 
@@ -194,60 +265,123 @@ The compiler produces a structured testcase with `shot_plan`, `final_video_promp
 | `shot_continuity` | Shots flow naturally |
 | `prompt_model_usability` | Final prompt works for video gen models |
 
+### Stage 4: Metrics Analysis
+
+Uses a **dual-source strategy** to determine which dimensions are active per testcase:
+- **Primary**: reads `active_dimensions` from compiled testcases (compiler self-reports which tags it preserved)
+- **Fallback**: infers from `compiler_payloads_v4.json` (all non-"none" tags treated as active)
+
+Outputs per-testcase checklists and per-difficulty distribution stats.
+
+### Stage 5: Video Generation
+
+Submits `final_video_prompt` from each compiled testcase to two video generation providers concurrently:
+
+| Provider | Model | API | Duration | Auth |
+|----------|-------|-----|----------|------|
+| Kling | v3-omni | api-beijing.klingai.com | 3–15s | JWT (HS256) |
+| Seedance | 2.0 (doubao-seedance-2-0-260128) | ark.cn-beijing.volces.com | 4–15s | Bearer token |
+
+- All testcases are submitted in parallel (both providers simultaneously)
+- Automatically polls until completion, then downloads mp4 files
+- `rerun_seedance.py` available for re-running Seedance only (e.g., to fix duration)
+
 ---
 
-## Complete Tag Reference (CN → EN)
+## Complete Tag Reference (CN → EN, v4)
 
-### 画风 (Style)
+### 画风 (Style) — 12 values
 
 | Chinese | English |
 |---------|---------|
-| 写实 | realistic |
+| 写实 | photorealistic |
+| 电影质感 | cinematic |
 | 哥特 | gothic |
 | 卡通 | cartoon |
+| 日式动漫 | anime |
+| 水彩 | watercolor |
+| 油画 | oil painting |
+| 赛博朋克 | cyberpunk |
+| 黑白 | black & white |
+| 超现实 | surrealist |
+| 极简 | minimalist |
+| 复古胶片 | vintage film |
 
-### 场景 (Scene)
+### 场景 (Scene) — 16 values
 
 | Chinese | English |
 |---------|---------|
-| 室内 | indoor |
-| 室外 | outdoor |
+| 客厅 | living room |
+| 厨房 | kitchen |
+| 办公室 | office |
+| 走廊 | hallway |
+| 仓库 | warehouse |
+| 医院 | hospital |
+| 城市街道 | city street |
+| 公园 | park |
+| 森林 | forest |
+| 海滩 | beach |
+| 沙漠 | desert |
+| 雪地 | snowfield |
+| 山顶 | mountain peak |
+| 水下 | underwater |
+| 废墟 | ruins |
+| 舞台 | theater stage |
 
-### 主体 (Subject)
+### 主体 (Subject) — 10 values
 
 | Chinese | English |
 |---------|---------|
 | 人类 | human |
-| 动物 | animal |
-| 物体 | object |
+| 哺乳动物 | mammal |
+| 鸟类 | bird |
+| 水生动物 | aquatic animal |
+| 昆虫 | insect |
+| 机器人 | robot |
+| 车辆 | vehicle |
+| 自然元素 | natural element |
+| 日常物品 | everyday object |
+| 虚构生物 | fictional creature |
 
 ### 物理属性 (Physical Properties)
 
-**状态 (State)**
+**状态 (State) — 7 values**
 
 | Chinese | English |
 |---------|---------|
 | 固体 | solid |
 | 液体 | liquid |
 | 气体 | gas |
-| 刚体 | rigid |
-| 非刚体 | non-rigid |
+| 等离子 | plasma |
+| 刚体 | rigid body |
+| 非刚体 | soft body |
+| 颗粒 | particle |
 
-**规则 (Rule)**
+**规则 (Rule) — 4 values**
 
 | Chinese | English |
 |---------|---------|
 | 现实 | real-world |
 | 科幻 | sci-fi |
+| 魔幻 | fantasy |
+| 梦境 | dreamlike |
 
-**纹理 (Texture)**
+**纹理 (Texture) — 10 values**
 
 | Chinese | English |
 |---------|---------|
 | 光滑 | smooth |
+| 粗糙 | rough |
 | 毛发 | hair/fur |
+| 羽毛 | feathered |
+| 金属 | metallic |
+| 木质 | wooden |
+| 布料 | fabric |
+| 玻璃 | glass |
+| 石质 | stone |
+| 皮革 | leather |
 
-**透光度 (Opacity)**
+**透光度 (Opacity) — 3 values**
 
 | Chinese | English |
 |---------|---------|
@@ -255,16 +389,28 @@ The compiler produces a structured testcase with `shot_plan`, `final_video_promp
 | 半透明 | semi-transparent |
 | 不透明 | opaque |
 
-### 空间布局 (Spatial Layout)
+**尺度 (Scale) — 3 values** (v4 new)
 
 | Chinese | English |
 |---------|---------|
-| 上下 | vertical relation |
-| 左右 | left-right relation |
-| 前后 | foreground-background relation |
-| 内外关系 | inside-outside relation |
+| 微观 | microscopic |
+| 常规 | normal scale |
+| 巨型 | giant |
 
-### 动作 (Action)
+### 空间布局 (Spatial Layout) — 8 values
+
+| Chinese | English |
+|---------|---------|
+| 上下 | vertical |
+| 左右 | left-right |
+| 前后 | foreground-background |
+| 内外 | inside-outside |
+| 环绕 | encircling |
+| 对角 | diagonal |
+| 层叠 | layered/stacked |
+| 散落 | scattered |
+
+### 动作 (Action) — 24 values
 
 | Chinese | English |
 |---------|---------|
@@ -274,47 +420,69 @@ The compiler produces a structured testcase with `shot_plan`, `final_video_promp
 | 打斗 | fighting |
 | 后空翻 | backflip |
 | 武术 | martial arts |
+| 跳舞 | dancing |
+| 游泳 | swimming |
+| 攀爬 | climbing |
+| 骑行 | cycling |
+| 驾驶 | driving |
+| 烹饪 | cooking |
+| 书写 | writing |
+| 弹奏乐器 | playing instrument |
+| 投掷 | throwing |
+| 拥抱 | hugging |
+| 鞠躬 | bowing |
 | 对话 | dialogue |
 | 唱歌 | singing |
+| 倒下 | falling |
+| 悬浮 | hovering |
+| 旋转 | spinning |
+| 挥手 | waving |
 | 无 | none |
 
-### 表情 (Emotion)
+### 表情 (Emotion) — 22 values
+
+7 emotions (Ekman's 6 + delight) × 3 intensities + none:
 
 | Chinese | English |
 |---------|---------|
-| 喜:强 | strong joy |
-| 喜:中 | moderate joy |
-| 喜:弱 | subtle joy |
-| 怒:强 | strong anger |
-| 怒:中 | moderate anger |
-| 怒:弱 | subtle anger |
-| 哀:强 | strong sadness |
-| 哀:中 | moderate sadness |
-| 哀:弱 | subtle sadness |
-| 乐:强 | strong delight |
-| 乐:中 | moderate delight |
-| 乐:弱 | subtle delight |
+| 喜:强/中/弱 | strong/moderate/subtle joy |
+| 怒:强/中/弱 | strong/moderate/subtle anger |
+| 哀:强/中/弱 | strong/moderate/subtle sadness |
+| 乐:强/中/弱 | strong/moderate/subtle delight |
+| 惊:强/中/弱 | strong/moderate/subtle surprise |
+| 恐:强/中/弱 | strong/moderate/subtle fear |
+| 厌:强/中/弱 | strong/moderate/subtle disgust |
 | 无 | none |
 
-### 特效 (Effect)
+### 特效 (Effect) — 12 values
 
 | Chinese | English |
 |---------|---------|
 | 爆炸 | explosion |
 | 光效 | light effect |
+| 火焰 | flame |
+| 烟雾 | smoke |
+| 雨 | rain |
+| 雪 | snow |
+| 闪电 | lightning |
+| 魔法粒子 | magic particles |
+| 全息投影 | hologram |
+| 碎裂 | shattering |
+| 水花 | water splash |
 | 无 | none |
 
 ### 灯光 (Lighting)
 
-**色调 (Tone)**
+**色调 (Tone) — 4 values**
 
 | Chinese | English |
 |---------|---------|
 | 暖光 | warm |
 | 冷光 | cool |
 | 中性 | neutral |
+| 彩色混合 | multi-color |
 
-**方向 (Direction)**
+**方向 (Direction) — 6 values**
 
 | Chinese | English |
 |---------|---------|
@@ -322,18 +490,49 @@ The compiler produces a structured testcase with `shot_plan`, `final_video_promp
 | 侧光 | side light |
 | 逆光 | backlight |
 | 顶光 | top light |
+| 底光 | under light |
+| 环境光 | ambient light |
+
+**强度 (Intensity) — 3 values** (v4 new)
+
+| Chinese | English |
+|---------|---------|
+| 高调 | high-key |
+| 低调 | low-key |
+| 正常 | normal |
+
+### 色彩 (Color) (v4 new)
+
+**饱和度 (Saturation) — 3 values**
+
+| Chinese | English |
+|---------|---------|
+| 高饱和 | high saturation |
+| 低饱和 | low saturation |
+| 去色 | desaturated |
+
+**主色调 (Palette) — 4 values**
+
+| Chinese | English |
+|---------|---------|
+| 暖色系 | warm palette |
+| 冷色系 | cool palette |
+| 互补色 | complementary |
+| 单色系 | monochromatic |
 
 ### 相机 (Camera)
 
-**角度 (Angle)**
+**角度 (Angle) — 5 values**
 
 | Chinese | English |
 |---------|---------|
 | 俯拍 | high angle |
 | 仰拍 | low angle |
 | 平拍 | eye level |
+| 鸟瞰 | bird's eye |
+| 荷兰角 | dutch angle |
 
-**运镜 (Movement)**
+**运镜 (Movement) — 10 values**
 
 | Chinese | English |
 |---------|---------|
@@ -343,45 +542,91 @@ The compiler produces a structured testcase with `shot_plan`, `final_video_promp
 | 移 | truck |
 | 跟 | tracking shot |
 | 升降 | crane |
+| 环绕 | orbit |
+| 手持 | handheld |
+| 甩 | whip pan |
 | 静止 | static |
 
-**构图 (Composition)**
+**构图 (Composition) — 6 values**
 
 | Chinese | English |
 |---------|---------|
 | 三分法 | rule of thirds |
 | 对称 | symmetrical |
 | 引导线 | leading lines |
+| 中心构图 | center framing |
+| 框架构图 | frame within frame |
+| 黄金螺旋 | golden spiral |
 
-**时间 (Time Mode)**
+**时间 (Time Mode) — 5 values**
 
 | Chinese | English |
 |---------|---------|
 | 常规速度 | real-time |
 | 慢动作 | slow motion |
 | 延时摄影 | timelapse |
-| 倒放 | reverse motion |
+| 倒放 | reverse |
+| 定格 | freeze frame |
 
-**景别 (Shot Size)**
+**景别 (Shot Size) — 6 values**
 
 | Chinese | English |
 |---------|---------|
-| 远景 | long shot |
-| 全景 | full shot |
+| 特写 | extreme close-up |
+| 近景 | close-up |
 | 中景 | medium shot |
-| 近景 | close shot |
+| 全景 | full shot |
+| 远景 | long shot |
+| 大远景 | extreme long shot |
 
----
+**景深 (Depth of Field) — 3 values** (v4 new)
 
-## Subject Dependency Matrix
+| Chinese | English |
+|---------|---------|
+| 浅景深 | shallow DOF |
+| 深景深 | deep DOF |
+| 全景深 | pan-focus |
 
-Not all tag combinations are valid. The sampler auto-repairs based on:
+**焦距 (Focal Length) — 4 values** (v4 new)
 
-| Subject | State | Texture | Opacity | Action | Emotion |
-|---------|-------|---------|---------|--------|---------|
-| **Human** | solid | smooth, hair/fur | opaque | all 8 + none | all 12 + none |
-| **Animal** | solid | smooth, hair/fur | opaque | walk, run, jump, fight, none | subtle only + none |
-| **Object** | all 5 | smooth | all 3 | none | none |
+| Chinese | English |
+|---------|---------|
+| 广角 | wide-angle |
+| 标准 | standard lens |
+| 长焦 | telephoto |
+| 微距 | macro |
+
+### 环境 (Environment) (v4 new)
+
+**时段 (Time of Day) — 4 values**
+
+| Chinese | English |
+|---------|---------|
+| 黎明 | dawn |
+| 白天 | daytime |
+| 黄昏 | dusk |
+| 夜晚 | night |
+
+**天气 (Weather) — 5 values**
+
+| Chinese | English |
+|---------|---------|
+| 晴天 | clear |
+| 阴天 | overcast |
+| 雨天 | rainy |
+| 雾天 | foggy |
+| 雪天 | snowy |
+
+### 转场 (Transition) — 6 values (v4 new)
+
+| Chinese | English |
+|---------|---------|
+| 硬切 | hard cut |
+| 淡入淡出 | fade |
+| 溶解 | dissolve |
+| 擦除 | wipe |
+| 匹配剪辑 | match cut |
+| 无 | none |
 
 ---
 
