@@ -1,0 +1,504 @@
+{
+  "formulation": "CSP = (X, D, C): 27 variables, conditional domain restrictions",
+  "n_variables": 27,
+  "n_independent": 20,
+  "n_dependent": 6,
+  "n_subjects": 10,
+  "n_constraint_edges": 60,
+  "condition_variable": "主体",
+  "dependent_attributes": [
+    "物理属性.状态",
+    "物理属性.纹理",
+    "物理属性.透光度",
+    "物理属性.尺度",
+    "动作",
+    "表情"
+  ],
+  "independent_attributes": [
+    "场景",
+    "灯光.强度",
+    "灯光.方向",
+    "灯光.色调",
+    "物理属性.规则",
+    "特效",
+    "环境.天气",
+    "环境.时段",
+    "画风",
+    "相机.时间",
+    "相机.景别",
+    "相机.景深",
+    "相机.构图",
+    "相机.焦距",
+    "相机.角度",
+    "相机.运镜",
+    "空间布局",
+    "色彩.主色调",
+    "色彩.饱和度",
+    "转场"
+  ],
+  "avg_restriction_ratio": 0.5816,
+  "per_subject_freedom": {
+    "人类": {
+      "joint_valid_ratio": 0.00634921,
+      "joint_valid_pct": 0.6349
+    },
+    "哺乳动物": {
+      "joint_valid_ratio": 0.00170455,
+      "joint_valid_pct": 0.1705
+    },
+    "鸟类": {
+      "joint_valid_ratio": 6.013e-05,
+      "joint_valid_pct": 0.006
+    },
+    "水生动物": {
+      "joint_valid_ratio": 9.019e-05,
+      "joint_valid_pct": 0.009
+    },
+    "昆虫": {
+      "joint_valid_ratio": 0.00012025,
+      "joint_valid_pct": 0.012
+    },
+    "机器人": {
+      "joint_valid_ratio": 0.0002405,
+      "joint_valid_pct": 0.0241
+    },
+    "车辆": {
+      "joint_valid_ratio": 9.62e-05,
+      "joint_valid_pct": 0.0096
+    },
+    "自然元素": {
+      "joint_valid_ratio": 0.00121753,
+      "joint_valid_pct": 0.1218
+    },
+    "日常物品": {
+      "joint_valid_ratio": 0.0020202,
+      "joint_valid_pct": 0.202
+    },
+    "虚构生物": {
+      "joint_valid_ratio": 0.03652597,
+      "joint_valid_pct": 3.6526
+    }
+  },
+  "edges": [
+    {
+      "subject": "人类",
+      "attribute": "物理属性.状态",
+      "valid_count": 1,
+      "full_domain_size": 7,
+      "restriction_ratio": 0.8571
+    },
+    {
+      "subject": "人类",
+      "attribute": "物理属性.纹理",
+      "valid_count": 4,
+      "full_domain_size": 10,
+      "restriction_ratio": 0.6
+    },
+    {
+      "subject": "人类",
+      "attribute": "物理属性.透光度",
+      "valid_count": 1,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.6667
+    },
+    {
+      "subject": "人类",
+      "attribute": "物理属性.尺度",
+      "valid_count": 1,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.6667
+    },
+    {
+      "subject": "人类",
+      "attribute": "动作",
+      "valid_count": 24,
+      "full_domain_size": 24,
+      "restriction_ratio": 0.0
+    },
+    {
+      "subject": "人类",
+      "attribute": "表情",
+      "valid_count": 22,
+      "full_domain_size": 22,
+      "restriction_ratio": 0.0
+    },
+    {
+      "subject": "哺乳动物",
+      "attribute": "物理属性.状态",
+      "valid_count": 1,
+      "full_domain_size": 7,
+      "restriction_ratio": 0.8571
+    },
+    {
+      "subject": "哺乳动物",
+      "attribute": "物理属性.纹理",
+      "valid_count": 3,
+      "full_domain_size": 10,
+      "restriction_ratio": 0.7
+    },
+    {
+      "subject": "哺乳动物",
+      "attribute": "物理属性.透光度",
+      "valid_count": 1,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.6667
+    },
+    {
+      "subject": "哺乳动物",
+      "attribute": "物理属性.尺度",
+      "valid_count": 3,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.0
+    },
+    {
+      "subject": "哺乳动物",
+      "attribute": "动作",
+      "valid_count": 9,
+      "full_domain_size": 24,
+      "restriction_ratio": 0.625
+    },
+    {
+      "subject": "哺乳动物",
+      "attribute": "表情",
+      "valid_count": 7,
+      "full_domain_size": 22,
+      "restriction_ratio": 0.6818
+    },
+    {
+      "subject": "鸟类",
+      "attribute": "物理属性.状态",
+      "valid_count": 1,
+      "full_domain_size": 7,
+      "restriction_ratio": 0.8571
+    },
+    {
+      "subject": "鸟类",
+      "attribute": "物理属性.纹理",
+      "valid_count": 2,
+      "full_domain_size": 10,
+      "restriction_ratio": 0.8
+    },
+    {
+      "subject": "鸟类",
+      "attribute": "物理属性.透光度",
+      "valid_count": 1,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.6667
+    },
+    {
+      "subject": "鸟类",
+      "attribute": "物理属性.尺度",
+      "valid_count": 2,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.3333
+    },
+    {
+      "subject": "鸟类",
+      "attribute": "动作",
+      "valid_count": 5,
+      "full_domain_size": 24,
+      "restriction_ratio": 0.7917
+    },
+    {
+      "subject": "鸟类",
+      "attribute": "表情",
+      "valid_count": 1,
+      "full_domain_size": 22,
+      "restriction_ratio": 0.9545
+    },
+    {
+      "subject": "水生动物",
+      "attribute": "物理属性.状态",
+      "valid_count": 1,
+      "full_domain_size": 7,
+      "restriction_ratio": 0.8571
+    },
+    {
+      "subject": "水生动物",
+      "attribute": "物理属性.纹理",
+      "valid_count": 1,
+      "full_domain_size": 10,
+      "restriction_ratio": 0.9
+    },
+    {
+      "subject": "水生动物",
+      "attribute": "物理属性.透光度",
+      "valid_count": 2,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.3333
+    },
+    {
+      "subject": "水生动物",
+      "attribute": "物理属性.尺度",
+      "valid_count": 3,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.0
+    },
+    {
+      "subject": "水生动物",
+      "attribute": "动作",
+      "valid_count": 5,
+      "full_domain_size": 24,
+      "restriction_ratio": 0.7917
+    },
+    {
+      "subject": "水生动物",
+      "attribute": "表情",
+      "valid_count": 1,
+      "full_domain_size": 22,
+      "restriction_ratio": 0.9545
+    },
+    {
+      "subject": "昆虫",
+      "attribute": "物理属性.状态",
+      "valid_count": 1,
+      "full_domain_size": 7,
+      "restriction_ratio": 0.8571
+    },
+    {
+      "subject": "昆虫",
+      "attribute": "物理属性.纹理",
+      "valid_count": 2,
+      "full_domain_size": 10,
+      "restriction_ratio": 0.8
+    },
+    {
+      "subject": "昆虫",
+      "attribute": "物理属性.透光度",
+      "valid_count": 2,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.3333
+    },
+    {
+      "subject": "昆虫",
+      "attribute": "物理属性.尺度",
+      "valid_count": 2,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.3333
+    },
+    {
+      "subject": "昆虫",
+      "attribute": "动作",
+      "valid_count": 5,
+      "full_domain_size": 24,
+      "restriction_ratio": 0.7917
+    },
+    {
+      "subject": "昆虫",
+      "attribute": "表情",
+      "valid_count": 1,
+      "full_domain_size": 22,
+      "restriction_ratio": 0.9545
+    },
+    {
+      "subject": "机器人",
+      "attribute": "物理属性.状态",
+      "valid_count": 2,
+      "full_domain_size": 7,
+      "restriction_ratio": 0.7143
+    },
+    {
+      "subject": "机器人",
+      "attribute": "物理属性.纹理",
+      "valid_count": 2,
+      "full_domain_size": 10,
+      "restriction_ratio": 0.8
+    },
+    {
+      "subject": "机器人",
+      "attribute": "物理属性.透光度",
+      "valid_count": 1,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.6667
+    },
+    {
+      "subject": "机器人",
+      "attribute": "物理属性.尺度",
+      "valid_count": 2,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.3333
+    },
+    {
+      "subject": "机器人",
+      "attribute": "动作",
+      "valid_count": 10,
+      "full_domain_size": 24,
+      "restriction_ratio": 0.5833
+    },
+    {
+      "subject": "机器人",
+      "attribute": "表情",
+      "valid_count": 1,
+      "full_domain_size": 22,
+      "restriction_ratio": 0.9545
+    },
+    {
+      "subject": "车辆",
+      "attribute": "物理属性.状态",
+      "valid_count": 2,
+      "full_domain_size": 7,
+      "restriction_ratio": 0.7143
+    },
+    {
+      "subject": "车辆",
+      "attribute": "物理属性.纹理",
+      "valid_count": 2,
+      "full_domain_size": 10,
+      "restriction_ratio": 0.8
+    },
+    {
+      "subject": "车辆",
+      "attribute": "物理属性.透光度",
+      "valid_count": 1,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.6667
+    },
+    {
+      "subject": "车辆",
+      "attribute": "物理属性.尺度",
+      "valid_count": 2,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.3333
+    },
+    {
+      "subject": "车辆",
+      "attribute": "动作",
+      "valid_count": 4,
+      "full_domain_size": 24,
+      "restriction_ratio": 0.8333
+    },
+    {
+      "subject": "车辆",
+      "attribute": "表情",
+      "valid_count": 1,
+      "full_domain_size": 22,
+      "restriction_ratio": 0.9545
+    },
+    {
+      "subject": "自然元素",
+      "attribute": "物理属性.状态",
+      "valid_count": 5,
+      "full_domain_size": 7,
+      "restriction_ratio": 0.2857
+    },
+    {
+      "subject": "自然元素",
+      "attribute": "物理属性.纹理",
+      "valid_count": 3,
+      "full_domain_size": 10,
+      "restriction_ratio": 0.7
+    },
+    {
+      "subject": "自然元素",
+      "attribute": "物理属性.透光度",
+      "valid_count": 3,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.0
+    },
+    {
+      "subject": "自然元素",
+      "attribute": "物理属性.尺度",
+      "valid_count": 3,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.0
+    },
+    {
+      "subject": "自然元素",
+      "attribute": "动作",
+      "valid_count": 3,
+      "full_domain_size": 24,
+      "restriction_ratio": 0.875
+    },
+    {
+      "subject": "自然元素",
+      "attribute": "表情",
+      "valid_count": 1,
+      "full_domain_size": 22,
+      "restriction_ratio": 0.9545
+    },
+    {
+      "subject": "日常物品",
+      "attribute": "物理属性.状态",
+      "valid_count": 4,
+      "full_domain_size": 7,
+      "restriction_ratio": 0.4286
+    },
+    {
+      "subject": "日常物品",
+      "attribute": "物理属性.纹理",
+      "valid_count": 7,
+      "full_domain_size": 10,
+      "restriction_ratio": 0.3
+    },
+    {
+      "subject": "日常物品",
+      "attribute": "物理属性.透光度",
+      "valid_count": 3,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.0
+    },
+    {
+      "subject": "日常物品",
+      "attribute": "物理属性.尺度",
+      "valid_count": 2,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.3333
+    },
+    {
+      "subject": "日常物品",
+      "attribute": "动作",
+      "valid_count": 4,
+      "full_domain_size": 24,
+      "restriction_ratio": 0.8333
+    },
+    {
+      "subject": "日常物品",
+      "attribute": "表情",
+      "valid_count": 1,
+      "full_domain_size": 22,
+      "restriction_ratio": 0.9545
+    },
+    {
+      "subject": "虚构生物",
+      "attribute": "物理属性.状态",
+      "valid_count": 3,
+      "full_domain_size": 7,
+      "restriction_ratio": 0.5714
+    },
+    {
+      "subject": "虚构生物",
+      "attribute": "物理属性.纹理",
+      "valid_count": 5,
+      "full_domain_size": 10,
+      "restriction_ratio": 0.5
+    },
+    {
+      "subject": "虚构生物",
+      "attribute": "物理属性.透光度",
+      "valid_count": 3,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.0
+    },
+    {
+      "subject": "虚构生物",
+      "attribute": "物理属性.尺度",
+      "valid_count": 3,
+      "full_domain_size": 3,
+      "restriction_ratio": 0.0
+    },
+    {
+      "subject": "虚构生物",
+      "attribute": "动作",
+      "valid_count": 10,
+      "full_domain_size": 24,
+      "restriction_ratio": 0.5833
+    },
+    {
+      "subject": "虚构生物",
+      "attribute": "表情",
+      "valid_count": 9,
+      "full_domain_size": 22,
+      "restriction_ratio": 0.5909
+    }
+  ]
+}

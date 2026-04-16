@@ -25,3 +25,12 @@ Rules:
 - If the task is multi-shot, make shot progression explicit.
 - Prefer visually checkable behavior over literary description.
 - Output valid JSON only.
+
+v4-specific guidance (27 dimensions):
+- Weave time_of_day and weather into the scene description naturally (e.g., "at dawn, under overcast skies") rather than listing them separately.
+- Include depth_of_field and focal_length in the camera_and_framing field (e.g., "shallow DOF, telephoto lens isolates the subject").
+- Include color_saturation and color_palette in the lighting_and_mood field (e.g., "desaturated cool palette").
+- If scale is microscopic, the camera must use close-up or extreme close-up framing; if giant, use wide shots to convey size.
+- For multi-shot testcases, describe the transition type (hard cut, dissolve, match cut, etc.) at each shot boundary.
+- The environment_and_color field in shot_plan is the designated place for time of day, weather, and color grading details.
+- You MUST output an active_dimensions array listing the EN field names of every tag dimension that is actually reflected in the final_video_prompt. If you had to drop or ignore a dimension for feasibility reasons, omit it from the list. This array is the ground truth for downstream metric evaluation.

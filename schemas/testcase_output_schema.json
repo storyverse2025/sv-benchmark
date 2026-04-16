@@ -10,7 +10,8 @@
     "shot_plan",
     "final_video_prompt",
     "negative_prompt",
-    "coverage_notes"
+    "coverage_notes",
+    "active_dimensions"
   ],
   "properties": {
     "testcase_id": {"type": "string"},
@@ -37,7 +38,8 @@
           "visual_goal": {"type": "string"},
           "what_happens": {"type": "string"},
           "camera_and_framing": {"type": "string"},
-          "lighting_and_mood": {"type": "string"}
+          "lighting_and_mood": {"type": "string"},
+          "environment_and_color": {"type": "string"}
         },
         "additionalProperties": false
       }
@@ -53,6 +55,23 @@
         "tradeoffs": {"type": "array", "items": {"type": "string"}}
       },
       "additionalProperties": false
+    },
+    "active_dimensions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "style", "scenes", "subjects",
+          "physical_state", "physical_rule", "texture", "opacity", "scale",
+          "spatial_layout", "action", "emotion", "effect",
+          "lighting_tone", "lighting_direction", "lighting_intensity",
+          "color_saturation", "color_palette",
+          "camera_angle", "camera_movement", "composition",
+          "time_mode", "shot_size", "depth_of_field", "focal_length",
+          "time_of_day", "weather", "transition"
+        ]
+      },
+      "description": "EN field names of the 27 tag dimensions that were actually preserved in the final prompt. Omit any dimension whose tag was dropped or could not be meaningfully incorporated."
     }
   },
   "additionalProperties": false

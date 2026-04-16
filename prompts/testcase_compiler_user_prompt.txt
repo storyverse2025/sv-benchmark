@@ -8,6 +8,9 @@ Requirements:
 - Make the key tags visually testable, not merely implied.
 - Avoid unnecessary inventions.
 - If the payload includes cinematic warnings, resolve them by simplifying staging rather than dropping core tags.
+- Describe depth_of_field and focal_length inside camera_and_framing.
+- Describe color_saturation, color_palette, time_of_day, and weather inside environment_and_color.
+- For multi-shot testcases, specify the transition type between shots.
 
 Compiler payload:
 {{COMPILER_PAYLOAD_JSON}}
@@ -25,7 +28,8 @@ Output JSON schema:
       "visual_goal": "",
       "what_happens": "",
       "camera_and_framing": "",
-      "lighting_and_mood": ""
+      "lighting_and_mood": "",
+      "environment_and_color": ""
     }
   ],
   "final_video_prompt": "",
@@ -34,5 +38,6 @@ Output JSON schema:
     "must_show": [],
     "soft_interpretations": [],
     "tradeoffs": []
-  }
+  },
+  "active_dimensions": ["style", "scenes", "subjects", "...only dimensions preserved in final_video_prompt"]
 }

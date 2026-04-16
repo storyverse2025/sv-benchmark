@@ -29,6 +29,14 @@ Hard-fail conditions:
 - ignores single-shot / multi-shot requirement
 - key primary tags are missing
 - output is mostly prose and not evaluable
+- microscopic-scale subject shown only in wide shots (scale–framing contradiction)
+
+v4 evaluation notes (27 dimensions):
+- tag_coverage: evaluate ONLY the dimensions listed in the testcase's active_dimensions array. A dimension that was intentionally dropped (not in active_dimensions) should NOT count against tag_coverage. But if a dimension IS listed in active_dimensions yet is not visually represented in the prompt, that is a coverage failure.
+- visual_observability: verify time_of_day and weather are reflected in the scene description (not just stated), and color grading is consistent with the specified palette.
+- cinematic_feasibility: check that depth_of_field/focal_length choices are compatible with the shot size and subject count.
+- shot_continuity: for multi-shot testcases, verify the specified transition type is described at each cut point.
+- active_dimensions audit: if active_dimensions is suspiciously short (e.g., <10 when the payload provided 25+ tags), flag this as a major_issue — the compiler may have been too aggressive in dropping tags.
 
 Output valid JSON only with this schema:
 {

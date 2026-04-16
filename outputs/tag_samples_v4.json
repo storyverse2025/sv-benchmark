@@ -1,0 +1,2394 @@
+[
+  {
+    "id": 1,
+    "难度等级": "S1 最简",
+    "难度描述": "单物品/单人物 + 单场景 + 单镜头",
+    "画风": "卡通",
+    "场景": [
+      "客厅"
+    ],
+    "主体": [
+      "昆虫"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "科幻",
+      "纹理": "光滑",
+      "透光度": "半透明",
+      "尺度": "微观"
+    },
+    "空间布局": "内外",
+    "动作": "跳跃",
+    "表情": "无",
+    "特效": "烟雾",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "逆光",
+      "强度": "低调"
+    },
+    "色彩": {
+      "饱和度": "低饱和",
+      "主色调": "暖色系"
+    },
+    "相机": {
+      "角度": "荷兰角",
+      "运镜": [
+        "移"
+      ],
+      "构图": "中心构图",
+      "时间": "延时摄影",
+      "景别": [
+        "特写"
+      ],
+      "景深": "浅景深",
+      "焦距": "微距"
+    },
+    "环境": {
+      "时段": "黄昏",
+      "天气": "雾天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [],
+      "suggestions": [],
+      "promptability_score": 1.0,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "难度等级": "S1 最简",
+    "难度描述": "单物品/单人物 + 单场景 + 单镜头",
+    "画风": "电影质感",
+    "场景": [
+      "走廊"
+    ],
+    "主体": [
+      "哺乳动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "魔幻",
+      "纹理": "毛发",
+      "透光度": "不透明",
+      "尺度": "常规"
+    },
+    "空间布局": "左右",
+    "动作": "跑步",
+    "表情": "怒:弱",
+    "特效": "火焰",
+    "灯光": {
+      "色调": "彩色混合",
+      "方向": "侧光",
+      "强度": "高调"
+    },
+    "色彩": {
+      "饱和度": "高饱和",
+      "主色调": "单色系"
+    },
+    "相机": {
+      "角度": "平拍",
+      "运镜": [
+        "跟"
+      ],
+      "构图": "对称",
+      "时间": "倒放",
+      "景别": [
+        "中景"
+      ],
+      "景深": "深景深",
+      "焦距": "广角"
+    },
+    "环境": {
+      "时段": "黎明",
+      "天气": "雨天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [],
+      "suggestions": [],
+      "promptability_score": 1.0,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "难度等级": "S1 最简",
+    "难度描述": "单物品/单人物 + 单场景 + 单镜头",
+    "画风": "哥特",
+    "场景": [
+      "仓库"
+    ],
+    "主体": [
+      "人类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "梦境",
+      "纹理": "布料",
+      "透光度": "不透明",
+      "尺度": "常规"
+    },
+    "空间布局": "前后",
+    "动作": "走路",
+    "表情": "喜:弱",
+    "特效": "爆炸",
+    "灯光": {
+      "色调": "中性",
+      "方向": "顺光",
+      "强度": "高调"
+    },
+    "色彩": {
+      "饱和度": "低饱和",
+      "主色调": "暖色系"
+    },
+    "相机": {
+      "角度": "仰拍",
+      "运镜": [
+        "摇"
+      ],
+      "构图": "三分法",
+      "时间": "慢动作",
+      "景别": [
+        "远景"
+      ],
+      "景深": "浅景深",
+      "焦距": "长焦"
+    },
+    "环境": {
+      "时段": "夜晚",
+      "天气": "雪天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [
+        "subtle emotion hard to verify in wide shots",
+        "high-key at night needs strong motivated light source"
+      ],
+      "suggestions": [
+        "express weak emotion through posture or silhouette"
+      ],
+      "promptability_score": 0.84,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "难度等级": "S1 最简",
+    "难度描述": "单物品/单人物 + 单场景 + 单镜头",
+    "画风": "日式动漫",
+    "场景": [
+      "厨房"
+    ],
+    "主体": [
+      "鸟类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "羽毛",
+      "透光度": "不透明",
+      "尺度": "微观"
+    },
+    "空间布局": "上下",
+    "动作": "悬浮",
+    "表情": "无",
+    "特效": "雨",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "顶光",
+      "强度": "正常"
+    },
+    "色彩": {
+      "饱和度": "去色",
+      "主色调": "互补色"
+    },
+    "相机": {
+      "角度": "俯拍",
+      "运镜": [
+        "拉"
+      ],
+      "构图": "引导线",
+      "时间": "常规速度",
+      "景别": [
+        "全景"
+      ],
+      "景深": "全景深",
+      "焦距": "标准"
+    },
+    "环境": {
+      "时段": "白天",
+      "天气": "晴天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [
+        "weather VFX '雨' conflicts with fully indoor setting",
+        "microscopic subject invisible in wide shots"
+      ],
+      "warnings": [],
+      "suggestions": [
+        "use close-up or extreme close-up for micro subjects"
+      ],
+      "promptability_score": 0.56,
+      "promptability_bucket": "borderline",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "难度等级": "S1 最简",
+    "难度描述": "单物品/单人物 + 单场景 + 单镜头",
+    "画风": "写实",
+    "场景": [
+      "办公室"
+    ],
+    "主体": [
+      "水生动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "光滑",
+      "透光度": "半透明",
+      "尺度": "常规"
+    },
+    "空间布局": "环绕",
+    "动作": "游泳",
+    "表情": "无",
+    "特效": "光效",
+    "灯光": {
+      "色调": "冷光",
+      "方向": "底光",
+      "强度": "低调"
+    },
+    "色彩": {
+      "饱和度": "高饱和",
+      "主色调": "冷色系"
+    },
+    "相机": {
+      "角度": "鸟瞰",
+      "运镜": [
+        "推"
+      ],
+      "构图": "框架构图",
+      "时间": "定格",
+      "景别": [
+        "近景"
+      ],
+      "景深": "深景深",
+      "焦距": "广角"
+    },
+    "环境": {
+      "时段": "黎明",
+      "天气": "阴天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [
+        "freeze frame reduces action readability",
+        "swimming uncommon outside aquatic scenes"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.84,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "难度等级": "S2 简单",
+    "难度描述": "单物品/单人物 + 多场景 + 单镜头",
+    "画风": "写实",
+    "场景": [
+      "客厅",
+      "厨房"
+    ],
+    "主体": [
+      "人类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "布料",
+      "透光度": "不透明",
+      "尺度": "常规"
+    },
+    "空间布局": "左右",
+    "动作": "打斗",
+    "表情": "喜:强",
+    "特效": "雨",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "侧光",
+      "强度": "低调"
+    },
+    "色彩": {
+      "饱和度": "高饱和",
+      "主色调": "暖色系"
+    },
+    "相机": {
+      "角度": "鸟瞰",
+      "运镜": [
+        "移"
+      ],
+      "构图": "框架构图",
+      "时间": "倒放",
+      "景别": [
+        "近景"
+      ],
+      "景深": "全景深",
+      "焦距": "微距"
+    },
+    "环境": {
+      "时段": "黄昏",
+      "天气": "雨天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [
+        "weather VFX '雨' conflicts with fully indoor setting"
+      ],
+      "warnings": [
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.7,
+      "promptability_bucket": "borderline",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "难度等级": "S2 简单",
+    "难度描述": "单物品/单人物 + 多场景 + 单镜头",
+    "画风": "电影质感",
+    "场景": [
+      "厨房",
+      "走廊",
+      "客厅"
+    ],
+    "主体": [
+      "鸟类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "光滑",
+      "透光度": "不透明",
+      "尺度": "微观"
+    },
+    "空间布局": "前后",
+    "动作": "悬浮",
+    "表情": "无",
+    "特效": "烟雾",
+    "灯光": {
+      "色调": "冷光",
+      "方向": "顺光",
+      "强度": "低调"
+    },
+    "色彩": {
+      "饱和度": "低饱和",
+      "主色调": "冷色系"
+    },
+    "相机": {
+      "角度": "俯拍",
+      "运镜": [
+        "推"
+      ],
+      "构图": "中心构图",
+      "时间": "定格",
+      "景别": [
+        "全景"
+      ],
+      "景深": "深景深",
+      "焦距": "广角"
+    },
+    "环境": {
+      "时段": "白天",
+      "天气": "雾天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [
+        "microscopic subject invisible in wide shots"
+      ],
+      "warnings": [
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [
+        "use close-up or extreme close-up for micro subjects"
+      ],
+      "promptability_score": 0.7,
+      "promptability_bucket": "borderline",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "难度等级": "S2 简单",
+    "难度描述": "单物品/单人物 + 多场景 + 单镜头",
+    "画风": "哥特",
+    "场景": [
+      "客厅",
+      "走廊"
+    ],
+    "主体": [
+      "水生动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "魔幻",
+      "纹理": "光滑",
+      "透光度": "不透明",
+      "尺度": "常规"
+    },
+    "空间布局": "内外",
+    "动作": "跳跃",
+    "表情": "无",
+    "特效": "爆炸",
+    "灯光": {
+      "色调": "中性",
+      "方向": "顶光",
+      "强度": "高调"
+    },
+    "色彩": {
+      "饱和度": "低饱和",
+      "主色调": "互补色"
+    },
+    "相机": {
+      "角度": "平拍",
+      "运镜": [
+        "摇"
+      ],
+      "构图": "三分法",
+      "时间": "延时摄影",
+      "景别": [
+        "中景"
+      ],
+      "景深": "深景深",
+      "焦距": "广角"
+    },
+    "环境": {
+      "时段": "夜晚",
+      "天气": "雪天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [
+        "high-key at night needs strong motivated light source",
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.84,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "难度等级": "S2 简单",
+    "难度描述": "单物品/单人物 + 多场景 + 单镜头",
+    "画风": "卡通",
+    "场景": [
+      "办公室",
+      "客厅"
+    ],
+    "主体": [
+      "哺乳动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "梦境",
+      "纹理": "毛发",
+      "透光度": "不透明",
+      "尺度": "微观"
+    },
+    "空间布局": "环绕",
+    "动作": "跑步",
+    "表情": "怒:弱",
+    "特效": "光效",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "逆光",
+      "强度": "正常"
+    },
+    "色彩": {
+      "饱和度": "去色",
+      "主色调": "暖色系"
+    },
+    "相机": {
+      "角度": "仰拍",
+      "运镜": [
+        "拉"
+      ],
+      "构图": "对称",
+      "时间": "常规速度",
+      "景别": [
+        "远景"
+      ],
+      "景深": "浅景深",
+      "焦距": "标准"
+    },
+    "环境": {
+      "时段": "黎明",
+      "天气": "阴天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [
+        "microscopic subject invisible in wide shots"
+      ],
+      "warnings": [
+        "subtle emotion hard to verify in wide shots",
+        "fine texture invisible in wide backlit shots",
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [
+        "express weak emotion through posture or silhouette",
+        "use close-up or extreme close-up for micro subjects"
+      ],
+      "promptability_score": 0.54,
+      "promptability_bucket": "conflict_heavy",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "难度等级": "S2 简单",
+    "难度描述": "单物品/单人物 + 多场景 + 单镜头",
+    "画风": "日式动漫",
+    "场景": [
+      "办公室",
+      "客厅",
+      "厨房"
+    ],
+    "主体": [
+      "昆虫"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "科幻",
+      "纹理": "光滑",
+      "透光度": "半透明",
+      "尺度": "常规"
+    },
+    "空间布局": "上下",
+    "动作": "走路",
+    "表情": "无",
+    "特效": "火焰",
+    "灯光": {
+      "色调": "彩色混合",
+      "方向": "底光",
+      "强度": "高调"
+    },
+    "色彩": {
+      "饱和度": "高饱和",
+      "主色调": "单色系"
+    },
+    "相机": {
+      "角度": "荷兰角",
+      "运镜": [
+        "跟"
+      ],
+      "构图": "引导线",
+      "时间": "慢动作",
+      "景别": [
+        "特写"
+      ],
+      "景深": "浅景深",
+      "焦距": "长焦"
+    },
+    "环境": {
+      "时段": "黎明",
+      "天气": "晴天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "难度等级": "S3 中等",
+    "难度描述": "多物品/多人物 + 单场景 + 单镜头",
+    "画风": "哥特",
+    "场景": [
+      "客厅"
+    ],
+    "主体": [
+      "人类",
+      "哺乳动物",
+      "鸟类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "梦境",
+      "纹理": "羽毛",
+      "透光度": "不透明",
+      "尺度": "常规"
+    },
+    "空间布局": "前后",
+    "动作": "后空翻",
+    "表情": "喜:强",
+    "特效": "光效",
+    "灯光": {
+      "色调": "冷光",
+      "方向": "侧光",
+      "强度": "高调"
+    },
+    "色彩": {
+      "饱和度": "低饱和",
+      "主色调": "暖色系"
+    },
+    "相机": {
+      "角度": "俯拍",
+      "运镜": [
+        "摇"
+      ],
+      "构图": "引导线",
+      "时间": "倒放",
+      "景别": [
+        "远景"
+      ],
+      "景深": "浅景深",
+      "焦距": "微距"
+    },
+    "环境": {
+      "时段": "黎明",
+      "天气": "雪天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [
+        "macro lens typically paired with close framing",
+        "shallow DOF may obscure multiple subjects"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.84,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "难度等级": "S3 中等",
+    "难度描述": "多物品/多人物 + 单场景 + 单镜头",
+    "画风": "电影质感",
+    "场景": [
+      "走廊"
+    ],
+    "主体": [
+      "水生动物",
+      "人类",
+      "哺乳动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "布料",
+      "透光度": "半透明",
+      "尺度": "微观"
+    },
+    "空间布局": "环绕",
+    "动作": "打斗",
+    "表情": "喜:弱",
+    "特效": "雨",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "逆光",
+      "强度": "正常"
+    },
+    "色彩": {
+      "饱和度": "去色",
+      "主色调": "互补色"
+    },
+    "相机": {
+      "角度": "荷兰角",
+      "运镜": [
+        "移"
+      ],
+      "构图": "三分法",
+      "时间": "慢动作",
+      "景别": [
+        "全景"
+      ],
+      "景深": "深景深",
+      "焦距": "长焦"
+    },
+    "环境": {
+      "时段": "夜晚",
+      "天气": "雨天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [
+        "weather VFX '雨' conflicts with fully indoor setting",
+        "microscopic subject invisible in wide shots"
+      ],
+      "warnings": [
+        "subtle emotion hard to verify in wide shots"
+      ],
+      "suggestions": [
+        "express weak emotion through posture or silhouette",
+        "use close-up or extreme close-up for micro subjects"
+      ],
+      "promptability_score": 0.48,
+      "promptability_bucket": "conflict_heavy",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "难度等级": "S3 中等",
+    "难度描述": "多物品/多人物 + 单场景 + 单镜头",
+    "画风": "卡通",
+    "场景": [
+      "仓库"
+    ],
+    "主体": [
+      "哺乳动物",
+      "人类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "光滑",
+      "透光度": "不透明",
+      "尺度": "微观"
+    },
+    "空间布局": "上下",
+    "动作": "走路",
+    "表情": "怒:强",
+    "特效": "烟雾",
+    "灯光": {
+      "色调": "中性",
+      "方向": "顶光",
+      "强度": "低调"
+    },
+    "色彩": {
+      "饱和度": "高饱和",
+      "主色调": "冷色系"
+    },
+    "相机": {
+      "角度": "仰拍",
+      "运镜": [
+        "拉"
+      ],
+      "构图": "中心构图",
+      "时间": "延时摄影",
+      "景别": [
+        "中景"
+      ],
+      "景深": "全景深",
+      "焦距": "广角"
+    },
+    "环境": {
+      "时段": "黄昏",
+      "天气": "晴天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [
+        "timelapse reduces readable emotional acting"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "难度等级": "S3 中等",
+    "难度描述": "多物品/多人物 + 单场景 + 单镜头",
+    "画风": "日式动漫",
+    "场景": [
+      "办公室"
+    ],
+    "主体": [
+      "人类",
+      "鸟类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "魔幻",
+      "纹理": "皮革",
+      "透光度": "不透明",
+      "尺度": "常规"
+    },
+    "空间布局": "内外",
+    "动作": "跳跃",
+    "表情": "喜:中",
+    "特效": "爆炸",
+    "灯光": {
+      "色调": "彩色混合",
+      "方向": "底光",
+      "强度": "高调"
+    },
+    "色彩": {
+      "饱和度": "高饱和",
+      "主色调": "暖色系"
+    },
+    "相机": {
+      "角度": "平拍",
+      "运镜": [
+        "跟"
+      ],
+      "构图": "框架构图",
+      "时间": "定格",
+      "景别": [
+        "近景"
+      ],
+      "景深": "深景深",
+      "焦距": "标准"
+    },
+    "环境": {
+      "时段": "黎明",
+      "天气": "雾天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [
+        "freeze frame reduces action readability"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "难度等级": "S3 中等",
+    "难度描述": "多物品/多人物 + 单场景 + 单镜头",
+    "画风": "写实",
+    "场景": [
+      "厨房"
+    ],
+    "主体": [
+      "人类",
+      "水生动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "科幻",
+      "纹理": "毛发",
+      "透光度": "半透明",
+      "尺度": "常规"
+    },
+    "空间布局": "左右",
+    "动作": "跑步",
+    "表情": "怒:中",
+    "特效": "火焰",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "顺光",
+      "强度": "低调"
+    },
+    "色彩": {
+      "饱和度": "低饱和",
+      "主色调": "单色系"
+    },
+    "相机": {
+      "角度": "鸟瞰",
+      "运镜": [
+        "推"
+      ],
+      "构图": "对称",
+      "时间": "常规速度",
+      "景别": [
+        "特写"
+      ],
+      "景深": "浅景深",
+      "焦距": "广角"
+    },
+    "环境": {
+      "时段": "白天",
+      "天气": "阴天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [
+        "wide-angle close-up causes perspective distortion"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "难度等级": "S4 复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 单镜头",
+    "画风": "写实",
+    "场景": [
+      "客厅",
+      "办公室"
+    ],
+    "主体": [
+      "鸟类",
+      "人类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "布料",
+      "透光度": "不透明",
+      "尺度": "微观"
+    },
+    "空间布局": "环绕",
+    "动作": "跳跃",
+    "表情": "喜:强",
+    "特效": "爆炸",
+    "灯光": {
+      "色调": "彩色混合",
+      "方向": "侧光",
+      "强度": "低调"
+    },
+    "色彩": {
+      "饱和度": "去色",
+      "主色调": "互补色"
+    },
+    "相机": {
+      "角度": "荷兰角",
+      "运镜": [
+        "摇"
+      ],
+      "构图": "中心构图",
+      "时间": "倒放",
+      "景别": [
+        "全景"
+      ],
+      "景深": "深景深",
+      "焦距": "标准"
+    },
+    "环境": {
+      "时段": "夜晚",
+      "天气": "雨天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [
+        "microscopic subject invisible in wide shots"
+      ],
+      "warnings": [
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [
+        "use close-up or extreme close-up for micro subjects"
+      ],
+      "promptability_score": 0.7,
+      "promptability_bucket": "borderline",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "难度等级": "S4 复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 单镜头",
+    "画风": "卡通",
+    "场景": [
+      "走廊",
+      "厨房",
+      "客厅"
+    ],
+    "主体": [
+      "水生动物",
+      "人类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "科幻",
+      "纹理": "皮革",
+      "透光度": "半透明",
+      "尺度": "常规"
+    },
+    "空间布局": "左右",
+    "动作": "打斗",
+    "表情": "怒:中",
+    "特效": "雨",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "顺光",
+      "强度": "高调"
+    },
+    "色彩": {
+      "饱和度": "高饱和",
+      "主色调": "暖色系"
+    },
+    "相机": {
+      "角度": "鸟瞰",
+      "运镜": [
+        "跟"
+      ],
+      "构图": "引导线",
+      "时间": "延时摄影",
+      "景别": [
+        "近景"
+      ],
+      "景深": "全景深",
+      "焦距": "广角"
+    },
+    "环境": {
+      "时段": "黎明",
+      "天气": "雪天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [
+        "timelapse conflicts with performance-heavy action",
+        "weather VFX '雨' conflicts with fully indoor setting"
+      ],
+      "warnings": [
+        "timelapse reduces readable emotional acting",
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.4,
+      "promptability_bucket": "conflict_heavy",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "难度等级": "S4 复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 单镜头",
+    "画风": "哥特",
+    "场景": [
+      "走廊",
+      "客厅"
+    ],
+    "主体": [
+      "人类",
+      "哺乳动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "梦境",
+      "纹理": "光滑",
+      "透光度": "不透明",
+      "尺度": "常规"
+    },
+    "空间布局": "内外",
+    "动作": "走路",
+    "表情": "喜:弱",
+    "特效": "烟雾",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "逆光",
+      "强度": "正常"
+    },
+    "色彩": {
+      "饱和度": "低饱和",
+      "主色调": "暖色系"
+    },
+    "相机": {
+      "角度": "仰拍",
+      "运镜": [
+        "拉"
+      ],
+      "构图": "框架构图",
+      "时间": "常规速度",
+      "景别": [
+        "远景"
+      ],
+      "景深": "浅景深",
+      "焦距": "广角"
+    },
+    "环境": {
+      "时段": "黎明",
+      "天气": "阴天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [
+        "subtle emotion hard to verify in wide shots",
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [
+        "express weak emotion through posture or silhouette"
+      ],
+      "promptability_score": 0.84,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "难度等级": "S4 复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 单镜头",
+    "画风": "电影质感",
+    "场景": [
+      "客厅",
+      "办公室",
+      "厨房"
+    ],
+    "主体": [
+      "鸟类",
+      "人类",
+      "哺乳动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "毛发",
+      "透光度": "不透明",
+      "尺度": "巨型"
+    },
+    "空间布局": "上下",
+    "动作": "跑步",
+    "表情": "喜:中",
+    "特效": "火焰",
+    "灯光": {
+      "色调": "中性",
+      "方向": "顶光",
+      "强度": "低调"
+    },
+    "色彩": {
+      "饱和度": "高饱和",
+      "主色调": "冷色系"
+    },
+    "相机": {
+      "角度": "俯拍",
+      "运镜": [
+        "推"
+      ],
+      "构图": "三分法",
+      "时间": "慢动作",
+      "景别": [
+        "特写"
+      ],
+      "景深": "浅景深",
+      "焦距": "微距"
+    },
+    "环境": {
+      "时段": "白天",
+      "天气": "晴天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [
+        "extreme close-up may lose sense of giant scale",
+        "shallow DOF may obscure multiple subjects",
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.76,
+      "promptability_bucket": "borderline",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "难度等级": "S4 复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 单镜头",
+    "画风": "日式动漫",
+    "场景": [
+      "客厅",
+      "厨房"
+    ],
+    "主体": [
+      "人类",
+      "水生动物",
+      "哺乳动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "魔幻",
+      "纹理": "光滑",
+      "透光度": "半透明",
+      "尺度": "微观"
+    },
+    "空间布局": "前后",
+    "动作": "后空翻",
+    "表情": "怒:强",
+    "特效": "光效",
+    "灯光": {
+      "色调": "冷光",
+      "方向": "底光",
+      "强度": "高调"
+    },
+    "色彩": {
+      "饱和度": "低饱和",
+      "主色调": "单色系"
+    },
+    "相机": {
+      "角度": "平拍",
+      "运镜": [
+        "移"
+      ],
+      "构图": "对称",
+      "时间": "定格",
+      "景别": [
+        "中景"
+      ],
+      "景深": "深景深",
+      "焦距": "长焦"
+    },
+    "环境": {
+      "时段": "黄昏",
+      "天气": "雾天"
+    },
+    "转场": "无",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [
+        "freeze frame reduces action readability",
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.84,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "难度等级": "S5 极复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 多镜头",
+    "画风": "日式动漫",
+    "场景": [
+      "走廊",
+      "客厅",
+      "厨房"
+    ],
+    "主体": [
+      "人类",
+      "鸟类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "科幻",
+      "纹理": "毛发",
+      "透光度": "不透明",
+      "尺度": "常规"
+    },
+    "空间布局": "前后",
+    "动作": "打斗",
+    "表情": "喜:强",
+    "特效": "爆炸",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "底光",
+      "强度": "高调"
+    },
+    "色彩": {
+      "饱和度": "去色",
+      "主色调": "冷色系"
+    },
+    "相机": {
+      "角度": "平拍",
+      "运镜": [
+        "推",
+        "移"
+      ],
+      "构图": "引导线",
+      "时间": "常规速度",
+      "景别": [
+        "特写",
+        "近景"
+      ],
+      "景深": "全景深",
+      "焦距": "广角"
+    },
+    "环境": {
+      "时段": "黎明",
+      "天气": "晴天"
+    },
+    "转场": "硬切",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [],
+      "suggestions": [],
+      "promptability_score": 1.0,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "难度等级": "S5 极复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 多镜头",
+    "画风": "哥特",
+    "场景": [
+      "客厅",
+      "走廊"
+    ],
+    "主体": [
+      "人类",
+      "哺乳动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "光滑",
+      "透光度": "不透明",
+      "尺度": "常规"
+    },
+    "空间布局": "上下",
+    "动作": "跳跃",
+    "表情": "怒:中",
+    "特效": "雨",
+    "灯光": {
+      "色调": "冷光",
+      "方向": "顶光",
+      "强度": "正常"
+    },
+    "色彩": {
+      "饱和度": "低饱和",
+      "主色调": "暖色系"
+    },
+    "相机": {
+      "角度": "俯拍",
+      "运镜": [
+        "推",
+        "拉",
+        "摇"
+      ],
+      "构图": "框架构图",
+      "时间": "倒放",
+      "景别": [
+        "特写",
+        "全景"
+      ],
+      "景深": "浅景深",
+      "焦距": "广角"
+    },
+    "环境": {
+      "时段": "白天",
+      "天气": "雨天"
+    },
+    "转场": "溶解",
+    "v4_meta": {
+      "issues": [
+        "weather VFX '雨' conflicts with fully indoor setting"
+      ],
+      "warnings": [],
+      "suggestions": [],
+      "promptability_score": 0.78,
+      "promptability_bucket": "borderline",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "难度等级": "S5 极复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 多镜头",
+    "画风": "电影质感",
+    "场景": [
+      "厨房",
+      "客厅",
+      "办公室"
+    ],
+    "主体": [
+      "鸟类",
+      "哺乳动物",
+      "人类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "魔幻",
+      "纹理": "皮革",
+      "透光度": "不透明",
+      "尺度": "常规"
+    },
+    "空间布局": "左右",
+    "动作": "后空翻",
+    "表情": "怒:强",
+    "特效": "火焰",
+    "灯光": {
+      "色调": "彩色混合",
+      "方向": "逆光",
+      "强度": "高调"
+    },
+    "色彩": {
+      "饱和度": "高饱和",
+      "主色调": "互补色"
+    },
+    "相机": {
+      "角度": "仰拍",
+      "运镜": [
+        "推",
+        "拉"
+      ],
+      "构图": "中心构图",
+      "时间": "延时摄影",
+      "景别": [
+        "特写",
+        "近景",
+        "全景"
+      ],
+      "景深": "深景深",
+      "焦距": "长焦"
+    },
+    "环境": {
+      "时段": "黄昏",
+      "天气": "雪天"
+    },
+    "转场": "匹配剪辑",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [
+        "timelapse reduces readable emotional acting"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "难度等级": "S5 极复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 多镜头",
+    "画风": "写实",
+    "场景": [
+      "客厅",
+      "办公室"
+    ],
+    "主体": [
+      "水生动物",
+      "人类"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "梦境",
+      "纹理": "布料",
+      "透光度": "半透明",
+      "尺度": "微观"
+    },
+    "空间布局": "环绕",
+    "动作": "走路",
+    "表情": "喜:中",
+    "特效": "烟雾",
+    "灯光": {
+      "色调": "中性",
+      "方向": "侧光",
+      "强度": "低调"
+    },
+    "色彩": {
+      "饱和度": "低饱和",
+      "主色调": "暖色系"
+    },
+    "相机": {
+      "角度": "荷兰角",
+      "运镜": [
+        "推",
+        "摇"
+      ],
+      "构图": "三分法",
+      "时间": "定格",
+      "景别": [
+        "特写",
+        "中景"
+      ],
+      "景深": "深景深",
+      "焦距": "微距"
+    },
+    "环境": {
+      "时段": "黎明",
+      "天气": "雾天"
+    },
+    "转场": "淡入淡出",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [
+        "freeze frame reduces action readability"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "难度等级": "S5 极复杂",
+    "难度描述": "多物品/多人物 + 多场景 + 多镜头",
+    "画风": "卡通",
+    "场景": [
+      "客厅",
+      "厨房"
+    ],
+    "主体": [
+      "人类",
+      "水生动物",
+      "哺乳动物"
+    ],
+    "物理属性": {
+      "状态": "固体",
+      "规则": "现实",
+      "纹理": "光滑",
+      "透光度": "半透明",
+      "尺度": "微观"
+    },
+    "空间布局": "内外",
+    "动作": "跑步",
+    "表情": "喜:弱",
+    "特效": "光效",
+    "灯光": {
+      "色调": "暖光",
+      "方向": "顺光",
+      "强度": "低调"
+    },
+    "色彩": {
+      "饱和度": "高饱和",
+      "主色调": "单色系"
+    },
+    "相机": {
+      "角度": "鸟瞰",
+      "运镜": [
+        "推",
+        "拉",
+        "移"
+      ],
+      "构图": "对称",
+      "时间": "慢动作",
+      "景别": [
+        "特写",
+        "近景",
+        "中景"
+      ],
+      "景深": "浅景深",
+      "焦距": "标准"
+    },
+    "环境": {
+      "时段": "夜晚",
+      "天气": "阴天"
+    },
+    "转场": "擦除",
+    "v4_meta": {
+      "issues": [],
+      "warnings": [
+        "shallow DOF may obscure multiple subjects"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize",
+      "primary_tags": [
+        "scenes",
+        "subjects",
+        "action",
+        "camera_angle",
+        "camera_movement",
+        "time_mode",
+        "shot_size"
+      ],
+      "secondary_tags": [
+        "spatial_layout",
+        "emotion",
+        "effect",
+        "lighting_tone",
+        "lighting_direction",
+        "lighting_intensity",
+        "composition",
+        "depth_of_field",
+        "focal_length"
+      ],
+      "stylistic_tags": [
+        "style",
+        "physical_state",
+        "physical_rule",
+        "texture",
+        "opacity",
+        "scale",
+        "color_saturation",
+        "color_palette",
+        "time_of_day",
+        "weather",
+        "transition"
+      ]
+    }
+  }
+]

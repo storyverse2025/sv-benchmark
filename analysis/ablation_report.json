@@ -1,0 +1,694 @@
+{
+  "violations": {
+    "naive": {
+      "n_samples": 1000,
+      "n_with_violations": 946,
+      "violation_rate": 0.946,
+      "avg_violations_per_sample": 2.72,
+      "max_violations_per_sample": 6,
+      "violation_count_distribution": {
+        "4": 178,
+        "2": 255,
+        "5": 97,
+        "1": 143,
+        "3": 256,
+        "6": 17,
+        "0": 54
+      },
+      "per_attribute_violation_count": {
+        "物理属性.状态": 585,
+        "物理属性.纹理": 560,
+        "物理属性.透光度": 284,
+        "物理属性.尺度": 130,
+        "动作": 533,
+        "表情": 628
+      }
+    },
+    "repaired": {
+      "n_samples": 1000,
+      "n_with_violations": 0,
+      "violation_rate": 0.0,
+      "avg_violations_per_sample": 0.0,
+      "max_violations_per_sample": 0,
+      "violation_count_distribution": {
+        "0": 1000
+      },
+      "per_attribute_violation_count": {
+        "物理属性.状态": 0,
+        "物理属性.纹理": 0,
+        "物理属性.透光度": 0,
+        "物理属性.尺度": 0,
+        "动作": 0,
+        "表情": 0
+      }
+    }
+  },
+  "diversity": {
+    "naive": {
+      "mean_coverage": 1.0,
+      "mean_normalized_entropy": 0.9761
+    },
+    "repaired": {
+      "mean_coverage": 1.0,
+      "mean_normalized_entropy": 0.9493
+    },
+    "entropy_change_pct": -2.75,
+    "per_dimension_comparison": {
+      "画风": {
+        "naive_entropy": 0.9998,
+        "repaired_entropy": 0.9998,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "场景": {
+        "naive_entropy": 0.962,
+        "repaired_entropy": 0.962,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "主体": {
+        "naive_entropy": 0.9978,
+        "repaired_entropy": 0.9978,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "物理属性.状态": {
+        "naive_entropy": 0.9999,
+        "repaired_entropy": 0.8393,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": -0.1606
+      },
+      "物理属性.规则": {
+        "naive_entropy": 1.0,
+        "repaired_entropy": 1.0,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "物理属性.纹理": {
+        "naive_entropy": 1.0,
+        "repaired_entropy": 0.9633,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": -0.0367
+      },
+      "物理属性.透光度": {
+        "naive_entropy": 1.0,
+        "repaired_entropy": 0.899,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": -0.101
+      },
+      "物理属性.尺度": {
+        "naive_entropy": 1.0,
+        "repaired_entropy": 0.9954,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": -0.0046
+      },
+      "空间布局": {
+        "naive_entropy": 1.0,
+        "repaired_entropy": 1.0,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "动作": {
+        "naive_entropy": 0.9995,
+        "repaired_entropy": 0.9013,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": -0.0982
+      },
+      "表情": {
+        "naive_entropy": 0.9998,
+        "repaired_entropy": 0.677,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": -0.3228
+      },
+      "特效": {
+        "naive_entropy": 0.9998,
+        "repaired_entropy": 0.9998,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "灯光.色调": {
+        "naive_entropy": 1.0,
+        "repaired_entropy": 1.0,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "灯光.方向": {
+        "naive_entropy": 0.9999,
+        "repaired_entropy": 0.9999,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "灯光.强度": {
+        "naive_entropy": 1.0,
+        "repaired_entropy": 1.0,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "色彩.饱和度": {
+        "naive_entropy": 1.0,
+        "repaired_entropy": 1.0,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "色彩.主色调": {
+        "naive_entropy": 1.0,
+        "repaired_entropy": 1.0,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "相机.角度": {
+        "naive_entropy": 1.0,
+        "repaired_entropy": 1.0,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "相机.运镜": {
+        "naive_entropy": 0.9945,
+        "repaired_entropy": 0.9945,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "相机.构图": {
+        "naive_entropy": 0.9999,
+        "repaired_entropy": 0.9999,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "相机.时间": {
+        "naive_entropy": 1.0,
+        "repaired_entropy": 1.0,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "相机.景别": {
+        "naive_entropy": 0.9997,
+        "repaired_entropy": 0.9997,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "相机.景深": {
+        "naive_entropy": 1.0,
+        "repaired_entropy": 1.0,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "相机.焦距": {
+        "naive_entropy": 1.0,
+        "repaired_entropy": 1.0,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "环境.时段": {
+        "naive_entropy": 1.0,
+        "repaired_entropy": 1.0,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "环境.天气": {
+        "naive_entropy": 1.0,
+        "repaired_entropy": 1.0,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      },
+      "转场": {
+        "naive_entropy": 0.4018,
+        "repaired_entropy": 0.4018,
+        "naive_coverage": 1.0,
+        "repaired_coverage": 1.0,
+        "entropy_delta": 0.0
+      }
+    }
+  },
+  "feasibility": {
+    "naive": {
+      "mean_score": 0.7892,
+      "std_score": 0.1619,
+      "min_score": 0.1,
+      "max_score": 1.0,
+      "bucket_distribution": {
+        "borderline": {
+          "count": 320,
+          "pct": 32.0
+        },
+        "conflict_heavy": {
+          "count": 112,
+          "pct": 11.2
+        },
+        "easy_to_visualize": {
+          "count": 568,
+          "pct": 56.8
+        }
+      }
+    },
+    "repaired": {
+      "mean_score": 0.806,
+      "std_score": 0.1517,
+      "min_score": 0.24,
+      "max_score": 1.0,
+      "bucket_distribution": {
+        "borderline": {
+          "count": 325,
+          "pct": 32.5
+        },
+        "conflict_heavy": {
+          "count": 83,
+          "pct": 8.3
+        },
+        "easy_to_visualize": {
+          "count": 592,
+          "pct": 59.2
+        }
+      }
+    }
+  },
+  "combined_quality": {
+    "naive": {
+      "valid_easy": {
+        "count": 32,
+        "pct": 3.2
+      },
+      "valid_borderline": {
+        "count": 15,
+        "pct": 1.5
+      },
+      "valid_conflict": {
+        "count": 7,
+        "pct": 0.7
+      },
+      "invalid": {
+        "count": 946,
+        "pct": 94.6
+      }
+    },
+    "repaired": {
+      "valid_easy": {
+        "count": 592,
+        "pct": 59.2
+      },
+      "valid_borderline": {
+        "count": 325,
+        "pct": 32.5
+      },
+      "valid_conflict": {
+        "count": 83,
+        "pct": 8.3
+      },
+      "invalid": {
+        "count": 0,
+        "pct": 0.0
+      }
+    }
+  },
+  "analytical_violation_rate": {
+    "per_subject": {
+      "人类": {
+        "per_attribute": {
+          "物理属性.状态": {
+            "valid_count": 1,
+            "domain_size": 7,
+            "p_valid": 0.1429
+          },
+          "物理属性.纹理": {
+            "valid_count": 4,
+            "domain_size": 10,
+            "p_valid": 0.4
+          },
+          "物理属性.透光度": {
+            "valid_count": 1,
+            "domain_size": 3,
+            "p_valid": 0.3333
+          },
+          "物理属性.尺度": {
+            "valid_count": 1,
+            "domain_size": 3,
+            "p_valid": 0.3333
+          },
+          "动作": {
+            "valid_count": 24,
+            "domain_size": 24,
+            "p_valid": 1.0
+          },
+          "表情": {
+            "valid_count": 22,
+            "domain_size": 22,
+            "p_valid": 1.0
+          }
+        },
+        "p_all_valid": 0.00634921,
+        "p_violation": 0.99365079
+      },
+      "哺乳动物": {
+        "per_attribute": {
+          "物理属性.状态": {
+            "valid_count": 1,
+            "domain_size": 7,
+            "p_valid": 0.1429
+          },
+          "物理属性.纹理": {
+            "valid_count": 3,
+            "domain_size": 10,
+            "p_valid": 0.3
+          },
+          "物理属性.透光度": {
+            "valid_count": 1,
+            "domain_size": 3,
+            "p_valid": 0.3333
+          },
+          "物理属性.尺度": {
+            "valid_count": 3,
+            "domain_size": 3,
+            "p_valid": 1.0
+          },
+          "动作": {
+            "valid_count": 9,
+            "domain_size": 24,
+            "p_valid": 0.375
+          },
+          "表情": {
+            "valid_count": 7,
+            "domain_size": 22,
+            "p_valid": 0.3182
+          }
+        },
+        "p_all_valid": 0.00170455,
+        "p_violation": 0.99829545
+      },
+      "鸟类": {
+        "per_attribute": {
+          "物理属性.状态": {
+            "valid_count": 1,
+            "domain_size": 7,
+            "p_valid": 0.1429
+          },
+          "物理属性.纹理": {
+            "valid_count": 2,
+            "domain_size": 10,
+            "p_valid": 0.2
+          },
+          "物理属性.透光度": {
+            "valid_count": 1,
+            "domain_size": 3,
+            "p_valid": 0.3333
+          },
+          "物理属性.尺度": {
+            "valid_count": 2,
+            "domain_size": 3,
+            "p_valid": 0.6667
+          },
+          "动作": {
+            "valid_count": 5,
+            "domain_size": 24,
+            "p_valid": 0.2083
+          },
+          "表情": {
+            "valid_count": 1,
+            "domain_size": 22,
+            "p_valid": 0.0455
+          }
+        },
+        "p_all_valid": 6.013e-05,
+        "p_violation": 0.99993987
+      },
+      "水生动物": {
+        "per_attribute": {
+          "物理属性.状态": {
+            "valid_count": 1,
+            "domain_size": 7,
+            "p_valid": 0.1429
+          },
+          "物理属性.纹理": {
+            "valid_count": 1,
+            "domain_size": 10,
+            "p_valid": 0.1
+          },
+          "物理属性.透光度": {
+            "valid_count": 2,
+            "domain_size": 3,
+            "p_valid": 0.6667
+          },
+          "物理属性.尺度": {
+            "valid_count": 3,
+            "domain_size": 3,
+            "p_valid": 1.0
+          },
+          "动作": {
+            "valid_count": 5,
+            "domain_size": 24,
+            "p_valid": 0.2083
+          },
+          "表情": {
+            "valid_count": 1,
+            "domain_size": 22,
+            "p_valid": 0.0455
+          }
+        },
+        "p_all_valid": 9.019e-05,
+        "p_violation": 0.99990981
+      },
+      "昆虫": {
+        "per_attribute": {
+          "物理属性.状态": {
+            "valid_count": 1,
+            "domain_size": 7,
+            "p_valid": 0.1429
+          },
+          "物理属性.纹理": {
+            "valid_count": 2,
+            "domain_size": 10,
+            "p_valid": 0.2
+          },
+          "物理属性.透光度": {
+            "valid_count": 2,
+            "domain_size": 3,
+            "p_valid": 0.6667
+          },
+          "物理属性.尺度": {
+            "valid_count": 2,
+            "domain_size": 3,
+            "p_valid": 0.6667
+          },
+          "动作": {
+            "valid_count": 5,
+            "domain_size": 24,
+            "p_valid": 0.2083
+          },
+          "表情": {
+            "valid_count": 1,
+            "domain_size": 22,
+            "p_valid": 0.0455
+          }
+        },
+        "p_all_valid": 0.00012025,
+        "p_violation": 0.99987975
+      },
+      "机器人": {
+        "per_attribute": {
+          "物理属性.状态": {
+            "valid_count": 2,
+            "domain_size": 7,
+            "p_valid": 0.2857
+          },
+          "物理属性.纹理": {
+            "valid_count": 2,
+            "domain_size": 10,
+            "p_valid": 0.2
+          },
+          "物理属性.透光度": {
+            "valid_count": 1,
+            "domain_size": 3,
+            "p_valid": 0.3333
+          },
+          "物理属性.尺度": {
+            "valid_count": 2,
+            "domain_size": 3,
+            "p_valid": 0.6667
+          },
+          "动作": {
+            "valid_count": 10,
+            "domain_size": 24,
+            "p_valid": 0.4167
+          },
+          "表情": {
+            "valid_count": 1,
+            "domain_size": 22,
+            "p_valid": 0.0455
+          }
+        },
+        "p_all_valid": 0.0002405,
+        "p_violation": 0.9997595
+      },
+      "车辆": {
+        "per_attribute": {
+          "物理属性.状态": {
+            "valid_count": 2,
+            "domain_size": 7,
+            "p_valid": 0.2857
+          },
+          "物理属性.纹理": {
+            "valid_count": 2,
+            "domain_size": 10,
+            "p_valid": 0.2
+          },
+          "物理属性.透光度": {
+            "valid_count": 1,
+            "domain_size": 3,
+            "p_valid": 0.3333
+          },
+          "物理属性.尺度": {
+            "valid_count": 2,
+            "domain_size": 3,
+            "p_valid": 0.6667
+          },
+          "动作": {
+            "valid_count": 4,
+            "domain_size": 24,
+            "p_valid": 0.1667
+          },
+          "表情": {
+            "valid_count": 1,
+            "domain_size": 22,
+            "p_valid": 0.0455
+          }
+        },
+        "p_all_valid": 9.62e-05,
+        "p_violation": 0.9999038
+      },
+      "自然元素": {
+        "per_attribute": {
+          "物理属性.状态": {
+            "valid_count": 5,
+            "domain_size": 7,
+            "p_valid": 0.7143
+          },
+          "物理属性.纹理": {
+            "valid_count": 3,
+            "domain_size": 10,
+            "p_valid": 0.3
+          },
+          "物理属性.透光度": {
+            "valid_count": 3,
+            "domain_size": 3,
+            "p_valid": 1.0
+          },
+          "物理属性.尺度": {
+            "valid_count": 3,
+            "domain_size": 3,
+            "p_valid": 1.0
+          },
+          "动作": {
+            "valid_count": 3,
+            "domain_size": 24,
+            "p_valid": 0.125
+          },
+          "表情": {
+            "valid_count": 1,
+            "domain_size": 22,
+            "p_valid": 0.0455
+          }
+        },
+        "p_all_valid": 0.00121753,
+        "p_violation": 0.99878247
+      },
+      "日常物品": {
+        "per_attribute": {
+          "物理属性.状态": {
+            "valid_count": 4,
+            "domain_size": 7,
+            "p_valid": 0.5714
+          },
+          "物理属性.纹理": {
+            "valid_count": 7,
+            "domain_size": 10,
+            "p_valid": 0.7
+          },
+          "物理属性.透光度": {
+            "valid_count": 3,
+            "domain_size": 3,
+            "p_valid": 1.0
+          },
+          "物理属性.尺度": {
+            "valid_count": 2,
+            "domain_size": 3,
+            "p_valid": 0.6667
+          },
+          "动作": {
+            "valid_count": 4,
+            "domain_size": 24,
+            "p_valid": 0.1667
+          },
+          "表情": {
+            "valid_count": 1,
+            "domain_size": 22,
+            "p_valid": 0.0455
+          }
+        },
+        "p_all_valid": 0.0020202,
+        "p_violation": 0.9979798
+      },
+      "虚构生物": {
+        "per_attribute": {
+          "物理属性.状态": {
+            "valid_count": 3,
+            "domain_size": 7,
+            "p_valid": 0.4286
+          },
+          "物理属性.纹理": {
+            "valid_count": 5,
+            "domain_size": 10,
+            "p_valid": 0.5
+          },
+          "物理属性.透光度": {
+            "valid_count": 3,
+            "domain_size": 3,
+            "p_valid": 1.0
+          },
+          "物理属性.尺度": {
+            "valid_count": 3,
+            "domain_size": 3,
+            "p_valid": 1.0
+          },
+          "动作": {
+            "valid_count": 10,
+            "domain_size": 24,
+            "p_valid": 0.4167
+          },
+          "表情": {
+            "valid_count": 9,
+            "domain_size": 22,
+            "p_valid": 0.4091
+          }
+        },
+        "p_all_valid": 0.03652597,
+        "p_violation": 0.96347403
+      }
+    },
+    "overall_p_valid": 0.00484247,
+    "overall_p_violation": 0.99515753
+  }
+}

@@ -2,7 +2,7 @@
 
 Benchmark testcase generation pipeline for video generation models.
 
-**v2 was a sampler. v3 is a full pipeline: sampler + testcase compiler + judge.**
+**v2 was a sampler. v3 is a full pipeline: sampler + testcase compiler + judge. v4 is a cinema-grade taxonomy expansion with constraint-aware sampling analysis.**
 
 ---
 
@@ -51,7 +51,8 @@ This enables fair, repeatable comparison of video generation models.
 │  LLM produces per sample:                                                   │
 │  { testcase_id, core_intent, duration_seconds, story_logic,                │
 │    shot_plan: [...], final_video_prompt, negative_prompt,                   │
-│    coverage_notes: { must_show, soft_interpretations, tradeoffs } }        │
+│    coverage_notes: { must_show, soft_interpretations, tradeoffs },         │
+│    active_dimensions: ["style", "scenes", ...] }                           │
 │                                                                             │
 │  Example:  examples/example_compiler_payload.json                          │
 │         → examples/example_compiled_testcase.json                          │
@@ -80,7 +81,11 @@ This enables fair, repeatable comparison of video generation models.
 ```
 sv-benchmark/
 ├── sampler/
-│   └── sampling_v3.py              # Tag sampling script (local, no API)
+│   ├── sampling_v3.py              # v3 tag sampling (18 dimensions, legacy)
+│   ├── sampling_v4.py              # v4 cinema-grade sampling (27 dimensions)
+│   └── constraint_analysis.py      # Constraint-aware sampling ablation
+├── analyzer/
+│   └── metrics_analyzer.py         # Metric detection (active_dimensions + payload)
 ├── prompts/
 │   ├── testcase_compiler_system_prompt.txt
 │   ├── testcase_compiler_user_prompt.txt
@@ -91,10 +96,13 @@ sv-benchmark/
 │   ├── example_compiler_payload.json
 │   └── example_compiled_testcase.json
 ├── outputs/                         # Generated data (gitignored for large runs)
-│   ├── tag_samples_v3.json
-│   ├── tag_samples_v3.csv
-│   ├── compiler_payloads_v3.json
-│   └── summary_v3.json
+│   ├── tag_samples_v4.json
+│   ├── tag_samples_v4.csv
+│   ├── compiler_payloads_v4.json
+│   └── summary_v4.json
+├── analysis/                        # Constraint analysis outputs
+│   ├── constraint_graph.json
+│   └── ablation_report.json
 └── README.md
 ```
 
@@ -171,7 +179,7 @@ Feed the compiler payload + generated testcase into `prompts/testcase_judge_prom
 4. Faithful tag coverage
 5. Natural English phrasing
 
-The compiler produces a structured testcase with `shot_plan`, `final_video_prompt`, `negative_prompt`, and `coverage_notes` — not raw prose.
+The compiler produces a structured testcase with `shot_plan`, `final_video_prompt`, `negative_prompt`, `coverage_notes`, and `active_dimensions` — not raw prose. The `active_dimensions` array lists which of the 27 tag dimensions were actually preserved in the final prompt; it serves as the ground truth for downstream metric evaluation.
 
 ### Stage 3: Quality Judging
 
@@ -390,6 +398,129 @@ We kept the v2 core sampling logic intact and added layers on top:
 4. **Three-stage pipeline instead of one-shot** — moved from "tags → prose prompt" to `sampling → compiler → judge`. Generate a structured testcase first, then compress into a final video prompt.
 
 5. **Added schemas and prompts** — compiler system prompt, compiler user prompt, judge prompt, output JSON schema, example cases. Enables batch runs and automated evaluation.
+
+---
+
+## v3 → v4 Evolution
+
+v4 is a **cinema-grade taxonomy expansion** grounded in professional film/animation production references:
+
+| Source Domain | Reference |
+|---|---|
+| Visual Style | Art direction / production design categories |
+| Camera | ASC Cinematographer's Manual; Brown, *Cinematography: Theory & Practice* |
+| Action | Williams, *The Animator's Survival Kit* |
+| Emotion | Ekman's 6 basic emotions + valence-arousal model |
+| Color | Van Hurkman, *Color Correction Handbook* |
+| Lighting | Three-point + motivated lighting theory |
+| Environment | Script-supervisor continuity practice |
+| Transition | Dmytryk, *On Film Editing* |
+
+### Schema expansion summary
+
+| | v3 | v4 | Change |
+|---|---|---|---|
+| **Evaluation dimensions** | 18 | **27** | +50% |
+| **Unique tag values** | ~73 | **205** | +181% |
+| **Scene types** | 2 | **16** | indoor/outdoor → 16 locations |
+| **Subject types** | 3 | **10** | human/animal/object → 10 asset classes |
+| **Actions** | 9 | **24** | +dancing, swimming, climbing, cooking, ... |
+| **Emotions** | 13 | **22** | +surprise, fear, disgust (Ekman's 6) |
+| **Effects** | 3 | **12** | +flame, smoke, rain, snow, lightning, ... |
+| **Dependency matrix** | 3×5 | **10×6** | 10 subject types × 6 dependent attributes |
+| **Feasibility rules** | 7 | **17** | cross-dimension conflict checks |
+
+### 9 new dimensions in v4
+
+| Dimension | CN | Grounding | Values |
+|---|---|---|---|
+| Scale | 物理属性.尺度 | VFX scale pipeline | microscopic, normal, giant |
+| Light Intensity | 灯光.强度 | Three-point lighting | high-key, low-key, normal |
+| Color Saturation | 色彩.饱和度 | Color grading theory | high, low, desaturated |
+| Color Palette | 色彩.主色调 | Color grading theory | warm, cool, complementary, monochromatic |
+| Depth of Field | 相机.景深 | ASC manual | shallow DOF, deep DOF, pan-focus |
+| Focal Length | 相机.焦距 | ASC manual | wide-angle, standard, telephoto, macro |
+| Time of Day | 环境.时段 | Continuity practice | dawn, daytime, dusk, night |
+| Weather | 环境.天气 | Continuity practice | clear, overcast, rainy, foggy, snowy |
+| Transition | 转场 | Editorial grammar | hard cut, fade, dissolve, wipe, match cut, none |
+
+### v4 Tag Priorities
+
+| Priority | Rule | Fields |
+|----------|------|--------|
+| **primary** | Do not drop | subjects, scenes, action, camera_movement, shot_size, camera_angle, time_mode |
+| **secondary** | Preserve if visually testable | effect, emotion, spatial_layout, lighting_tone, lighting_direction, lighting_intensity, composition, depth_of_field, focal_length |
+| **stylistic** | Keep if no harm to clarity | style, physical_state, physical_rule, texture, opacity, scale, color_saturation, color_palette, time_of_day, weather, transition |
+
+### v4 Subject Dependency Matrix (10 × 6)
+
+| Subject | State | Texture | Opacity | Scale | Action | Emotion |
+|---|---|---|---|---|---|---|
+| **Human** | solid | smooth, hair/fur, fabric, leather | opaque | normal | all 24 | all 22 |
+| **Mammal** | solid | smooth, hair/fur, leather | opaque | micro, normal, giant | walk, run, jump, fight, swim, climb, fall, spin, none | subtle only + none |
+| **Bird** | solid | smooth, feathered | opaque | micro, normal | walk, jump, hover, spin, none | none |
+| **Aquatic** | solid | smooth | opaque, semi-trans | micro, normal, giant | swim, jump, spin, hover, none | none |
+| **Insect** | solid | smooth, rough | opaque, semi-trans | micro, normal | walk, jump, hover, climb, none | none |
+| **Robot** | solid, rigid | smooth, metallic | opaque | normal, giant | walk, run, jump, fight, spin, hover, fall, wave, bow, none | none |
+| **Vehicle** | solid, rigid | smooth, metallic | opaque | normal, giant | drive, spin, fall, none | none |
+| **Natural Element** | liquid, gas, plasma, particle, soft | smooth, rough, glass | all 3 | micro, normal, giant | hover, spin, none | none |
+| **Everyday Object** | solid, liquid, rigid, soft | smooth, rough, metallic, wooden, fabric, glass, stone | all 3 | micro, normal | spin, fall, hover, none | none |
+| **Fictional Creature** | solid, soft, gas | smooth, rough, hair/fur, feathered, leather | all 3 | micro, normal, giant | walk, run, jump, fight, swim, climb, hover, spin, fall, none | subtle–moderate joy/anger, subtle sadness/delight/surprise/fear, none |
+
+---
+
+## Constraint-Aware Sampling Analysis
+
+v4 formalizes the dependency matrix as a **Constraint Satisfaction Problem (CSP)** and quantifies the benefit of constraint repair.
+
+### CSP Formulation
+
+```
+CSP = (X, D, C)
+  X = 27 tag-dimension variables
+  D = domain per variable (205 total values)
+  C = 60 conditional domain restrictions (10 subjects × 6 dependent attributes)
+```
+
+The constraint graph is **star-shaped**: the subject variable is the hub, and 6 dependent attributes are spokes. The remaining 20 dimensions are independent (no cross-constraints).
+
+### Why constraint repair matters
+
+Run `sampler/constraint_analysis.py` to reproduce:
+
+```bash
+cd sampler
+python constraint_analysis.py --n_per_level 200 --seed 42
+```
+
+**Analytical result (closed-form):** Under naive uniform random sampling, **99.52%** of samples violate at least one dependency constraint.
+
+**Empirical result (N=1000):**
+
+| Metric | Naive | Repaired |
+|---|---|---|
+| Violation rate | 94.6% | **0.0%** |
+| Avg violations / sample | 2.72 | 0.00 |
+| Mean normalized entropy | 0.976 | 0.949 |
+| Entropy change | — | **−2.75%** |
+| Valid + easy_to_visualize | 3.2% | **59.2%** |
+
+**Conclusion:** Constraint repair eliminates all violations while preserving sampling diversity (only 2.75% entropy loss).
+
+### Per-subject constraint tightness
+
+| Subject | P(valid \| naive) | P(≥1 violation) |
+|---|---|---|
+| Fictional Creature | 3.6526% | 96.35% |
+| Human | 0.6349% | 99.37% |
+| Everyday Object | 0.2020% | 99.80% |
+| Mammal | 0.1705% | 99.83% |
+| Natural Element | 0.1218% | 99.88% |
+| Robot | 0.0241% | 99.98% |
+| Vehicle | 0.0096% | 99.99% |
+| Aquatic Animal | 0.0090% | 99.99% |
+| Insect | 0.0120% | 99.99% |
+| Bird | 0.0060% | 99.99% |
 
 ---
 

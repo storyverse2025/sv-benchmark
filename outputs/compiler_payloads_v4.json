@@ -1,0 +1,2369 @@
+[
+  {
+    "id": 1,
+    "difficulty": "S1",
+    "difficulty_desc": "单物品/单人物 + 单场景 + 单镜头",
+    "style": "cartoon",
+    "scenes": [
+      "living room"
+    ],
+    "subjects": [
+      "insect"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "sci-fi",
+    "texture": "smooth",
+    "opacity": "semi-transparent",
+    "scale": "microscopic",
+    "spatial_layout": "inside-outside",
+    "action": "jumping",
+    "emotion": "none",
+    "effect": "smoke",
+    "lighting_tone": "warm",
+    "lighting_direction": "backlight",
+    "lighting_intensity": "low-key",
+    "color_saturation": "low saturation",
+    "color_palette": "warm palette",
+    "camera_angle": "dutch angle",
+    "camera_movement": [
+      "truck"
+    ],
+    "composition": "center framing",
+    "time_mode": "timelapse",
+    "shot_size": [
+      "extreme close-up"
+    ],
+    "depth_of_field": "shallow DOF",
+    "focal_length": "macro",
+    "time_of_day": "dusk",
+    "weather": "foggy",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [],
+      "suggestions": [],
+      "promptability_score": 1.0,
+      "promptability_bucket": "easy_to_visualize"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 2,
+    "difficulty": "S1",
+    "difficulty_desc": "单物品/单人物 + 单场景 + 单镜头",
+    "style": "cinematic",
+    "scenes": [
+      "hallway"
+    ],
+    "subjects": [
+      "mammal"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "fantasy",
+    "texture": "hair/fur",
+    "opacity": "opaque",
+    "scale": "normal scale",
+    "spatial_layout": "left-right",
+    "action": "running",
+    "emotion": "subtle anger",
+    "effect": "flame",
+    "lighting_tone": "multi-color",
+    "lighting_direction": "side light",
+    "lighting_intensity": "high-key",
+    "color_saturation": "high saturation",
+    "color_palette": "monochromatic",
+    "camera_angle": "eye level",
+    "camera_movement": [
+      "tracking shot"
+    ],
+    "composition": "symmetrical",
+    "time_mode": "reverse",
+    "shot_size": [
+      "medium shot"
+    ],
+    "depth_of_field": "deep DOF",
+    "focal_length": "wide-angle",
+    "time_of_day": "dawn",
+    "weather": "rainy",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [],
+      "suggestions": [],
+      "promptability_score": 1.0,
+      "promptability_bucket": "easy_to_visualize"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 3,
+    "difficulty": "S1",
+    "difficulty_desc": "单物品/单人物 + 单场景 + 单镜头",
+    "style": "gothic",
+    "scenes": [
+      "warehouse"
+    ],
+    "subjects": [
+      "human"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "dreamlike",
+    "texture": "fabric",
+    "opacity": "opaque",
+    "scale": "normal scale",
+    "spatial_layout": "foreground-background",
+    "action": "walking",
+    "emotion": "subtle joy",
+    "effect": "explosion",
+    "lighting_tone": "neutral",
+    "lighting_direction": "front light",
+    "lighting_intensity": "high-key",
+    "color_saturation": "low saturation",
+    "color_palette": "warm palette",
+    "camera_angle": "low angle",
+    "camera_movement": [
+      "pan"
+    ],
+    "composition": "rule of thirds",
+    "time_mode": "slow motion",
+    "shot_size": [
+      "long shot"
+    ],
+    "depth_of_field": "shallow DOF",
+    "focal_length": "telephoto",
+    "time_of_day": "night",
+    "weather": "snowy",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [
+        "subtle emotion hard to verify in wide shots",
+        "high-key at night needs strong motivated light source"
+      ],
+      "suggestions": [
+        "express weak emotion through posture or silhouette"
+      ],
+      "promptability_score": 0.84,
+      "promptability_bucket": "easy_to_visualize"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 4,
+    "difficulty": "S1",
+    "difficulty_desc": "单物品/单人物 + 单场景 + 单镜头",
+    "style": "anime",
+    "scenes": [
+      "kitchen"
+    ],
+    "subjects": [
+      "bird"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "real-world",
+    "texture": "feathered",
+    "opacity": "opaque",
+    "scale": "microscopic",
+    "spatial_layout": "vertical",
+    "action": "hovering",
+    "emotion": "none",
+    "effect": "rain",
+    "lighting_tone": "warm",
+    "lighting_direction": "top light",
+    "lighting_intensity": "normal",
+    "color_saturation": "desaturated",
+    "color_palette": "complementary",
+    "camera_angle": "high angle",
+    "camera_movement": [
+      "pull out"
+    ],
+    "composition": "leading lines",
+    "time_mode": "real-time",
+    "shot_size": [
+      "full shot"
+    ],
+    "depth_of_field": "pan-focus",
+    "focal_length": "standard lens",
+    "time_of_day": "daytime",
+    "weather": "clear",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [
+        "weather VFX '雨' conflicts with fully indoor setting",
+        "microscopic subject invisible in wide shots"
+      ],
+      "warnings": [],
+      "suggestions": [
+        "use close-up or extreme close-up for micro subjects"
+      ],
+      "promptability_score": 0.56,
+      "promptability_bucket": "borderline"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 5,
+    "difficulty": "S1",
+    "difficulty_desc": "单物品/单人物 + 单场景 + 单镜头",
+    "style": "photorealistic",
+    "scenes": [
+      "office"
+    ],
+    "subjects": [
+      "aquatic animal"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "real-world",
+    "texture": "smooth",
+    "opacity": "semi-transparent",
+    "scale": "normal scale",
+    "spatial_layout": "encircling",
+    "action": "swimming",
+    "emotion": "none",
+    "effect": "light effect",
+    "lighting_tone": "cool",
+    "lighting_direction": "under light",
+    "lighting_intensity": "low-key",
+    "color_saturation": "high saturation",
+    "color_palette": "cool palette",
+    "camera_angle": "bird's eye",
+    "camera_movement": [
+      "push in"
+    ],
+    "composition": "frame within frame",
+    "time_mode": "freeze frame",
+    "shot_size": [
+      "close-up"
+    ],
+    "depth_of_field": "deep DOF",
+    "focal_length": "wide-angle",
+    "time_of_day": "dawn",
+    "weather": "overcast",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [
+        "freeze frame reduces action readability",
+        "swimming uncommon outside aquatic scenes"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.84,
+      "promptability_bucket": "easy_to_visualize"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 6,
+    "difficulty": "S2",
+    "difficulty_desc": "单物品/单人物 + 多场景 + 单镜头",
+    "style": "photorealistic",
+    "scenes": [
+      "living room",
+      "kitchen"
+    ],
+    "subjects": [
+      "human"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "real-world",
+    "texture": "fabric",
+    "opacity": "opaque",
+    "scale": "normal scale",
+    "spatial_layout": "left-right",
+    "action": "fighting",
+    "emotion": "strong joy",
+    "effect": "rain",
+    "lighting_tone": "warm",
+    "lighting_direction": "side light",
+    "lighting_intensity": "low-key",
+    "color_saturation": "high saturation",
+    "color_palette": "warm palette",
+    "camera_angle": "bird's eye",
+    "camera_movement": [
+      "truck"
+    ],
+    "composition": "frame within frame",
+    "time_mode": "reverse",
+    "shot_size": [
+      "close-up"
+    ],
+    "depth_of_field": "pan-focus",
+    "focal_length": "macro",
+    "time_of_day": "dusk",
+    "weather": "rainy",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [
+        "weather VFX '雨' conflicts with fully indoor setting"
+      ],
+      "warnings": [
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.7,
+      "promptability_bucket": "borderline"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 7,
+    "difficulty": "S2",
+    "difficulty_desc": "单物品/单人物 + 多场景 + 单镜头",
+    "style": "cinematic",
+    "scenes": [
+      "kitchen",
+      "hallway",
+      "living room"
+    ],
+    "subjects": [
+      "bird"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "real-world",
+    "texture": "smooth",
+    "opacity": "opaque",
+    "scale": "microscopic",
+    "spatial_layout": "foreground-background",
+    "action": "hovering",
+    "emotion": "none",
+    "effect": "smoke",
+    "lighting_tone": "cool",
+    "lighting_direction": "front light",
+    "lighting_intensity": "low-key",
+    "color_saturation": "low saturation",
+    "color_palette": "cool palette",
+    "camera_angle": "high angle",
+    "camera_movement": [
+      "push in"
+    ],
+    "composition": "center framing",
+    "time_mode": "freeze frame",
+    "shot_size": [
+      "full shot"
+    ],
+    "depth_of_field": "deep DOF",
+    "focal_length": "wide-angle",
+    "time_of_day": "daytime",
+    "weather": "foggy",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [
+        "microscopic subject invisible in wide shots"
+      ],
+      "warnings": [
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [
+        "use close-up or extreme close-up for micro subjects"
+      ],
+      "promptability_score": 0.7,
+      "promptability_bucket": "borderline"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 8,
+    "difficulty": "S2",
+    "difficulty_desc": "单物品/单人物 + 多场景 + 单镜头",
+    "style": "gothic",
+    "scenes": [
+      "living room",
+      "hallway"
+    ],
+    "subjects": [
+      "aquatic animal"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "fantasy",
+    "texture": "smooth",
+    "opacity": "opaque",
+    "scale": "normal scale",
+    "spatial_layout": "inside-outside",
+    "action": "jumping",
+    "emotion": "none",
+    "effect": "explosion",
+    "lighting_tone": "neutral",
+    "lighting_direction": "top light",
+    "lighting_intensity": "high-key",
+    "color_saturation": "low saturation",
+    "color_palette": "complementary",
+    "camera_angle": "eye level",
+    "camera_movement": [
+      "pan"
+    ],
+    "composition": "rule of thirds",
+    "time_mode": "timelapse",
+    "shot_size": [
+      "medium shot"
+    ],
+    "depth_of_field": "deep DOF",
+    "focal_length": "wide-angle",
+    "time_of_day": "night",
+    "weather": "snowy",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [
+        "high-key at night needs strong motivated light source",
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.84,
+      "promptability_bucket": "easy_to_visualize"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 9,
+    "difficulty": "S2",
+    "difficulty_desc": "单物品/单人物 + 多场景 + 单镜头",
+    "style": "cartoon",
+    "scenes": [
+      "office",
+      "living room"
+    ],
+    "subjects": [
+      "mammal"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "dreamlike",
+    "texture": "hair/fur",
+    "opacity": "opaque",
+    "scale": "microscopic",
+    "spatial_layout": "encircling",
+    "action": "running",
+    "emotion": "subtle anger",
+    "effect": "light effect",
+    "lighting_tone": "warm",
+    "lighting_direction": "backlight",
+    "lighting_intensity": "normal",
+    "color_saturation": "desaturated",
+    "color_palette": "warm palette",
+    "camera_angle": "low angle",
+    "camera_movement": [
+      "pull out"
+    ],
+    "composition": "symmetrical",
+    "time_mode": "real-time",
+    "shot_size": [
+      "long shot"
+    ],
+    "depth_of_field": "shallow DOF",
+    "focal_length": "standard lens",
+    "time_of_day": "dawn",
+    "weather": "overcast",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [
+        "microscopic subject invisible in wide shots"
+      ],
+      "warnings": [
+        "subtle emotion hard to verify in wide shots",
+        "fine texture invisible in wide backlit shots",
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [
+        "express weak emotion through posture or silhouette",
+        "use close-up or extreme close-up for micro subjects"
+      ],
+      "promptability_score": 0.54,
+      "promptability_bucket": "conflict_heavy"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 10,
+    "difficulty": "S2",
+    "difficulty_desc": "单物品/单人物 + 多场景 + 单镜头",
+    "style": "anime",
+    "scenes": [
+      "office",
+      "living room",
+      "kitchen"
+    ],
+    "subjects": [
+      "insect"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "sci-fi",
+    "texture": "smooth",
+    "opacity": "semi-transparent",
+    "scale": "normal scale",
+    "spatial_layout": "vertical",
+    "action": "walking",
+    "emotion": "none",
+    "effect": "flame",
+    "lighting_tone": "multi-color",
+    "lighting_direction": "under light",
+    "lighting_intensity": "high-key",
+    "color_saturation": "high saturation",
+    "color_palette": "monochromatic",
+    "camera_angle": "dutch angle",
+    "camera_movement": [
+      "tracking shot"
+    ],
+    "composition": "leading lines",
+    "time_mode": "slow motion",
+    "shot_size": [
+      "extreme close-up"
+    ],
+    "depth_of_field": "shallow DOF",
+    "focal_length": "telephoto",
+    "time_of_day": "dawn",
+    "weather": "clear",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 11,
+    "difficulty": "S3",
+    "difficulty_desc": "多物品/多人物 + 单场景 + 单镜头",
+    "style": "gothic",
+    "scenes": [
+      "living room"
+    ],
+    "subjects": [
+      "human",
+      "mammal",
+      "bird"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "dreamlike",
+    "texture": "feathered",
+    "opacity": "opaque",
+    "scale": "normal scale",
+    "spatial_layout": "foreground-background",
+    "action": "backflip",
+    "emotion": "strong joy",
+    "effect": "light effect",
+    "lighting_tone": "cool",
+    "lighting_direction": "side light",
+    "lighting_intensity": "high-key",
+    "color_saturation": "low saturation",
+    "color_palette": "warm palette",
+    "camera_angle": "high angle",
+    "camera_movement": [
+      "pan"
+    ],
+    "composition": "leading lines",
+    "time_mode": "reverse",
+    "shot_size": [
+      "long shot"
+    ],
+    "depth_of_field": "shallow DOF",
+    "focal_length": "macro",
+    "time_of_day": "dawn",
+    "weather": "snowy",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [
+        "macro lens typically paired with close framing",
+        "shallow DOF may obscure multiple subjects"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.84,
+      "promptability_bucket": "easy_to_visualize"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 12,
+    "difficulty": "S3",
+    "difficulty_desc": "多物品/多人物 + 单场景 + 单镜头",
+    "style": "cinematic",
+    "scenes": [
+      "hallway"
+    ],
+    "subjects": [
+      "aquatic animal",
+      "human",
+      "mammal"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "real-world",
+    "texture": "fabric",
+    "opacity": "semi-transparent",
+    "scale": "microscopic",
+    "spatial_layout": "encircling",
+    "action": "fighting",
+    "emotion": "subtle joy",
+    "effect": "rain",
+    "lighting_tone": "warm",
+    "lighting_direction": "backlight",
+    "lighting_intensity": "normal",
+    "color_saturation": "desaturated",
+    "color_palette": "complementary",
+    "camera_angle": "dutch angle",
+    "camera_movement": [
+      "truck"
+    ],
+    "composition": "rule of thirds",
+    "time_mode": "slow motion",
+    "shot_size": [
+      "full shot"
+    ],
+    "depth_of_field": "deep DOF",
+    "focal_length": "telephoto",
+    "time_of_day": "night",
+    "weather": "rainy",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [
+        "weather VFX '雨' conflicts with fully indoor setting",
+        "microscopic subject invisible in wide shots"
+      ],
+      "warnings": [
+        "subtle emotion hard to verify in wide shots"
+      ],
+      "suggestions": [
+        "express weak emotion through posture or silhouette",
+        "use close-up or extreme close-up for micro subjects"
+      ],
+      "promptability_score": 0.48,
+      "promptability_bucket": "conflict_heavy"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 13,
+    "difficulty": "S3",
+    "difficulty_desc": "多物品/多人物 + 单场景 + 单镜头",
+    "style": "cartoon",
+    "scenes": [
+      "warehouse"
+    ],
+    "subjects": [
+      "mammal",
+      "human"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "real-world",
+    "texture": "smooth",
+    "opacity": "opaque",
+    "scale": "microscopic",
+    "spatial_layout": "vertical",
+    "action": "walking",
+    "emotion": "strong anger",
+    "effect": "smoke",
+    "lighting_tone": "neutral",
+    "lighting_direction": "top light",
+    "lighting_intensity": "low-key",
+    "color_saturation": "high saturation",
+    "color_palette": "cool palette",
+    "camera_angle": "low angle",
+    "camera_movement": [
+      "pull out"
+    ],
+    "composition": "center framing",
+    "time_mode": "timelapse",
+    "shot_size": [
+      "medium shot"
+    ],
+    "depth_of_field": "pan-focus",
+    "focal_length": "wide-angle",
+    "time_of_day": "dusk",
+    "weather": "clear",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [
+        "timelapse reduces readable emotional acting"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 14,
+    "difficulty": "S3",
+    "difficulty_desc": "多物品/多人物 + 单场景 + 单镜头",
+    "style": "anime",
+    "scenes": [
+      "office"
+    ],
+    "subjects": [
+      "human",
+      "bird"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "fantasy",
+    "texture": "leather",
+    "opacity": "opaque",
+    "scale": "normal scale",
+    "spatial_layout": "inside-outside",
+    "action": "jumping",
+    "emotion": "moderate joy",
+    "effect": "explosion",
+    "lighting_tone": "multi-color",
+    "lighting_direction": "under light",
+    "lighting_intensity": "high-key",
+    "color_saturation": "high saturation",
+    "color_palette": "warm palette",
+    "camera_angle": "eye level",
+    "camera_movement": [
+      "tracking shot"
+    ],
+    "composition": "frame within frame",
+    "time_mode": "freeze frame",
+    "shot_size": [
+      "close-up"
+    ],
+    "depth_of_field": "deep DOF",
+    "focal_length": "standard lens",
+    "time_of_day": "dawn",
+    "weather": "foggy",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [
+        "freeze frame reduces action readability"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 15,
+    "difficulty": "S3",
+    "difficulty_desc": "多物品/多人物 + 单场景 + 单镜头",
+    "style": "photorealistic",
+    "scenes": [
+      "kitchen"
+    ],
+    "subjects": [
+      "human",
+      "aquatic animal"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "sci-fi",
+    "texture": "hair/fur",
+    "opacity": "semi-transparent",
+    "scale": "normal scale",
+    "spatial_layout": "left-right",
+    "action": "running",
+    "emotion": "moderate anger",
+    "effect": "flame",
+    "lighting_tone": "warm",
+    "lighting_direction": "front light",
+    "lighting_intensity": "low-key",
+    "color_saturation": "low saturation",
+    "color_palette": "monochromatic",
+    "camera_angle": "bird's eye",
+    "camera_movement": [
+      "push in"
+    ],
+    "composition": "symmetrical",
+    "time_mode": "real-time",
+    "shot_size": [
+      "extreme close-up"
+    ],
+    "depth_of_field": "shallow DOF",
+    "focal_length": "wide-angle",
+    "time_of_day": "daytime",
+    "weather": "overcast",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [
+        "wide-angle close-up causes perspective distortion"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 16,
+    "difficulty": "S4",
+    "difficulty_desc": "多物品/多人物 + 多场景 + 单镜头",
+    "style": "photorealistic",
+    "scenes": [
+      "living room",
+      "office"
+    ],
+    "subjects": [
+      "bird",
+      "human"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "real-world",
+    "texture": "fabric",
+    "opacity": "opaque",
+    "scale": "microscopic",
+    "spatial_layout": "encircling",
+    "action": "jumping",
+    "emotion": "strong joy",
+    "effect": "explosion",
+    "lighting_tone": "multi-color",
+    "lighting_direction": "side light",
+    "lighting_intensity": "low-key",
+    "color_saturation": "desaturated",
+    "color_palette": "complementary",
+    "camera_angle": "dutch angle",
+    "camera_movement": [
+      "pan"
+    ],
+    "composition": "center framing",
+    "time_mode": "reverse",
+    "shot_size": [
+      "full shot"
+    ],
+    "depth_of_field": "deep DOF",
+    "focal_length": "standard lens",
+    "time_of_day": "night",
+    "weather": "rainy",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [
+        "microscopic subject invisible in wide shots"
+      ],
+      "warnings": [
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [
+        "use close-up or extreme close-up for micro subjects"
+      ],
+      "promptability_score": 0.7,
+      "promptability_bucket": "borderline"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 17,
+    "difficulty": "S4",
+    "difficulty_desc": "多物品/多人物 + 多场景 + 单镜头",
+    "style": "cartoon",
+    "scenes": [
+      "hallway",
+      "kitchen",
+      "living room"
+    ],
+    "subjects": [
+      "aquatic animal",
+      "human"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "sci-fi",
+    "texture": "leather",
+    "opacity": "semi-transparent",
+    "scale": "normal scale",
+    "spatial_layout": "left-right",
+    "action": "fighting",
+    "emotion": "moderate anger",
+    "effect": "rain",
+    "lighting_tone": "warm",
+    "lighting_direction": "front light",
+    "lighting_intensity": "high-key",
+    "color_saturation": "high saturation",
+    "color_palette": "warm palette",
+    "camera_angle": "bird's eye",
+    "camera_movement": [
+      "tracking shot"
+    ],
+    "composition": "leading lines",
+    "time_mode": "timelapse",
+    "shot_size": [
+      "close-up"
+    ],
+    "depth_of_field": "pan-focus",
+    "focal_length": "wide-angle",
+    "time_of_day": "dawn",
+    "weather": "snowy",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [
+        "timelapse conflicts with performance-heavy action",
+        "weather VFX '雨' conflicts with fully indoor setting"
+      ],
+      "warnings": [
+        "timelapse reduces readable emotional acting",
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.4,
+      "promptability_bucket": "conflict_heavy"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 18,
+    "difficulty": "S4",
+    "difficulty_desc": "多物品/多人物 + 多场景 + 单镜头",
+    "style": "gothic",
+    "scenes": [
+      "hallway",
+      "living room"
+    ],
+    "subjects": [
+      "human",
+      "mammal"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "dreamlike",
+    "texture": "smooth",
+    "opacity": "opaque",
+    "scale": "normal scale",
+    "spatial_layout": "inside-outside",
+    "action": "walking",
+    "emotion": "subtle joy",
+    "effect": "smoke",
+    "lighting_tone": "warm",
+    "lighting_direction": "backlight",
+    "lighting_intensity": "normal",
+    "color_saturation": "low saturation",
+    "color_palette": "warm palette",
+    "camera_angle": "low angle",
+    "camera_movement": [
+      "pull out"
+    ],
+    "composition": "frame within frame",
+    "time_mode": "real-time",
+    "shot_size": [
+      "long shot"
+    ],
+    "depth_of_field": "shallow DOF",
+    "focal_length": "wide-angle",
+    "time_of_day": "dawn",
+    "weather": "overcast",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [
+        "subtle emotion hard to verify in wide shots",
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [
+        "express weak emotion through posture or silhouette"
+      ],
+      "promptability_score": 0.84,
+      "promptability_bucket": "easy_to_visualize"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 19,
+    "difficulty": "S4",
+    "difficulty_desc": "多物品/多人物 + 多场景 + 单镜头",
+    "style": "cinematic",
+    "scenes": [
+      "living room",
+      "office",
+      "kitchen"
+    ],
+    "subjects": [
+      "bird",
+      "human",
+      "mammal"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "real-world",
+    "texture": "hair/fur",
+    "opacity": "opaque",
+    "scale": "giant",
+    "spatial_layout": "vertical",
+    "action": "running",
+    "emotion": "moderate joy",
+    "effect": "flame",
+    "lighting_tone": "neutral",
+    "lighting_direction": "top light",
+    "lighting_intensity": "low-key",
+    "color_saturation": "high saturation",
+    "color_palette": "cool palette",
+    "camera_angle": "high angle",
+    "camera_movement": [
+      "push in"
+    ],
+    "composition": "rule of thirds",
+    "time_mode": "slow motion",
+    "shot_size": [
+      "extreme close-up"
+    ],
+    "depth_of_field": "shallow DOF",
+    "focal_length": "macro",
+    "time_of_day": "daytime",
+    "weather": "clear",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [
+        "extreme close-up may lose sense of giant scale",
+        "shallow DOF may obscure multiple subjects",
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.76,
+      "promptability_bucket": "borderline"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 20,
+    "difficulty": "S4",
+    "difficulty_desc": "多物品/多人物 + 多场景 + 单镜头",
+    "style": "anime",
+    "scenes": [
+      "living room",
+      "kitchen"
+    ],
+    "subjects": [
+      "human",
+      "aquatic animal",
+      "mammal"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "fantasy",
+    "texture": "smooth",
+    "opacity": "semi-transparent",
+    "scale": "microscopic",
+    "spatial_layout": "foreground-background",
+    "action": "backflip",
+    "emotion": "strong anger",
+    "effect": "light effect",
+    "lighting_tone": "cool",
+    "lighting_direction": "under light",
+    "lighting_intensity": "high-key",
+    "color_saturation": "low saturation",
+    "color_palette": "monochromatic",
+    "camera_angle": "eye level",
+    "camera_movement": [
+      "truck"
+    ],
+    "composition": "symmetrical",
+    "time_mode": "freeze frame",
+    "shot_size": [
+      "medium shot"
+    ],
+    "depth_of_field": "deep DOF",
+    "focal_length": "telephoto",
+    "time_of_day": "dusk",
+    "weather": "foggy",
+    "transition": "none",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [
+        "freeze frame reduces action readability",
+        "single-shot multi-scene requires continuous traversal"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.84,
+      "promptability_bucket": "easy_to_visualize"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 21,
+    "difficulty": "S5",
+    "difficulty_desc": "多物品/多人物 + 多场景 + 多镜头",
+    "style": "anime",
+    "scenes": [
+      "hallway",
+      "living room",
+      "kitchen"
+    ],
+    "subjects": [
+      "human",
+      "bird"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "sci-fi",
+    "texture": "hair/fur",
+    "opacity": "opaque",
+    "scale": "normal scale",
+    "spatial_layout": "foreground-background",
+    "action": "fighting",
+    "emotion": "strong joy",
+    "effect": "explosion",
+    "lighting_tone": "warm",
+    "lighting_direction": "under light",
+    "lighting_intensity": "high-key",
+    "color_saturation": "desaturated",
+    "color_palette": "cool palette",
+    "camera_angle": "eye level",
+    "camera_movement": [
+      "push in",
+      "truck"
+    ],
+    "composition": "leading lines",
+    "time_mode": "real-time",
+    "shot_size": [
+      "extreme close-up",
+      "close-up"
+    ],
+    "depth_of_field": "pan-focus",
+    "focal_length": "wide-angle",
+    "time_of_day": "dawn",
+    "weather": "clear",
+    "transition": "hard cut",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [],
+      "suggestions": [],
+      "promptability_score": 1.0,
+      "promptability_bucket": "easy_to_visualize"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 22,
+    "difficulty": "S5",
+    "difficulty_desc": "多物品/多人物 + 多场景 + 多镜头",
+    "style": "gothic",
+    "scenes": [
+      "living room",
+      "hallway"
+    ],
+    "subjects": [
+      "human",
+      "mammal"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "real-world",
+    "texture": "smooth",
+    "opacity": "opaque",
+    "scale": "normal scale",
+    "spatial_layout": "vertical",
+    "action": "jumping",
+    "emotion": "moderate anger",
+    "effect": "rain",
+    "lighting_tone": "cool",
+    "lighting_direction": "top light",
+    "lighting_intensity": "normal",
+    "color_saturation": "low saturation",
+    "color_palette": "warm palette",
+    "camera_angle": "high angle",
+    "camera_movement": [
+      "push in",
+      "pull out",
+      "pan"
+    ],
+    "composition": "frame within frame",
+    "time_mode": "reverse",
+    "shot_size": [
+      "extreme close-up",
+      "full shot"
+    ],
+    "depth_of_field": "shallow DOF",
+    "focal_length": "wide-angle",
+    "time_of_day": "daytime",
+    "weather": "rainy",
+    "transition": "dissolve",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [
+        "weather VFX '雨' conflicts with fully indoor setting"
+      ],
+      "warnings": [],
+      "suggestions": [],
+      "promptability_score": 0.78,
+      "promptability_bucket": "borderline"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 23,
+    "difficulty": "S5",
+    "difficulty_desc": "多物品/多人物 + 多场景 + 多镜头",
+    "style": "cinematic",
+    "scenes": [
+      "kitchen",
+      "living room",
+      "office"
+    ],
+    "subjects": [
+      "bird",
+      "mammal",
+      "human"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "fantasy",
+    "texture": "leather",
+    "opacity": "opaque",
+    "scale": "normal scale",
+    "spatial_layout": "left-right",
+    "action": "backflip",
+    "emotion": "strong anger",
+    "effect": "flame",
+    "lighting_tone": "multi-color",
+    "lighting_direction": "backlight",
+    "lighting_intensity": "high-key",
+    "color_saturation": "high saturation",
+    "color_palette": "complementary",
+    "camera_angle": "low angle",
+    "camera_movement": [
+      "push in",
+      "pull out"
+    ],
+    "composition": "center framing",
+    "time_mode": "timelapse",
+    "shot_size": [
+      "extreme close-up",
+      "close-up",
+      "full shot"
+    ],
+    "depth_of_field": "deep DOF",
+    "focal_length": "telephoto",
+    "time_of_day": "dusk",
+    "weather": "snowy",
+    "transition": "match cut",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [
+        "timelapse reduces readable emotional acting"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 24,
+    "difficulty": "S5",
+    "difficulty_desc": "多物品/多人物 + 多场景 + 多镜头",
+    "style": "photorealistic",
+    "scenes": [
+      "living room",
+      "office"
+    ],
+    "subjects": [
+      "aquatic animal",
+      "human"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "dreamlike",
+    "texture": "fabric",
+    "opacity": "semi-transparent",
+    "scale": "microscopic",
+    "spatial_layout": "encircling",
+    "action": "walking",
+    "emotion": "moderate joy",
+    "effect": "smoke",
+    "lighting_tone": "neutral",
+    "lighting_direction": "side light",
+    "lighting_intensity": "low-key",
+    "color_saturation": "low saturation",
+    "color_palette": "warm palette",
+    "camera_angle": "dutch angle",
+    "camera_movement": [
+      "push in",
+      "pan"
+    ],
+    "composition": "rule of thirds",
+    "time_mode": "freeze frame",
+    "shot_size": [
+      "extreme close-up",
+      "medium shot"
+    ],
+    "depth_of_field": "deep DOF",
+    "focal_length": "macro",
+    "time_of_day": "dawn",
+    "weather": "foggy",
+    "transition": "fade",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [
+        "freeze frame reduces action readability"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  },
+  {
+    "id": 25,
+    "difficulty": "S5",
+    "difficulty_desc": "多物品/多人物 + 多场景 + 多镜头",
+    "style": "cartoon",
+    "scenes": [
+      "living room",
+      "kitchen"
+    ],
+    "subjects": [
+      "human",
+      "aquatic animal",
+      "mammal"
+    ],
+    "physical_state": "solid",
+    "physical_rule": "real-world",
+    "texture": "smooth",
+    "opacity": "semi-transparent",
+    "scale": "microscopic",
+    "spatial_layout": "inside-outside",
+    "action": "running",
+    "emotion": "subtle joy",
+    "effect": "light effect",
+    "lighting_tone": "warm",
+    "lighting_direction": "front light",
+    "lighting_intensity": "low-key",
+    "color_saturation": "high saturation",
+    "color_palette": "monochromatic",
+    "camera_angle": "bird's eye",
+    "camera_movement": [
+      "push in",
+      "pull out",
+      "truck"
+    ],
+    "composition": "symmetrical",
+    "time_mode": "slow motion",
+    "shot_size": [
+      "extreme close-up",
+      "close-up",
+      "medium shot"
+    ],
+    "depth_of_field": "shallow DOF",
+    "focal_length": "standard lens",
+    "time_of_day": "night",
+    "weather": "overcast",
+    "transition": "wipe",
+    "primary_tags": [
+      "scenes",
+      "subjects",
+      "action",
+      "camera_angle",
+      "camera_movement",
+      "time_mode",
+      "shot_size"
+    ],
+    "secondary_tags": [
+      "spatial_layout",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "composition",
+      "depth_of_field",
+      "focal_length"
+    ],
+    "stylistic_tags": [
+      "style",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "color_saturation",
+      "color_palette",
+      "time_of_day",
+      "weather",
+      "transition"
+    ],
+    "cinematic_feasibility": {
+      "issues": [],
+      "warnings": [
+        "shallow DOF may obscure multiple subjects"
+      ],
+      "suggestions": [],
+      "promptability_score": 0.92,
+      "promptability_bucket": "easy_to_visualize"
+    },
+    "compiler_notes": {
+      "language": "English",
+      "target_duration_seconds": [
+        10,
+        15
+      ],
+      "goal": "compile tags into an evaluable storyboard testcase before compressing into a final video prompt",
+      "rule": "preserve primary tags first, then secondary, then stylistic"
+    }
+  }
+]
