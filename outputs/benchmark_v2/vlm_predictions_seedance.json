@@ -1,8 +1,7 @@
 {
   "S1-11-anime-warehouse-fictional-creature-snow": {
     "style": [
-      "cinematic",
-      "photorealistic"
+      "cinematic"
     ],
     "scenes": [
       "warehouse"
@@ -15,12 +14,14 @@
       "solid"
     ],
     "texture": [
-      "smooth"
+      "smooth",
+      "wooden"
     ],
     "opacity": [
       "opaque"
     ],
     "spatial_layout": [
+      "inside-outside",
       "foreground-background",
       "layered/stacked"
     ],
@@ -46,7 +47,8 @@
       "push in"
     ],
     "composition": [
-      "center framing"
+      "center framing",
+      "frame within frame"
     ],
     "time_mode": [
       "real-time"
@@ -61,10 +63,10 @@
       "low-key"
     ],
     "color_saturation": [
-      "low saturation"
+      "desaturated"
     ],
     "color_palette": [
-      "warm palette"
+      "monochromatic"
     ],
     "depth_of_field": [
       "shallow DOF"
@@ -84,33 +86,34 @@
   },
   "S1-2-cyberpunk-beach-vehicle-water-splash-driving": {
     "style": [
-      "cinematic",
-      "photorealistic"
+      "photorealistic",
+      "cinematic"
     ],
     "scenes": [
       "beach"
     ],
     "subjects": [
-      "vehicle"
+      "vehicle",
+      "natural element"
     ],
     "physical_state": [
-      "rigid body"
+      "solid"
     ],
     "physical_rule": [
       "sci-fi"
     ],
     "texture": [
-      "metallic",
-      "smooth"
+      "metallic"
     ],
     "opacity": [
       "opaque"
     ],
     "spatial_layout": [
-      "foreground-background"
+      "foreground-background",
+      "vertical"
     ],
     "action": [
-      "driving"
+      "hovering"
     ],
     "emotion": [
       "none"
@@ -122,7 +125,7 @@
       "cool"
     ],
     "lighting_direction": [
-      "backlight"
+      "side light"
     ],
     "camera_angle": [
       "low angle"
@@ -138,8 +141,8 @@
       "real-time"
     ],
     "shot_size": [
-      "long shot",
-      "extreme close-up"
+      "full shot",
+      "close-up"
     ],
     "scale": [
       "giant"
@@ -169,7 +172,8 @@
   "S2-1-cartoon-living-room-desert-bird-explosion-hovering": {
     "style": [
       "black & white",
-      "surrealist"
+      "surrealist",
+      "cartoon"
     ],
     "scenes": [
       "living room",
@@ -217,7 +221,7 @@
     ],
     "camera_movement": [
       "tracking shot",
-      "pull out"
+      "pan"
     ],
     "composition": [
       "center framing"
@@ -232,7 +236,7 @@
       "normal scale"
     ],
     "lighting_intensity": [
-      "normal"
+      "low-key"
     ],
     "color_saturation": [
       "desaturated"
@@ -244,7 +248,7 @@
       "deep DOF"
     ],
     "focal_length": [
-      "wide-angle"
+      "standard lens"
     ],
     "time_of_day": [
       "night"
@@ -283,7 +287,7 @@
       "foreground-background"
     ],
     "action": [
-      "dancing"
+      "spinning"
     ],
     "emotion": [
       "none"
@@ -353,19 +357,19 @@
       "solid"
     ],
     "physical_rule": [
-      "sci-fi"
+      "fantasy"
     ],
     "texture": [
       "metallic",
-      "smooth"
+      "fabric"
     ],
     "opacity": [
       "opaque",
-      "semi-transparent"
+      "transparent"
     ],
     "spatial_layout": [
-      "foreground-background",
-      "left-right"
+      "left-right",
+      "foreground-background"
     ],
     "action": [
       "none"
@@ -390,7 +394,6 @@
       "pan"
     ],
     "composition": [
-      "center framing",
       "rule of thirds"
     ],
     "time_mode": [
@@ -404,7 +407,7 @@
       "normal scale"
     ],
     "lighting_intensity": [
-      "normal"
+      "low-key"
     ],
     "color_saturation": [
       "low saturation"
@@ -430,8 +433,8 @@
   },
   "S3-11-minimalist-desert-natural-element-robot-light-effect": {
     "style": [
-      "cinematic",
-      "photorealistic"
+      "photorealistic",
+      "cinematic"
     ],
     "scenes": [
       "desert"
@@ -485,7 +488,7 @@
       "real-time"
     ],
     "shot_size": [
-      "extreme long shot"
+      "long shot"
     ],
     "scale": [
       "normal scale"
@@ -497,14 +500,13 @@
       "high saturation"
     ],
     "color_palette": [
-      "warm palette",
       "complementary"
     ],
     "depth_of_field": [
       "deep DOF"
     ],
     "focal_length": [
-      "wide-angle"
+      "standard lens"
     ],
     "time_of_day": [
       "dusk"
@@ -535,7 +537,8 @@
     ],
     "texture": [
       "glass",
-      "metallic"
+      "metallic",
+      "stone"
     ],
     "opacity": [
       "transparent",
@@ -546,7 +549,8 @@
       "foreground-background"
     ],
     "action": [
-      "walking"
+      "walking",
+      "climbing"
     ],
     "emotion": [
       "none"
@@ -558,13 +562,13 @@
       "cool"
     ],
     "lighting_direction": [
-      "backlight"
+      "ambient light"
     ],
     "camera_angle": [
       "eye level"
     ],
     "camera_movement": [
-      "pull out"
+      "static"
     ],
     "composition": [
       "frame within frame",
@@ -574,14 +578,13 @@
       "reverse"
     ],
     "shot_size": [
-      "medium shot",
-      "full shot"
+      "medium shot"
     ],
     "scale": [
       "normal scale"
     ],
     "lighting_intensity": [
-      "low-key"
+      "normal"
     ],
     "color_saturation": [
       "low saturation"
@@ -607,7 +610,8 @@
   },
   "S4-2-vintage-film-office-beach-bird-robot-hologram-hovering": {
     "style": [
-      "cinematic"
+      "cinematic",
+      "surrealist"
     ],
     "scenes": [
       "office"
@@ -615,7 +619,8 @@
     "subjects": [
       "robot",
       "bird",
-      "everyday object"
+      "everyday object",
+      "natural element"
     ],
     "physical_state": [
       "solid"
@@ -624,14 +629,16 @@
       "sci-fi"
     ],
     "texture": [
-      "smooth"
+      "smooth",
+      "rough"
     ],
     "opacity": [
       "semi-transparent",
       "opaque"
     ],
     "spatial_layout": [
-      "foreground-background"
+      "foreground-background",
+      "scattered"
     ],
     "action": [
       "hovering"
@@ -646,7 +653,7 @@
       "cool"
     ],
     "lighting_direction": [
-      "ambient light"
+      "top light"
     ],
     "camera_angle": [
       "high angle"
@@ -661,7 +668,7 @@
       "real-time"
     ],
     "shot_size": [
-      "full shot"
+      "close-up"
     ],
     "scale": [
       "normal scale"
@@ -682,7 +689,7 @@
       "standard lens"
     ],
     "time_of_day": [
-      "unpredictable"
+      "night"
     ],
     "weather": [
       "unpredictable"
@@ -711,14 +718,13 @@
       "sci-fi"
     ],
     "texture": [
-      "hair/fur",
       "fabric",
+      "hair/fur",
       "glass"
     ],
     "opacity": [
       "opaque",
-      "semi-transparent",
-      "transparent"
+      "semi-transparent"
     ],
     "action": [
       "running",
@@ -740,15 +746,14 @@
       "eye level"
     ],
     "camera_movement": [
-      "static",
-      "pan"
+      "static"
     ],
     "composition": [
       "center framing",
       "rule of thirds"
     ],
     "time_mode": [
-      "real-time"
+      "slow motion"
     ],
     "shot_size": [
       "extreme long shot",
@@ -762,10 +767,11 @@
       "low-key"
     ],
     "color_saturation": [
-      "high saturation"
+      "low saturation"
     ],
     "color_palette": [
-      "complementary"
+      "cool palette",
+      "warm palette"
     ],
     "depth_of_field": [
       "shallow DOF"
@@ -790,6 +796,7 @@
     ],
     "scenes": [
       "ruins",
+      "snowfield",
       "kitchen",
       "living room"
     ],
@@ -801,15 +808,14 @@
       "solid"
     ],
     "physical_rule": [
-      "fantasy"
+      "sci-fi"
     ],
     "texture": [
-      "smooth",
-      "fabric"
+      "smooth"
     ],
     "opacity": [
       "opaque",
-      "semi-transparent"
+      "transparent"
     ],
     "spatial_layout": [
       "inside-outside",
@@ -819,7 +825,7 @@
       "dialogue"
     ],
     "emotion": [
-      "strong sadness"
+      "moderate sadness"
     ],
     "effect": [
       "snow"
@@ -837,14 +843,13 @@
       "push in"
     ],
     "composition": [
-      "center framing",
-      "rule of thirds"
+      "center framing"
     ],
     "time_mode": [
       "real-time"
     ],
     "shot_size": [
-      "long shot",
+      "extreme long shot",
       "full shot",
       "medium shot"
     ],

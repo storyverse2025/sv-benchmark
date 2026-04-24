@@ -7,22 +7,22 @@
       "unpredictable"
     ],
     "subjects": [
-      "bird",
-      "everyday object"
+      "bird"
     ],
     "physical_state": [
       "solid"
     ],
     "texture": [
-      "smooth",
-      "glass"
+      "glass",
+      "smooth"
     ],
     "opacity": [
-      "transparent"
+      "semi-transparent",
+      "opaque"
     ],
     "spatial_layout": [
-      "foreground-background",
-      "layered/stacked"
+      "inside-outside",
+      "foreground-background"
     ],
     "action": [
       "none"
@@ -43,20 +43,20 @@
       "eye level"
     ],
     "camera_movement": [
-      "push in"
+      "static"
     ],
     "composition": [
       "center framing",
       "frame within frame"
     ],
     "time_mode": [
-      "slow motion"
+      "real-time"
     ],
     "shot_size": [
-      "close-up"
+      "full shot"
     ],
     "scale": [
-      "microscopic"
+      "normal scale"
     ],
     "lighting_intensity": [
       "normal"
@@ -74,7 +74,7 @@
       "macro"
     ],
     "time_of_day": [
-      "unpredictable"
+      "daytime"
     ],
     "weather": [
       "rainy"
@@ -96,7 +96,7 @@
       "human"
     ],
     "physical_state": [
-      "rigid body"
+      "solid"
     ],
     "physical_rule": [
       "sci-fi"
@@ -110,8 +110,7 @@
       "opaque"
     ],
     "spatial_layout": [
-      "foreground-background",
-      "inside-outside"
+      "foreground-background"
     ],
     "action": [
       "driving"
@@ -136,12 +135,14 @@
       "pull out"
     ],
     "composition": [
-      "center framing"
+      "center framing",
+      "symmetrical"
     ],
     "time_mode": [
       "real-time"
     ],
     "shot_size": [
+      "extreme long shot",
       "long shot",
       "medium shot",
       "close-up"
@@ -156,35 +157,31 @@
       "low saturation"
     ],
     "color_palette": [
-      "cool palette",
       "complementary"
     ],
     "depth_of_field": [
       "deep DOF"
     ],
     "focal_length": [
-      "wide-angle"
+      "standard lens"
     ],
     "time_of_day": [
       "dusk"
     ],
     "weather": [
-      "overcast",
-      "foggy"
+      "overcast"
     ]
   },
   "S2-1-cartoon-living-room-desert-bird-explosion-hovering": {
     "style": [
-      "surrealist",
-      "cinematic"
+      "surrealist"
     ],
     "scenes": [
       "living room",
       "desert"
     ],
     "subjects": [
-      "bird",
-      "everyday object"
+      "bird"
     ],
     "physical_state": [
       "solid"
@@ -194,16 +191,14 @@
     ],
     "texture": [
       "smooth",
-      "fabric",
-      "glass"
+      "rough"
     ],
     "opacity": [
-      "opaque",
-      "transparent"
+      "opaque"
     ],
     "spatial_layout": [
-      "inside-outside",
-      "foreground-background"
+      "foreground-background",
+      "encircling"
     ],
     "action": [
       "hovering"
@@ -215,7 +210,7 @@
       "explosion"
     ],
     "lighting_tone": [
-      "multi-color"
+      "warm"
     ],
     "lighting_direction": [
       "top light"
@@ -224,7 +219,7 @@
       "eye level"
     ],
     "camera_movement": [
-      "static"
+      "push in"
     ],
     "composition": [
       "center framing",
@@ -253,7 +248,7 @@
       "deep DOF"
     ],
     "focal_length": [
-      "wide-angle"
+      "standard lens"
     ],
     "time_of_day": [
       "night"
@@ -267,7 +262,8 @@
       "photorealistic"
     ],
     "scenes": [
-      "warehouse"
+      "warehouse",
+      "desert"
     ],
     "subjects": [
       "human"
@@ -280,7 +276,7 @@
     ],
     "texture": [
       "fabric",
-      "smooth"
+      "metallic"
     ],
     "opacity": [
       "opaque"
@@ -347,6 +343,7 @@
   },
   "S3-4-anime-kitchen-human-everyday-object-light-effect": {
     "style": [
+      "photorealistic",
       "cartoon"
     ],
     "scenes": [
@@ -354,24 +351,26 @@
     ],
     "subjects": [
       "everyday object",
+      "natural element",
       "human"
     ],
     "physical_state": [
-      "solid"
+      "liquid"
     ],
     "physical_rule": [
-      "dreamlike"
+      "fantasy"
     ],
     "texture": [
       "metallic",
       "smooth"
     ],
     "opacity": [
-      "opaque",
-      "transparent"
+      "transparent",
+      "opaque"
     ],
     "spatial_layout": [
       "encircling",
+      "vertical",
       "foreground-background"
     ],
     "action": [
@@ -393,7 +392,8 @@
       "high angle"
     ],
     "camera_movement": [
-      "orbit"
+      "pan",
+      "push in"
     ],
     "composition": [
       "center framing",
@@ -418,13 +418,13 @@
       "cool palette"
     ],
     "depth_of_field": [
-      "shallow DOF"
+      "deep DOF"
     ],
     "focal_length": [
       "standard lens"
     ],
     "time_of_day": [
-      "unpredictable"
+      "daytime"
     ],
     "weather": [
       "unpredictable"
@@ -442,28 +442,25 @@
       "desert"
     ],
     "subjects": [
-      "robot",
-      "fictional creature"
+      "robot"
     ],
     "physical_state": [
-      "solid"
+      "gas"
     ],
     "physical_rule": [
-      "dreamlike"
+      "sci-fi"
     ],
     "texture": [
-      "metallic",
-      "smooth"
+      "metallic"
     ],
     "opacity": [
-      "opaque",
-      "semi-transparent"
+      "semi-transparent",
+      "opaque"
     ],
     "spatial_layout": [
       "encircling"
     ],
     "action": [
-      "hovering",
       "spinning"
     ],
     "emotion": [
@@ -482,7 +479,7 @@
       "high angle"
     ],
     "camera_movement": [
-      "static"
+      "push in"
     ],
     "composition": [
       "center framing"
@@ -523,13 +520,14 @@
   },
   "S4-3-anime-city-street-kitchen-robot-insect-jumping": {
     "style": [
+      "photorealistic",
       "surrealist"
     ],
     "scenes": [
       "kitchen"
     ],
     "subjects": [
-      "human",
+      "robot",
       "insect"
     ],
     "physical_state": [
@@ -539,8 +537,8 @@
       "dreamlike"
     ],
     "texture": [
-      "glass",
-      "smooth"
+      "smooth",
+      "glass"
     ],
     "opacity": [
       "transparent",
@@ -552,7 +550,8 @@
     ],
     "action": [
       "dancing",
-      "jumping"
+      "jumping",
+      "climbing"
     ],
     "emotion": [
       "none"
@@ -580,13 +579,14 @@
       "real-time"
     ],
     "shot_size": [
+      "medium shot",
       "full shot"
     ],
     "scale": [
-      "normal scale"
+      "giant"
     ],
     "lighting_intensity": [
-      "normal"
+      "low-key"
     ],
     "color_saturation": [
       "low saturation"
@@ -612,8 +612,8 @@
   },
   "S4-2-vintage-film-office-beach-bird-robot-hologram-hovering": {
     "style": [
-      "surrealist",
-      "photorealistic"
+      "photorealistic",
+      "surrealist"
     ],
     "scenes": [
       "beach"
@@ -621,8 +621,7 @@
     "subjects": [
       "robot",
       "bird",
-      "everyday object",
-      "natural element"
+      "everyday object"
     ],
     "physical_state": [
       "solid"
@@ -721,8 +720,8 @@
     "texture": [
       "hair/fur",
       "fabric",
-      "wooden",
-      "metallic"
+      "metallic",
+      "wooden"
     ],
     "opacity": [
       "opaque"
@@ -732,7 +731,7 @@
       "jumping"
     ],
     "emotion": [
-      "none"
+      "unpredictable"
     ],
     "effect": [
       "light effect"
@@ -741,14 +740,14 @@
       "multi-color"
     ],
     "lighting_direction": [
-      "side light"
+      "backlight"
     ],
     "camera_angle": [
       "eye level"
     ],
     "camera_movement": [
       "static",
-      "tracking shot"
+      "pan"
     ],
     "composition": [
       "center framing"
@@ -765,7 +764,8 @@
       "normal scale"
     ],
     "lighting_intensity": [
-      "low-key"
+      "low-key",
+      "normal"
     ],
     "color_saturation": [
       "low saturation"
@@ -807,7 +807,7 @@
       "solid"
     ],
     "physical_rule": [
-      "fantasy"
+      "real-world"
     ],
     "texture": [
       "smooth"
@@ -826,19 +826,19 @@
       "moderate sadness"
     ],
     "effect": [
-      "none"
+      "snow"
     ],
     "lighting_tone": [
       "cool"
     ],
     "lighting_direction": [
-      "ambient light"
+      "side light"
     ],
     "camera_angle": [
-      "high angle"
+      "eye level"
     ],
     "camera_movement": [
-      "push in"
+      "static"
     ],
     "composition": [
       "center framing"
@@ -874,7 +874,7 @@
       "daytime"
     ],
     "weather": [
-      "clear"
+      "snowy"
     ],
     "transition": [
       "hard cut"

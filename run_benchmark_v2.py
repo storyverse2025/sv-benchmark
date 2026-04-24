@@ -47,7 +47,7 @@ KLING_API_BASE = os.environ.get("KLING_API_BASE", "")
 
 SEEDANCE_MODEL = "doubao-seedance-2-0-260128"
 KLING_MODEL = "kling-v3"
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "google/gemini-3.1-pro-preview")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.1-pro-preview")
 
 KLING_VIDEO_ENDPOINT = "/v1/video/generations"
 CHAT_ENDPOINT = "/v1/chat/completions"
@@ -352,98 +352,111 @@ def build_vlm_prompts(gt_records: list[dict]) -> list[dict]:
 
 
 # ====================================================================
-# Stage C — Gemini VLM Scoring
+# Stage C — Gemini VLM Scoring (native google.genai SDK, full video)
 # ====================================================================
 
 def _load_system_prompt() -> str:
     return SYSTEM_PROMPT_PATH.read_text(encoding="utf-8")
 
 
-async def score_one_video(
-    client: httpx.AsyncClient,
-    video_path: str,
+def _init_gemini_client():
+    from google import genai
+    return genai.Client(api_key=GEMINI_API_KEY)
+
+
+def _upload_video(gemini_client, video_path: str) -> Any:
+    import time as _time
+    uploaded = gemini_client.files.upload(file=video_path)
+    while uploaded.state.name == "PROCESSING":
+        _time.sleep(3)
+        uploaded = gemini_client.files.get(name=uploaded.name)
+    if uploaded.state.name != "ACTIVE":
+        raise RuntimeError(f"Video upload failed: {uploaded.state}")
+    return uploaded
+
+
+def _parse_gemini_json(content: str) -> dict:
+    import re as _re
+    content = content.strip()
+    if content.startswith("```"):
+        content = content.split("\n", 1)[1] if "\n" in content else content[3:]
+        if content.endswith("```"):
+            content = content[:-3]
+        content = content.strip()
+    content = _re.sub(r',\s*}', '}', content)
+    content = _re.sub(r',\s*\]', ']', content)
+    return json.loads(content)
+
+
+def score_one_video(
+    gemini_client,
+    video_file,
     user_prompt: str,
     system_prompt: str,
     tc_id: str,
     model_name: str,
 ) -> Optional[dict]:
-    logger.info("[gemini] Scoring %s (%s)...", tc_id, model_name)
-    with open(video_path, "rb") as f:
-        video_b64 = base64.b64encode(f.read()).decode()
+    from google import genai
+    from google.genai import types
 
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": [
-            {"type": "text", "text": user_prompt},
-            {"type": "image_url", "image_url": {
-                "url": f"data:video/mp4;base64,{video_b64}"
-            }},
-        ]},
-    ]
+    logger.info("[gemini] Scoring %s (%s)...", tc_id, model_name)
 
     for attempt in range(3):
         try:
-            resp = await client.post(
-                f"{GEMINI_API_BASE}{CHAT_ENDPOINT}",
-                json={
-                    "model": GEMINI_MODEL,
-                    "messages": messages,
-                    "max_tokens": 4000,
-                    "temperature": 0.0,
-                },
-                headers=_gemini_headers(),
-                timeout=180.0,
+            response = gemini_client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=[
+                    types.Content(
+                        role="user",
+                        parts=[
+                            types.Part.from_text(text=user_prompt),
+                            types.Part.from_uri(
+                                file_uri=video_file.uri,
+                                mime_type="video/mp4",
+                            ),
+                        ],
+                    ),
+                ],
+                config=types.GenerateContentConfig(
+                    system_instruction=system_prompt,
+                    temperature=0.0,
+                    max_output_tokens=4000,
+                ),
             )
-            resp.raise_for_status()
-            data = resp.json()
 
-            if "error" in data:
-                logger.error("[gemini] API error for %s (%s): %s",
-                             tc_id, model_name, data["error"])
-                if attempt < 2:
-                    await asyncio.sleep(10)
-                    continue
-                return None
-
-            content = data["choices"][0]["message"].get("content", "")
+            content = response.text
             if not content:
                 logger.warning("[gemini] Empty content for %s (%s), retrying...",
                                tc_id, model_name)
                 if attempt < 2:
-                    await asyncio.sleep(5)
+                    time.sleep(5)
                     continue
                 return None
 
-            content = content.strip()
-            if content.startswith("```"):
-                content = content.split("\n", 1)[1] if "\n" in content else content[3:]
-                if content.endswith("```"):
-                    content = content[:-3]
-                content = content.strip()
-
-            # Fix trailing commas that Gemini sometimes produces
-            import re as _re
-            content = _re.sub(r',\s*}', '}', content)
-            content = _re.sub(r',\s*\]', ']', content)
-
-            prediction = json.loads(content)
-            tokens = data.get("usage", {}).get("total_tokens", 0)
-            logger.info("[gemini] %s (%s): %d metrics predicted, %d tokens",
-                        tc_id, model_name, len(prediction), tokens)
+            prediction = _parse_gemini_json(content)
+            usage = response.usage_metadata
+            video_tokens = 0
+            if usage and usage.prompt_tokens_details:
+                for detail in usage.prompt_tokens_details:
+                    if detail.modality.name == "VIDEO":
+                        video_tokens = detail.token_count
+            total = usage.total_token_count if usage else 0
+            logger.info("[gemini] %s (%s): %d metrics, %d total tokens (%d video tokens)",
+                        tc_id, model_name, len(prediction), total, video_tokens)
             return prediction
 
         except json.JSONDecodeError as e:
             logger.error("[gemini] JSON parse error for %s (%s): %s\nRaw: %s",
                          tc_id, model_name, e, content[:300])
             if attempt < 2:
-                await asyncio.sleep(5)
+                time.sleep(5)
                 continue
             return None
         except Exception as e:
             logger.error("[gemini] Error scoring %s (%s): %s",
                          tc_id, model_name, e)
             if attempt < 2:
-                await asyncio.sleep(10)
+                time.sleep(10)
                 continue
             return None
 
@@ -465,32 +478,45 @@ async def stage_c_score_videos(
     seedance_preds: dict[str, dict] = {}
     kling_preds: dict[str, dict] = {}
 
-    # Score videos sequentially to avoid rate limits
-    async with httpx.AsyncClient(timeout=300.0) as client:
-        for gen in gen_results:
-            if not gen["video_path"]:
-                continue
+    gemini_client = _init_gemini_client()
 
-            tc_id = gen["testcase_id"]
-            model_name = gen["model"]
-            bundle = bundle_by_id.get(tc_id)
-            if not bundle:
-                logger.warning("No VLM bundle for %s, skipping", tc_id)
-                continue
+    # Upload all videos first, then score
+    video_files: dict[str, Any] = {}
+    for gen in gen_results:
+        if not gen.get("video_path"):
+            continue
+        vpath = gen["video_path"]
+        if vpath not in video_files:
+            logger.info("[gemini] Uploading %s...", Path(vpath).name)
+            video_files[vpath] = _upload_video(gemini_client, vpath)
 
-            pred = await score_one_video(
-                client, gen["video_path"],
-                bundle["user_prompt"], system_prompt,
-                tc_id, model_name,
-            )
-            if pred:
-                if model_name == "seedance":
-                    seedance_preds[tc_id] = pred
-                else:
-                    kling_preds[tc_id] = pred
+    for gen in gen_results:
+        if not gen.get("video_path"):
+            continue
 
-            # Small delay between calls
-            await asyncio.sleep(2)
+        tc_id = gen["testcase_id"]
+        model_name = gen["model"]
+        bundle = bundle_by_id.get(tc_id)
+        if not bundle:
+            logger.warning("No VLM bundle for %s, skipping", tc_id)
+            continue
+
+        vfile = video_files.get(gen["video_path"])
+        if not vfile:
+            continue
+
+        pred = score_one_video(
+            gemini_client, vfile,
+            bundle["user_prompt"], system_prompt,
+            tc_id, model_name,
+        )
+        if pred:
+            if model_name == "seedance":
+                seedance_preds[tc_id] = pred
+            else:
+                kling_preds[tc_id] = pred
+
+        time.sleep(2)
 
     # Save predictions
     for name, preds in [("seedance", seedance_preds), ("kling", kling_preds)]:

@@ -8,24 +8,24 @@
       "duration_seconds": 12,
       "counts": {
         "scorable": 26,
-        "exact": 10,
-        "partial": 2,
-        "miss": 14,
+        "exact": 7,
+        "partial": 4,
+        "miss": 15,
         "unpredictable": 0,
         "missing": 0,
         "skipped": 1
       },
       "aggregate": {
-        "exact_match_rate": 0.38461538461538464,
-        "macro_f1": 0.43589743589743585,
-        "micro_precision": 0.41379310344827586,
-        "micro_recall": 0.41379310344827586,
-        "micro_f1": 0.41379310344827586
+        "exact_match_rate": 0.2692307692307692,
+        "macro_f1": 0.36538461538461536,
+        "micro_precision": 0.3548387096774194,
+        "micro_recall": 0.3793103448275862,
+        "micro_f1": 0.36666666666666664
       },
       "micro_tallies": {
-        "tp": 12,
-        "fp": 17,
-        "fn": 17
+        "tp": 11,
+        "fp": 20,
+        "fn": 18
       },
       "extraneous_predictions": [],
       "metrics": [
@@ -35,8 +35,7 @@
             "anime"
           ],
           "pred": [
-            "cinematic",
-            "photorealistic"
+            "cinematic"
           ],
           "precision": 0.0,
           "recall": 0.0,
@@ -94,16 +93,17 @@
           "f1": null
         },
         {
-          "status": "exact",
+          "status": "partial",
           "gt": [
             "smooth"
           ],
           "pred": [
-            "smooth"
+            "smooth",
+            "wooden"
           ],
-          "precision": 1.0,
+          "precision": 0.5,
           "recall": 1.0,
-          "f1": 1.0,
+          "f1": 0.6666666666666666,
           "en_field": "texture"
         },
         {
@@ -126,11 +126,12 @@
           ],
           "pred": [
             "foreground-background",
+            "inside-outside",
             "layered/stacked"
           ],
-          "precision": 0.5,
+          "precision": 0.3333333333333333,
           "recall": 1.0,
-          "f1": 0.6666666666666666,
+          "f1": 0.5,
           "en_field": "spatial_layout"
         },
         {
@@ -227,16 +228,17 @@
           "en_field": "camera_movement"
         },
         {
-          "status": "miss",
+          "status": "partial",
           "gt": [
             "frame within frame"
           ],
           "pred": [
-            "center framing"
+            "center framing",
+            "frame within frame"
           ],
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
           "en_field": "composition"
         },
         {
@@ -292,29 +294,29 @@
           "en_field": "lighting_intensity"
         },
         {
-          "status": "exact",
+          "status": "miss",
           "gt": [
             "low saturation"
           ],
           "pred": [
-            "low saturation"
+            "desaturated"
           ],
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "en_field": "color_saturation"
         },
         {
-          "status": "exact",
+          "status": "miss",
           "gt": [
             "warm palette"
           ],
           "pred": [
-            "warm palette"
+            "monochromatic"
           ],
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "en_field": "color_palette"
         },
         {
@@ -391,24 +393,24 @@
       "duration_seconds": 12,
       "counts": {
         "scorable": 26,
-        "exact": 11,
+        "exact": 10,
         "partial": 5,
-        "miss": 10,
+        "miss": 11,
         "unpredictable": 0,
         "missing": 0,
         "skipped": 1
       },
       "aggregate": {
-        "exact_match_rate": 0.4230769230769231,
-        "macro_f1": 0.5512820512820512,
-        "micro_precision": 0.5666666666666667,
-        "micro_recall": 0.5483870967741935,
-        "micro_f1": 0.5573770491803278
+        "exact_match_rate": 0.38461538461538464,
+        "macro_f1": 0.5128205128205129,
+        "micro_precision": 0.5161290322580645,
+        "micro_recall": 0.5161290322580645,
+        "micro_f1": 0.5161290322580645
       },
       "micro_tallies": {
-        "tp": 17,
-        "fp": 13,
-        "fn": 14
+        "tp": 16,
+        "fp": 15,
+        "fn": 15
       },
       "extraneous_predictions": [],
       "metrics": [
@@ -440,16 +442,17 @@
           "en_field": "scenes"
         },
         {
-          "status": "exact",
+          "status": "partial",
           "gt": [
             "vehicle"
           ],
           "pred": [
+            "natural element",
             "vehicle"
           ],
-          "precision": 1.0,
+          "precision": 0.5,
           "recall": 1.0,
-          "f1": 1.0,
+          "f1": 0.6666666666666666,
           "en_field": "subjects"
         },
         {
@@ -459,7 +462,7 @@
             "solid"
           ],
           "pred": [
-            "rigid body"
+            "solid"
           ],
           "precision": 1.0,
           "recall": 0.5,
@@ -480,17 +483,16 @@
           "en_field": "physical_rule"
         },
         {
-          "status": "partial",
+          "status": "miss",
           "gt": [
             "smooth"
           ],
           "pred": [
-            "metallic",
-            "smooth"
+            "metallic"
           ],
-          "precision": 0.5,
-          "recall": 1.0,
-          "f1": 0.6666666666666666,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "en_field": "texture"
         },
         {
@@ -513,7 +515,8 @@
             "inside-outside"
           ],
           "pred": [
-            "foreground-background"
+            "foreground-background",
+            "vertical"
           ],
           "precision": 0.0,
           "recall": 0.0,
@@ -521,17 +524,17 @@
           "en_field": "spatial_layout"
         },
         {
-          "status": "partial",
+          "status": "miss",
           "gt": [
             "driving",
             "throwing"
           ],
           "pred": [
-            "driving"
+            "hovering"
           ],
-          "precision": 1.0,
-          "recall": 0.5,
-          "f1": 0.6666666666666666,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "en_field": "action"
         },
         {
@@ -579,7 +582,7 @@
             "under light"
           ],
           "pred": [
-            "backlight"
+            "side light"
           ],
           "precision": 0.0,
           "recall": 0.0,
@@ -641,17 +644,17 @@
           "en_field": "time_mode"
         },
         {
-          "status": "miss",
+          "status": "partial",
           "gt": [
             "close-up"
           ],
           "pred": [
-            "extreme close-up",
-            "long shot"
+            "close-up",
+            "full shot"
           ],
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
           "en_field": "shot_size"
         },
         {
@@ -777,39 +780,40 @@
       "duration_seconds": 12,
       "counts": {
         "scorable": 26,
-        "exact": 11,
-        "partial": 4,
+        "exact": 10,
+        "partial": 5,
         "miss": 11,
         "unpredictable": 0,
         "missing": 0,
         "skipped": 1
       },
       "aggregate": {
-        "exact_match_rate": 0.4230769230769231,
-        "macro_f1": 0.5192307692307692,
-        "micro_precision": 0.48484848484848486,
+        "exact_match_rate": 0.38461538461538464,
+        "macro_f1": 0.49358974358974356,
+        "micro_precision": 0.47058823529411764,
         "micro_recall": 0.5333333333333333,
-        "micro_f1": 0.507936507936508
+        "micro_f1": 0.5
       },
       "micro_tallies": {
         "tp": 16,
-        "fp": 17,
+        "fp": 18,
         "fn": 14
       },
       "extraneous_predictions": [],
       "metrics": [
         {
-          "status": "miss",
+          "status": "partial",
           "gt": [
             "cartoon"
           ],
           "pred": [
             "black & white",
+            "cartoon",
             "surrealist"
           ],
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1": 0.5,
           "en_field": "style"
         },
         {
@@ -989,18 +993,18 @@
           "en_field": "camera_angle"
         },
         {
-          "status": "miss",
+          "status": "partial",
           "gt": [
             "orbit",
             "pan"
           ],
           "pred": [
-            "pull out",
+            "pan",
             "tracking shot"
           ],
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
           "en_field": "camera_movement"
         },
         {
@@ -1056,17 +1060,17 @@
           "en_field": "scale"
         },
         {
-          "status": "partial",
+          "status": "miss",
           "gt": [
             "high-key",
             "normal"
           ],
           "pred": [
-            "normal"
+            "low-key"
           ],
-          "precision": 1.0,
-          "recall": 0.5,
-          "f1": 0.6666666666666666,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "en_field": "lighting_intensity"
         },
         {
@@ -1109,16 +1113,16 @@
           "en_field": "depth_of_field"
         },
         {
-          "status": "exact",
+          "status": "miss",
           "gt": [
             "wide-angle"
           ],
           "pred": [
-            "wide-angle"
+            "standard lens"
           ],
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "en_field": "focal_length"
         },
         {
@@ -1166,23 +1170,23 @@
       "counts": {
         "scorable": 26,
         "exact": 13,
-        "partial": 4,
-        "miss": 9,
+        "partial": 3,
+        "miss": 10,
         "unpredictable": 0,
         "missing": 0,
         "skipped": 1
       },
       "aggregate": {
         "exact_match_rate": 0.5,
-        "macro_f1": 0.6025641025641025,
-        "micro_precision": 0.6129032258064516,
-        "micro_recall": 0.59375,
-        "micro_f1": 0.6031746031746031
+        "macro_f1": 0.5769230769230769,
+        "micro_precision": 0.5806451612903226,
+        "micro_recall": 0.5625,
+        "micro_f1": 0.5714285714285715
       },
       "micro_tallies": {
-        "tp": 19,
-        "fp": 12,
-        "fn": 13
+        "tp": 18,
+        "fp": 13,
+        "fn": 14
       },
       "extraneous_predictions": [],
       "metrics": [
@@ -1296,17 +1300,17 @@
           "en_field": "spatial_layout"
         },
         {
-          "status": "partial",
+          "status": "miss",
           "gt": [
             "dancing",
             "falling"
           ],
           "pred": [
-            "dancing"
+            "spinning"
           ],
-          "precision": 1.0,
-          "recall": 0.5,
-          "f1": 0.6666666666666666,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "en_field": "action"
         },
         {
@@ -1554,23 +1558,23 @@
       "counts": {
         "scorable": 27,
         "exact": 12,
-        "partial": 5,
-        "miss": 9,
+        "partial": 4,
+        "miss": 10,
         "unpredictable": 1,
         "missing": 0,
         "skipped": 0
       },
       "aggregate": {
         "exact_match_rate": 0.4444444444444444,
-        "macro_f1": 0.5948717948717949,
-        "micro_precision": 0.5454545454545454,
-        "micro_recall": 0.6428571428571429,
-        "micro_f1": 0.5901639344262296
+        "macro_f1": 0.5692307692307692,
+        "micro_precision": 0.53125,
+        "micro_recall": 0.6071428571428571,
+        "micro_f1": 0.5666666666666667
       },
       "micro_tallies": {
-        "tp": 18,
+        "tp": 17,
         "fp": 15,
-        "fn": 10
+        "fn": 11
       },
       "extraneous_predictions": [],
       "metrics": [
@@ -1630,16 +1634,16 @@
           "en_field": "physical_state"
         },
         {
-          "status": "miss",
+          "status": "exact",
           "gt": [
             "fantasy"
           ],
           "pred": [
-            "sci-fi"
+            "fantasy"
           ],
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
           "en_field": "physical_rule"
         },
         {
@@ -1648,8 +1652,8 @@
             "metallic"
           ],
           "pred": [
-            "metallic",
-            "smooth"
+            "fabric",
+            "metallic"
           ],
           "precision": 0.5,
           "recall": 1.0,
@@ -1657,17 +1661,17 @@
           "en_field": "texture"
         },
         {
-          "status": "partial",
+          "status": "miss",
           "gt": [
             "semi-transparent"
           ],
           "pred": [
             "opaque",
-            "semi-transparent"
+            "transparent"
           ],
-          "precision": 0.5,
-          "recall": 1.0,
-          "f1": 0.6666666666666666,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "en_field": "opacity"
         },
         {
@@ -1782,7 +1786,6 @@
             "leading lines"
           ],
           "pred": [
-            "center framing",
             "rule of thirds"
           ],
           "precision": 0.0,
@@ -1831,16 +1834,16 @@
           "en_field": "scale"
         },
         {
-          "status": "exact",
+          "status": "miss",
           "gt": [
             "normal"
           ],
           "pred": [
-            "normal"
+            "low-key"
           ],
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "en_field": "lighting_intensity"
         },
         {
@@ -1943,24 +1946,24 @@
       "duration_seconds": 12,
       "counts": {
         "scorable": 27,
-        "exact": 10,
-        "partial": 5,
-        "miss": 12,
+        "exact": 11,
+        "partial": 3,
+        "miss": 13,
         "unpredictable": 0,
         "missing": 0,
         "skipped": 0
       },
       "aggregate": {
-        "exact_match_rate": 0.37037037037037035,
-        "macro_f1": 0.4876543209876542,
-        "micro_precision": 0.46875,
-        "micro_recall": 0.4838709677419355,
-        "micro_f1": 0.47619047619047616
+        "exact_match_rate": 0.4074074074074074,
+        "macro_f1": 0.4753086419753086,
+        "micro_precision": 0.45161290322580644,
+        "micro_recall": 0.45161290322580644,
+        "micro_f1": 0.45161290322580644
       },
       "micro_tallies": {
-        "tp": 15,
+        "tp": 14,
         "fp": 17,
-        "fn": 16
+        "fn": 17
       },
       "extraneous_predictions": [],
       "metrics": [
@@ -2198,7 +2201,7 @@
             "full shot"
           ],
           "pred": [
-            "extreme long shot"
+            "long shot"
           ],
           "precision": 0.0,
           "recall": 0.0,
@@ -2245,17 +2248,16 @@
           "en_field": "color_saturation"
         },
         {
-          "status": "partial",
+          "status": "exact",
           "gt": [
             "complementary"
           ],
           "pred": [
-            "complementary",
-            "warm palette"
+            "complementary"
           ],
-          "precision": 0.5,
+          "precision": 1.0,
           "recall": 1.0,
-          "f1": 0.6666666666666666,
+          "f1": 1.0,
           "en_field": "color_palette"
         },
         {
@@ -2272,17 +2274,17 @@
           "en_field": "depth_of_field"
         },
         {
-          "status": "partial",
+          "status": "miss",
           "gt": [
             "macro",
             "wide-angle"
           ],
           "pred": [
-            "wide-angle"
+            "standard lens"
           ],
-          "precision": 1.0,
-          "recall": 0.5,
-          "f1": 0.6666666666666666,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "en_field": "focal_length"
         },
         {
@@ -2332,24 +2334,24 @@
       "duration_seconds": 12,
       "counts": {
         "scorable": 27,
-        "exact": 9,
+        "exact": 8,
         "partial": 3,
-        "miss": 15,
+        "miss": 16,
         "unpredictable": 0,
         "missing": 0,
         "skipped": 0
       },
       "aggregate": {
-        "exact_match_rate": 0.3333333333333333,
-        "macro_f1": 0.4012345679012345,
-        "micro_precision": 0.42424242424242425,
-        "micro_recall": 0.42424242424242425,
-        "micro_f1": 0.4242424242424243
+        "exact_match_rate": 0.2962962962962963,
+        "macro_f1": 0.3604938271604938,
+        "micro_precision": 0.38235294117647056,
+        "micro_recall": 0.3939393939393939,
+        "micro_f1": 0.38805970149253727
       },
       "micro_tallies": {
-        "tp": 14,
-        "fp": 19,
-        "fn": 19
+        "tp": 13,
+        "fp": 21,
+        "fn": 20
       },
       "extraneous_predictions": [],
       "metrics": [
@@ -2429,11 +2431,12 @@
           ],
           "pred": [
             "glass",
-            "metallic"
+            "metallic",
+            "stone"
           ],
-          "precision": 0.5,
+          "precision": 0.3333333333333333,
           "recall": 0.5,
-          "f1": 0.5,
+          "f1": 0.4,
           "en_field": "texture"
         },
         {
@@ -2471,6 +2474,7 @@
             "jumping"
           ],
           "pred": [
+            "climbing",
             "walking"
           ],
           "precision": 0.0,
@@ -2521,7 +2525,7 @@
           "status": "miss",
           "gt": [],
           "pred": [
-            "backlight"
+            "ambient light"
           ],
           "precision": 0.0,
           "recall": 0.0,
@@ -2548,7 +2552,7 @@
             "pan"
           ],
           "pred": [
-            "pull out"
+            "static"
           ],
           "precision": 0.0,
           "recall": 0.0,
@@ -2589,7 +2593,6 @@
             "extreme close-up"
           ],
           "pred": [
-            "full shot",
             "medium shot"
           ],
           "precision": 0.0,
@@ -2611,16 +2614,16 @@
           "en_field": "scale"
         },
         {
-          "status": "exact",
+          "status": "miss",
           "gt": [
             "low-key"
           ],
           "pred": [
-            "low-key"
+            "normal"
           ],
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "en_field": "lighting_intensity"
         },
         {
@@ -2724,23 +2727,23 @@
       "counts": {
         "scorable": 27,
         "exact": 9,
-        "partial": 5,
-        "miss": 11,
-        "unpredictable": 2,
+        "partial": 7,
+        "miss": 10,
+        "unpredictable": 1,
         "missing": 0,
         "skipped": 0
       },
       "aggregate": {
         "exact_match_rate": 0.3333333333333333,
-        "macro_f1": 0.49199999999999994,
-        "micro_precision": 0.5357142857142857,
-        "micro_recall": 0.46875,
-        "micro_f1": 0.5
+        "macro_f1": 0.5128205128205128,
+        "micro_precision": 0.5151515151515151,
+        "micro_recall": 0.5151515151515151,
+        "micro_f1": 0.5151515151515151
       },
       "micro_tallies": {
-        "tp": 15,
-        "fp": 13,
-        "fn": 17
+        "tp": 17,
+        "fp": 16,
+        "fn": 16
       },
       "extraneous_predictions": [],
       "metrics": [
@@ -2750,7 +2753,8 @@
             "vintage film"
           ],
           "pred": [
-            "cinematic"
+            "cinematic",
+            "surrealist"
           ],
           "precision": 0.0,
           "recall": 0.0,
@@ -2780,11 +2784,12 @@
           "pred": [
             "bird",
             "everyday object",
+            "natural element",
             "robot"
           ],
-          "precision": 0.6666666666666666,
+          "precision": 0.5,
           "recall": 1.0,
-          "f1": 0.8,
+          "f1": 0.6666666666666666,
           "en_field": "subjects"
         },
         {
@@ -2814,16 +2819,17 @@
           "en_field": "physical_rule"
         },
         {
-          "status": "exact",
+          "status": "partial",
           "gt": [
             "smooth"
           ],
           "pred": [
+            "rough",
             "smooth"
           ],
-          "precision": 1.0,
+          "precision": 0.5,
           "recall": 1.0,
-          "f1": 1.0,
+          "f1": 0.6666666666666666,
           "en_field": "texture"
         },
         {
@@ -2841,17 +2847,18 @@
           "en_field": "opacity"
         },
         {
-          "status": "miss",
+          "status": "partial",
           "gt": [
             "scattered",
             "vertical"
           ],
           "pred": [
-            "foreground-background"
+            "foreground-background",
+            "scattered"
           ],
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
           "en_field": "spatial_layout"
         },
         {
@@ -2914,7 +2921,7 @@
             "under light"
           ],
           "pred": [
-            "ambient light"
+            "top light"
           ],
           "precision": 0.0,
           "recall": 0.0,
@@ -2975,16 +2982,16 @@
           "en_field": "time_mode"
         },
         {
-          "status": "miss",
+          "status": "exact",
           "gt": [
             "close-up"
           ],
           "pred": [
-            "full shot"
+            "close-up"
           ],
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
           "en_field": "shot_size"
         },
         {
@@ -3067,12 +3074,12 @@
           "en_field": "focal_length"
         },
         {
-          "status": "unpredictable",
+          "status": "miss",
           "gt": [
             "dawn"
           ],
           "pred": [
-            "unpredictable"
+            "night"
           ],
           "precision": 0.0,
           "recall": 0.0,
@@ -3123,15 +3130,15 @@
       },
       "aggregate": {
         "exact_match_rate": 0.23076923076923078,
-        "macro_f1": 0.4668498168498169,
-        "micro_precision": 0.5384615384615384,
-        "micro_recall": 0.5121951219512195,
-        "micro_f1": 0.525
+        "macro_f1": 0.4630036630036631,
+        "micro_precision": 0.5263157894736842,
+        "micro_recall": 0.4878048780487805,
+        "micro_f1": 0.5063291139240507
       },
       "micro_tallies": {
-        "tp": 21,
+        "tp": 20,
         "fp": 18,
-        "fn": 20
+        "fn": 21
       },
       "extraneous_predictions": [],
       "metrics": [
@@ -3230,12 +3237,11 @@
           ],
           "pred": [
             "opaque",
-            "semi-transparent",
-            "transparent"
+            "semi-transparent"
           ],
-          "precision": 0.3333333333333333,
+          "precision": 0.5,
           "recall": 1.0,
-          "f1": 0.5,
+          "f1": 0.6666666666666666,
           "en_field": "opacity"
         },
         {
@@ -3338,12 +3344,11 @@
             "whip pan"
           ],
           "pred": [
-            "pan",
             "static"
           ],
           "precision": 1.0,
-          "recall": 0.5,
-          "f1": 0.6666666666666666,
+          "recall": 0.25,
+          "f1": 0.4,
           "en_field": "camera_movement"
         },
         {
@@ -3366,7 +3371,7 @@
             "timelapse"
           ],
           "pred": [
-            "real-time"
+            "slow motion"
           ],
           "precision": 0.0,
           "recall": 0.0,
@@ -3419,29 +3424,30 @@
           "en_field": "lighting_intensity"
         },
         {
-          "status": "miss",
+          "status": "exact",
           "gt": [
             "low saturation"
           ],
           "pred": [
-            "high saturation"
-          ],
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
-          "en_field": "color_saturation"
-        },
-        {
-          "status": "exact",
-          "gt": [
-            "complementary"
-          ],
-          "pred": [
-            "complementary"
+            "low saturation"
           ],
           "precision": 1.0,
           "recall": 1.0,
           "f1": 1.0,
+          "en_field": "color_saturation"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "complementary"
+          ],
+          "pred": [
+            "cool palette",
+            "warm palette"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "en_field": "color_palette"
         },
         {
@@ -3519,24 +3525,24 @@
       "duration_seconds": 12,
       "counts": {
         "scorable": 27,
-        "exact": 8,
-        "partial": 9,
-        "miss": 10,
+        "exact": 7,
+        "partial": 7,
+        "miss": 13,
         "unpredictable": 0,
         "missing": 0,
         "skipped": 0
       },
       "aggregate": {
-        "exact_match_rate": 0.2962962962962963,
-        "macro_f1": 0.4938271604938272,
-        "micro_precision": 0.5405405405405406,
-        "micro_recall": 0.5405405405405406,
-        "micro_f1": 0.5405405405405406
+        "exact_match_rate": 0.25925925925925924,
+        "macro_f1": 0.4206349206349206,
+        "micro_precision": 0.4722222222222222,
+        "micro_recall": 0.4594594594594595,
+        "micro_f1": 0.4657534246575342
       },
       "micro_tallies": {
-        "tp": 20,
-        "fp": 17,
-        "fn": 17
+        "tp": 17,
+        "fp": 19,
+        "fn": 20
       },
       "extraneous_predictions": [],
       "metrics": [
@@ -3554,7 +3560,7 @@
           "en_field": "style"
         },
         {
-          "status": "exact",
+          "status": "partial",
           "gt": [
             "kitchen",
             "living room",
@@ -3563,11 +3569,12 @@
           "pred": [
             "kitchen",
             "living room",
-            "ruins"
+            "ruins",
+            "snowfield"
           ],
-          "precision": 1.0,
+          "precision": 0.75,
           "recall": 1.0,
-          "f1": 1.0,
+          "f1": 0.8571428571428571,
           "en_field": "scenes"
         },
         {
@@ -3604,7 +3611,7 @@
             "real-world"
           ],
           "pred": [
-            "fantasy"
+            "sci-fi"
           ],
           "precision": 0.0,
           "recall": 0.0,
@@ -3612,32 +3619,31 @@
           "en_field": "physical_rule"
         },
         {
-          "status": "partial",
+          "status": "miss",
           "gt": [
             "fabric",
             "stone"
           ],
           "pred": [
-            "fabric",
             "smooth"
           ],
-          "precision": 0.5,
-          "recall": 0.5,
-          "f1": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "en_field": "texture"
         },
         {
-          "status": "partial",
+          "status": "miss",
           "gt": [
             "semi-transparent"
           ],
           "pred": [
             "opaque",
-            "semi-transparent"
+            "transparent"
           ],
-          "precision": 0.5,
-          "recall": 1.0,
-          "f1": 0.6666666666666666,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "en_field": "opacity"
         },
         {
@@ -3669,16 +3675,16 @@
           "en_field": "action"
         },
         {
-          "status": "exact",
+          "status": "miss",
           "gt": [
             "strong sadness"
           ],
           "pred": [
-            "strong sadness"
+            "moderate sadness"
           ],
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "en_field": "emotion"
         },
         {
@@ -3749,17 +3755,16 @@
           "en_field": "camera_movement"
         },
         {
-          "status": "partial",
+          "status": "exact",
           "gt": [
             "center framing"
           ],
           "pred": [
-            "center framing",
-            "rule of thirds"
+            "center framing"
           ],
-          "precision": 0.5,
+          "precision": 1.0,
           "recall": 1.0,
-          "f1": 0.6666666666666666,
+          "f1": 1.0,
           "en_field": "composition"
         },
         {
@@ -3783,8 +3788,8 @@
             "long shot"
           ],
           "pred": [
+            "extreme long shot",
             "full shot",
-            "long shot",
             "medium shot"
           ],
           "precision": 0.3333333333333333,

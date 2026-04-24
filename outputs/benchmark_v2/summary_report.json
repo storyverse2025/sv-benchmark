@@ -2,156 +2,156 @@
   "models": {
     "seedance": {
       "n_testcases": 10,
-      "global_exact_match_rate": 0.37358490566037733,
-      "mean_macro_f1": 0.5045412020078687,
-      "mean_micro_f1": 0.5138418639139386,
+      "global_exact_match_rate": 0.35094339622641507,
+      "mean_macro_f1": 0.4750210283543617,
+      "mean_micro_f1": 0.48477975954714136,
       "per_testcase": [
         {
           "testcase_id": "S1-11-anime-warehouse-fictional-creature-snow",
           "difficulty": "S1",
-          "exact_match_rate": 0.38461538461538464,
-          "macro_f1": 0.43589743589743585,
-          "micro_f1": 0.41379310344827586
+          "exact_match_rate": 0.2692307692307692,
+          "macro_f1": 0.36538461538461536,
+          "micro_f1": 0.36666666666666664
         },
         {
           "testcase_id": "S1-2-cyberpunk-beach-vehicle-water-splash-driving",
           "difficulty": "S1",
-          "exact_match_rate": 0.4230769230769231,
-          "macro_f1": 0.5512820512820512,
-          "micro_f1": 0.5573770491803278
+          "exact_match_rate": 0.38461538461538464,
+          "macro_f1": 0.5128205128205129,
+          "micro_f1": 0.5161290322580645
         },
         {
           "testcase_id": "S2-1-cartoon-living-room-desert-bird-explosion-hovering",
           "difficulty": "S2",
-          "exact_match_rate": 0.4230769230769231,
-          "macro_f1": 0.5192307692307692,
-          "micro_f1": 0.507936507936508
+          "exact_match_rate": 0.38461538461538464,
+          "macro_f1": 0.49358974358974356,
+          "micro_f1": 0.5
         },
         {
           "testcase_id": "S2-5-oil-painting-warehouse-desert-human-light-effect-dancing",
           "difficulty": "S2",
           "exact_match_rate": 0.5,
-          "macro_f1": 0.6025641025641025,
-          "micro_f1": 0.6031746031746031
+          "macro_f1": 0.5769230769230769,
+          "micro_f1": 0.5714285714285715
         },
         {
           "testcase_id": "S3-4-anime-kitchen-human-everyday-object-light-effect",
           "difficulty": "S3",
           "exact_match_rate": 0.4444444444444444,
-          "macro_f1": 0.5948717948717949,
-          "micro_f1": 0.5901639344262296
+          "macro_f1": 0.5692307692307692,
+          "micro_f1": 0.5666666666666667
         },
         {
           "testcase_id": "S3-11-minimalist-desert-natural-element-robot-light-effect",
           "difficulty": "S3",
-          "exact_match_rate": 0.37037037037037035,
-          "macro_f1": 0.4876543209876542,
-          "micro_f1": 0.47619047619047616
+          "exact_match_rate": 0.4074074074074074,
+          "macro_f1": 0.4753086419753086,
+          "micro_f1": 0.45161290322580644
         },
         {
           "testcase_id": "S4-3-anime-city-street-kitchen-robot-insect-jumping",
           "difficulty": "S4",
-          "exact_match_rate": 0.3333333333333333,
-          "macro_f1": 0.4012345679012345,
-          "micro_f1": 0.4242424242424243
+          "exact_match_rate": 0.2962962962962963,
+          "macro_f1": 0.3604938271604938,
+          "micro_f1": 0.38805970149253727
         },
         {
           "testcase_id": "S4-2-vintage-film-office-beach-bird-robot-hologram-hovering",
           "difficulty": "S4",
           "exact_match_rate": 0.3333333333333333,
-          "macro_f1": 0.49199999999999994,
-          "micro_f1": 0.5
+          "macro_f1": 0.5128205128205128,
+          "micro_f1": 0.5151515151515151
         },
         {
           "testcase_id": "S5-11-vintage-film-desert-kitchen-living-room-human-mammal-light-effect-jumping",
           "difficulty": "S5",
           "exact_match_rate": 0.23076923076923078,
-          "macro_f1": 0.4668498168498169,
-          "micro_f1": 0.525
+          "macro_f1": 0.4630036630036631,
+          "micro_f1": 0.5063291139240507
         },
         {
           "testcase_id": "S5-9-cartoon-ruins-kitchen-living-room-insect-fictional-creature-human-snow-dialogue",
           "difficulty": "S5",
-          "exact_match_rate": 0.2962962962962963,
-          "macro_f1": 0.4938271604938272,
-          "micro_f1": 0.5405405405405406
+          "exact_match_rate": 0.25925925925925924,
+          "macro_f1": 0.4206349206349206,
+          "micro_f1": 0.4657534246575342
         }
       ]
     },
     "kling": {
       "n_testcases": 10,
-      "global_exact_match_rate": 0.3169811320754717,
-      "mean_macro_f1": 0.4497575905575905,
-      "mean_micro_f1": 0.46112326215032295,
+      "global_exact_match_rate": 0.3660377358490566,
+      "mean_macro_f1": 0.48687334147334144,
+      "mean_micro_f1": 0.49615008216503853,
       "per_testcase": [
         {
           "testcase_id": "S1-11-anime-warehouse-fictional-creature-snow",
           "difficulty": "S1",
-          "exact_match_rate": 0.3076923076923077,
-          "macro_f1": 0.47222222222222215,
-          "micro_f1": 0.4727272727272727
+          "exact_match_rate": 0.34615384615384615,
+          "macro_f1": 0.4933333333333333,
+          "micro_f1": 0.49122807017543857
         },
         {
           "testcase_id": "S1-2-cyberpunk-beach-vehicle-water-splash-driving",
           "difficulty": "S1",
-          "exact_match_rate": 0.23076923076923078,
-          "macro_f1": 0.4230769230769231,
-          "micro_f1": 0.44776119402985076
+          "exact_match_rate": 0.34615384615384615,
+          "macro_f1": 0.4641025641025641,
+          "micro_f1": 0.4848484848484849
         },
         {
           "testcase_id": "S2-1-cartoon-living-room-desert-bird-explosion-hovering",
           "difficulty": "S2",
-          "exact_match_rate": 0.4230769230769231,
-          "macro_f1": 0.5192307692307692,
-          "micro_f1": 0.4923076923076923
+          "exact_match_rate": 0.46153846153846156,
+          "macro_f1": 0.5384615384615384,
+          "micro_f1": 0.5245901639344263
         },
         {
           "testcase_id": "S2-5-oil-painting-warehouse-desert-human-light-effect-dancing",
           "difficulty": "S2",
-          "exact_match_rate": 0.34615384615384615,
-          "macro_f1": 0.4743589743589744,
-          "micro_f1": 0.4918032786885246
+          "exact_match_rate": 0.38461538461538464,
+          "macro_f1": 0.48717948717948717,
+          "micro_f1": 0.5161290322580646
         },
         {
           "testcase_id": "S3-4-anime-kitchen-human-everyday-object-light-effect",
           "difficulty": "S3",
-          "exact_match_rate": 0.37037037037037035,
-          "macro_f1": 0.45866666666666667,
-          "micro_f1": 0.456140350877193
+          "exact_match_rate": 0.48148148148148145,
+          "macro_f1": 0.5961538461538461,
+          "micro_f1": 0.5714285714285714
         },
         {
           "testcase_id": "S3-11-minimalist-desert-natural-element-robot-light-effect",
           "difficulty": "S3",
           "exact_match_rate": 0.3333333333333333,
-          "macro_f1": 0.42222222222222217,
-          "micro_f1": 0.4126984126984127
+          "macro_f1": 0.4012345679012345,
+          "micro_f1": 0.39999999999999997
         },
         {
           "testcase_id": "S4-3-anime-city-street-kitchen-robot-insect-jumping",
           "difficulty": "S4",
-          "exact_match_rate": 0.2962962962962963,
-          "macro_f1": 0.38888888888888884,
-          "micro_f1": 0.4242424242424243
+          "exact_match_rate": 0.4074074074074074,
+          "macro_f1": 0.4753086419753086,
+          "micro_f1": 0.49275362318840576
         },
         {
           "testcase_id": "S4-2-vintage-film-office-beach-bird-robot-hologram-hovering",
           "difficulty": "S4",
           "exact_match_rate": 0.2962962962962963,
-          "macro_f1": 0.5061728395061728,
-          "micro_f1": 0.5217391304347826
+          "macro_f1": 0.5111111111111111,
+          "micro_f1": 0.5294117647058822
         },
         {
           "testcase_id": "S5-11-vintage-film-desert-kitchen-living-room-human-mammal-light-effect-jumping",
           "difficulty": "S5",
           "exact_match_rate": 0.2692307692307692,
-          "macro_f1": 0.43150183150183147,
-          "micro_f1": 0.4473684210526316
+          "macro_f1": 0.48209523809523813,
+          "micro_f1": 0.5066666666666667
         },
         {
           "testcase_id": "S5-9-cartoon-ruins-kitchen-living-room-insect-fictional-creature-human-snow-dialogue",
           "difficulty": "S5",
-          "exact_match_rate": 0.2962962962962963,
-          "macro_f1": 0.4012345679012345,
+          "exact_match_rate": 0.3333333333333333,
+          "macro_f1": 0.41975308641975306,
           "micro_f1": 0.4444444444444445
         }
       ]
