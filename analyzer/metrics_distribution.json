@@ -956,24 +956,24 @@
       "metric": "转场",
       "per_level": {
         "S1": {
-          "scorable": 1,
+          "scorable": 0,
           "total": 1,
-          "pct": 100.0
+          "pct": 0.0
         },
         "S2": {
-          "scorable": 1,
+          "scorable": 0,
           "total": 1,
-          "pct": 100.0
+          "pct": 0.0
         },
         "S3": {
-          "scorable": 1,
+          "scorable": 0,
           "total": 1,
-          "pct": 100.0
+          "pct": 0.0
         },
         "S4": {
-          "scorable": 1,
+          "scorable": 0,
           "total": 1,
-          "pct": 100.0
+          "pct": 0.0
         },
         "S5": {
           "scorable": 1,
@@ -982,9 +982,9 @@
         }
       },
       "overall": {
-        "scorable": 5,
+        "scorable": 1,
         "total": 5,
-        "pct": 100.0
+        "pct": 20.0
       }
     }
   ]

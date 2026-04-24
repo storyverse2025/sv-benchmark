@@ -204,10 +204,8 @@ def compare_testcase(
     ]
     macro_f1 = sum(answered_f1s) / len(answered_f1s) if answered_f1s else 0.0
 
-    # Extra predictions that weren't asked for (VLM predicted a QC-skipped metric
-    # — doesn't hurt scoring, but flag so the user notices).
-    asked = {m["en_field"] for m in gt_record.get("metrics", []) if m.get("scorable")}
-    extraneous = sorted(set(pred.keys()) - asked)
+    all_en_fields = {m["en_field"] for m in gt_record.get("metrics", [])}
+    extraneous = sorted(set(pred.keys()) - all_en_fields)
 
     return {
         "testcase_id": gt_record.get("testcase_id"),
@@ -223,6 +221,11 @@ def compare_testcase(
             "micro_precision": micro_p,
             "micro_recall": micro_r,
             "micro_f1": micro_f1,
+        },
+        "micro_tallies": {
+            "tp": total_tp,
+            "fp": total_fp,
+            "fn": total_fn,
         },
         "extraneous_predictions": extraneous,
         "metrics": metric_results,
@@ -325,10 +328,31 @@ def print_overall(reports: List[Dict[str, Any]]) -> None:
             f"{tot_exact}/{tot_scorable}  ({100*tot_exact/tot_scorable:.1f}%)"
         )
 
-    macro_f1 = sum(r["aggregate"]["macro_f1"] for r in reports) / len(reports)
-    micro_f1 = sum(r["aggregate"]["micro_f1"] for r in reports) / len(reports)
-    print(f"  Mean macro F1:           {macro_f1:.3f}")
-    print(f"  Mean micro F1:           {micro_f1:.3f}")
+    pool_tp = sum(r["micro_tallies"]["tp"] for r in reports)
+    pool_fp = sum(r["micro_tallies"]["fp"] for r in reports)
+    pool_fn = sum(r["micro_tallies"]["fn"] for r in reports)
+    micro_p = pool_tp / (pool_tp + pool_fp) if (pool_tp + pool_fp) else 0.0
+    micro_r = pool_tp / (pool_tp + pool_fn) if (pool_tp + pool_fn) else 0.0
+    micro_f1 = (
+        2 * micro_p * micro_r / (micro_p + micro_r)
+        if (micro_p + micro_r) else 0.0
+    )
+
+    per_metric_f1: Dict[str, List[float]] = {}
+    for r in reports:
+        for m in r["metrics"]:
+            if m["status"] in (STATUS_EXACT, STATUS_PARTIAL, STATUS_MISS, STATUS_MISSING):
+                per_metric_f1.setdefault(m["en_field"], []).append(m["f1"])
+    macro_f1 = (
+        sum(sum(fs) / len(fs) for fs in per_metric_f1.values()) / len(per_metric_f1)
+        if per_metric_f1 else 0.0
+    )
+
+    print(
+        f"  Micro P / R / F1:        "
+        f"{micro_p:.3f} / {micro_r:.3f} / {micro_f1:.3f}"
+    )
+    print(f"  Macro F1:                {macro_f1:.3f}")
     print(sep)
 
 

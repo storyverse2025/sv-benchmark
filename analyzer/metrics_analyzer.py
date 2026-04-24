@@ -163,7 +163,7 @@ SYNONYMS: Dict[str, Dict[str, List[str]]] = {
         "push in": ["pushes in", "pushing in"],
         "pull out": ["pulls out", "pulling out"],
         "pan": ["panning", "pans"],
-        "tracking shot": ["tracks", "tracking"],
+
         "crane": ["cranes", "craning", "crane shot", "crane move"],
         "orbit": ["orbits", "orbiting", "orbiting camera"],
         "handheld": ["hand held"],
@@ -370,6 +370,8 @@ def extract_gt_values(en_field: str, text: str, allowed: List[str]) -> List[str]
         t_low = trigger.lower()
         if not t_low:
             continue
+        if t_low == "none":
+            continue
         pattern = r"(?<!\w)" + re.escape(t_low) + r"(?!\w)"
         for m in re.finditer(pattern, lower_text):
             matches.append((m.start(), m.end(), canon))
@@ -435,6 +437,9 @@ def build_records(
                 scorable = False
                 qc_note = ""
 
+            if scorable and qc_note and "dropped" in qc_note.lower():
+                scorable = False
+
             if scorable:
                 scorable_count += 1
 
@@ -443,6 +448,9 @@ def build_records(
                 extract_gt_values(en_field, full_text, allowed_for_metric)
                 if scorable else []
             )
+
+            if scorable and not gt_values and "none" in allowed_for_metric:
+                gt_values = ["none"]
 
             metrics_out.append({
                 "en_field": en_field,

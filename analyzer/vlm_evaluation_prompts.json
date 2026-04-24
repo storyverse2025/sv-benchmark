@@ -7,7 +7,7 @@
       "testcase_id": "S1-1-surrealist-theater-stage-fictional-creature-flame-hovering",
       "difficulty": "S1",
       "duration_seconds": 12,
-      "num_scorable_metrics": 27,
+      "num_scorable_metrics": 26,
       "predict_fields": [
         "style",
         "scenes",
@@ -34,17 +34,22 @@
         "depth_of_field",
         "focal_length",
         "time_of_day",
-        "weather",
-        "transition"
+        "weather"
       ],
-      "skipped_metrics": [],
-      "user_prompt": "Evaluate the attached video for testcase `S1-1-surrealist-theater-stage-fictional-creature-flame-hovering` (difficulty S1, duration ~12s).\n\nPredict all 27 metrics from the Label Bank in your system instructions. Return a single JSON object with exactly those 27 keys.\n"
+      "skipped_metrics": [
+        {
+          "en_field": "transition",
+          "metric": "转场",
+          "qc_note": "dropped, single-shot testcase"
+        }
+      ],
+      "user_prompt": "Evaluate the attached video (duration ~12s).\n\nPredict all metrics from the Label Bank in your system instructions EXCEPT the following 1, which are intentionally skipped for this sample (QC failed or dropped):\n\n  transition\n  (QC notes: transition: dropped, single-shot testcase)\n\nReturn a single JSON object with exactly the 26 remaining keys.\n"
     },
     {
       "testcase_id": "S2-41-cartoon-living-room-underwater-kitchen-human-smoke-cycling",
       "difficulty": "S2",
       "duration_seconds": 13,
-      "num_scorable_metrics": 27,
+      "num_scorable_metrics": 26,
       "predict_fields": [
         "style",
         "scenes",
@@ -71,17 +76,22 @@
         "depth_of_field",
         "focal_length",
         "time_of_day",
-        "weather",
-        "transition"
+        "weather"
       ],
-      "skipped_metrics": [],
-      "user_prompt": "Evaluate the attached video for testcase `S2-41-cartoon-living-room-underwater-kitchen-human-smoke-cycling` (difficulty S2, duration ~13s).\n\nPredict all 27 metrics from the Label Bank in your system instructions. Return a single JSON object with exactly those 27 keys.\n"
+      "skipped_metrics": [
+        {
+          "en_field": "transition",
+          "metric": "转场",
+          "qc_note": "dropped, single-shot testcase"
+        }
+      ],
+      "user_prompt": "Evaluate the attached video (duration ~13s).\n\nPredict all metrics from the Label Bank in your system instructions EXCEPT the following 1, which are intentionally skipped for this sample (QC failed or dropped):\n\n  transition\n  (QC notes: transition: dropped, single-shot testcase)\n\nReturn a single JSON object with exactly the 26 remaining keys.\n"
     },
     {
       "testcase_id": "S3-83-photorealistic-mountain-peak-insect-mammal-snow-walking",
       "difficulty": "S3",
       "duration_seconds": 12,
-      "num_scorable_metrics": 27,
+      "num_scorable_metrics": 26,
       "predict_fields": [
         "style",
         "scenes",
@@ -108,17 +118,22 @@
         "depth_of_field",
         "focal_length",
         "time_of_day",
-        "weather",
-        "transition"
+        "weather"
       ],
-      "skipped_metrics": [],
-      "user_prompt": "Evaluate the attached video for testcase `S3-83-photorealistic-mountain-peak-insect-mammal-snow-walking` (difficulty S3, duration ~12s).\n\nPredict all 27 metrics from the Label Bank in your system instructions. Return a single JSON object with exactly those 27 keys.\n"
+      "skipped_metrics": [
+        {
+          "en_field": "transition",
+          "metric": "转场",
+          "qc_note": "dropped, single-shot testcase"
+        }
+      ],
+      "user_prompt": "Evaluate the attached video (duration ~12s).\n\nPredict all metrics from the Label Bank in your system instructions EXCEPT the following 1, which are intentionally skipped for this sample (QC failed or dropped):\n\n  transition\n  (QC notes: transition: dropped, single-shot testcase)\n\nReturn a single JSON object with exactly the 26 remaining keys.\n"
     },
     {
       "testcase_id": "S4-121-gothic-ruins-kitchen-living-room-aquatic-animal-robot-human-flame-dialogue",
       "difficulty": "S4",
       "duration_seconds": 15,
-      "num_scorable_metrics": 25,
+      "num_scorable_metrics": 24,
       "predict_fields": [
         "style",
         "scenes",
@@ -143,8 +158,7 @@
         "color_palette",
         "depth_of_field",
         "time_of_day",
-        "weather",
-        "transition"
+        "weather"
       ],
       "skipped_metrics": [
         {
@@ -156,9 +170,14 @@
           "en_field": "focal_length",
           "metric": "相机.焦距",
           "qc_note": "macro lens directly contradicts extreme long shot"
+        },
+        {
+          "en_field": "transition",
+          "metric": "转场",
+          "qc_note": "dropped, single-shot testcase"
         }
       ],
-      "user_prompt": "Evaluate the attached video for testcase `S4-121-gothic-ruins-kitchen-living-room-aquatic-animal-robot-human-flame-dialogue` (difficulty S4, duration ~15s).\n\nPredict all metrics from the Label Bank in your system instructions EXCEPT the following 2, which are intentionally skipped for this sample (QC failed or dropped):\n\n  shot_size, focal_length\n  (QC notes: shot_size: extreme long shot of three giant subjects undermines 'giant' scale cue; likely to read small; focal_length: macro lens directly contradicts extreme long shot)\n\nReturn a single JSON object with exactly the 25 remaining keys.\n"
+      "user_prompt": "Evaluate the attached video (duration ~15s).\n\nPredict all metrics from the Label Bank in your system instructions EXCEPT the following 3, which are intentionally skipped for this sample (QC failed or dropped):\n\n  shot_size, focal_length, transition\n  (QC notes: shot_size: extreme long shot of three giant subjects undermines 'giant' scale cue; likely to read small; focal_length: macro lens directly contradicts extreme long shot; transition: dropped, single-shot testcase)\n\nReturn a single JSON object with exactly the 24 remaining keys.\n"
     },
     {
       "testcase_id": "S5-161-minimalist-hallway-kitchen-insect-bird-human-rain-martial-arts",
@@ -195,7 +214,7 @@
         "transition"
       ],
       "skipped_metrics": [],
-      "user_prompt": "Evaluate the attached video for testcase `S5-161-minimalist-hallway-kitchen-insect-bird-human-rain-martial-arts` (difficulty S5, duration ~15s).\n\nPredict all 27 metrics from the Label Bank in your system instructions. Return a single JSON object with exactly those 27 keys.\n"
+      "user_prompt": "Evaluate the attached video (duration ~15s).\n\nPredict all 27 metrics from the Label Bank in your system instructions. Return a single JSON object with exactly those 27 keys.\n"
     }
   ]
 }

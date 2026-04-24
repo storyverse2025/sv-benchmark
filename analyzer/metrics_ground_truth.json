@@ -4,7 +4,7 @@
     "difficulty": "S1",
     "duration_seconds": 12,
     "overall_pass": true,
-    "num_scorable_metrics": 27,
+    "num_scorable_metrics": 26,
     "metrics": [
       {
         "en_field": "style",
@@ -270,12 +270,10 @@
       {
         "en_field": "transition",
         "metric": "转场",
-        "scorable": true,
+        "scorable": false,
         "qc_note": "dropped, single-shot testcase",
         "active_in_prompt": false,
-        "gt_values": [
-          "none"
-        ]
+        "gt_values": []
       }
     ]
   },
@@ -284,7 +282,7 @@
     "difficulty": "S2",
     "duration_seconds": 13,
     "overall_pass": true,
-    "num_scorable_metrics": 27,
+    "num_scorable_metrics": 26,
     "metrics": [
       {
         "en_field": "style",
@@ -555,12 +553,10 @@
       {
         "en_field": "transition",
         "metric": "转场",
-        "scorable": true,
+        "scorable": false,
         "qc_note": "dropped, single-shot testcase",
         "active_in_prompt": false,
-        "gt_values": [
-          "none"
-        ]
+        "gt_values": []
       }
     ]
   },
@@ -569,7 +565,7 @@
     "difficulty": "S3",
     "duration_seconds": 12,
     "overall_pass": true,
-    "num_scorable_metrics": 27,
+    "num_scorable_metrics": 26,
     "metrics": [
       {
         "en_field": "style",
@@ -838,12 +834,10 @@
       {
         "en_field": "transition",
         "metric": "转场",
-        "scorable": true,
+        "scorable": false,
         "qc_note": "dropped, single-shot testcase",
         "active_in_prompt": false,
-        "gt_values": [
-          "none"
-        ]
+        "gt_values": []
       }
     ]
   },
@@ -852,7 +846,7 @@
     "difficulty": "S4",
     "duration_seconds": 15,
     "overall_pass": true,
-    "num_scorable_metrics": 25,
+    "num_scorable_metrics": 24,
     "metrics": [
       {
         "en_field": "style",
@@ -1120,12 +1114,10 @@
       {
         "en_field": "transition",
         "metric": "转场",
-        "scorable": true,
+        "scorable": false,
         "qc_note": "dropped, single-shot testcase",
         "active_in_prompt": false,
-        "gt_values": [
-          "none"
-        ]
+        "gt_values": []
       }
     ]
   },

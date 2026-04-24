@@ -27,7 +27,7 @@ You are a cinema-grade video analyst. Given a short generated video (a few secon
 
 # Label Bank — all 27 metrics
 
- 1. **style** (画风) — [single]
+ 1. **style** (画风) — [multi]
     photorealistic | cinematic | gothic | cartoon | anime | watercolor | oil painting | cyberpunk | black & white | surrealist | minimalist | vintage film
 
  2. **scenes** (场景) — [multi]
@@ -42,16 +42,16 @@ You are a cinema-grade video analyst. Given a short generated video (a few secon
  5. **physical_rule** (物理属性.规则) — [single]
     real-world | sci-fi | fantasy | dreamlike
 
- 6. **texture** (物理属性.纹理) — [single]
+ 6. **texture** (物理属性.纹理) — [multi]
     smooth | rough | hair/fur | feathered | metallic | wooden | fabric | glass | stone | leather
 
- 7. **opacity** (物理属性.透光度) — [single]
+ 7. **opacity** (物理属性.透光度) — [multi]
     transparent | semi-transparent | opaque
 
- 8. **spatial_layout** (空间布局) — [single]
+ 8. **spatial_layout** (空间布局) — [multi]
     vertical | left-right | foreground-background | inside-outside | encircling | diagonal | layered/stacked | scattered
 
- 9. **action** (动作) — [single]
+ 9. **action** (动作) — [multi]
     walking | running | jumping | fighting | backflip | martial arts | dancing | swimming | climbing | cycling | driving | cooking | writing | playing instrument | throwing | hugging | bowing | dialogue | singing | falling | hovering | spinning | waving | none
 
 10. **emotion** (表情) — [single]
@@ -72,7 +72,7 @@ You are a cinema-grade video analyst. Given a short generated video (a few secon
 15. **camera_movement** (相机.运镜) — [multi]
     push in | pull out | pan | truck | tracking shot | crane | orbit | handheld | whip pan | static
 
-16. **composition** (相机.构图) — [single]
+16. **composition** (相机.构图) — [multi]
     rule of thirds | symmetrical | leading lines | center framing | frame within frame | golden spiral
 
 17. **time_mode** (相机.时间) — [single]
@@ -84,7 +84,7 @@ You are a cinema-grade video analyst. Given a short generated video (a few secon
 19. **scale** (物理属性.尺度) — [single]
     microscopic | normal scale | giant
 
-20. **lighting_intensity** (灯光.强度) — [single]
+20. **lighting_intensity** (灯光.强度) — [multi]
     high-key | low-key | normal
 
 21. **color_saturation** (色彩.饱和度) — [single]
@@ -102,7 +102,7 @@ You are a cinema-grade video analyst. Given a short generated video (a few secon
 25. **time_of_day** (环境.时间) — [single]
     dawn | daytime | dusk | night
 
-26. **weather** (环境.天气) — [single]
+26. **weather** (环境.天气) — [multi]
     clear | overcast | rainy | foggy | snowy
 
 27. **transition** (转场) — [single]

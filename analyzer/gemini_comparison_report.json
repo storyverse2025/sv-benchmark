@@ -6,20 +6,25 @@
       "difficulty": "S1",
       "duration_seconds": 12,
       "counts": {
-        "scorable": 27,
-        "exact": 18,
+        "scorable": 26,
+        "exact": 17,
         "partial": 1,
         "miss": 8,
         "unpredictable": 0,
         "missing": 0,
-        "skipped": 0
+        "skipped": 1
       },
       "aggregate": {
-        "exact_match_rate": 0.6666666666666666,
-        "macro_f1": 0.691358024691358,
-        "micro_precision": 0.6785714285714286,
-        "micro_recall": 0.6785714285714286,
-        "micro_f1": 0.6785714285714286
+        "exact_match_rate": 0.6538461538461539,
+        "macro_f1": 0.6794871794871794,
+        "micro_precision": 0.6666666666666666,
+        "micro_recall": 0.6666666666666666,
+        "micro_f1": 0.6666666666666666
+      },
+      "micro_tallies": {
+        "tp": 18,
+        "fp": 9,
+        "fn": 9
       },
       "extraneous_predictions": [],
       "metrics": [
@@ -364,17 +369,16 @@
           "en_field": "weather"
         },
         {
-          "status": "exact",
-          "gt": [
-            "none"
-          ],
+          "en_field": "transition",
+          "status": "skipped",
+          "gt": [],
           "pred": [
             "none"
           ],
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
-          "en_field": "transition"
+          "qc_note": "dropped, single-shot testcase",
+          "precision": null,
+          "recall": null,
+          "f1": null
         }
       ]
     }

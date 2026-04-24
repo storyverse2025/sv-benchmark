@@ -70,6 +70,14 @@ MULTI_VALUE_METRICS: set = {
     "camera_movement",
     "shot_size",
     "color_palette",
+    "composition",
+    "texture",
+    "opacity",
+    "style",
+    "spatial_layout",
+    "weather",
+    "action",
+    "lighting_intensity",
 }
 
 
@@ -180,16 +188,14 @@ def build_metric_catalog(allowed: Dict[str, List[str]]) -> Dict[str, Any]:
 # which metrics are intentionally skipped.
 
 USER_PROMPT_ALL_TEMPLATE = """\
-Evaluate the attached video for testcase `{testcase_id}` \
-(difficulty {difficulty}, duration ~{duration_seconds}s).
+Evaluate the attached video (duration ~{duration_seconds}s).
 
 Predict all {n_total} metrics from the Label Bank in your system \
 instructions. Return a single JSON object with exactly those {n_total} keys.
 """
 
 USER_PROMPT_WITH_SKIP_TEMPLATE = """\
-Evaluate the attached video for testcase `{testcase_id}` \
-(difficulty {difficulty}, duration ~{duration_seconds}s).
+Evaluate the attached video (duration ~{duration_seconds}s).
 
 Predict all metrics from the Label Bank in your system instructions \
 EXCEPT the following {n_skip}, which are intentionally skipped for this \
@@ -231,8 +237,6 @@ def build_vlm_bundle(testcase_record: Dict[str, Any]) -> Dict[str, Any]:
         )
         qc_notes = f"\n  (QC notes: {skip_notes})" if skip_notes else ""
         user_prompt = USER_PROMPT_WITH_SKIP_TEMPLATE.format(
-            testcase_id=testcase_record.get("testcase_id"),
-            difficulty=testcase_record.get("difficulty", ""),
             duration_seconds=testcase_record.get("duration_seconds", ""),
             n_skip=len(skip_fields),
             n_predict=len(predict_fields),
@@ -241,8 +245,6 @@ def build_vlm_bundle(testcase_record: Dict[str, Any]) -> Dict[str, Any]:
         )
     else:
         user_prompt = USER_PROMPT_ALL_TEMPLATE.format(
-            testcase_id=testcase_record.get("testcase_id"),
-            difficulty=testcase_record.get("difficulty", ""),
             duration_seconds=testcase_record.get("duration_seconds", ""),
             n_total=n_total,
         )
