@@ -1,0 +1,991 @@
+{
+  "levels": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+  ],
+  "total_samples_per_level": {
+    "S1": 1,
+    "S2": 1,
+    "S3": 1,
+    "S4": 1,
+    "S5": 1
+  },
+  "total_samples": 5,
+  "metrics_distribution": [
+    {
+      "en_field": "style",
+      "metric": "画风",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "scenes",
+      "metric": "场景",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "subjects",
+      "metric": "主体",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "physical_state",
+      "metric": "物理属性.状态",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "physical_rule",
+      "metric": "物理属性.规则",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "texture",
+      "metric": "物理属性.纹理",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "opacity",
+      "metric": "物理属性.透光度",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "spatial_layout",
+      "metric": "空间布局",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "action",
+      "metric": "动作",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "emotion",
+      "metric": "表情",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "effect",
+      "metric": "特效",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "lighting_tone",
+      "metric": "灯光.色调",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "lighting_direction",
+      "metric": "灯光.方向",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "camera_angle",
+      "metric": "相机.角度",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "camera_movement",
+      "metric": "相机.运镜",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "composition",
+      "metric": "相机.构图",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "time_mode",
+      "metric": "相机.时间",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "shot_size",
+      "metric": "相机.景别",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 0,
+          "total": 1,
+          "pct": 0.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 4,
+        "total": 5,
+        "pct": 80.0
+      }
+    },
+    {
+      "en_field": "scale",
+      "metric": "物理属性.尺度",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "lighting_intensity",
+      "metric": "灯光.强度",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "color_saturation",
+      "metric": "色彩.饱和度",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "color_palette",
+      "metric": "色彩.色板",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "depth_of_field",
+      "metric": "相机.景深",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "focal_length",
+      "metric": "相机.焦距",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 0,
+          "total": 1,
+          "pct": 0.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 4,
+        "total": 5,
+        "pct": 80.0
+      }
+    },
+    {
+      "en_field": "time_of_day",
+      "metric": "环境.时间",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "weather",
+      "metric": "环境.天气",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    },
+    {
+      "en_field": "transition",
+      "metric": "转场",
+      "per_level": {
+        "S1": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S2": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S3": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S4": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        },
+        "S5": {
+          "scorable": 1,
+          "total": 1,
+          "pct": 100.0
+        }
+      },
+      "overall": {
+        "scorable": 5,
+        "total": 5,
+        "pct": 100.0
+      }
+    }
+  ]
+}

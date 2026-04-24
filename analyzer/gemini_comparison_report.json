@@ -1,0 +1,382 @@
+{
+  "n_testcases": 1,
+  "reports": [
+    {
+      "testcase_id": "S1-1-surrealist-theater-stage-fictional-creature-flame-hovering",
+      "difficulty": "S1",
+      "duration_seconds": 12,
+      "counts": {
+        "scorable": 27,
+        "exact": 18,
+        "partial": 1,
+        "miss": 8,
+        "unpredictable": 0,
+        "missing": 0,
+        "skipped": 0
+      },
+      "aggregate": {
+        "exact_match_rate": 0.6666666666666666,
+        "macro_f1": 0.691358024691358,
+        "micro_precision": 0.6785714285714286,
+        "micro_recall": 0.6785714285714286,
+        "micro_f1": 0.6785714285714286
+      },
+      "extraneous_predictions": [],
+      "metrics": [
+        {
+          "status": "exact",
+          "gt": [
+            "surrealist"
+          ],
+          "pred": [
+            "surrealist"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "style"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "theater stage"
+          ],
+          "pred": [
+            "theater stage"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "scenes"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "fictional creature"
+          ],
+          "pred": [
+            "fictional creature"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "subjects"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "solid"
+          ],
+          "pred": [
+            "solid"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "physical_state"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "fantasy"
+          ],
+          "pred": [
+            "dreamlike"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "physical_rule"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "smooth"
+          ],
+          "pred": [
+            "metallic"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "texture"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "opaque"
+          ],
+          "pred": [
+            "opaque"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "opacity"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "layered/stacked"
+          ],
+          "pred": [
+            "foreground-background"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "spatial_layout"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "hovering"
+          ],
+          "pred": [
+            "hovering"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "action"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "none"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "emotion"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "flame"
+          ],
+          "pred": [
+            "flame"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "effect"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "warm"
+          ],
+          "pred": [
+            "warm"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "lighting_tone"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "side light"
+          ],
+          "pred": [
+            "backlight"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_direction"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "eye level"
+          ],
+          "pred": [
+            "eye level"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "camera_angle"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "truck"
+          ],
+          "pred": [
+            "pan",
+            "tracking shot"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "camera_movement"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "center framing",
+            "leading lines"
+          ],
+          "pred": [
+            "center framing"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "composition"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "real-time"
+          ],
+          "pred": [
+            "real-time"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "time_mode"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "close-up"
+          ],
+          "pred": [
+            "long shot"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "shot_size"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "normal scale"
+          ],
+          "pred": [
+            "normal scale"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "scale"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "normal"
+          ],
+          "pred": [
+            "normal"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "low saturation"
+          ],
+          "pred": [
+            "low saturation"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "color_saturation"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "monochromatic"
+          ],
+          "pred": [
+            "warm palette"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "color_palette"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "deep DOF"
+          ],
+          "pred": [
+            "deep DOF"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "depth_of_field"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "standard lens"
+          ],
+          "pred": [
+            "standard lens"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "focal_length"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "dawn"
+          ],
+          "pred": [
+            "dawn"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "time_of_day"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "clear"
+          ],
+          "pred": [
+            "foggy"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "weather"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "none"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "transition"
+        }
+      ]
+    }
+  ]
+}

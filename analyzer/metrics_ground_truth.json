@@ -1,0 +1,1421 @@
+[
+  {
+    "testcase_id": "S1-1-surrealist-theater-stage-fictional-creature-flame-hovering",
+    "difficulty": "S1",
+    "duration_seconds": 12,
+    "overall_pass": true,
+    "num_scorable_metrics": 27,
+    "metrics": [
+      {
+        "en_field": "style",
+        "metric": "画风",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "surrealist"
+        ]
+      },
+      {
+        "en_field": "scenes",
+        "metric": "场景",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "theater stage"
+        ]
+      },
+      {
+        "en_field": "subjects",
+        "metric": "主体",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "fictional creature"
+        ]
+      },
+      {
+        "en_field": "physical_state",
+        "metric": "物理属性.状态",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "solid"
+        ]
+      },
+      {
+        "en_field": "physical_rule",
+        "metric": "物理属性.规则",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "fantasy"
+        ]
+      },
+      {
+        "en_field": "texture",
+        "metric": "物理属性.纹理",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "smooth"
+        ]
+      },
+      {
+        "en_field": "opacity",
+        "metric": "物理属性.透光度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "opaque"
+        ]
+      },
+      {
+        "en_field": "spatial_layout",
+        "metric": "空间布局",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "layered/stacked"
+        ]
+      },
+      {
+        "en_field": "action",
+        "metric": "动作",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "hovering"
+        ]
+      },
+      {
+        "en_field": "emotion",
+        "metric": "表情",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": false,
+        "gt_values": [
+          "none"
+        ]
+      },
+      {
+        "en_field": "effect",
+        "metric": "特效",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "flame"
+        ]
+      },
+      {
+        "en_field": "lighting_tone",
+        "metric": "灯光.色调",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "warm"
+        ]
+      },
+      {
+        "en_field": "lighting_direction",
+        "metric": "灯光.方向",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "side light"
+        ]
+      },
+      {
+        "en_field": "camera_angle",
+        "metric": "相机.角度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "eye level"
+        ]
+      },
+      {
+        "en_field": "camera_movement",
+        "metric": "相机.运镜",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "truck"
+        ]
+      },
+      {
+        "en_field": "composition",
+        "metric": "相机.构图",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "leading lines",
+          "center framing"
+        ]
+      },
+      {
+        "en_field": "time_mode",
+        "metric": "相机.时间",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "real-time"
+        ]
+      },
+      {
+        "en_field": "shot_size",
+        "metric": "相机.景别",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "close-up"
+        ]
+      },
+      {
+        "en_field": "scale",
+        "metric": "物理属性.尺度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "normal scale"
+        ]
+      },
+      {
+        "en_field": "lighting_intensity",
+        "metric": "灯光.强度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "normal"
+        ]
+      },
+      {
+        "en_field": "color_saturation",
+        "metric": "色彩.饱和度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "low saturation"
+        ]
+      },
+      {
+        "en_field": "color_palette",
+        "metric": "色彩.色板",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "monochromatic"
+        ]
+      },
+      {
+        "en_field": "depth_of_field",
+        "metric": "相机.景深",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "deep DOF"
+        ]
+      },
+      {
+        "en_field": "focal_length",
+        "metric": "相机.焦距",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "standard lens"
+        ]
+      },
+      {
+        "en_field": "time_of_day",
+        "metric": "环境.时间",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "dawn"
+        ]
+      },
+      {
+        "en_field": "weather",
+        "metric": "环境.天气",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "clear"
+        ]
+      },
+      {
+        "en_field": "transition",
+        "metric": "转场",
+        "scorable": true,
+        "qc_note": "dropped, single-shot testcase",
+        "active_in_prompt": false,
+        "gt_values": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "testcase_id": "S2-41-cartoon-living-room-underwater-kitchen-human-smoke-cycling",
+    "difficulty": "S2",
+    "duration_seconds": 13,
+    "overall_pass": true,
+    "num_scorable_metrics": 27,
+    "metrics": [
+      {
+        "en_field": "style",
+        "metric": "画风",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "cartoon"
+        ]
+      },
+      {
+        "en_field": "scenes",
+        "metric": "场景",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "living room",
+          "kitchen",
+          "underwater"
+        ]
+      },
+      {
+        "en_field": "subjects",
+        "metric": "主体",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "human"
+        ]
+      },
+      {
+        "en_field": "physical_state",
+        "metric": "物理属性.状态",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "solid"
+        ]
+      },
+      {
+        "en_field": "physical_rule",
+        "metric": "物理属性.规则",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "real-world"
+        ]
+      },
+      {
+        "en_field": "texture",
+        "metric": "物理属性.纹理",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "hair/fur",
+          "glass"
+        ]
+      },
+      {
+        "en_field": "opacity",
+        "metric": "物理属性.透光度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "transparent",
+          "opaque"
+        ]
+      },
+      {
+        "en_field": "spatial_layout",
+        "metric": "空间布局",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "inside-outside"
+        ]
+      },
+      {
+        "en_field": "action",
+        "metric": "动作",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "cycling"
+        ]
+      },
+      {
+        "en_field": "emotion",
+        "metric": "表情",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "strong fear"
+        ]
+      },
+      {
+        "en_field": "effect",
+        "metric": "特效",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "smoke"
+        ]
+      },
+      {
+        "en_field": "lighting_tone",
+        "metric": "灯光.色调",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "warm"
+        ]
+      },
+      {
+        "en_field": "lighting_direction",
+        "metric": "灯光.方向",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "side light"
+        ]
+      },
+      {
+        "en_field": "camera_angle",
+        "metric": "相机.角度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "low angle"
+        ]
+      },
+      {
+        "en_field": "camera_movement",
+        "metric": "相机.运镜",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "pan",
+          "handheld"
+        ]
+      },
+      {
+        "en_field": "composition",
+        "metric": "相机.构图",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "leading lines"
+        ]
+      },
+      {
+        "en_field": "time_mode",
+        "metric": "相机.时间",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "slow motion"
+        ]
+      },
+      {
+        "en_field": "shot_size",
+        "metric": "相机.景别",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "medium shot"
+        ]
+      },
+      {
+        "en_field": "scale",
+        "metric": "物理属性.尺度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "normal scale"
+        ]
+      },
+      {
+        "en_field": "lighting_intensity",
+        "metric": "灯光.强度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "low-key",
+          "normal"
+        ]
+      },
+      {
+        "en_field": "color_saturation",
+        "metric": "色彩.饱和度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "low saturation"
+        ]
+      },
+      {
+        "en_field": "color_palette",
+        "metric": "色彩.色板",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "complementary"
+        ]
+      },
+      {
+        "en_field": "depth_of_field",
+        "metric": "相机.景深",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "pan-focus"
+        ]
+      },
+      {
+        "en_field": "focal_length",
+        "metric": "相机.焦距",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "wide-angle"
+        ]
+      },
+      {
+        "en_field": "time_of_day",
+        "metric": "环境.时间",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "dawn"
+        ]
+      },
+      {
+        "en_field": "weather",
+        "metric": "环境.天气",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "clear"
+        ]
+      },
+      {
+        "en_field": "transition",
+        "metric": "转场",
+        "scorable": true,
+        "qc_note": "dropped, single-shot testcase",
+        "active_in_prompt": false,
+        "gt_values": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "testcase_id": "S3-83-photorealistic-mountain-peak-insect-mammal-snow-walking",
+    "difficulty": "S3",
+    "duration_seconds": 12,
+    "overall_pass": true,
+    "num_scorable_metrics": 27,
+    "metrics": [
+      {
+        "en_field": "style",
+        "metric": "画风",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "photorealistic",
+          "cinematic"
+        ]
+      },
+      {
+        "en_field": "scenes",
+        "metric": "场景",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "mountain peak"
+        ]
+      },
+      {
+        "en_field": "subjects",
+        "metric": "主体",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "mammal",
+          "insect"
+        ]
+      },
+      {
+        "en_field": "physical_state",
+        "metric": "物理属性.状态",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "solid"
+        ]
+      },
+      {
+        "en_field": "physical_rule",
+        "metric": "物理属性.规则",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "fantasy"
+        ]
+      },
+      {
+        "en_field": "texture",
+        "metric": "物理属性.纹理",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "smooth"
+        ]
+      },
+      {
+        "en_field": "opacity",
+        "metric": "物理属性.透光度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "opaque"
+        ]
+      },
+      {
+        "en_field": "spatial_layout",
+        "metric": "空间布局",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "vertical",
+          "foreground-background"
+        ]
+      },
+      {
+        "en_field": "action",
+        "metric": "动作",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "walking"
+        ]
+      },
+      {
+        "en_field": "emotion",
+        "metric": "表情",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "subtle surprise"
+        ]
+      },
+      {
+        "en_field": "effect",
+        "metric": "特效",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "snow"
+        ]
+      },
+      {
+        "en_field": "lighting_tone",
+        "metric": "灯光.色调",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "cool"
+        ]
+      },
+      {
+        "en_field": "lighting_direction",
+        "metric": "灯光.方向",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "under light"
+        ]
+      },
+      {
+        "en_field": "camera_angle",
+        "metric": "相机.角度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "eye level"
+        ]
+      },
+      {
+        "en_field": "camera_movement",
+        "metric": "相机.运镜",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "crane"
+        ]
+      },
+      {
+        "en_field": "composition",
+        "metric": "相机.构图",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "frame within frame"
+        ]
+      },
+      {
+        "en_field": "time_mode",
+        "metric": "相机.时间",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "real-time"
+        ]
+      },
+      {
+        "en_field": "shot_size",
+        "metric": "相机.景别",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "close-up"
+        ]
+      },
+      {
+        "en_field": "scale",
+        "metric": "物理属性.尺度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "giant"
+        ]
+      },
+      {
+        "en_field": "lighting_intensity",
+        "metric": "灯光.强度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "high-key"
+        ]
+      },
+      {
+        "en_field": "color_saturation",
+        "metric": "色彩.饱和度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "high saturation"
+        ]
+      },
+      {
+        "en_field": "color_palette",
+        "metric": "色彩.色板",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "monochromatic"
+        ]
+      },
+      {
+        "en_field": "depth_of_field",
+        "metric": "相机.景深",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "shallow DOF"
+        ]
+      },
+      {
+        "en_field": "focal_length",
+        "metric": "相机.焦距",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "standard lens"
+        ]
+      },
+      {
+        "en_field": "time_of_day",
+        "metric": "环境.时间",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "dusk"
+        ]
+      },
+      {
+        "en_field": "weather",
+        "metric": "环境.天气",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "clear",
+          "snowy"
+        ]
+      },
+      {
+        "en_field": "transition",
+        "metric": "转场",
+        "scorable": true,
+        "qc_note": "dropped, single-shot testcase",
+        "active_in_prompt": false,
+        "gt_values": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "testcase_id": "S4-121-gothic-ruins-kitchen-living-room-aquatic-animal-robot-human-flame-dialogue",
+    "difficulty": "S4",
+    "duration_seconds": 15,
+    "overall_pass": true,
+    "num_scorable_metrics": 25,
+    "metrics": [
+      {
+        "en_field": "style",
+        "metric": "画风",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "gothic"
+        ]
+      },
+      {
+        "en_field": "scenes",
+        "metric": "场景",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "living room",
+          "kitchen",
+          "ruins"
+        ]
+      },
+      {
+        "en_field": "subjects",
+        "metric": "主体",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "human",
+          "aquatic animal",
+          "robot"
+        ]
+      },
+      {
+        "en_field": "physical_state",
+        "metric": "物理属性.状态",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "rigid body"
+        ]
+      },
+      {
+        "en_field": "physical_rule",
+        "metric": "物理属性.规则",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "dreamlike"
+        ]
+      },
+      {
+        "en_field": "texture",
+        "metric": "物理属性.纹理",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "smooth",
+          "stone"
+        ]
+      },
+      {
+        "en_field": "opacity",
+        "metric": "物理属性.透光度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "opaque"
+        ]
+      },
+      {
+        "en_field": "spatial_layout",
+        "metric": "空间布局",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "vertical",
+          "layered/stacked"
+        ]
+      },
+      {
+        "en_field": "action",
+        "metric": "动作",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "dialogue"
+        ]
+      },
+      {
+        "en_field": "emotion",
+        "metric": "表情",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "subtle surprise"
+        ]
+      },
+      {
+        "en_field": "effect",
+        "metric": "特效",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "flame"
+        ]
+      },
+      {
+        "en_field": "lighting_tone",
+        "metric": "灯光.色调",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "multi-color"
+        ]
+      },
+      {
+        "en_field": "lighting_direction",
+        "metric": "灯光.方向",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "under light"
+        ]
+      },
+      {
+        "en_field": "camera_angle",
+        "metric": "相机.角度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "low angle"
+        ]
+      },
+      {
+        "en_field": "camera_movement",
+        "metric": "相机.运镜",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "orbit"
+        ]
+      },
+      {
+        "en_field": "composition",
+        "metric": "相机.构图",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "leading lines"
+        ]
+      },
+      {
+        "en_field": "time_mode",
+        "metric": "相机.时间",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "reverse"
+        ]
+      },
+      {
+        "en_field": "shot_size",
+        "metric": "相机.景别",
+        "scorable": false,
+        "qc_note": "extreme long shot of three giant subjects undermines 'giant' scale cue; likely to read small",
+        "active_in_prompt": true,
+        "gt_values": []
+      },
+      {
+        "en_field": "scale",
+        "metric": "物理属性.尺度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "giant"
+        ]
+      },
+      {
+        "en_field": "lighting_intensity",
+        "metric": "灯光.强度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "high-key"
+        ]
+      },
+      {
+        "en_field": "color_saturation",
+        "metric": "色彩.饱和度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "low saturation"
+        ]
+      },
+      {
+        "en_field": "color_palette",
+        "metric": "色彩.色板",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "monochromatic"
+        ]
+      },
+      {
+        "en_field": "depth_of_field",
+        "metric": "相机.景深",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "shallow DOF"
+        ]
+      },
+      {
+        "en_field": "focal_length",
+        "metric": "相机.焦距",
+        "scorable": false,
+        "qc_note": "macro lens directly contradicts extreme long shot",
+        "active_in_prompt": true,
+        "gt_values": []
+      },
+      {
+        "en_field": "time_of_day",
+        "metric": "环境.时间",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "night"
+        ]
+      },
+      {
+        "en_field": "weather",
+        "metric": "环境.天气",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "clear",
+          "snowy"
+        ]
+      },
+      {
+        "en_field": "transition",
+        "metric": "转场",
+        "scorable": true,
+        "qc_note": "dropped, single-shot testcase",
+        "active_in_prompt": false,
+        "gt_values": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "testcase_id": "S5-161-minimalist-hallway-kitchen-insect-bird-human-rain-martial-arts",
+    "difficulty": "S5",
+    "duration_seconds": 15,
+    "overall_pass": true,
+    "num_scorable_metrics": 27,
+    "metrics": [
+      {
+        "en_field": "style",
+        "metric": "画风",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "minimalist"
+        ]
+      },
+      {
+        "en_field": "scenes",
+        "metric": "场景",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "kitchen",
+          "hallway"
+        ]
+      },
+      {
+        "en_field": "subjects",
+        "metric": "主体",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "human",
+          "bird",
+          "insect"
+        ]
+      },
+      {
+        "en_field": "physical_state",
+        "metric": "物理属性.状态",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "solid"
+        ]
+      },
+      {
+        "en_field": "physical_rule",
+        "metric": "物理属性.规则",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "dreamlike"
+        ]
+      },
+      {
+        "en_field": "texture",
+        "metric": "物理属性.纹理",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "glass",
+          "leather"
+        ]
+      },
+      {
+        "en_field": "opacity",
+        "metric": "物理属性.透光度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "opaque"
+        ]
+      },
+      {
+        "en_field": "spatial_layout",
+        "metric": "空间布局",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "inside-outside",
+          "scattered"
+        ]
+      },
+      {
+        "en_field": "action",
+        "metric": "动作",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "martial arts",
+          "climbing",
+          "falling"
+        ]
+      },
+      {
+        "en_field": "emotion",
+        "metric": "表情",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "moderate disgust"
+        ]
+      },
+      {
+        "en_field": "effect",
+        "metric": "特效",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "rain"
+        ]
+      },
+      {
+        "en_field": "lighting_tone",
+        "metric": "灯光.色调",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "cool"
+        ]
+      },
+      {
+        "en_field": "lighting_direction",
+        "metric": "灯光.方向",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "ambient light"
+        ]
+      },
+      {
+        "en_field": "camera_angle",
+        "metric": "相机.角度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "high angle"
+        ]
+      },
+      {
+        "en_field": "camera_movement",
+        "metric": "相机.运镜",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "push in",
+          "pull out"
+        ]
+      },
+      {
+        "en_field": "composition",
+        "metric": "相机.构图",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "rule of thirds"
+        ]
+      },
+      {
+        "en_field": "time_mode",
+        "metric": "相机.时间",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "reverse"
+        ]
+      },
+      {
+        "en_field": "shot_size",
+        "metric": "相机.景别",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "extreme close-up",
+          "close-up"
+        ]
+      },
+      {
+        "en_field": "scale",
+        "metric": "物理属性.尺度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "microscopic"
+        ]
+      },
+      {
+        "en_field": "lighting_intensity",
+        "metric": "灯光.强度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "high-key"
+        ]
+      },
+      {
+        "en_field": "color_saturation",
+        "metric": "色彩.饱和度",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "desaturated"
+        ]
+      },
+      {
+        "en_field": "color_palette",
+        "metric": "色彩.色板",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "complementary"
+        ]
+      },
+      {
+        "en_field": "depth_of_field",
+        "metric": "相机.景深",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "deep DOF"
+        ]
+      },
+      {
+        "en_field": "focal_length",
+        "metric": "相机.焦距",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "standard lens"
+        ]
+      },
+      {
+        "en_field": "time_of_day",
+        "metric": "环境.时间",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "dawn"
+        ]
+      },
+      {
+        "en_field": "weather",
+        "metric": "环境.天气",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "clear",
+          "rainy"
+        ]
+      },
+      {
+        "en_field": "transition",
+        "metric": "转场",
+        "scorable": true,
+        "qc_note": "",
+        "active_in_prompt": true,
+        "gt_values": [
+          "match cut"
+        ]
+      }
+    ]
+  }
+]

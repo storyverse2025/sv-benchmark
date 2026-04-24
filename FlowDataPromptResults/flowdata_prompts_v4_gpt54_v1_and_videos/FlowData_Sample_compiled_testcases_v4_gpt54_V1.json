@@ -1,0 +1,391 @@
+[
+  {
+    "testcase_id": "S1-1-surrealist-theater-stage-fictional-creature-flame-hovering",
+    "core_intent": "A simplest single-subject, single-scene, single-shot testcase that checks whether a model can keep a smooth opaque fantasy creature hovering on a surreal theater stage while preserving close-up framing, a lateral truck move, warm side light, flame, and dawn color conditions.",
+    "duration_seconds": 12,
+    "story_logic": "A small surreal stage tableau is already in motion when the video begins: the creature hovers between stacked stage platforms while a controlled flame burns below it. The camera trucks sideways in one continuous close-up, making the hovering action, layered space, stage leading lines, and warm side light visible without adding cuts or extra story.",
+    "shot_plan": [
+      {
+        "shot_id": 1,
+        "time_range": "0s-12s",
+        "visual_goal": "Show one hovering fantasy creature as the only subject, with the theater stage, flame, camera move, and layered composition all readable in a single continuous shot.",
+        "what_happens": "A smooth, opaque fictional creature floats a few inches above stacked risers on a surreal theater stage. A narrow flame burns beneath the creature without touching it, casting warm highlights along its body. The creature stays centered as the stage's leading lines slide behind it, reinforcing the hovering motion and layered layout.",
+        "camera_and_framing": "Single unbroken close-up at eye level, using a slow horizontal truck move across the stage. The framing keeps the creature dominant while deep DOF and a standard lens preserve the layered risers, flame, and stage lines in focus.",
+        "lighting_and_mood": "Normal-intensity warm side light shapes the creature and flame, with a restrained surreal mood rather than horror or comedy.",
+        "environment_and_color": "Clear dawn light enters from the back of the theater stage; the image uses low saturation and a monochromatic warm-gold palette."
+      }
+    ],
+    "final_video_prompt": "A 12-second surrealist video in real-time, single continuous shot, no cuts. On a theater stage at clear dawn, a smooth solid opaque fictional creature of normal scale hovers above layered stacked risers. A small controlled flame burns below it, lighting the underside without touching the body. The camera stays at eye level in a close-up and slowly trucks sideways, using leading lines from the stage floor and curtains while deep DOF and a standard lens keep the layered stage elements readable. Use normal warm side lighting, low saturation, and a mostly monochromatic warm-gold palette. Keep the creature as the only subject, preserve the fantasy rule set, and make the hovering action and flame clearly visible.",
+    "negative_prompt": "extra characters, multiple creatures, cuts, camera shake, flying offscreen, realistic animal anatomy only, transparent body, furry texture, cold lighting, high saturation, cluttered stage, gore, text, watermark, logo",
+    "coverage_notes": {
+      "must_show": [
+        "one fictional creature on a theater stage",
+        "hovering action in real time",
+        "single continuous close-up shot",
+        "eye-level camera with slow truck movement",
+        "layered or stacked spatial layout",
+        "visible flame effect",
+        "warm side lighting",
+        "leading lines composition"
+      ],
+      "soft_interpretations": [
+        "surrealist style can be expressed through theatrical scale, impossible hovering, and simplified stage geometry",
+        "fantasy physical rule is limited to hovering so the scene remains easy to evaluate",
+        "clear dawn and weather are represented as dawn light entering the stage space rather than an outdoor sky",
+        "low saturation and monochromatic palette should still allow the flame to be readable"
+      ],
+      "tradeoffs": [
+        "emotion is omitted because the payload specifies none",
+        "transition is omitted because this is a single-shot testcase with transition none"
+      ]
+    },
+    "active_dimensions": [
+      "style",
+      "scenes",
+      "subjects",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "spatial_layout",
+      "action",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "color_saturation",
+      "color_palette",
+      "camera_angle",
+      "camera_movement",
+      "composition",
+      "time_mode",
+      "shot_size",
+      "depth_of_field",
+      "focal_length",
+      "time_of_day",
+      "weather"
+    ]
+  },
+  {
+    "testcase_id": "S2-41-cartoon-living-room-underwater-kitchen-human-smoke-cycling",
+    "core_intent": "A simple-plus single-subject, multi-scene, single-shot testcase that checks whether a model can keep one fearful cartoon human cycling in slow motion through a continuous living-room, underwater, and kitchen path while preserving handheld low-angle medium-shot framing, smoke, warm side light, and inside-outside spatial transitions.",
+    "duration_seconds": 13,
+    "story_logic": "The multi-scene constraint is solved as one continuous impossible-but-readable cartoon set: the cyclist starts inside a living room, passes through a glassy underwater tunnel, and exits into a kitchen without any cut. The single human remains the anchor, while smoke trails and slow motion make the cycling action and strong fear readable throughout the traversal.",
+    "shot_plan": [
+      {
+        "shot_id": 1,
+        "time_range": "0s-13s",
+        "visual_goal": "Show one human cycling through three connected environments in one unbroken shot, preserving action, fear, smoke, camera style, and lighting.",
+        "what_happens": "A fuzzy-haired cartoon human pedals a bicycle in slow motion from a living room doorway into a transparent underwater tube and then into a kitchen. The rider looks strongly afraid, gripping the handlebars and glancing toward the surrounding water as a thin smoke trail curls from the rear wheel. The inside-outside relationship stays visible through doorframes, glass walls, and the kitchen threshold.",
+        "camera_and_framing": "Single unbroken medium shot from a low angle with handheld motion. A wide-angle lens and pan-focus keep the living room, underwater passage, kitchen threshold, and leading lines readable as the camera backs up with the cyclist.",
+        "lighting_and_mood": "Low-key warm side light follows the rider across the continuous set, making the fear expression and smoke silhouette visible.",
+        "environment_and_color": "Clear dawn light leaks through windows in the living room and kitchen; the underwater section remains clear, with low saturation and a complementary warm-orange versus blue-green palette."
+      }
+    ],
+    "final_video_prompt": "A 13-second cartoon video in slow motion, single continuous shot, no cuts. Show one normal-scale human with fuzzy hair or fur-like clothing texture, solid and opaque under real-world rules, cycling through a connected living room, transparent underwater tube, and kitchen. The camera stays in a low-angle medium shot with handheld movement, wide-angle lens, pan-focus, and leading lines from doorframes, glass tunnel edges, and kitchen counters. The rider shows strong fear through wide eyes, tense shoulders, and gripping hands while pedaling continuously. A thin smoke trail follows the bicycle wheel without hiding the subject. Use low-key warm side lighting, clear dawn window light, low saturation, and a complementary blue-green and warm-orange palette. Keep the inside-outside spatial relationship visible as the rider passes from room to underwater passage to kitchen.",
+    "negative_prompt": "multiple riders, cuts between scenes, montage, missing bicycle, normal walking instead of cycling, subject disappearing underwater, opaque water, heavy smoke hiding the rider, calm expression, high saturation, front-facing flat light, gore, text, watermark, logo",
+    "coverage_notes": {
+      "must_show": [
+        "one human subject only",
+        "living room, underwater passage, and kitchen in one continuous shot",
+        "cycling action in slow motion",
+        "strong fear visible in posture and face",
+        "inside-outside spatial relationship through thresholds and glass",
+        "low-angle handheld medium shot",
+        "smoke effect",
+        "warm low-key side light",
+        "wide-angle pan-focus camera with leading lines"
+      ],
+      "soft_interpretations": [
+        "hair/fur texture is interpreted as fuzzy hair or fur-like clothing so the human remains plausible",
+        "underwater scene is handled as a transparent tube connecting indoor rooms to satisfy single-shot traversal",
+        "clear weather is represented by clean dawn window light rather than outdoor sky exposure",
+        "complementary palette uses warm interiors against blue-green water"
+      ],
+      "tradeoffs": [
+        "single-shot multi-scene traversal is staged as one connected cartoon set instead of separate locations",
+        "smoke is kept thin so pan-focus visibility and the cyclist's fear remain testable"
+      ]
+    },
+    "active_dimensions": [
+      "style",
+      "scenes",
+      "subjects",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "spatial_layout",
+      "action",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "color_saturation",
+      "color_palette",
+      "camera_angle",
+      "camera_movement",
+      "composition",
+      "time_mode",
+      "shot_size",
+      "depth_of_field",
+      "focal_length",
+      "time_of_day",
+      "weather"
+    ]
+  },
+  {
+    "testcase_id": "S3-83-photorealistic-mountain-peak-insect-mammal-snow-walking",
+    "core_intent": "A medium-difficulty multi-subject, single-scene, single-shot testcase that checks whether a model can render a giant insect and giant mammal walking together on a mountain peak while preserving photorealism, fantasy scale, vertical blocking, snow, cool high-key underlight, eye-level crane movement, close-up framing, and shallow-focus cinematic depth.",
+    "duration_seconds": 12,
+    "story_logic": "The scene is staged as a physically readable fantasy encounter on a snowy mountain peak. The giant mammal walks along a ridge while the giant insect steps on a higher rock shelf above it, creating a vertical composition that makes their scale clear even in close-up. The crane move rises slowly with them in real time, letting the viewer verify both subjects, walking motion, snow, lighting, and the mountain environment in one continuous shot.",
+    "shot_plan": [
+      {
+        "shot_id": 1,
+        "time_range": "0s-12s",
+        "visual_goal": "Show two giant subjects walking in the same mountain-peak environment with clear vertical staging, visible snow, and readable camera constraints.",
+        "what_happens": "At dusk on a snowy mountain peak, a smooth opaque giant mammal walks along a narrow ridge while a smooth opaque giant insect walks on a higher ledge directly behind it. Snow drifts across their legs and body edges, and the mammal's slight head turn conveys subtle surprise at the insect's looming presence. Both subjects remain solid, photorealistic, and visibly enormous against tiny rocks and distant peaks.",
+        "camera_and_framing": "Single continuous close-up at eye level with a slow crane movement rising from the mammal's shoulder height toward the insect's higher ledge. A standard lens and shallow DOF isolate the two giant subjects while keeping enough mountain texture visible to prove scale.",
+        "lighting_and_mood": "Cool high-key underlight reflects from the snow below, giving the giants a crisp fantasy glow while keeping their forms readable.",
+        "environment_and_color": "Snowy dusk on a mountain peak; high-saturation monochromatic blue-white grading with snow particles visible in the foreground and background."
+      }
+    ],
+    "final_video_prompt": "A 12-second photorealistic fantasy video in real time, single continuous shot, no cuts. On a snowy mountain peak at dusk, show a giant smooth opaque mammal walking along a narrow ridge while a giant smooth opaque insect walks on a higher rock ledge behind it, creating a clear vertical spatial layout. Both subjects are solid and enormous compared with tiny rocks and distant peaks. Snow drifts around their legs and bodies as a visible snow effect. The mammal gives a subtle surprised head turn toward the insect while continuing to walk. Use an eye-level close-up with a slow crane movement rising from the mammal toward the insect, standard lens, frame-within-frame composition through dark foreground rocks, and shallow DOF that keeps the subjects sharp while softly separating the mountain background. Lighting is cool, high-key underlight reflected from snow; color is high-saturation monochromatic blue-white. Keep both subjects visible and make the walking action readable.",
+    "negative_prompt": "tiny normal-scale animals, missing insect, missing mammal, indoor scene, desert or forest, running or flying instead of walking, cartoon look, extra subjects, flat front lighting, no snow, heavy blizzard hiding the subjects, extreme wide shot where expressions disappear, deep focus documentary look, cuts, text, watermark, logo, gore",
+    "coverage_notes": {
+      "must_show": [
+        "mountain peak as the only scene",
+        "giant insect and giant mammal as two subjects",
+        "walking action in real time",
+        "vertical spatial layout with one subject higher than the other",
+        "snow effect and snowy weather",
+        "eye-level close-up with slow crane movement",
+        "cool high-key underlight reflected from snow",
+        "frame-within-frame composition",
+        "shallow DOF and standard lens"
+      ],
+      "soft_interpretations": [
+        "fantasy physical rule is limited to giant scale and coexistence of the subjects on the ridge",
+        "subtle surprise is conveyed through a small mammal head turn because facial detail may be limited in close-up motion",
+        "monochromatic palette uses blue-white snow tones while high saturation keeps the image vivid",
+        "giant scale is reinforced with tiny rocks, distant peaks, and vertical ledge separation"
+      ],
+      "tradeoffs": [
+        "close-up framing can reduce scale cues, so the prompt includes tiny rocks and distant peaks inside the frame",
+        "shallow DOF should separate the background without hiding the second giant subject"
+      ]
+    },
+    "active_dimensions": [
+      "style",
+      "scenes",
+      "subjects",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "spatial_layout",
+      "action",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "color_saturation",
+      "color_palette",
+      "camera_angle",
+      "camera_movement",
+      "composition",
+      "time_mode",
+      "shot_size",
+      "depth_of_field",
+      "focal_length",
+      "time_of_day",
+      "weather"
+    ]
+  },
+  {
+    "testcase_id": "S4-121-gothic-ruins-kitchen-living-room-aquatic-animal-robot-human-flame-dialogue",
+    "core_intent": "A complex multi-subject, multi-scene, single-shot testcase that checks whether a model can preserve a giant aquatic animal, robot, and human in a gothic dreamlike reverse-time dialogue across ruins, kitchen, and living room while maintaining a low-angle orbit, extreme long shot, vertical layout, flame, snowy night, and high-key multicolor underlighting.",
+    "duration_seconds": 15,
+    "story_logic": "The single shot treats the three scenes as stacked dreamlike rooms inside one gothic vertical structure: snowy ruins at the base, a suspended kitchen in the middle, and a living room above. Reverse time makes their visual dialogue rewind from a completed exchange back to the first gesture, while the orbit camera keeps all three giant subjects countable in the extreme long shot.",
+    "shot_plan": [
+      {
+        "shot_id": 1,
+        "time_range": "0s-15s",
+        "visual_goal": "Show three giant subjects across three vertically stacked scenes in one continuous reverse-time shot, keeping dialogue gestures, flame, gothic style, and camera constraints visible.",
+        "what_happens": "In a gothic tower-like space, snowy ruins, a kitchen, and a living room are stacked vertically like open stage levels. A giant smooth opaque aquatic animal coils through the lower ruins, a giant robot stands in the kitchen level, and a giant human leans from the living room above. Their dialogue plays backward: the human's pointing hand retracts, the robot's faceplate pulses in reverse, and the aquatic animal's open mouth closes as flame tongues sink back into braziers below them. Subtle surprise is shown by the human's half-turned posture and the robot's paused tilt.",
+        "camera_and_framing": "One continuous extreme long shot from a low angle, slowly orbiting the vertical structure. Shallow DOF creates a selective gothic miniature effect, while a macro lens look is used as forced-perspective dream logic to make giant bodies feel monumental and close despite the wide framing.",
+        "lighting_and_mood": "High-key multicolor underlighting rises from the braziers and floor slits, motivating the night brightness and casting gothic colored edges on all three subjects.",
+        "environment_and_color": "Snowy night surrounds the ruined openings; the image uses low saturation and a near-monochromatic stone-gray palette with restrained colored underlight accents."
+      }
+    ],
+    "final_video_prompt": "A 15-second gothic dreamlike video in reverse time, single continuous shot, no cuts. Show a vertically stacked environment containing snowy ruins at the bottom, a kitchen in the middle, and a living room above, all visible inside one open gothic tower. Three giant smooth opaque rigid-body subjects occupy the structure: an aquatic animal in the ruins, a robot in the kitchen, and a human in the living room. They perform a visual dialogue in reverse: gestures retract, the robot faceplate pulses backward, the human's surprised posture relaxes, and the aquatic animal's open mouth closes. Flame in lower braziers sinks downward in reverse. Use a low-angle extreme long shot with a slow orbit camera, leading lines up the vertical architecture, shallow DOF, and a macro-lens forced-perspective look. Lighting is high-key multicolor underlight at snowy night; colors are low saturation with a mostly monochromatic stone-gray gothic palette. Keep the three giant subjects countable, the vertical multi-scene layout clear, and the reverse-time dialogue readable through gestures rather than subtitles.",
+    "negative_prompt": "separate cuts, normal-sized subjects, missing aquatic animal, missing robot, missing human, ordinary realistic rooms with no gothic structure, forward-time motion, unreadable dialogue relying on text, subtitles, heavy blur hiding subjects, daylight, warm natural lighting only, crowded extra characters, gore, watermark, logo",
+    "coverage_notes": {
+      "must_show": [
+        "ruins, kitchen, and living room visible in one continuous single shot",
+        "aquatic animal, robot, and human as giant subjects",
+        "dreamlike reverse-time dialogue shown through gestures and faceplate pulses",
+        "vertical spatial layout",
+        "low-angle orbit camera",
+        "extreme long shot",
+        "flame effect reversing into braziers",
+        "high-key multicolor underlighting",
+        "snowy night gothic environment",
+        "leading lines composition"
+      ],
+      "soft_interpretations": [
+        "dialogue is made visually testable through body language, mouth movement, and robot faceplate pulses instead of audio or subtitles",
+        "macro focal length is interpreted as a forced-perspective dreamlike lens effect because the requested framing is an extreme long shot",
+        "subtle surprise is conveyed through posture and timing because very wide framing makes facial detail hard to verify",
+        "monochromatic palette is mostly stone gray with restrained colored underlight accents"
+      ],
+      "tradeoffs": [
+        "the conflict between macro lens and extreme long shot is resolved as dreamlike forced perspective rather than literal macro photography",
+        "shallow DOF is kept mild so multiple giant subjects remain countable",
+        "single-shot multi-scene traversal is staged as one vertically open gothic structure"
+      ]
+    },
+    "active_dimensions": [
+      "style",
+      "scenes",
+      "subjects",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "spatial_layout",
+      "action",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "color_saturation",
+      "color_palette",
+      "camera_angle",
+      "camera_movement",
+      "composition",
+      "time_mode",
+      "shot_size",
+      "depth_of_field",
+      "focal_length",
+      "time_of_day",
+      "weather"
+    ]
+  },
+  {
+    "testcase_id": "S5-161-minimalist-hallway-kitchen-insect-bird-human-rain-martial-arts",
+    "core_intent": "A very complex multi-subject, multi-scene, multi-shot testcase that checks whether a model can preserve three microscopic subjects across a hallway and kitchen, using dreamlike reverse-time martial arts, match cuts, high-angle extreme close-ups, rain cues, minimalist staging, and inside-outside spatial contrast.",
+    "duration_seconds": 15,
+    "story_logic": "The micro-story uses reverse time: it starts after a tiny martial-arts clash has already scattered droplets and crumbs, then rewinds through matched poses from hallway to kitchen until the three microscopic subjects return to their starting positions. Rain is handled as visible window and threshold droplets rather than an outdoor storm inside the rooms, preserving the indoor scenes while keeping the rain effect and rainy weather testable.",
+    "shot_plan": [
+      {
+        "shot_id": 1,
+        "time_range": "0s-3s",
+        "visual_goal": "Establish the microscopic scale, reverse-time behavior, rainy indoor threshold, and three subjects.",
+        "what_happens": "In a minimalist hallway near a rain-streaked doorway, a microscopic insect, bird, and human are suspended among tiny droplets and leather-textured props. The droplets begin moving upward in reverse, revealing that the action is playing backward after a miniature martial-arts impact.",
+        "camera_and_framing": "High-angle extreme close-up with a slow push in. Deep DOF and a standard lens keep all three tiny opaque subjects and the inside-outside doorway relation readable.",
+        "lighting_and_mood": "High-key cool ambient light creates a clean, clinical mood; the human's recoiling posture and the bird's turned head show moderate disgust.",
+        "environment_and_color": "Rainy dawn is visible through the doorway and on the floor droplets; the minimalist image is desaturated with a complementary blue-and-rust palette."
+      },
+      {
+        "shot_id": 2,
+        "time_range": "3s-6s",
+        "visual_goal": "Use a match cut to continue the reverse martial-arts motion while moving from hallway to kitchen.",
+        "what_happens": "Match cut on a raised tiny limb: the same pose appears on the edge of a kitchen counter. The insect slides backward out of a defensive stance, the microscopic human's sleeve folds back into place, and the bird's wing retracts as if a strike is being undone.",
+        "camera_and_framing": "High-angle close-up with a measured pull out, keeping the counter edge as an inside-outside boundary. Deep DOF and a standard lens preserve the subjects, droplets, and kitchen geometry.",
+        "lighting_and_mood": "High-key cool ambient light remains even and minimalist, with disgust conveyed through the human's backward-leaning posture and the bird avoiding contact.",
+        "environment_and_color": "Rainy dawn appears as window streaks reflected on the kitchen counter; desaturated complementary colors separate subjects from the clean background."
+      },
+      {
+        "shot_id": 3,
+        "time_range": "6s-9s",
+        "visual_goal": "Show all three microscopic subjects interacting in a readable martial-arts exchange.",
+        "what_happens": "Another match cut aligns a falling droplet with a hallway floor speck. In reverse, the three subjects separate from a triangular martial-arts knot: the insect backs away low, the human's palm un-strikes, and the bird's tiny wing returns from a block.",
+        "camera_and_framing": "High-angle extreme close-up with a slow push in. The rule-of-thirds composition places the three subjects at separate points while deep DOF keeps their small bodies legible.",
+        "lighting_and_mood": "Cool high-key ambient light avoids heavy shadows, supporting a minimalist but dreamlike tone.",
+        "environment_and_color": "Indoor floor droplets rise toward the rainy doorway at dawn; desaturated complementary color accents keep the scene readable."
+      },
+      {
+        "shot_id": 4,
+        "time_range": "9s-12s",
+        "visual_goal": "Reinforce the hallway-to-kitchen multi-scene structure and match-cut transition rule.",
+        "what_happens": "Match cut on a circular droplet: the view returns to the kitchen sink rim. The rain effect appears as droplets climbing back onto the window glass while the subjects reverse through a final martial-arts pose, each still microscopic and opaque.",
+        "camera_and_framing": "High-angle close-up with a controlled pull out, standard lens, and deep DOF. The frame uses rule of thirds to keep the insect, bird, and human separated and countable.",
+        "lighting_and_mood": "High-key cool ambient light keeps the leather textures visible without visual clutter.",
+        "environment_and_color": "Rainy dawn outside the kitchen window provides the weather cue; desaturated complementary blue and muted orange accents remain consistent."
+      },
+      {
+        "shot_id": 5,
+        "time_range": "12s-15s",
+        "visual_goal": "End the reverse-time sequence with a clear pre-action tableau across the inside-outside boundary.",
+        "what_happens": "Final match cut back to the hallway doorway. The three microscopic subjects settle backward into their starting positions before the fight: the insect near the threshold, the bird on a tiny leather strip, and the human just inside the hallway, all showing moderate disgust through turned bodies and avoidance.",
+        "camera_and_framing": "High-angle extreme close-up with a final gentle push in. Deep DOF and a standard lens hold the doorway, subjects, rain droplets, and minimalist negative space in focus.",
+        "lighting_and_mood": "Cool high-key ambient light ends the sequence cleanly, keeping the dreamlike reverse motion visible rather than chaotic.",
+        "environment_and_color": "Rainy dawn remains visible beyond the doorway; the image stays desaturated with a complementary palette."
+      }
+    ],
+    "final_video_prompt": "A 15-second minimalist dreamlike video in reverse time, five shots with match cuts. Show a microscopic insect, bird, and human, all solid, opaque, and subtly leather-textured, moving through a reversed miniature martial-arts exchange between a hallway and a kitchen. Use indoor rainy-dawn cues: rain streaks on windows, droplets on the doorway threshold, and droplets rising upward in reverse, not an outdoor storm filling the rooms. The spatial layout should emphasize inside-outside boundaries such as the doorway, counter edge, sink rim, and window. Camera style: high-angle extreme close-ups and close-ups, alternating slow push in and pull out, rule-of-thirds composition, deep DOF, standard lens. Lighting is cool, high-key ambient light; colors are desaturated with a complementary blue-and-rust palette. Each shot should match cut on a pose or droplet so the sequence feels continuous. Moderate disgust is shown through turned bodies, recoiling posture, and avoidance rather than exaggerated facial acting. Keep the three microscopic subjects countable and the martial-arts poses readable.",
+    "negative_prompt": "normal-sized subjects, missing insect, missing bird, missing human, outdoor-only scene, heavy rain flooding the rooms, chaotic combat blur, forward-time motion, random cuts instead of match cuts, dark low-key lighting, saturated neon palette, extra characters, gore, text, watermark, logo",
+    "coverage_notes": {
+      "must_show": [
+        "hallway and kitchen as distinct scenes",
+        "insect, bird, and human as three microscopic subjects",
+        "reverse-time martial arts action",
+        "inside-outside spatial layout at doorway, counter, or window boundaries",
+        "rain effect and rainy dawn cues",
+        "five-shot progression with match cuts",
+        "high-angle close-up or extreme close-up camera",
+        "push in and pull out camera movement",
+        "cool high-key ambient light",
+        "rule-of-thirds composition"
+      ],
+      "soft_interpretations": [
+        "dreamlike rule set justifies reverse motion and miniature staging",
+        "moderate disgust is conveyed through body orientation and avoidance because microscopic faces are hard to inspect",
+        "leather texture can appear on wings, clothing, or tiny props as long as it is visible",
+        "minimalist style is preserved through clean surfaces, negative space, and limited props",
+        "rain is represented by windows and threshold droplets to avoid contradicting the indoor hallway and kitchen"
+      ],
+      "tradeoffs": [
+        "weather VFX conflicts with fully indoor scenes, so rain is kept at windows, thresholds, and reflected droplets",
+        "heavy VFX is simplified to sparse droplets so the minimalist style and microscopic subjects remain readable"
+      ]
+    },
+    "active_dimensions": [
+      "style",
+      "scenes",
+      "subjects",
+      "physical_state",
+      "physical_rule",
+      "texture",
+      "opacity",
+      "scale",
+      "spatial_layout",
+      "action",
+      "emotion",
+      "effect",
+      "lighting_tone",
+      "lighting_direction",
+      "lighting_intensity",
+      "color_saturation",
+      "color_palette",
+      "camera_angle",
+      "camera_movement",
+      "composition",
+      "time_mode",
+      "shot_size",
+      "depth_of_field",
+      "focal_length",
+      "time_of_day",
+      "weather",
+      "transition"
+    ]
+  }
+]

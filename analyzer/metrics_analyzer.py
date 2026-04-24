@@ -1,36 +1,42 @@
 """
-Metrics Analyzer — Stage 4 of the sv-benchmark pipeline
-========================================================
+Metrics Analyzer — extracts scorable metrics and their ground-truth values.
+=============================================================================
 
-Dual-source strategy:
-  PRIMARY  — compiled_testcases.json → read active_dimensions (which tags
-             the compiler actually preserved in the final prompt)
-  FALLBACK — compiler_payloads_v4.json → all non-"none" tags are treated
-             as active (used when compiled testcases are unavailable or
-             lack the active_dimensions field)
+Inputs:
+  1. compiled testcases JSON  — list of testcases with `testcase_id`,
+     `active_dimensions`, and rich text fields (core_intent, story_logic,
+     shot_plan, final_video_prompt, coverage_notes).
+  2. QC JSON                  — list of per-testcase reviews with
+     `metric_review.<metric>.pass`. A metric is "scorable" iff pass == true.
+  3. Allowed-values TXT       — canonical enum values per metric.  Extracted
+     ground-truth values MUST appear in this list.
 
-Tag values always come from the compiler payload so the checklist can
-show the concrete value assigned to each dimension.
+Output (single file):
+  metrics_ground_truth.json   — per-testcase list of 27 metrics, each with
+     `scorable`, `qc_note`, `active_in_prompt`, and `gt_values`.
 
-Output (written to analyzer/ folder):
-  1. metrics_checklists.json        — per-testcase active metrics + tag values
-  2. tag_distribution_by_level.json — per-difficulty cumulative distribution
+Ground-truth extraction:
+  Concatenate all textual fields of the compiled testcase and scan it for
+  any allowed value (case-insensitive substring, longest-first so that
+  "extreme close-up" wins over "close-up").  Matches that overlap in the
+  text are deduplicated by keeping the longer span.
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import re
 from collections import OrderedDict
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Set
+from typing import Any, Dict, List, Optional, Tuple
 
 
 # ============================================================
-# 1. Metric definitions  (27 dimensions)
+# 1. Metric definitions (27 dimensions)
 # ============================================================
 
-FIELD_TO_METRIC = OrderedDict([
+FIELD_TO_METRIC: "OrderedDict[str, str]" = OrderedDict([
     # ── v3 original 18 ──────────────────────────────────────
     ("style",              "画风"),
     ("scenes",             "场景"),
@@ -62,258 +68,611 @@ FIELD_TO_METRIC = OrderedDict([
     ("transition",         "转场"),
 ])
 
-N_METRICS = len(FIELD_TO_METRIC)          # 27
-
-DIFFICULTY_LABELS = ["S1", "S2", "S3", "S4", "S5"]
+N_METRICS = len(FIELD_TO_METRIC)  # 27
 
 
 # ============================================================
-# 2. Helpers — tag value extraction
+# 2. Parse allowed-values list (metrics_and_gt_values_list.txt)
 # ============================================================
 
-def _to_values(value: Any) -> List[str]:
-    """Normalize a tag field value to a flat list of display strings."""
-    if isinstance(value, list):
-        return [str(v) for v in value]
-    if isinstance(value, str) and value.strip().lower() != "none" and value.strip():
-        return [value]
-    return []
+# Header line looks like:
+#   画风 (style) — 12 值：
+#   画风 (style) — 12 值： photorealistic, cinematic, ...
+_HEADER_RE = re.compile(
+    r".*?\(([a-z_]+)\)\s*[—\-]+\s*\d+\s*值\s*[:：]\s*(.*)$",
+)
 
 
-def _payload_active_fields(payload: Dict[str, Any]) -> Set[str]:
-    """Determine which dimensions are active from a raw payload (fallback)."""
-    active: Set[str] = set()
-    for en_field in FIELD_TO_METRIC:
-        raw = payload.get(en_field)
-        is_active = (
-            (isinstance(raw, list) and len(raw) > 0)
-            or (isinstance(raw, str) and raw.strip().lower() != "none" and raw.strip() != "")
-        )
-        if is_active:
-            active.add(en_field)
-    return active
+def parse_allowed_values(txt_path: Path) -> Dict[str, List[str]]:
+    """Parse `metrics_and_gt_values_list.txt` into {en_field: [values]}.
 
-
-# ============================================================
-# 3. Build per-testcase metrics checklist
-# ============================================================
-
-def _detect_metrics(
-    payload: Dict[str, Any],
-    active_dims: Optional[Set[str]],
-) -> List[Dict[str, Any]]:
+    Handles three layouts present in the source file:
+      (a) header line only → values live on the following non-empty line
+      (b) header line with inline values after the `：`
+      (c) emotion: header → human-readable explanation → `即：<values>` line
+          (the explanation line is skipped in favour of the canonical `即：` line)
     """
-    For each of the 27 dimensions, decide active/inactive and read values.
 
-    active_dims (from compiled testcase) is the primary source.
-    Falls back to payload-level detection when active_dims is None.
-    """
-    fallback = active_dims is None
-    if fallback:
-        active_dims = _payload_active_fields(payload)
+    lines = txt_path.read_text(encoding="utf-8").splitlines()
+    allowed: Dict[str, List[str]] = {}
 
-    results: List[Dict[str, Any]] = []
-    for en_field in FIELD_TO_METRIC:
-        active = en_field in active_dims
-        values = _to_values(payload.get(en_field)) if active else []
-        results.append({
-            "metric": FIELD_TO_METRIC[en_field],
-            "en_field": en_field,
-            "detected_values": values,
-            "active": active,
-            "source": "payload_fallback" if fallback else "compiled",
-        })
-    return results
+    def split_values(raw: str) -> List[str]:
+        return [v.strip() for v in raw.split(",") if v.strip()]
 
-
-def _make_testcase_id(payload: Dict[str, Any]) -> str:
-    diff = payload.get("difficulty", "??")
-    idx = payload.get("id", 0)
-    return f"{diff}-{idx:03d}"
-
-
-def build_metrics_checklists(
-    payloads: List[Dict[str, Any]],
-    compiled: Optional[List[Dict[str, Any]]] = None,
-) -> List[Dict[str, Any]]:
-    """
-    Build a per-testcase checklist of which metrics are active.
-
-    If compiled testcases are provided AND they contain active_dimensions,
-    those are used as the ground truth.  Otherwise, falls back to
-    payload-level tag presence.
-    """
-    compiled_by_idx: Dict[int, Dict[str, Any]] = {}
-    if compiled:
-        for i, tc in enumerate(compiled):
-            compiled_by_idx[i] = tc
-
-    checklists: List[Dict[str, Any]] = []
-    for i, pl in enumerate(payloads):
-        tc = compiled_by_idx.get(i)
-        active_dims: Optional[Set[str]] = None
-        if tc and "active_dimensions" in tc:
-            active_dims = set(tc["active_dimensions"])
-
-        tid_compiled = tc["testcase_id"] if tc and "testcase_id" in tc else None
-        tid = tid_compiled or _make_testcase_id(pl)
-
-        detected = _detect_metrics(pl, active_dims)
-        active_count = sum(1 for m in detected if m["active"])
-
-        checklists.append({
-            "testcase_id": tid,
-            "difficulty": pl.get("difficulty", "unknown"),
-            "num_metrics": active_count,
-            "source": "compiled" if active_dims is not None else "payload_fallback",
-            "metrics": detected,
-        })
-    return checklists
-
-
-# ============================================================
-# 4. Cumulative distribution (array format)
-# ============================================================
-
-def build_distribution(
-    checklists: List[Dict[str, Any]],
-) -> List[Dict[str, Any]]:
-    groups: Dict[str, List[Dict[str, Any]]] = {}
-    for cl in checklists:
-        groups.setdefault(cl["difficulty"], []).append(cl)
-
-    result: List[Dict[str, Any]] = []
-    for diff in DIFFICULTY_LABELS:
-        if diff not in groups:
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        m = _HEADER_RE.match(line)
+        if not m:
+            i += 1
             continue
-        group = groups[diff]
-        n_samples = len(group)
-        total_possible = N_METRICS * n_samples
 
-        counts: Dict[str, int] = dict.fromkeys(FIELD_TO_METRIC, 0)
-        for cl in group:
-            for m in cl["metrics"]:
-                if m["active"]:
-                    counts[m["en_field"]] += 1
+        en_field = m.group(1).strip()
+        inline = m.group(2).strip()
+        values: List[str] = []
 
-        total_active = sum(counts.values())
+        if inline:
+            values = split_values(inline)
 
-        metrics_arr: List[Dict[str, Any]] = []
+        # Scan the block until the next header for a richer enum line.
+        # This lets us override inline values for `emotion` (which uses `即：`).
+        j = i + 1
+        while j < len(lines):
+            cand = lines[j].strip()
+            if _HEADER_RE.match(cand):
+                break
+            if not cand:
+                j += 1
+                continue
+            if cand.startswith("即"):
+                body = re.sub(r"^即\s*[:：]\s*", "", cand)
+                values = split_values(body)
+            elif not values and "," in cand:
+                values = split_values(cand)
+            j += 1
+
+        if values:
+            allowed[en_field] = values
+        i = j if j > i else i + 1
+
+    return allowed
+
+
+# ============================================================
+# 3. Synonym / paraphrase table  (canonical_value → list of triggers)
+# ============================================================
+#
+# `SYNONYMS[en_field][canonical]` lists extra text triggers that should
+# resolve to the same canonical value.  Hyphen / space / joined forms
+# are generated automatically by `_generate_variants`; this table only
+# covers cases where the prompt uses a genuinely different word.
+#
+# Keep entries SPECIFIC — overly generic triggers (e.g. "huge",
+# "sideways") introduce false positives across unrelated metrics.
+
+SYNONYMS: Dict[str, Dict[str, List[str]]] = {
+    "action": {
+        "dialogue": ["talking", "conversation", "speaking", "visual dialogue"],
+    },
+    "camera_angle": {
+        "eye level": ["eye-line", "eye height"],
+        "bird's eye": ["top-down view", "overhead view"],
+    },
+    "camera_movement": {
+        "truck": ["trucks", "trucking", "truck move", "truck movement", "lateral truck"],
+        "push in": ["pushes in", "pushing in"],
+        "pull out": ["pulls out", "pulling out"],
+        "pan": ["panning", "pans"],
+        "tracking shot": ["tracks", "tracking"],
+        "crane": ["cranes", "craning", "crane shot", "crane move"],
+        "orbit": ["orbits", "orbiting", "orbiting camera"],
+        "handheld": ["hand held"],
+        "static": ["locked off", "stationary", "fixed camera"],
+    },
+    "color_palette": {
+        "monochromatic": ["monochrome", "single-color"],
+    },
+    "composition": {
+        "center framing": ["centered", "stays centered", "center-frame", "center frame"],
+        "leading lines": ["leading line"],
+    },
+    "depth_of_field": {
+        "shallow DOF": ["shallow depth of field", "shallow focus"],
+        "deep DOF": ["deep depth of field", "deep focus"],
+        "pan-focus": ["all in focus", "everything in focus"],
+    },
+    "focal_length": {
+        "standard lens": ["normal lens", "50mm"],
+    },
+    "lighting_direction": {
+        "under light": ["underlight", "underlit", "uplight", "underlighting"],
+        "front light": ["frontlit", "frontlighting"],
+        "side light": ["sidelit", "sidelighting"],
+        "backlight": ["backlit", "backlighting"],
+        "top light": ["overhead light", "top-down light"],
+        "ambient light": ["ambient lighting"],
+    },
+    "lighting_tone": {
+        "multi-color": ["multicolored", "rainbow", "polychrome"],
+        "warm": ["warm lighting", "warm tones", "warm highlights", "warm glow"],
+        "cool": ["cool lighting", "cool tones"],
+        "neutral": ["neutral lighting", "neutral tones"],
+    },
+    "physical_state": {
+        "rigid body": ["rigid-bodied"],
+    },
+    "physical_rule": {
+        "real-world": ["realistic physics", "real world physics"],
+    },
+    "scale": {
+        "normal scale": ["normal-scale", "normal size", "regular size", "regular-size"],
+        "giant": ["enormous", "gigantic", "colossal"],
+    },
+    "shot_size": {
+        "extreme close-up": ["extreme closeup"],
+        "close-up": ["closeup"],
+        "extreme long shot": ["extreme wide shot"],
+    },
+    "spatial_layout": {
+        "layered/stacked": [
+            "layered", "stacked", "layered or stacked", "stacked layered",
+            "stacked risers",
+        ],
+        "foreground-background": ["foreground and background"],
+        "left-right": ["left to right"],
+        "inside-outside": ["inside to outside", "inside and outside"],
+    },
+    "subjects": {
+        "fictional creature": ["fantasy creature", "mythical creature"],
+        "aquatic animal": ["aquatic creature", "sea creature"],
+    },
+    "texture": {
+        "hair/fur": ["hair", "fur", "furry", "fuzzy hair", "fur-like"],
+    },
+    "time_mode": {
+        "real-time": ["in real time"],
+    },
+    "transition": {
+        "none": [
+            "no cuts", "single continuous shot", "single-shot",
+            "one continuous shot", "one unbroken shot", "single unbroken",
+            "no transitions",
+        ],
+    },
+}
+
+
+# ============================================================
+# 4. Ground-truth extraction from testcase text
+# ============================================================
+
+_TEXT_FIELDS_TOP = ("core_intent", "story_logic", "final_video_prompt")
+_TEXT_FIELDS_SHOT = (
+    "visual_goal",
+    "what_happens",
+    "camera_and_framing",
+    "lighting_and_mood",
+    "environment_and_color",
+)
+
+
+def build_testcase_text(testcase: Dict[str, Any]) -> str:
+    """Concatenate every descriptive text field of a compiled testcase."""
+    parts: List[str] = []
+
+    for key in _TEXT_FIELDS_TOP:
+        v = testcase.get(key)
+        if isinstance(v, str):
+            parts.append(v)
+
+    for shot in testcase.get("shot_plan", []) or []:
+        if not isinstance(shot, dict):
+            continue
+        for key in _TEXT_FIELDS_SHOT:
+            v = shot.get(key)
+            if isinstance(v, str):
+                parts.append(v)
+
+    notes = testcase.get("coverage_notes", {})
+    if isinstance(notes, dict):
+        for key in ("must_show", "soft_interpretations", "tradeoffs"):
+            vals = notes.get(key)
+            if isinstance(vals, list):
+                parts.extend(str(v) for v in vals if isinstance(v, (str, int, float)))
+
+    return "\n".join(parts)
+
+
+def _generate_variants(value: str) -> List[str]:
+    """Return surface variants of a canonical value.
+
+    Covers the orthographic variation found in compiled prompts:
+      "real-time"  → {"real-time", "real time", "realtime"}
+      "rigid body" → {"rigid body", "rigid-body", "rigidbody"}
+      "hair/fur"   → {"hair/fur", "hair or fur", "hair", "fur"}
+      "frame within frame" → {..., "frame-within-frame"}
+    """
+    value = value.strip()
+    if not value:
+        return []
+
+    variants = {value}
+
+    if "-" in value:
+        variants.add(value.replace("-", " "))
+    if " " in value:
+        variants.add(value.replace(" ", "-"))
+
+    # For "/" (OR-values), add each side as its own trigger.
+    if "/" in value:
+        for part in value.split("/"):
+            part = part.strip()
+            if part:
+                variants.update(_generate_variants(part))
+        variants.add(value.replace("/", " or "))
+
+    # Joined form ("realtime") only for exactly two reasonably long words
+    # to avoid collisions like "multicolor" vs "multi color".
+    parts = [p for p in re.split(r"[\s\-]+", value.replace("/", " ")) if p]
+    if len(parts) == 2 and all(len(p) >= 3 for p in parts):
+        variants.add("".join(parts))
+
+    return sorted(variants, key=len, reverse=True)
+
+
+def _resolve_triggers(en_field: str, allowed: List[str]) -> List[Tuple[str, str]]:
+    """Return list of (canonical_value, trigger_text) pairs to scan for."""
+    seen: set = set()
+    triggers: List[Tuple[str, str]] = []
+    syn_for_field = SYNONYMS.get(en_field, {})
+
+    for canon in allowed:
+        for variant in _generate_variants(canon):
+            key = (canon, variant.lower())
+            if key not in seen:
+                seen.add(key)
+                triggers.append((canon, variant))
+        for syn in syn_for_field.get(canon, []):
+            key = (canon, syn.lower())
+            if key not in seen:
+                seen.add(key)
+                triggers.append((canon, syn))
+
+    return triggers
+
+
+def extract_gt_values(en_field: str, text: str, allowed: List[str]) -> List[str]:
+    """Return canonical allowed values whose triggers appear in `text`.
+
+    Matching rules:
+      * Each canonical value is matched via its own orthographic variants
+        plus any handcrafted synonyms from `SYNONYMS[en_field]`.
+      * Case-insensitive with word-boundary anchors (`(?<!\\w)` / `(?!\\w)`)
+        to avoid substring false positives such as "rain" inside "restrained".
+      * Longest-first greedy selection over non-overlapping spans so that
+        "extreme close-up" wins over "close-up" when both would match.
+      * "none" is dropped when any concrete canonical value is also matched
+        for the same metric.
+      * Output preserves the order from the allowed list for deterministic
+        diffing.
+    """
+    if not text or not allowed:
+        return []
+
+    triggers = _resolve_triggers(en_field, allowed)
+    if not triggers:
+        return []
+
+    lower_text = text.lower()
+    matches: List[Tuple[int, int, str]] = []
+
+    for canon, trigger in sorted(triggers, key=lambda t: len(t[1]), reverse=True):
+        t_low = trigger.lower()
+        if not t_low:
+            continue
+        pattern = r"(?<!\w)" + re.escape(t_low) + r"(?!\w)"
+        for m in re.finditer(pattern, lower_text):
+            matches.append((m.start(), m.end(), canon))
+
+    matches.sort(key=lambda t: (t[1] - t[0]), reverse=True)
+
+    consumed: List[Tuple[int, int]] = []
+    kept: List[str] = []
+    for start, end, canon in matches:
+        if any(not (end <= cs or start >= ce) for cs, ce in consumed):
+            continue
+        consumed.append((start, end))
+        if canon not in kept:
+            kept.append(canon)
+
+    if len(kept) > 1 and "none" in kept:
+        kept = [v for v in kept if v != "none"]
+
+    order = {v: i for i, v in enumerate(allowed)}
+    kept.sort(key=lambda v: order[v])
+    return kept
+
+
+# ============================================================
+# 5. Build per-testcase scorable-metrics record
+# ============================================================
+
+_DIFFICULTY_RE = re.compile(r"^(S[1-5])\b", re.IGNORECASE)
+
+
+def _difficulty_of(testcase_id: str) -> str:
+    m = _DIFFICULTY_RE.match(testcase_id or "")
+    return m.group(1).upper() if m else "??"
+
+
+def build_records(
+    compiled: List[Dict[str, Any]],
+    qc_entries: List[Dict[str, Any]],
+    allowed: Dict[str, List[str]],
+) -> List[Dict[str, Any]]:
+    """Join compiled + qc by testcase_id and build per-testcase metric records."""
+    qc_by_id: Dict[str, Dict[str, Any]] = {
+        qc.get("testcase_id", ""): qc for qc in qc_entries if qc.get("testcase_id")
+    }
+
+    records: List[Dict[str, Any]] = []
+    for tc in compiled:
+        tid = tc.get("testcase_id", "")
+        qc = qc_by_id.get(tid, {})
+        metric_review = qc.get("metric_review", {}) if isinstance(qc, dict) else {}
+
+        active_dims = set(tc.get("active_dimensions", []) or [])
+        full_text = build_testcase_text(tc)
+
+        metrics_out: List[Dict[str, Any]] = []
+        scorable_count = 0
         for en_field, cn_metric in FIELD_TO_METRIC.items():
-            c = counts[en_field]
-            metrics_arr.append({
-                "metric": cn_metric,
+            review = metric_review.get(en_field) if isinstance(metric_review, dict) else None
+            if isinstance(review, dict):
+                scorable = bool(review.get("pass", False))
+                qc_note = review.get("note", "") or ""
+            else:
+                scorable = False
+                qc_note = ""
+
+            if scorable:
+                scorable_count += 1
+
+            allowed_for_metric = allowed.get(en_field, [])
+            gt_values: List[str] = (
+                extract_gt_values(en_field, full_text, allowed_for_metric)
+                if scorable else []
+            )
+
+            metrics_out.append({
                 "en_field": en_field,
-                "active_count": c,
-                "ratio": round(c / total_possible, 4) if total_possible > 0 else 0,
+                "metric": cn_metric,
+                "scorable": scorable,
+                "qc_note": qc_note,
+                "active_in_prompt": en_field in active_dims,
+                "gt_values": gt_values,
             })
 
-        result.append({
-            "difficulty": diff,
-            "n_samples": n_samples,
-            "total_possible_metric_slots": total_possible,
-            "total_active_metric_slots": total_active,
-            "metrics": metrics_arr,
+        records.append({
+            "testcase_id": tid,
+            "difficulty": _difficulty_of(tid),
+            "duration_seconds": tc.get("duration_seconds"),
+            "overall_pass": qc.get("overall_pass") if isinstance(qc, dict) else None,
+            "num_scorable_metrics": scorable_count,
+            "metrics": metrics_out,
         })
 
-    return result
+    return records
 
 
 # ============================================================
-# 5. Pretty-print
+# 6. Pretty-print summary
 # ============================================================
 
-def print_checklists(checklists: List[Dict[str, Any]]) -> None:
-    for cl in checklists:
-        src = cl["source"]
-        tag = f"{cl['num_metrics']} active / {N_METRICS} total  [{src}]"
-        print(f"\n{'='*85}")
-        print(f"  Testcase : {cl['testcase_id']}")
-        print(f"  Difficulty: {cl['difficulty']}  |  Metrics: {tag}")
-        print(f"{'='*85}")
-        print(f"  {'Active':<8s} {'Metric':<16s} {'EN Field':<22s} {'Values'}")
-        print(f"  {'-'*8} {'-'*16} {'-'*22} {'-'*30}")
-        for m in cl["metrics"]:
-            flag = "  ✓" if m["active"] else "  ✗"
-            vals = ", ".join(m["detected_values"]) if m["detected_values"] else "—"
-            print(f"  {flag:<8s} {m['metric']:<16s} {m['en_field']:<22s} {vals}")
-
-
-def print_distribution(dist: List[Dict[str, Any]]) -> None:
-    for level in dist:
-        diff = level["difficulty"]
-        n = level["n_samples"]
-        tp = level["total_possible_metric_slots"]
-        ta = level["total_active_metric_slots"]
-        print(f"\n{'#'*65}")
-        print(f"  {diff}  (n_samples={n}, active={ta}/{tp})")
-        print(f"{'#'*65}")
-        print(f"  {'Metric':<16s} {'EN Field':<22s} {'Active':>6s}  {'Ratio':>8s}  Bar")
-        print(f"  {'-'*16} {'-'*22} {'-'*6}  {'-'*8}  {'-'*20}")
-        for m in level["metrics"]:
-            bar_len = int(m["ratio"] * 20 * N_METRICS)
-            bar = "█" * min(bar_len, 20) + "░" * max(20 - bar_len, 0)
-            active_str = f"{m['active_count']}/{n}"
-            print(f"  {m['metric']:<16s} {m['en_field']:<22s} {active_str:>6s}  "
-                  f"{m['ratio']:>7.2%}  {bar}")
+def print_summary(records: List[Dict[str, Any]]) -> None:
+    print(f"\n{'=' * 85}")
+    print(f"  Summary: {len(records)} testcase(s)")
+    print(f"{'=' * 85}")
+    for rec in records:
+        tid = rec["testcase_id"]
+        nsc = rec["num_scorable_metrics"]
+        unmatched = [m["en_field"] for m in rec["metrics"] if m["scorable"] and not m["gt_values"]]
+        print(f"\n  • {tid}  [scorable: {nsc}/{N_METRICS}]")
+        if unmatched:
+            print(f"      ⚠ no GT match for: {', '.join(unmatched)}")
+        for m in rec["metrics"]:
+            if not m["scorable"]:
+                continue
+            gts = ", ".join(m["gt_values"]) if m["gt_values"] else "—"
+            print(f"      {m['en_field']:<22s} → {gts}")
 
 
 # ============================================================
-# 6. Main
+# 7. Metrics distribution across difficulty levels
+# ============================================================
+
+_LEVEL_ORDER = ("S1", "S2", "S3", "S4", "S5")
+
+
+def build_metrics_distribution(records: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """Compute scorable-usage rate per metric × difficulty level.
+
+    For each (metric, level) pair:
+      scorable = # testcases at that level where metric has pass=true
+      total    = # testcases at that level
+      pct      = scorable / total * 100
+
+    Numerator = how many times the metric was actually used for evaluation.
+    Denominator = total prompt samples at that difficulty level.
+    """
+    levels_present: List[str] = []
+    total_per_level: Dict[str, int] = {}
+    scorable_per_level: Dict[str, Dict[str, int]] = {}
+
+    for rec in records:
+        level = rec.get("difficulty") or "unknown"
+        if level not in total_per_level:
+            total_per_level[level] = 0
+            scorable_per_level[level] = dict.fromkeys(FIELD_TO_METRIC, 0)
+            levels_present.append(level)
+        total_per_level[level] += 1
+        for m in rec.get("metrics", []):
+            if m.get("scorable"):
+                en_field = m.get("en_field")
+                if en_field in scorable_per_level[level]:
+                    scorable_per_level[level][en_field] += 1
+
+    # Keep canonical S1..S5 order for known levels, append any extras alphabetically
+    levels = [lv for lv in _LEVEL_ORDER if lv in total_per_level]
+    levels += sorted(lv for lv in total_per_level if lv not in _LEVEL_ORDER)
+
+    total_all = sum(total_per_level.values())
+
+    def _pct(num: int, denom: int) -> float:
+        return round(num / denom * 100, 2) if denom else 0.0
+
+    metrics_dist: List[Dict[str, Any]] = []
+    for en_field, cn_metric in FIELD_TO_METRIC.items():
+        per_level: Dict[str, Dict[str, Any]] = {}
+        overall_scorable = 0
+        for lv in levels:
+            sc = scorable_per_level[lv][en_field]
+            tot = total_per_level[lv]
+            overall_scorable += sc
+            per_level[lv] = {
+                "scorable": sc,
+                "total": tot,
+                "pct": _pct(sc, tot),
+            }
+        metrics_dist.append({
+            "en_field": en_field,
+            "metric": cn_metric,
+            "per_level": per_level,
+            "overall": {
+                "scorable": overall_scorable,
+                "total": total_all,
+                "pct": _pct(overall_scorable, total_all),
+            },
+        })
+
+    return {
+        "levels": levels,
+        "total_samples_per_level": {lv: total_per_level[lv] for lv in levels},
+        "total_samples": total_all,
+        "metrics_distribution": metrics_dist,
+    }
+
+
+def print_distribution(dist: Dict[str, Any]) -> None:
+    """Render the metrics-distribution matrix as an ASCII table."""
+    levels: List[str] = dist["levels"]
+    totals: Dict[str, int] = dist["total_samples_per_level"]
+    total_all: int = dist["total_samples"]
+
+    print(f"\n{'=' * 85}")
+    print("  Metrics distribution (scorable % per difficulty level)")
+    print(f"{'=' * 85}")
+    header_levels = "  ".join(f"{lv:>8s}" for lv in levels)
+    print(f"\n  {'metric':<22s}  {header_levels}  {'overall':>8s}")
+    totals_row = "  ".join(f"{'n=' + str(totals[lv]):>8s}" for lv in levels)
+    print(f"  {'':<22s}  {totals_row}  {'n=' + str(total_all):>8s}")
+    print(f"  {'-' * 22}  {'-' * (len(levels) * 10 - 2)}  {'-' * 8}")
+    for m in dist["metrics_distribution"]:
+        cells = "  ".join(
+            f"{m['per_level'][lv]['pct']:>7.1f}%" for lv in levels
+        )
+        overall_pct = m["overall"]["pct"]
+        print(f"  {m['en_field']:<22s}  {cells}  {overall_pct:>7.1f}%")
+
+
+# ============================================================
+# 8. Main
 # ============================================================
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Metrics Analyzer: derive active metrics from compiled testcases + payloads",
+        description=(
+            "Extract scorable metrics and ground-truth values for each testcase "
+            "from compiled testcases + QC annotations + allowed-values list."
+        ),
     )
     parser.add_argument(
-        "--payloads", type=str,
-        default="../outputs/compiler_payloads_v4.json",
-        help="Path to compiler payloads JSON (structured tag source)",
+        "--compiled", type=str, required=True,
+        help="Path to compiled testcases JSON (has active_dimensions + text fields).",
     )
     parser.add_argument(
-        "--compiled", type=str, default=None,
-        help="Path to compiled testcases JSON (active_dimensions source). "
-             "If omitted, falls back to payload-only detection.",
+        "--qc", type=str, required=True,
+        help="Path to QC JSON (has metric_review.<metric>.pass).",
     )
     parser.add_argument(
-        "--out_dir", type=str, default=".",
-        help="Output directory (default: analyzer/ folder itself)",
+        "--gt-values", type=str, default="metrics_and_gt_values_list.txt",
+        help="Path to allowed-values TXT (default: analyzer/metrics_and_gt_values_list.txt).",
+    )
+    parser.add_argument(
+        "--out", type=str, default="metrics_ground_truth.json",
+        help="Output JSON file (default: analyzer/metrics_ground_truth.json).",
+    )
+    parser.add_argument(
+        "--dist-out", type=str, default="metrics_distribution.json",
+        help=(
+            "Per-difficulty metrics usage distribution JSON "
+            "(default: analyzer/metrics_distribution.json)."
+        ),
+    )
+    parser.add_argument(
+        "--quiet", action="store_true",
+        help="Suppress the per-testcase summary print.",
     )
     args = parser.parse_args()
 
     base = Path(__file__).resolve().parent
 
-    pl_path = (base / args.payloads).resolve()
-    payloads = json.loads(pl_path.read_text(encoding="utf-8"))
-    print(f"Loaded {len(payloads)} payloads from {pl_path.name}")
+    def resolve(p: str) -> Path:
+        return Path(p) if Path(p).is_absolute() else (base / p).resolve()
 
-    compiled = None
-    if args.compiled:
-        tc_path = (base / args.compiled).resolve()
-        compiled = json.loads(tc_path.read_text(encoding="utf-8"))
-        has_ad = sum(1 for tc in compiled if "active_dimensions" in tc)
-        print(f"Loaded {len(compiled)} compiled testcases from {tc_path.name} "
-              f"({has_ad}/{len(compiled)} have active_dimensions)")
-    else:
-        print("No --compiled provided → using payload-only fallback")
+    compiled_path = resolve(args.compiled)
+    qc_path = resolve(args.qc)
+    gt_path = resolve(args.gt_values)
+    out_path = resolve(args.out)
+    dist_path = resolve(args.dist_out)
 
-    out_dir = (base / args.out_dir).resolve()
-    out_dir.mkdir(parents=True, exist_ok=True)
+    compiled: List[Dict[str, Any]] = json.loads(compiled_path.read_text(encoding="utf-8"))
+    qc_entries: List[Dict[str, Any]] = json.loads(qc_path.read_text(encoding="utf-8"))
+    allowed = parse_allowed_values(gt_path)
 
-    checklists = build_metrics_checklists(payloads, compiled)
-    print_checklists(checklists)
+    missing = [f for f in FIELD_TO_METRIC if f not in allowed]
+    if missing:
+        print(
+            f"⚠ {len(missing)} metric(s) have no allowed values parsed from "
+            f"{gt_path.name}: {missing}"
+        )
 
-    p1 = out_dir / "metrics_checklists.json"
-    p1.write_text(json.dumps(checklists, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"\n✓ Saved: {p1}")
+    print(
+        f"Loaded {len(compiled)} compiled testcases from {compiled_path.name}\n"
+        f"Loaded {len(qc_entries)} QC entries from {qc_path.name}\n"
+        f"Loaded allowed values for {len(allowed)} metric(s) from {gt_path.name}"
+    )
 
-    dist = build_distribution(checklists)
-    print_distribution(dist)
+    records = build_records(compiled, qc_entries, allowed)
 
-    p2 = out_dir / "tag_distribution_by_level.json"
-    p2.write_text(json.dumps(dist, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"\n✓ Saved: {p2}")
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(
+        json.dumps(records, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"\n✓ Saved: {out_path}")
+
+    distribution = build_metrics_distribution(records)
+    dist_path.parent.mkdir(parents=True, exist_ok=True)
+    dist_path.write_text(
+        json.dumps(distribution, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"✓ Saved: {dist_path}")
+
+    if not args.quiet:
+        print_summary(records)
+        print_distribution(distribution)
 
 
 if __name__ == "__main__":

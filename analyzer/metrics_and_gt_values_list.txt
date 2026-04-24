@@ -1,0 +1,55 @@
+画风 (style) — 12 值：
+photorealistic, cinematic, gothic, cartoon, anime, watercolor, oil painting, cyberpunk, black & white, surrealist, minimalist, vintage film
+
+场景 (scenes) — 16 值：
+living room, kitchen, office, hallway, warehouse, hospital, city street, park, forest, beach, desert, snowfield, mountain peak, underwater, ruins, theater stage
+
+主体 (subjects) — 10 值：
+human, mammal, bird, aquatic animal, insect, robot, vehicle, natural element, everyday object, fictional creature
+
+物理状态 (physical_state) — 7 值：
+solid, liquid, gas, plasma, rigid body, soft body, particle
+
+物理规则 (physical_rule) — 4 值：
+real-world, sci-fi, fantasy, dreamlike
+
+纹理 (texture) — 10 值：
+smooth, rough, hair/fur, feathered, metallic, wooden, fabric, glass, stone, leather
+
+透光度 (opacity) — 3 值：
+transparent, semi-transparent, opaque
+
+尺度 (scale) — 3 值：
+microscopic, normal scale, giant
+
+空间布局 (spatial_layout) — 8 值：
+vertical, left-right, foreground-background, inside-outside, encircling, diagonal, layered/stacked, scattered
+
+动作 (action) — 24 值：
+walking, running, jumping, fighting, backflip, martial arts, dancing, swimming, climbing, cycling, driving, cooking, writing, playing instrument, throwing, hugging, bowing, dialogue, singing, falling, hovering, spinning, waving, none
+
+表情 (emotion) — 22 值：
+7 基础情绪（Ekman 6 + delight）× 3 强度（strong/moderate/subtle）+ none
+即：strong joy, moderate joy, subtle joy, strong sadness, moderate sadness, subtle sadness, strong anger, moderate anger, subtle anger, strong fear, moderate fear, subtle fear, strong surprise, moderate surprise, subtle surprise, strong disgust, moderate disgust, subtle disgust, strong delight, moderate delight, subtle delight, none
+
+特效 (effect) — 12 值：
+explosion, light effect, flame, smoke, rain, snow, lightning, magic particles, hologram, shattering, water splash, none
+
+灯光色调 (lighting_tone) — 4 值： warm, cool, neutral, multi-color
+灯光方向 (lighting_direction) — 6 值： front light, side light, backlight, top light, under light, ambient light
+灯光强度 (lighting_intensity) — 3 值： high-key, low-key, normal
+
+相机角度 (camera_angle) — 5 值： high angle, low angle, eye level, bird's eye, dutch angle
+运镜 (camera_movement) — 10 值： push in, pull out, pan, truck, tracking shot, crane, orbit, handheld, whip pan, static
+构图 (composition) — 6 值： rule of thirds, symmetrical, leading lines, center framing, frame within frame, golden spiral
+时间模式 (time_mode) — 5 值： real-time, slow motion, timelapse, reverse, freeze frame
+景别 (shot_size) — 6 值： extreme close-up, close-up, medium shot, full shot, long shot, extreme long shot
+景深 (depth_of_field) — 3 值： shallow DOF, deep DOF, pan-focus
+焦距 (focal_length) — 4 值： wide-angle, standard lens, telephoto, macro
+
+色彩饱和度 (color_saturation) — 3 值： high saturation, low saturation, desaturated
+主色调 (color_palette) — 4 值： warm palette, cool palette, complementary, monochromatic
+
+时段 (time_of_day) — 4 值： dawn, daytime, dusk, night
+天气 (weather) — 5 值： clear, overcast, rainy, foggy, snowy
+转场 (transition) — 6 值： hard cut, fade, dissolve, wipe, match cut, none

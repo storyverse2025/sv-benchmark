@@ -3,3 +3,5 @@
 __pycache__/
 *.pyc
 .claude/
+# Generation run artifacts (may contain API keys)
+**/generation_results.json
