@@ -1,0 +1,880 @@
+{
+  "S1-11-anime-warehouse-fictional-creature-snow": {
+    "style": [
+      "cinematic",
+      "photorealistic"
+    ],
+    "scenes": [
+      "warehouse"
+    ],
+    "subjects": [
+      "human",
+      "everyday object"
+    ],
+    "physical_state": [
+      "solid"
+    ],
+    "texture": [
+      "smooth"
+    ],
+    "opacity": [
+      "opaque"
+    ],
+    "spatial_layout": [
+      "foreground-background",
+      "layered/stacked"
+    ],
+    "action": [
+      "none"
+    ],
+    "emotion": [
+      "none"
+    ],
+    "effect": [
+      "rain"
+    ],
+    "lighting_tone": [
+      "neutral"
+    ],
+    "lighting_direction": [
+      "backlight"
+    ],
+    "camera_angle": [
+      "eye level"
+    ],
+    "camera_movement": [
+      "push in"
+    ],
+    "composition": [
+      "center framing"
+    ],
+    "time_mode": [
+      "real-time"
+    ],
+    "shot_size": [
+      "long shot"
+    ],
+    "scale": [
+      "normal scale"
+    ],
+    "lighting_intensity": [
+      "low-key"
+    ],
+    "color_saturation": [
+      "low saturation"
+    ],
+    "color_palette": [
+      "warm palette"
+    ],
+    "depth_of_field": [
+      "shallow DOF"
+    ],
+    "focal_length": [
+      "standard lens"
+    ],
+    "time_of_day": [
+      "daytime"
+    ],
+    "weather": [
+      "rainy"
+    ],
+    "transition": [
+      "none"
+    ]
+  },
+  "S1-2-cyberpunk-beach-vehicle-water-splash-driving": {
+    "style": [
+      "cinematic",
+      "photorealistic"
+    ],
+    "scenes": [
+      "beach"
+    ],
+    "subjects": [
+      "vehicle"
+    ],
+    "physical_state": [
+      "rigid body"
+    ],
+    "physical_rule": [
+      "sci-fi"
+    ],
+    "texture": [
+      "metallic",
+      "smooth"
+    ],
+    "opacity": [
+      "opaque"
+    ],
+    "spatial_layout": [
+      "foreground-background"
+    ],
+    "action": [
+      "driving"
+    ],
+    "emotion": [
+      "none"
+    ],
+    "effect": [
+      "water splash"
+    ],
+    "lighting_tone": [
+      "cool"
+    ],
+    "lighting_direction": [
+      "backlight"
+    ],
+    "camera_angle": [
+      "low angle"
+    ],
+    "camera_movement": [
+      "push in"
+    ],
+    "composition": [
+      "center framing",
+      "symmetrical"
+    ],
+    "time_mode": [
+      "real-time"
+    ],
+    "shot_size": [
+      "long shot",
+      "extreme close-up"
+    ],
+    "scale": [
+      "giant"
+    ],
+    "lighting_intensity": [
+      "normal"
+    ],
+    "color_saturation": [
+      "low saturation"
+    ],
+    "color_palette": [
+      "complementary"
+    ],
+    "depth_of_field": [
+      "deep DOF"
+    ],
+    "focal_length": [
+      "wide-angle"
+    ],
+    "time_of_day": [
+      "dusk"
+    ],
+    "weather": [
+      "overcast"
+    ]
+  },
+  "S2-1-cartoon-living-room-desert-bird-explosion-hovering": {
+    "style": [
+      "black & white",
+      "surrealist"
+    ],
+    "scenes": [
+      "living room",
+      "desert"
+    ],
+    "subjects": [
+      "bird",
+      "everyday object"
+    ],
+    "physical_state": [
+      "solid"
+    ],
+    "physical_rule": [
+      "dreamlike"
+    ],
+    "texture": [
+      "smooth",
+      "wooden",
+      "fabric"
+    ],
+    "opacity": [
+      "opaque"
+    ],
+    "spatial_layout": [
+      "inside-outside",
+      "foreground-background"
+    ],
+    "action": [
+      "hovering"
+    ],
+    "emotion": [
+      "none"
+    ],
+    "effect": [
+      "light effect"
+    ],
+    "lighting_tone": [
+      "neutral"
+    ],
+    "lighting_direction": [
+      "top light"
+    ],
+    "camera_angle": [
+      "high angle"
+    ],
+    "camera_movement": [
+      "tracking shot",
+      "pull out"
+    ],
+    "composition": [
+      "center framing"
+    ],
+    "time_mode": [
+      "real-time"
+    ],
+    "shot_size": [
+      "full shot"
+    ],
+    "scale": [
+      "normal scale"
+    ],
+    "lighting_intensity": [
+      "normal"
+    ],
+    "color_saturation": [
+      "desaturated"
+    ],
+    "color_palette": [
+      "monochromatic"
+    ],
+    "depth_of_field": [
+      "deep DOF"
+    ],
+    "focal_length": [
+      "wide-angle"
+    ],
+    "time_of_day": [
+      "night"
+    ],
+    "weather": [
+      "clear"
+    ]
+  },
+  "S2-5-oil-painting-warehouse-desert-human-light-effect-dancing": {
+    "style": [
+      "black & white",
+      "cinematic"
+    ],
+    "scenes": [
+      "warehouse",
+      "desert"
+    ],
+    "subjects": [
+      "human"
+    ],
+    "physical_state": [
+      "solid"
+    ],
+    "physical_rule": [
+      "real-world"
+    ],
+    "texture": [
+      "fabric",
+      "stone"
+    ],
+    "opacity": [
+      "opaque"
+    ],
+    "spatial_layout": [
+      "inside-outside",
+      "foreground-background"
+    ],
+    "action": [
+      "dancing"
+    ],
+    "emotion": [
+      "none"
+    ],
+    "effect": [
+      "none"
+    ],
+    "lighting_tone": [
+      "neutral"
+    ],
+    "lighting_direction": [
+      "backlight"
+    ],
+    "camera_angle": [
+      "eye level"
+    ],
+    "camera_movement": [
+      "push in"
+    ],
+    "composition": [
+      "center framing",
+      "symmetrical"
+    ],
+    "time_mode": [
+      "real-time"
+    ],
+    "shot_size": [
+      "full shot"
+    ],
+    "scale": [
+      "normal scale"
+    ],
+    "lighting_intensity": [
+      "low-key"
+    ],
+    "color_saturation": [
+      "desaturated"
+    ],
+    "color_palette": [
+      "monochromatic"
+    ],
+    "depth_of_field": [
+      "deep DOF"
+    ],
+    "focal_length": [
+      "standard lens"
+    ],
+    "time_of_day": [
+      "night"
+    ],
+    "weather": [
+      "clear"
+    ]
+  },
+  "S3-4-anime-kitchen-human-everyday-object-light-effect": {
+    "style": [
+      "anime"
+    ],
+    "scenes": [
+      "kitchen"
+    ],
+    "subjects": [
+      "human",
+      "everyday object"
+    ],
+    "physical_state": [
+      "solid"
+    ],
+    "physical_rule": [
+      "sci-fi"
+    ],
+    "texture": [
+      "metallic",
+      "smooth"
+    ],
+    "opacity": [
+      "opaque",
+      "semi-transparent"
+    ],
+    "spatial_layout": [
+      "foreground-background",
+      "left-right"
+    ],
+    "action": [
+      "none"
+    ],
+    "emotion": [
+      "strong surprise"
+    ],
+    "effect": [
+      "light effect"
+    ],
+    "lighting_tone": [
+      "cool"
+    ],
+    "lighting_direction": [
+      "side light"
+    ],
+    "camera_angle": [
+      "high angle"
+    ],
+    "camera_movement": [
+      "pull out",
+      "pan"
+    ],
+    "composition": [
+      "center framing",
+      "rule of thirds"
+    ],
+    "time_mode": [
+      "real-time"
+    ],
+    "shot_size": [
+      "close-up",
+      "medium shot"
+    ],
+    "scale": [
+      "normal scale"
+    ],
+    "lighting_intensity": [
+      "normal"
+    ],
+    "color_saturation": [
+      "low saturation"
+    ],
+    "color_palette": [
+      "cool palette"
+    ],
+    "depth_of_field": [
+      "shallow DOF"
+    ],
+    "focal_length": [
+      "standard lens"
+    ],
+    "time_of_day": [
+      "daytime"
+    ],
+    "weather": [
+      "unpredictable"
+    ],
+    "transition": [
+      "none"
+    ]
+  },
+  "S3-11-minimalist-desert-natural-element-robot-light-effect": {
+    "style": [
+      "cinematic",
+      "photorealistic"
+    ],
+    "scenes": [
+      "desert"
+    ],
+    "subjects": [
+      "robot"
+    ],
+    "physical_state": [
+      "solid"
+    ],
+    "physical_rule": [
+      "sci-fi"
+    ],
+    "texture": [
+      "metallic",
+      "rough"
+    ],
+    "opacity": [
+      "opaque",
+      "semi-transparent"
+    ],
+    "spatial_layout": [
+      "encircling",
+      "foreground-background"
+    ],
+    "action": [
+      "none"
+    ],
+    "emotion": [
+      "none"
+    ],
+    "effect": [
+      "light effect"
+    ],
+    "lighting_tone": [
+      "warm"
+    ],
+    "lighting_direction": [
+      "side light"
+    ],
+    "camera_angle": [
+      "eye level"
+    ],
+    "camera_movement": [
+      "static"
+    ],
+    "composition": [
+      "center framing"
+    ],
+    "time_mode": [
+      "real-time"
+    ],
+    "shot_size": [
+      "extreme long shot"
+    ],
+    "scale": [
+      "normal scale"
+    ],
+    "lighting_intensity": [
+      "normal"
+    ],
+    "color_saturation": [
+      "high saturation"
+    ],
+    "color_palette": [
+      "warm palette",
+      "complementary"
+    ],
+    "depth_of_field": [
+      "deep DOF"
+    ],
+    "focal_length": [
+      "wide-angle"
+    ],
+    "time_of_day": [
+      "dusk"
+    ],
+    "weather": [
+      "clear"
+    ],
+    "transition": [
+      "none"
+    ]
+  },
+  "S4-3-anime-city-street-kitchen-robot-insect-jumping": {
+    "style": [
+      "anime"
+    ],
+    "scenes": [
+      "kitchen"
+    ],
+    "subjects": [
+      "robot",
+      "insect"
+    ],
+    "physical_state": [
+      "solid"
+    ],
+    "physical_rule": [
+      "sci-fi"
+    ],
+    "texture": [
+      "glass",
+      "metallic"
+    ],
+    "opacity": [
+      "transparent",
+      "opaque"
+    ],
+    "spatial_layout": [
+      "inside-outside",
+      "foreground-background"
+    ],
+    "action": [
+      "walking"
+    ],
+    "emotion": [
+      "none"
+    ],
+    "effect": [
+      "rain"
+    ],
+    "lighting_tone": [
+      "cool"
+    ],
+    "lighting_direction": [
+      "backlight"
+    ],
+    "camera_angle": [
+      "eye level"
+    ],
+    "camera_movement": [
+      "pull out"
+    ],
+    "composition": [
+      "frame within frame",
+      "center framing"
+    ],
+    "time_mode": [
+      "reverse"
+    ],
+    "shot_size": [
+      "medium shot",
+      "full shot"
+    ],
+    "scale": [
+      "normal scale"
+    ],
+    "lighting_intensity": [
+      "low-key"
+    ],
+    "color_saturation": [
+      "low saturation"
+    ],
+    "color_palette": [
+      "cool palette"
+    ],
+    "depth_of_field": [
+      "deep DOF"
+    ],
+    "focal_length": [
+      "standard lens"
+    ],
+    "time_of_day": [
+      "night"
+    ],
+    "weather": [
+      "rainy"
+    ],
+    "transition": [
+      "none"
+    ]
+  },
+  "S4-2-vintage-film-office-beach-bird-robot-hologram-hovering": {
+    "style": [
+      "cinematic"
+    ],
+    "scenes": [
+      "office"
+    ],
+    "subjects": [
+      "robot",
+      "bird",
+      "everyday object"
+    ],
+    "physical_state": [
+      "solid"
+    ],
+    "physical_rule": [
+      "sci-fi"
+    ],
+    "texture": [
+      "smooth"
+    ],
+    "opacity": [
+      "semi-transparent",
+      "opaque"
+    ],
+    "spatial_layout": [
+      "foreground-background"
+    ],
+    "action": [
+      "hovering"
+    ],
+    "emotion": [
+      "none"
+    ],
+    "effect": [
+      "hologram"
+    ],
+    "lighting_tone": [
+      "cool"
+    ],
+    "lighting_direction": [
+      "ambient light"
+    ],
+    "camera_angle": [
+      "high angle"
+    ],
+    "camera_movement": [
+      "push in"
+    ],
+    "composition": [
+      "center framing"
+    ],
+    "time_mode": [
+      "real-time"
+    ],
+    "shot_size": [
+      "full shot"
+    ],
+    "scale": [
+      "normal scale"
+    ],
+    "lighting_intensity": [
+      "low-key"
+    ],
+    "color_saturation": [
+      "low saturation"
+    ],
+    "color_palette": [
+      "cool palette"
+    ],
+    "depth_of_field": [
+      "shallow DOF"
+    ],
+    "focal_length": [
+      "standard lens"
+    ],
+    "time_of_day": [
+      "unpredictable"
+    ],
+    "weather": [
+      "unpredictable"
+    ],
+    "transition": [
+      "none"
+    ]
+  },
+  "S5-11-vintage-film-desert-kitchen-living-room-human-mammal-light-effect-jumping": {
+    "style": [
+      "photorealistic",
+      "cinematic"
+    ],
+    "scenes": [
+      "desert",
+      "kitchen"
+    ],
+    "subjects": [
+      "human",
+      "mammal"
+    ],
+    "physical_state": [
+      "solid"
+    ],
+    "physical_rule": [
+      "sci-fi"
+    ],
+    "texture": [
+      "hair/fur",
+      "fabric",
+      "glass"
+    ],
+    "opacity": [
+      "opaque",
+      "semi-transparent",
+      "transparent"
+    ],
+    "action": [
+      "running",
+      "jumping"
+    ],
+    "emotion": [
+      "none"
+    ],
+    "effect": [
+      "light effect"
+    ],
+    "lighting_tone": [
+      "multi-color"
+    ],
+    "lighting_direction": [
+      "side light"
+    ],
+    "camera_angle": [
+      "eye level"
+    ],
+    "camera_movement": [
+      "static",
+      "pan"
+    ],
+    "composition": [
+      "center framing",
+      "rule of thirds"
+    ],
+    "time_mode": [
+      "real-time"
+    ],
+    "shot_size": [
+      "extreme long shot",
+      "full shot",
+      "close-up"
+    ],
+    "scale": [
+      "normal scale"
+    ],
+    "lighting_intensity": [
+      "low-key"
+    ],
+    "color_saturation": [
+      "high saturation"
+    ],
+    "color_palette": [
+      "complementary"
+    ],
+    "depth_of_field": [
+      "shallow DOF"
+    ],
+    "focal_length": [
+      "standard lens"
+    ],
+    "time_of_day": [
+      "night"
+    ],
+    "weather": [
+      "clear",
+      "rainy"
+    ],
+    "transition": [
+      "hard cut"
+    ]
+  },
+  "S5-9-cartoon-ruins-kitchen-living-room-insect-fictional-creature-human-snow-dialogue": {
+    "style": [
+      "cartoon"
+    ],
+    "scenes": [
+      "ruins",
+      "kitchen",
+      "living room"
+    ],
+    "subjects": [
+      "human",
+      "insect"
+    ],
+    "physical_state": [
+      "solid"
+    ],
+    "physical_rule": [
+      "fantasy"
+    ],
+    "texture": [
+      "smooth",
+      "fabric"
+    ],
+    "opacity": [
+      "opaque",
+      "semi-transparent"
+    ],
+    "spatial_layout": [
+      "inside-outside",
+      "foreground-background"
+    ],
+    "action": [
+      "dialogue"
+    ],
+    "emotion": [
+      "strong sadness"
+    ],
+    "effect": [
+      "snow"
+    ],
+    "lighting_tone": [
+      "cool"
+    ],
+    "lighting_direction": [
+      "ambient light"
+    ],
+    "camera_angle": [
+      "high angle"
+    ],
+    "camera_movement": [
+      "push in"
+    ],
+    "composition": [
+      "center framing",
+      "rule of thirds"
+    ],
+    "time_mode": [
+      "real-time"
+    ],
+    "shot_size": [
+      "long shot",
+      "full shot",
+      "medium shot"
+    ],
+    "scale": [
+      "normal scale"
+    ],
+    "lighting_intensity": [
+      "normal"
+    ],
+    "color_saturation": [
+      "low saturation"
+    ],
+    "color_palette": [
+      "cool palette",
+      "monochromatic"
+    ],
+    "depth_of_field": [
+      "deep DOF"
+    ],
+    "focal_length": [
+      "standard lens"
+    ],
+    "time_of_day": [
+      "daytime"
+    ],
+    "weather": [
+      "snowy"
+    ],
+    "transition": [
+      "hard cut"
+    ]
+  }
+}

@@ -1,0 +1,3919 @@
+{
+  "model": "kling",
+  "n_testcases": 10,
+  "reports": [
+    {
+      "testcase_id": "S1-11-anime-warehouse-fictional-creature-snow",
+      "difficulty": "S1",
+      "duration_seconds": 12,
+      "counts": {
+        "scorable": 26,
+        "exact": 8,
+        "partial": 5,
+        "miss": 11,
+        "unpredictable": 2,
+        "missing": 0,
+        "skipped": 1
+      },
+      "aggregate": {
+        "exact_match_rate": 0.3076923076923077,
+        "macro_f1": 0.47222222222222215,
+        "micro_precision": 0.4642857142857143,
+        "micro_recall": 0.48148148148148145,
+        "micro_f1": 0.4727272727272727
+      },
+      "micro_tallies": {
+        "tp": 13,
+        "fp": 15,
+        "fn": 14
+      },
+      "extraneous_predictions": [],
+      "metrics": [
+        {
+          "status": "miss",
+          "gt": [
+            "anime"
+          ],
+          "pred": [
+            "photorealistic"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "style"
+        },
+        {
+          "status": "unpredictable",
+          "gt": [
+            "warehouse"
+          ],
+          "pred": [
+            "unpredictable"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "scenes"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "fictional creature"
+          ],
+          "pred": [
+            "bird",
+            "everyday object"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "subjects"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "solid"
+          ],
+          "pred": [
+            "solid"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "physical_state"
+        },
+        {
+          "en_field": "physical_rule",
+          "status": "skipped",
+          "gt": [],
+          "pred": null,
+          "qc_note": "prompt mentions a 'sci-fi body' but fails to explicitly assign a Physical Rule tag (e.g., 'Sci-fi' or 'Fantasy') to define the environment's laws",
+          "precision": null,
+          "recall": null,
+          "f1": null
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "smooth"
+          ],
+          "pred": [
+            "glass",
+            "smooth"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "texture"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "semi-transparent"
+          ],
+          "pred": [
+            "transparent"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "opacity"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "layered/stacked"
+          ],
+          "pred": [
+            "foreground-background",
+            "layered/stacked"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "spatial_layout"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "none"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "action"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "subtle joy"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "emotion"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "rain",
+            "snow"
+          ],
+          "pred": [
+            "rain"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "effect"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "cool",
+            "warm"
+          ],
+          "pred": [
+            "neutral"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_tone"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "side light"
+          ],
+          "pred": [
+            "ambient light"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_direction"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "low angle"
+          ],
+          "pred": [
+            "eye level"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "camera_angle"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "truck"
+          ],
+          "pred": [
+            "push in"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "camera_movement"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "frame within frame"
+          ],
+          "pred": [
+            "center framing",
+            "frame within frame"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "composition"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "freeze frame"
+          ],
+          "pred": [
+            "slow motion"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "time_mode"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "full shot"
+          ],
+          "pred": [
+            "close-up"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "shot_size"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "microscopic"
+          ],
+          "pred": [
+            "microscopic"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "scale"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "normal"
+          ],
+          "pred": [
+            "normal"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "low saturation"
+          ],
+          "pred": [
+            "low saturation"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "color_saturation"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "warm palette"
+          ],
+          "pred": [
+            "monochromatic"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "color_palette"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "shallow DOF"
+          ],
+          "pred": [
+            "shallow DOF"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "depth_of_field"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "macro",
+            "wide-angle"
+          ],
+          "pred": [
+            "macro"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "focal_length"
+        },
+        {
+          "status": "unpredictable",
+          "gt": [
+            "daytime"
+          ],
+          "pred": [
+            "unpredictable"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "time_of_day"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "rainy"
+          ],
+          "pred": [
+            "rainy"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "weather"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "none"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "transition"
+        }
+      ]
+    },
+    {
+      "testcase_id": "S1-2-cyberpunk-beach-vehicle-water-splash-driving",
+      "difficulty": "S1",
+      "duration_seconds": 12,
+      "counts": {
+        "scorable": 26,
+        "exact": 6,
+        "partial": 8,
+        "miss": 12,
+        "unpredictable": 0,
+        "missing": 0,
+        "skipped": 1
+      },
+      "aggregate": {
+        "exact_match_rate": 0.23076923076923078,
+        "macro_f1": 0.4230769230769231,
+        "micro_precision": 0.4166666666666667,
+        "micro_recall": 0.4838709677419355,
+        "micro_f1": 0.44776119402985076
+      },
+      "micro_tallies": {
+        "tp": 15,
+        "fp": 21,
+        "fn": 16
+      },
+      "extraneous_predictions": [],
+      "metrics": [
+        {
+          "status": "miss",
+          "gt": [
+            "cyberpunk"
+          ],
+          "pred": [
+            "cinematic",
+            "photorealistic"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "style"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "beach"
+          ],
+          "pred": [
+            "beach"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "scenes"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "vehicle"
+          ],
+          "pred": [
+            "human",
+            "vehicle"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "subjects"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "rigid body",
+            "solid"
+          ],
+          "pred": [
+            "rigid body"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "physical_state"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "dreamlike"
+          ],
+          "pred": [
+            "sci-fi"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "physical_rule"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "smooth"
+          ],
+          "pred": [
+            "glass",
+            "metallic"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "texture"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "opaque",
+            "transparent"
+          ],
+          "pred": [
+            "opaque",
+            "transparent"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "opacity"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "inside-outside"
+          ],
+          "pred": [
+            "foreground-background",
+            "inside-outside"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "spatial_layout"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "driving",
+            "throwing"
+          ],
+          "pred": [
+            "driving"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "action"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "none"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "emotion"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "water splash"
+          ],
+          "pred": [
+            "light effect"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "effect"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "warm"
+          ],
+          "pred": [
+            "cool"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_tone"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "under light"
+          ],
+          "pred": [
+            "ambient light"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_direction"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "low angle"
+          ],
+          "pred": [
+            "eye level"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "camera_angle"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "handheld"
+          ],
+          "pred": [
+            "pull out",
+            "push in"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "camera_movement"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "center framing",
+            "symmetrical"
+          ],
+          "pred": [
+            "center framing"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "composition"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "timelapse"
+          ],
+          "pred": [
+            "real-time"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "time_mode"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "close-up"
+          ],
+          "pred": [
+            "close-up",
+            "long shot",
+            "medium shot"
+          ],
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1": 0.5,
+          "en_field": "shot_size"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "giant"
+          ],
+          "pred": [
+            "normal scale"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "scale"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "low-key"
+          ],
+          "pred": [
+            "normal"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "low saturation"
+          ],
+          "pred": [
+            "low saturation"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "color_saturation"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "complementary"
+          ],
+          "pred": [
+            "complementary",
+            "cool palette"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "color_palette"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "deep DOF"
+          ],
+          "pred": [
+            "deep DOF"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "depth_of_field"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "standard lens"
+          ],
+          "pred": [
+            "wide-angle"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "focal_length"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "dusk"
+          ],
+          "pred": [
+            "dusk"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "time_of_day"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "clear",
+            "overcast"
+          ],
+          "pred": [
+            "foggy",
+            "overcast"
+          ],
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "en_field": "weather"
+        },
+        {
+          "en_field": "transition",
+          "status": "skipped",
+          "gt": [],
+          "pred": null,
+          "qc_note": "single-shot; no cut/dissolve so transition cannot be observed",
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      ]
+    },
+    {
+      "testcase_id": "S2-1-cartoon-living-room-desert-bird-explosion-hovering",
+      "difficulty": "S2",
+      "duration_seconds": 12,
+      "counts": {
+        "scorable": 26,
+        "exact": 11,
+        "partial": 4,
+        "miss": 11,
+        "unpredictable": 0,
+        "missing": 0,
+        "skipped": 1
+      },
+      "aggregate": {
+        "exact_match_rate": 0.4230769230769231,
+        "macro_f1": 0.5192307692307692,
+        "micro_precision": 0.45714285714285713,
+        "micro_recall": 0.5333333333333333,
+        "micro_f1": 0.4923076923076923
+      },
+      "micro_tallies": {
+        "tp": 16,
+        "fp": 19,
+        "fn": 14
+      },
+      "extraneous_predictions": [],
+      "metrics": [
+        {
+          "status": "miss",
+          "gt": [
+            "cartoon"
+          ],
+          "pred": [
+            "cinematic",
+            "surrealist"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "style"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "desert",
+            "living room"
+          ],
+          "pred": [
+            "desert",
+            "living room"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "scenes"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "bird"
+          ],
+          "pred": [
+            "bird",
+            "everyday object"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "subjects"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "solid"
+          ],
+          "pred": [
+            "solid"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "physical_state"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "fantasy"
+          ],
+          "pred": [
+            "dreamlike"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "physical_rule"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "smooth"
+          ],
+          "pred": [
+            "fabric",
+            "glass",
+            "smooth"
+          ],
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1": 0.5,
+          "en_field": "texture"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "opaque"
+          ],
+          "pred": [
+            "opaque",
+            "transparent"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "opacity"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "encircling"
+          ],
+          "pred": [
+            "foreground-background",
+            "inside-outside"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "spatial_layout"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "hovering"
+          ],
+          "pred": [
+            "hovering"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "action"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "none"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "emotion"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "explosion"
+          ],
+          "pred": [
+            "explosion"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "effect"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "cool",
+            "neutral"
+          ],
+          "pred": [
+            "multi-color"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_tone"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "front light"
+          ],
+          "pred": [
+            "top light"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_direction"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "bird's eye"
+          ],
+          "pred": [
+            "eye level"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "camera_angle"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "orbit",
+            "pan"
+          ],
+          "pred": [
+            "static"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "camera_movement"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "rule of thirds"
+          ],
+          "pred": [
+            "center framing",
+            "symmetrical"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "composition"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "freeze frame"
+          ],
+          "pred": [
+            "real-time"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "time_mode"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "full shot"
+          ],
+          "pred": [
+            "full shot"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "shot_size"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "normal scale"
+          ],
+          "pred": [
+            "normal scale"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "scale"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "high-key",
+            "normal"
+          ],
+          "pred": [
+            "normal"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "low saturation"
+          ],
+          "pred": [
+            "low saturation"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "color_saturation"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "monochromatic"
+          ],
+          "pred": [
+            "cool palette",
+            "warm palette"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "color_palette"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "pan-focus"
+          ],
+          "pred": [
+            "deep DOF"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "depth_of_field"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "wide-angle"
+          ],
+          "pred": [
+            "wide-angle"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "focal_length"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "night"
+          ],
+          "pred": [
+            "night"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "time_of_day"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "clear"
+          ],
+          "pred": [
+            "clear"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "weather"
+        },
+        {
+          "en_field": "transition",
+          "status": "skipped",
+          "gt": [],
+          "pred": null,
+          "qc_note": "single-shot; no cut/dissolve so transition cannot be observed",
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      ]
+    },
+    {
+      "testcase_id": "S2-5-oil-painting-warehouse-desert-human-light-effect-dancing",
+      "difficulty": "S2",
+      "duration_seconds": 12,
+      "counts": {
+        "scorable": 26,
+        "exact": 9,
+        "partial": 5,
+        "miss": 12,
+        "unpredictable": 0,
+        "missing": 0,
+        "skipped": 1
+      },
+      "aggregate": {
+        "exact_match_rate": 0.34615384615384615,
+        "macro_f1": 0.4743589743589744,
+        "micro_precision": 0.5172413793103449,
+        "micro_recall": 0.46875,
+        "micro_f1": 0.4918032786885246
+      },
+      "micro_tallies": {
+        "tp": 15,
+        "fp": 14,
+        "fn": 17
+      },
+      "extraneous_predictions": [],
+      "metrics": [
+        {
+          "status": "miss",
+          "gt": [
+            "oil painting"
+          ],
+          "pred": [
+            "photorealistic"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "style"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "desert",
+            "warehouse"
+          ],
+          "pred": [
+            "warehouse"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "scenes"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "human"
+          ],
+          "pred": [
+            "human"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "subjects"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "solid"
+          ],
+          "pred": [
+            "solid"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "physical_state"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "real-world"
+          ],
+          "pred": [
+            "real-world"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "physical_rule"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "hair/fur"
+          ],
+          "pred": [
+            "fabric",
+            "smooth"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "texture"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "opaque"
+          ],
+          "pred": [
+            "opaque"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "opacity"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "inside-outside"
+          ],
+          "pred": [
+            "foreground-background",
+            "inside-outside"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "spatial_layout"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "dancing",
+            "falling"
+          ],
+          "pred": [
+            "dancing"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "action"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "subtle sadness"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "emotion"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "light effect"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "effect"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "neutral"
+          ],
+          "pred": [
+            "neutral"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "lighting_tone"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "top light"
+          ],
+          "pred": [
+            "ambient light"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_direction"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "high angle"
+          ],
+          "pred": [
+            "eye level"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "camera_angle"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "pan",
+            "push in"
+          ],
+          "pred": [
+            "push in"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "camera_movement"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "center framing",
+            "symmetrical"
+          ],
+          "pred": [
+            "center framing",
+            "symmetrical"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "composition"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "reverse"
+          ],
+          "pred": [
+            "real-time"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "time_mode"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "close-up",
+            "medium shot"
+          ],
+          "pred": [
+            "long shot"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "shot_size"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "normal scale"
+          ],
+          "pred": [
+            "normal scale"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "scale"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "low-key",
+            "normal"
+          ],
+          "pred": [
+            "normal"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "desaturated"
+          ],
+          "pred": [
+            "low saturation"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "color_saturation"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "monochromatic"
+          ],
+          "pred": [
+            "monochromatic"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "color_palette"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "pan-focus"
+          ],
+          "pred": [
+            "deep DOF"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "depth_of_field"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "standard lens"
+          ],
+          "pred": [
+            "standard lens"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "focal_length"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "night"
+          ],
+          "pred": [
+            "daytime"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "time_of_day"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "clear"
+          ],
+          "pred": [
+            "overcast"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "weather"
+        },
+        {
+          "en_field": "transition",
+          "status": "skipped",
+          "gt": [],
+          "pred": null,
+          "qc_note": "single-shot, transition cannot be observed",
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      ]
+    },
+    {
+      "testcase_id": "S3-4-anime-kitchen-human-everyday-object-light-effect",
+      "difficulty": "S3",
+      "duration_seconds": 12,
+      "counts": {
+        "scorable": 27,
+        "exact": 10,
+        "partial": 2,
+        "miss": 13,
+        "unpredictable": 2,
+        "missing": 0,
+        "skipped": 0
+      },
+      "aggregate": {
+        "exact_match_rate": 0.37037037037037035,
+        "macro_f1": 0.45866666666666667,
+        "micro_precision": 0.43333333333333335,
+        "micro_recall": 0.48148148148148145,
+        "micro_f1": 0.456140350877193
+      },
+      "micro_tallies": {
+        "tp": 13,
+        "fp": 17,
+        "fn": 14
+      },
+      "extraneous_predictions": [],
+      "metrics": [
+        {
+          "status": "miss",
+          "gt": [
+            "anime"
+          ],
+          "pred": [
+            "cartoon"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "style"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "kitchen"
+          ],
+          "pred": [
+            "kitchen"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "scenes"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "bird",
+            "everyday object",
+            "human"
+          ],
+          "pred": [
+            "everyday object",
+            "human"
+          ],
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "en_field": "subjects"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "liquid"
+          ],
+          "pred": [
+            "solid"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "physical_state"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "fantasy"
+          ],
+          "pred": [
+            "dreamlike"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "physical_rule"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "metallic"
+          ],
+          "pred": [
+            "metallic",
+            "smooth"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "texture"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "semi-transparent"
+          ],
+          "pred": [
+            "opaque",
+            "transparent"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "opacity"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "vertical"
+          ],
+          "pred": [
+            "encircling",
+            "foreground-background"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "spatial_layout"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "hovering"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "action"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "strong surprise"
+          ],
+          "pred": [
+            "strong surprise"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "emotion"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "light effect"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "effect"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "cool"
+          ],
+          "pred": [
+            "cool"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "lighting_tone"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "front light"
+          ],
+          "pred": [
+            "ambient light"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_direction"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "bird's eye"
+          ],
+          "pred": [
+            "high angle"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "camera_angle"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "pan"
+          ],
+          "pred": [
+            "orbit"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "camera_movement"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "leading lines"
+          ],
+          "pred": [
+            "center framing",
+            "symmetrical"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "composition"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "real-time"
+          ],
+          "pred": [
+            "real-time"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "time_mode"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "close-up"
+          ],
+          "pred": [
+            "close-up"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "shot_size"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "normal scale"
+          ],
+          "pred": [
+            "normal scale"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "scale"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "normal"
+          ],
+          "pred": [
+            "normal"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "high saturation"
+          ],
+          "pred": [
+            "low saturation"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "color_saturation"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "cool palette"
+          ],
+          "pred": [
+            "cool palette"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "color_palette"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "pan-focus"
+          ],
+          "pred": [
+            "shallow DOF"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "depth_of_field"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "standard lens"
+          ],
+          "pred": [
+            "standard lens"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "focal_length"
+        },
+        {
+          "status": "unpredictable",
+          "gt": [
+            "daytime"
+          ],
+          "pred": [
+            "unpredictable"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "time_of_day"
+        },
+        {
+          "status": "unpredictable",
+          "gt": [
+            "clear",
+            "overcast"
+          ],
+          "pred": [
+            "unpredictable"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "weather"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "none"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "transition"
+        }
+      ]
+    },
+    {
+      "testcase_id": "S3-11-minimalist-desert-natural-element-robot-light-effect",
+      "difficulty": "S3",
+      "duration_seconds": 12,
+      "counts": {
+        "scorable": 27,
+        "exact": 9,
+        "partial": 4,
+        "miss": 14,
+        "unpredictable": 0,
+        "missing": 0,
+        "skipped": 0
+      },
+      "aggregate": {
+        "exact_match_rate": 0.3333333333333333,
+        "macro_f1": 0.42222222222222217,
+        "micro_precision": 0.40625,
+        "micro_recall": 0.41935483870967744,
+        "micro_f1": 0.4126984126984127
+      },
+      "micro_tallies": {
+        "tp": 13,
+        "fp": 19,
+        "fn": 18
+      },
+      "extraneous_predictions": [],
+      "metrics": [
+        {
+          "status": "miss",
+          "gt": [
+            "minimalist"
+          ],
+          "pred": [
+            "cinematic",
+            "surrealist"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "style"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "desert"
+          ],
+          "pred": [
+            "desert"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "scenes"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "bird",
+            "natural element",
+            "robot"
+          ],
+          "pred": [
+            "fictional creature",
+            "robot"
+          ],
+          "precision": 0.5,
+          "recall": 0.3333333333333333,
+          "f1": 0.4,
+          "en_field": "subjects"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "gas"
+          ],
+          "pred": [
+            "solid"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "physical_state"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "fantasy"
+          ],
+          "pred": [
+            "dreamlike"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "physical_rule"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "smooth"
+          ],
+          "pred": [
+            "metallic",
+            "smooth"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "texture"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "semi-transparent"
+          ],
+          "pred": [
+            "opaque",
+            "semi-transparent"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "opacity"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "scattered"
+          ],
+          "pred": [
+            "encircling"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "spatial_layout"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "running"
+          ],
+          "pred": [
+            "hovering",
+            "spinning"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "action"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "none"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "emotion"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "light effect"
+          ],
+          "pred": [
+            "smoke"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "effect"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "multi-color",
+            "warm"
+          ],
+          "pred": [
+            "multi-color"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "lighting_tone"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "ambient light"
+          ],
+          "pred": [
+            "side light"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_direction"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "bird's eye"
+          ],
+          "pred": [
+            "high angle"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "camera_angle"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "static"
+          ],
+          "pred": [
+            "static"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "camera_movement"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "center framing"
+          ],
+          "pred": [
+            "center framing"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "composition"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "reverse"
+          ],
+          "pred": [
+            "real-time"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "time_mode"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "full shot"
+          ],
+          "pred": [
+            "long shot"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "shot_size"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "microscopic"
+          ],
+          "pred": [
+            "normal scale"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "scale"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "normal"
+          ],
+          "pred": [
+            "normal"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "high saturation"
+          ],
+          "pred": [
+            "high saturation"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "color_saturation"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "complementary"
+          ],
+          "pred": [
+            "complementary"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "color_palette"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "deep DOF"
+          ],
+          "pred": [
+            "shallow DOF"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "depth_of_field"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "macro",
+            "wide-angle"
+          ],
+          "pred": [
+            "standard lens"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "focal_length"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "dawn"
+          ],
+          "pred": [
+            "dusk"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "time_of_day"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "clear"
+          ],
+          "pred": [
+            "clear"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "weather"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "none"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "transition"
+        }
+      ]
+    },
+    {
+      "testcase_id": "S4-3-anime-city-street-kitchen-robot-insect-jumping",
+      "difficulty": "S4",
+      "duration_seconds": 12,
+      "counts": {
+        "scorable": 27,
+        "exact": 8,
+        "partial": 4,
+        "miss": 15,
+        "unpredictable": 0,
+        "missing": 0,
+        "skipped": 0
+      },
+      "aggregate": {
+        "exact_match_rate": 0.2962962962962963,
+        "macro_f1": 0.38888888888888884,
+        "micro_precision": 0.42424242424242425,
+        "micro_recall": 0.42424242424242425,
+        "micro_f1": 0.4242424242424243
+      },
+      "micro_tallies": {
+        "tp": 14,
+        "fp": 19,
+        "fn": 19
+      },
+      "extraneous_predictions": [],
+      "metrics": [
+        {
+          "status": "miss",
+          "gt": [
+            "anime"
+          ],
+          "pred": [
+            "surrealist"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "style"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "city street",
+            "kitchen"
+          ],
+          "pred": [
+            "kitchen"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "scenes"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "insect",
+            "robot"
+          ],
+          "pred": [
+            "human",
+            "insect"
+          ],
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "en_field": "subjects"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "rigid body"
+          ],
+          "pred": [
+            "solid"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "physical_state"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "dreamlike"
+          ],
+          "pred": [
+            "dreamlike"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "physical_rule"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "glass",
+            "smooth"
+          ],
+          "pred": [
+            "glass",
+            "smooth"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "texture"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "semi-transparent"
+          ],
+          "pred": [
+            "opaque",
+            "transparent"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "opacity"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "layered/stacked",
+            "vertical"
+          ],
+          "pred": [
+            "foreground-background",
+            "inside-outside"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "spatial_layout"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "jumping"
+          ],
+          "pred": [
+            "dancing",
+            "jumping"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "action"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "none"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "emotion"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "rain"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "effect"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "multi-color"
+          ],
+          "pred": [
+            "multi-color"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "lighting_tone"
+        },
+        {
+          "status": "miss",
+          "gt": [],
+          "pred": [
+            "ambient light"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_direction"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "eye level"
+          ],
+          "pred": [
+            "eye level"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "camera_angle"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "handheld",
+            "pan"
+          ],
+          "pred": [
+            "static"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "camera_movement"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "center framing",
+            "frame within frame"
+          ],
+          "pred": [
+            "center framing",
+            "frame within frame"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "composition"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "timelapse"
+          ],
+          "pred": [
+            "real-time"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "time_mode"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "extreme close-up"
+          ],
+          "pred": [
+            "full shot"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "shot_size"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "giant"
+          ],
+          "pred": [
+            "normal scale"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "scale"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "low-key"
+          ],
+          "pred": [
+            "normal"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "desaturated"
+          ],
+          "pred": [
+            "low saturation"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "color_saturation"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "monochromatic"
+          ],
+          "pred": [
+            "cool palette"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "color_palette"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "pan-focus"
+          ],
+          "pred": [
+            "deep DOF"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "depth_of_field"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "macro"
+          ],
+          "pred": [
+            "standard lens"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "focal_length"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "night"
+          ],
+          "pred": [
+            "night"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "time_of_day"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "clear",
+            "rainy"
+          ],
+          "pred": [
+            "rainy"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "weather"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "none"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "transition"
+        }
+      ]
+    },
+    {
+      "testcase_id": "S4-2-vintage-film-office-beach-bird-robot-hologram-hovering",
+      "difficulty": "S4",
+      "duration_seconds": 12,
+      "counts": {
+        "scorable": 27,
+        "exact": 8,
+        "partial": 9,
+        "miss": 10,
+        "unpredictable": 0,
+        "missing": 0,
+        "skipped": 0
+      },
+      "aggregate": {
+        "exact_match_rate": 0.2962962962962963,
+        "macro_f1": 0.5061728395061728,
+        "micro_precision": 0.5294117647058824,
+        "micro_recall": 0.5142857142857142,
+        "micro_f1": 0.5217391304347826
+      },
+      "micro_tallies": {
+        "tp": 18,
+        "fp": 16,
+        "fn": 17
+      },
+      "extraneous_predictions": [],
+      "metrics": [
+        {
+          "status": "miss",
+          "gt": [
+            "vintage film"
+          ],
+          "pred": [
+            "photorealistic",
+            "surrealist"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "style"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "beach",
+            "office"
+          ],
+          "pred": [
+            "beach"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "scenes"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "bird",
+            "robot"
+          ],
+          "pred": [
+            "bird",
+            "everyday object",
+            "natural element",
+            "robot"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "subjects"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "rigid body"
+          ],
+          "pred": [
+            "solid"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "physical_state"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "dreamlike"
+          ],
+          "pred": [
+            "sci-fi"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "physical_rule"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "smooth"
+          ],
+          "pred": [
+            "rough",
+            "smooth"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "texture"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "opaque"
+          ],
+          "pred": [
+            "opaque",
+            "semi-transparent"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "opacity"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "scattered",
+            "vertical"
+          ],
+          "pred": [
+            "layered/stacked",
+            "vertical"
+          ],
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "en_field": "spatial_layout"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "hovering"
+          ],
+          "pred": [
+            "hovering"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "action"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "none"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "emotion"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "hologram"
+          ],
+          "pred": [
+            "hologram"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "effect"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "cool",
+            "multi-color",
+            "neutral"
+          ],
+          "pred": [
+            "cool"
+          ],
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5,
+          "en_field": "lighting_tone"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "under light"
+          ],
+          "pred": [
+            "ambient light"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_direction"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "bird's eye"
+          ],
+          "pred": [
+            "eye level"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "camera_angle"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "pan",
+            "static"
+          ],
+          "pred": [
+            "static"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "camera_movement"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "center framing"
+          ],
+          "pred": [
+            "center framing"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "composition"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "reverse"
+          ],
+          "pred": [
+            "real-time"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "time_mode"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "close-up"
+          ],
+          "pred": [
+            "full shot"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "shot_size"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "normal scale"
+          ],
+          "pred": [
+            "normal scale"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "scale"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "low-key",
+            "normal"
+          ],
+          "pred": [
+            "normal"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "low saturation"
+          ],
+          "pred": [
+            "low saturation"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "color_saturation"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "cool palette"
+          ],
+          "pred": [
+            "cool palette"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "color_palette"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "pan-focus"
+          ],
+          "pred": [
+            "deep DOF"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "depth_of_field"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "wide-angle"
+          ],
+          "pred": [
+            "standard lens"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "focal_length"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "dawn"
+          ],
+          "pred": [
+            "daytime"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "time_of_day"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "clear",
+            "foggy"
+          ],
+          "pred": [
+            "foggy"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "weather"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "none"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "transition"
+        }
+      ]
+    },
+    {
+      "testcase_id": "S5-11-vintage-film-desert-kitchen-living-room-human-mammal-light-effect-jumping",
+      "difficulty": "S5",
+      "duration_seconds": 12,
+      "counts": {
+        "scorable": 26,
+        "exact": 7,
+        "partial": 7,
+        "miss": 12,
+        "unpredictable": 0,
+        "missing": 0,
+        "skipped": 1
+      },
+      "aggregate": {
+        "exact_match_rate": 0.2692307692307692,
+        "macro_f1": 0.43150183150183147,
+        "micro_precision": 0.4857142857142857,
+        "micro_recall": 0.4146341463414634,
+        "micro_f1": 0.4473684210526316
+      },
+      "micro_tallies": {
+        "tp": 17,
+        "fp": 18,
+        "fn": 24
+      },
+      "extraneous_predictions": [],
+      "metrics": [
+        {
+          "status": "miss",
+          "gt": [
+            "vintage film"
+          ],
+          "pred": [
+            "cinematic"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "style"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "desert",
+            "kitchen",
+            "living room"
+          ],
+          "pred": [
+            "desert",
+            "kitchen"
+          ],
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "en_field": "scenes"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "human",
+            "mammal",
+            "vehicle"
+          ],
+          "pred": [
+            "human",
+            "mammal"
+          ],
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "en_field": "subjects"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "solid"
+          ],
+          "pred": [
+            "solid"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "physical_state"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "sci-fi"
+          ],
+          "pred": [
+            "sci-fi"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "physical_rule"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "fabric",
+            "hair/fur"
+          ],
+          "pred": [
+            "fabric",
+            "hair/fur",
+            "metallic",
+            "wooden"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "texture"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "opaque"
+          ],
+          "pred": [
+            "opaque"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "opacity"
+        },
+        {
+          "en_field": "spatial_layout",
+          "status": "skipped",
+          "gt": [],
+          "pred": null,
+          "qc_note": "no layout descriptor (foreground-background/symmetric/layered/…); arrangement ambiguous",
+          "precision": null,
+          "recall": null,
+          "f1": null
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "jumping"
+          ],
+          "pred": [
+            "jumping",
+            "running"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "action"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "moderate joy"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "emotion"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "light effect",
+            "rain"
+          ],
+          "pred": [
+            "light effect"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "effect"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "cool",
+            "warm"
+          ],
+          "pred": [
+            "multi-color"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_tone"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "front light"
+          ],
+          "pred": [
+            "side light"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_direction"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "low angle"
+          ],
+          "pred": [
+            "eye level"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "camera_angle"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "pan",
+            "push in",
+            "static",
+            "whip pan"
+          ],
+          "pred": [
+            "static",
+            "tracking shot"
+          ],
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1": 0.3333333333333333,
+          "en_field": "camera_movement"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "rule of thirds"
+          ],
+          "pred": [
+            "center framing"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "composition"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "timelapse"
+          ],
+          "pred": [
+            "real-time"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "time_mode"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "close-up",
+            "extreme close-up",
+            "extreme long shot",
+            "medium shot"
+          ],
+          "pred": [
+            "close-up",
+            "full shot",
+            "long shot"
+          ],
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.28571428571428575,
+          "en_field": "shot_size"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "normal scale"
+          ],
+          "pred": [
+            "normal scale"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "scale"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "high-key",
+            "normal"
+          ],
+          "pred": [
+            "low-key"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "low saturation"
+          ],
+          "pred": [
+            "low saturation"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "color_saturation"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "complementary"
+          ],
+          "pred": [
+            "complementary"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "color_palette"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "pan-focus"
+          ],
+          "pred": [
+            "shallow DOF"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "depth_of_field"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "macro"
+          ],
+          "pred": [
+            "standard lens"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "focal_length"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "night"
+          ],
+          "pred": [
+            "night"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "time_of_day"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "clear",
+            "rainy"
+          ],
+          "pred": [
+            "overcast"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "weather"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "dissolve"
+          ],
+          "pred": [
+            "hard cut"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "transition"
+        }
+      ]
+    },
+    {
+      "testcase_id": "S5-9-cartoon-ruins-kitchen-living-room-insect-fictional-creature-human-snow-dialogue",
+      "difficulty": "S5",
+      "duration_seconds": 12,
+      "counts": {
+        "scorable": 27,
+        "exact": 8,
+        "partial": 5,
+        "miss": 14,
+        "unpredictable": 0,
+        "missing": 0,
+        "skipped": 0
+      },
+      "aggregate": {
+        "exact_match_rate": 0.2962962962962963,
+        "macro_f1": 0.4012345679012345,
+        "micro_precision": 0.45714285714285713,
+        "micro_recall": 0.43243243243243246,
+        "micro_f1": 0.4444444444444445
+      },
+      "micro_tallies": {
+        "tp": 16,
+        "fp": 19,
+        "fn": 21
+      },
+      "extraneous_predictions": [],
+      "metrics": [
+        {
+          "status": "partial",
+          "gt": [
+            "cartoon"
+          ],
+          "pred": [
+            "cartoon",
+            "minimalist"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "style"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "kitchen",
+            "living room",
+            "ruins"
+          ],
+          "pred": [
+            "kitchen",
+            "living room",
+            "ruins"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "scenes"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "bird",
+            "fictional creature",
+            "human",
+            "insect"
+          ],
+          "pred": [
+            "fictional creature",
+            "human"
+          ],
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "en_field": "subjects"
+        },
+        {
+          "status": "miss",
+          "gt": [],
+          "pred": [
+            "solid"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "physical_state"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "real-world"
+          ],
+          "pred": [
+            "fantasy"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "physical_rule"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "fabric",
+            "stone"
+          ],
+          "pred": [
+            "smooth"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "texture"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "semi-transparent"
+          ],
+          "pred": [
+            "opaque"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "opacity"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "inside-outside"
+          ],
+          "pred": [
+            "foreground-background",
+            "scattered"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "spatial_layout"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "dialogue",
+            "falling"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "action"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "strong sadness"
+          ],
+          "pred": [
+            "moderate sadness"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "emotion"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "snow"
+          ],
+          "pred": [
+            "none"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "effect"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "neutral"
+          ],
+          "pred": [
+            "cool"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_tone"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "top light"
+          ],
+          "pred": [
+            "ambient light"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "lighting_direction"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "bird's eye"
+          ],
+          "pred": [
+            "high angle"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "camera_angle"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "crane",
+            "orbit",
+            "push in"
+          ],
+          "pred": [
+            "push in"
+          ],
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5,
+          "en_field": "camera_movement"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "center framing"
+          ],
+          "pred": [
+            "center framing"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "composition"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "freeze frame"
+          ],
+          "pred": [
+            "real-time"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "time_mode"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "close-up",
+            "extreme long shot",
+            "long shot"
+          ],
+          "pred": [
+            "full shot",
+            "long shot",
+            "medium shot"
+          ],
+          "precision": 0.3333333333333333,
+          "recall": 0.3333333333333333,
+          "f1": 0.3333333333333333,
+          "en_field": "shot_size"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "normal scale"
+          ],
+          "pred": [
+            "normal scale"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "scale"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "normal"
+          ],
+          "pred": [
+            "normal"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "high saturation"
+          ],
+          "pred": [
+            "low saturation"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "color_saturation"
+        },
+        {
+          "status": "partial",
+          "gt": [
+            "monochromatic"
+          ],
+          "pred": [
+            "cool palette",
+            "monochromatic"
+          ],
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "en_field": "color_palette"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "shallow DOF"
+          ],
+          "pred": [
+            "shallow DOF"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "depth_of_field"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "standard lens"
+          ],
+          "pred": [
+            "standard lens"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "focal_length"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "daytime"
+          ],
+          "pred": [
+            "daytime"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "time_of_day"
+        },
+        {
+          "status": "exact",
+          "gt": [
+            "clear"
+          ],
+          "pred": [
+            "clear"
+          ],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "en_field": "weather"
+        },
+        {
+          "status": "miss",
+          "gt": [
+            "fade"
+          ],
+          "pred": [
+            "hard cut"
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "en_field": "transition"
+        }
+      ]
+    }
+  ]
+}

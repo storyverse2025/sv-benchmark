@@ -1,0 +1,162 @@
+[
+  {
+    "testcase_id": "S1-11-anime-warehouse-fictional-creature-snow",
+    "model": "seedance",
+    "task_id": "cgt-20260424212220-gw2d8",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S1-11-anime-warehouse-fictional-creature-snow_seedance.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S1-11-anime-warehouse-fictional-creature-snow",
+    "model": "kling",
+    "task_id": "task_bsirYwTnvGCG36m4ZwSlT0TlAjtHQv1p",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S1-11-anime-warehouse-fictional-creature-snow_kling.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S1-2-cyberpunk-beach-vehicle-water-splash-driving",
+    "model": "seedance",
+    "task_id": "cgt-20260424212220-5sr7z",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S1-2-cyberpunk-beach-vehicle-water-splash-driving_seedance.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S1-2-cyberpunk-beach-vehicle-water-splash-driving",
+    "model": "kling",
+    "task_id": "task_ROjxGFKViljhRiMKTqmrjUgl48JAMD3l",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S1-2-cyberpunk-beach-vehicle-water-splash-driving_kling.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S2-1-cartoon-living-room-desert-bird-explosion-hovering",
+    "model": "seedance",
+    "task_id": "cgt-20260424212407-8twhr",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S2-1-cartoon-living-room-desert-bird-explosion-hovering_seedance.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S2-1-cartoon-living-room-desert-bird-explosion-hovering",
+    "model": "kling",
+    "task_id": "task_Czwn1lOCi7PF7lzOHIpXFGFugcrzbpXp",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S2-1-cartoon-living-room-desert-bird-explosion-hovering_kling.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S2-5-oil-painting-warehouse-desert-human-light-effect-dancing",
+    "model": "seedance",
+    "task_id": "cgt-20260424212524-t4zmw",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S2-5-oil-painting-warehouse-desert-human-light-effect-dancing_seedance.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S2-5-oil-painting-warehouse-desert-human-light-effect-dancing",
+    "model": "kling",
+    "task_id": "task_rbgQ54iTXaoFXwVDxe4RK9IilVPrTloz",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S2-5-oil-painting-warehouse-desert-human-light-effect-dancing_kling.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S3-4-anime-kitchen-human-everyday-object-light-effect",
+    "model": "seedance",
+    "task_id": "cgt-20260424212725-5hjqt",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S3-4-anime-kitchen-human-everyday-object-light-effect_seedance.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S3-4-anime-kitchen-human-everyday-object-light-effect",
+    "model": "kling",
+    "task_id": "task_0u0uJYktM1kya0LhH6cCe1lqHXGbBFJG",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S3-4-anime-kitchen-human-everyday-object-light-effect_kling.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S3-11-minimalist-desert-natural-element-robot-light-effect",
+    "model": "seedance",
+    "task_id": "cgt-20260424212856-zgpw4",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S3-11-minimalist-desert-natural-element-robot-light-effect_seedance.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S3-11-minimalist-desert-natural-element-robot-light-effect",
+    "model": "kling",
+    "task_id": "task_Lh4u8Tsm48ftj5jpzLzPcaGLUCvrHwhi",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S3-11-minimalist-desert-natural-element-robot-light-effect_kling.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S4-3-anime-city-street-kitchen-robot-insect-jumping",
+    "model": "seedance",
+    "task_id": "cgt-20260424212944-ml4tn",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S4-3-anime-city-street-kitchen-robot-insect-jumping_seedance.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S4-3-anime-city-street-kitchen-robot-insect-jumping",
+    "model": "kling",
+    "task_id": "task_mykqAhO2782p4zCHVEXzAY9x5AhRpgkC",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S4-3-anime-city-street-kitchen-robot-insect-jumping_kling.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S4-2-vintage-film-office-beach-bird-robot-hologram-hovering",
+    "model": "seedance",
+    "task_id": "cgt-20260424213129-8cskf",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S4-2-vintage-film-office-beach-bird-robot-hologram-hovering_seedance.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S4-2-vintage-film-office-beach-bird-robot-hologram-hovering",
+    "model": "kling",
+    "task_id": "task_RbaIHD3fYRUdbN2URl05F0Oxr7A0GrKl",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S4-2-vintage-film-office-beach-bird-robot-hologram-hovering_kling.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S5-11-vintage-film-desert-kitchen-living-room-human-mammal-light-effect-jumping",
+    "model": "seedance",
+    "task_id": "cgt-20260424213244-8mmll",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S5-11-vintage-film-desert-kitchen-living-room-human-mammal-light-effect-jumping_seedance.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S5-11-vintage-film-desert-kitchen-living-room-human-mammal-light-effect-jumping",
+    "model": "kling",
+    "task_id": "task_yq1lU2OsYU0JtHBvo4mo8o7BVj0Y0pnu",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S5-11-vintage-film-desert-kitchen-living-room-human-mammal-light-effect-jumping_kling.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S5-9-cartoon-ruins-kitchen-living-room-insect-fictional-creature-human-snow-dialogue",
+    "model": "seedance",
+    "task_id": "cgt-20260424213410-kdgjh",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S5-9-cartoon-ruins-kitchen-living-room-insect-fictional-creature-human-snow-dialogue_seedance.mp4",
+    "video_url": "[redacted]"
+  },
+  {
+    "testcase_id": "S5-9-cartoon-ruins-kitchen-living-room-insect-fictional-creature-human-snow-dialogue",
+    "model": "kling",
+    "task_id": "task_DtPrVtd1e8kM8EeA1TPHQwZbDG5NEETB",
+    "duration": 12,
+    "video_path": "/Users/ashleyliu/Documents/storyverse/sv-benchmark/outputs/benchmark_v2/videos/S5-9-cartoon-ruins-kitchen-living-room-insect-fictional-creature-human-snow-dialogue_kling.mp4",
+    "video_url": "[redacted]"
+  }
+]
