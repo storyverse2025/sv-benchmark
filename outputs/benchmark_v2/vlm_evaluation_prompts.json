@@ -1,5 +1,6 @@
 {
   "system_prompt_file": "vlm_system_prompt.md",
+  "version": "v4",
   "n_testcases": 10,
   "bundles": [
     {

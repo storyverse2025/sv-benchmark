@@ -1,29 +1,139 @@
 {
-    "style": ["surrealist"],
-    "scenes": ["theater stage"],
-    "subjects": ["fictional creature"],
-    "physical_state": ["solid"],
-    "physical_rule": ["dreamlike"],
-    "texture": ["metallic"],
-    "opacity": ["opaque"],
-    "spatial_layout": ["foreground-background"],
-    "action": ["hovering"],
-    "emotion": ["none"],
-    "effect": ["flame"],
-    "lighting_tone": ["warm"],
-    "lighting_direction": ["backlight"],
-    "camera_angle": ["eye level"],
-    "camera_movement": ["tracking shot", "pan"],
-    "composition": ["center framing"],
-    "time_mode": ["real-time"],
-    "shot_size": ["long shot"],
-    "scale": ["normal scale"],
-    "lighting_intensity": ["normal"],
-    "color_saturation": ["low saturation"],
-    "color_palette": ["warm palette"],
-    "depth_of_field": ["deep DOF"],
-    "focal_length": ["standard lens"],
-    "time_of_day": ["dawn"],
-    "weather": ["foggy"],
-    "transition": ["none"]
-  }
+  "reasoning": {
+    "fx_and_style": "The visual style features a cinematic, 3D-animated aesthetic with a slightly desaturated, cool color palette. Stylized snow particles drift continuously through the scene as an atmospheric effect. There are no edits, as the video is a single, continuous shot.",
+    "environment": "The setting is the interior of a warehouse or storage room, heavily cluttered with stacked cardboard boxes. A large, open loading door reveals an overcast, snowy outdoor scene during the daytime.",
+    "subjects_and_physics": "The primary subject is a small, solid, glowing humanoid fictional creature with a smooth texture, standing completely motionless. The surrounding stacked cardboard boxes serve as secondary everyday objects, all appearing completely opaque and at a normal scale.",
+    "camera": "The camera executes a very slow push-in movement in real-time, maintaining a center-framed composition that uses the open doorway as a natural frame within a frame. A shallow depth of field keeps the subject in focus while heavily blurring the foreground boxes and the exterior background.",
+    "lighting": "Illumination is strongly driven by backlight streaming through the open doorway, casting the interior into low-key shadow and highlighting the subject's edges with a cool, neutral tone."
+  },
+  "style": [
+    {"value": "cinematic", "confidence": 0.90},
+    {"value": "anime", "confidence": 0.30},
+    {"value": "minimalist", "confidence": 0.10}
+  ],
+  "scenes": [
+    {"value": "warehouse", "confidence": 0.95},
+    {"value": "unpredictable", "confidence": 0.05},
+    {"value": "office", "confidence": 0.01}
+  ],
+  "subjects": [
+    {"value": "fictional creature", "confidence": 0.90},
+    {"value": "everyday object", "confidence": 0.80},
+    {"value": "unpredictable", "confidence": 0.05}
+  ],
+  "physical_state": [
+    {"value": "solid", "confidence": 0.95},
+    {"value": "rigid body", "confidence": 0.10},
+    {"value": "soft body", "confidence": 0.01}
+  ],
+  "texture": [
+    {"value": "smooth", "confidence": 0.90},
+    {"value": "rough", "confidence": 0.70},
+    {"value": "unpredictable", "confidence": 0.05}
+  ],
+  "opacity": [
+    {"value": "opaque", "confidence": 0.95},
+    {"value": "unpredictable", "confidence": 0.05},
+    {"value": "semi-transparent", "confidence": 0.01}
+  ],
+  "spatial_layout": [
+    {"value": "foreground-background", "confidence": 0.90},
+    {"value": "inside-outside", "confidence": 0.85},
+    {"value": "layered/stacked", "confidence": 0.80}
+  ],
+  "action": [
+    {"value": "none", "confidence": 0.95},
+    {"value": "unpredictable", "confidence": 0.05},
+    {"value": "dialogue", "confidence": 0.01}
+  ],
+  "emotion": [
+    {"value": "none", "confidence": 0.90},
+    {"value": "unpredictable", "confidence": 0.05},
+    {"value": "subtle sadness", "confidence": 0.01}
+  ],
+  "effect": [
+    {"value": "snow", "confidence": 0.95},
+    {"value": "magic particles", "confidence": 0.10},
+    {"value": "none", "confidence": 0.01}
+  ],
+  "lighting_tone": [
+    {"value": "cool", "confidence": 0.70},
+    {"value": "neutral", "confidence": 0.40},
+    {"value": "warm", "confidence": 0.05}
+  ],
+  "lighting_direction": [
+    {"value": "backlight", "confidence": 0.95},
+    {"value": "ambient light", "confidence": 0.10},
+    {"value": "front light", "confidence": 0.05}
+  ],
+  "camera_angle": [
+    {"value": "eye level", "confidence": 0.80},
+    {"value": "low angle", "confidence": 0.20},
+    {"value": "high angle", "confidence": 0.05}
+  ],
+  "camera_movement": [
+    {"value": "push in", "confidence": 0.90},
+    {"value": "static", "confidence": 0.20},
+    {"value": "tracking shot", "confidence": 0.10}
+  ],
+  "composition": [
+    {"value": "center framing", "confidence": 0.90},
+    {"value": "frame within frame", "confidence": 0.85},
+    {"value": "symmetrical", "confidence": 0.40}
+  ],
+  "time_mode": [
+    {"value": "real-time", "confidence": 0.90},
+    {"value": "slow motion", "confidence": 0.10},
+    {"value": "freeze frame", "confidence": 0.01}
+  ],
+  "shot_size": [
+    {"value": "long shot", "confidence": 0.70},
+    {"value": "full shot", "confidence": 0.60},
+    {"value": "medium shot", "confidence": 0.05}
+  ],
+  "scale": [
+    {"value": "normal scale", "confidence": 0.90},
+    {"value": "microscopic", "confidence": 0.05},
+    {"value": "giant", "confidence": 0.01}
+  ],
+  "lighting_intensity": [
+    {"value": "low-key", "confidence": 0.90},
+    {"value": "normal", "confidence": 0.10},
+    {"value": "unpredictable", "confidence": 0.05}
+  ],
+  "color_saturation": [
+    {"value": "desaturated", "confidence": 0.80},
+    {"value": "low saturation", "confidence": 0.60},
+    {"value": "high saturation", "confidence": 0.01}
+  ],
+  "color_palette": [
+    {"value": "cool palette", "confidence": 0.70},
+    {"value": "monochromatic", "confidence": 0.40},
+    {"value": "unpredictable", "confidence": 0.05}
+  ],
+  "depth_of_field": [
+    {"value": "shallow DOF", "confidence": 0.95},
+    {"value": "deep DOF", "confidence": 0.05},
+    {"value": "pan-focus", "confidence": 0.01}
+  ],
+  "focal_length": [
+    {"value": "standard lens", "confidence": 0.80},
+    {"value": "telephoto", "confidence": 0.15},
+    {"value": "wide-angle", "confidence": 0.05}
+  ],
+  "time_of_day": [
+    {"value": "daytime", "confidence": 0.80},
+    {"value": "dusk", "confidence": 0.20},
+    {"value": "dawn", "confidence": 0.10}
+  ],
+  "weather": [
+    {"value": "snowy", "confidence": 0.95},
+    {"value": "overcast", "confidence": 0.60},
+    {"value": "unpredictable", "confidence": 0.05}
+  ],
+  "transition": [
+    {"value": "none", "confidence": 0.95},
+    {"value": "hard cut", "confidence": 0.01},
+    {"value": "fade", "confidence": 0.01}
+  ]
+}

@@ -1,0 +1,694 @@
+{
+  "n_testcases": 1,
+  "confidence_threshold": 0.1,
+  "top_k": 3,
+  "weighted": false,
+  "reports": [
+    {
+      "testcase_id": "S1-11-anime-warehouse-fictional-creature-snow",
+      "difficulty": "S1",
+      "duration_seconds": 12,
+      "threshold": 0.1,
+      "top_k": 3,
+      "weighted": false,
+      "n_scorable": 26,
+      "n_missing": 0,
+      "accuracy": 0.6538461538461539,
+      "precision": 0.34,
+      "recall": 0.5862068965517241,
+      "metrics": [
+        {
+          "gt": [
+            "anime"
+          ],
+          "selected": [
+            {
+              "value": "cinematic",
+              "confidence": 0.9
+            },
+            {
+              "value": "anime",
+              "confidence": 0.3
+            },
+            {
+              "value": "minimalist",
+              "confidence": 0.1
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 2,
+          "fn": 0,
+          "hit_w": 0.3,
+          "tp_w": 0.3,
+          "fp_w": 1.0,
+          "rec_mass": 0.3,
+          "gt_size": 1,
+          "en_field": "style"
+        },
+        {
+          "gt": [
+            "warehouse"
+          ],
+          "selected": [
+            {
+              "value": "warehouse",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "scenes"
+        },
+        {
+          "gt": [
+            "fictional creature"
+          ],
+          "selected": [
+            {
+              "value": "fictional creature",
+              "confidence": 0.9
+            },
+            {
+              "value": "everyday object",
+              "confidence": 0.8
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0.8,
+          "rec_mass": 0.9,
+          "gt_size": 1,
+          "en_field": "subjects"
+        },
+        {
+          "gt": [
+            "solid"
+          ],
+          "selected": [
+            {
+              "value": "solid",
+              "confidence": 0.95
+            },
+            {
+              "value": "rigid body",
+              "confidence": 0.1
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0.1,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "physical_state"
+        },
+        {
+          "gt": [
+            "smooth"
+          ],
+          "selected": [
+            {
+              "value": "smooth",
+              "confidence": 0.9
+            },
+            {
+              "value": "rough",
+              "confidence": 0.7
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0.7,
+          "rec_mass": 0.9,
+          "gt_size": 1,
+          "en_field": "texture"
+        },
+        {
+          "gt": [
+            "semi-transparent"
+          ],
+          "selected": [
+            {
+              "value": "opaque",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "opacity"
+        },
+        {
+          "gt": [
+            "layered/stacked"
+          ],
+          "selected": [
+            {
+              "value": "foreground-background",
+              "confidence": 0.9
+            },
+            {
+              "value": "inside-outside",
+              "confidence": 0.85
+            },
+            {
+              "value": "layered/stacked",
+              "confidence": 0.8
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 2,
+          "fn": 0,
+          "hit_w": 0.8,
+          "tp_w": 0.8,
+          "fp_w": 1.75,
+          "rec_mass": 0.8,
+          "gt_size": 1,
+          "en_field": "spatial_layout"
+        },
+        {
+          "gt": [
+            "none"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "action"
+        },
+        {
+          "gt": [
+            "subtle joy"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "emotion"
+        },
+        {
+          "gt": [
+            "rain",
+            "snow"
+          ],
+          "selected": [
+            {
+              "value": "snow",
+              "confidence": 0.95
+            },
+            {
+              "value": "magic particles",
+              "confidence": 0.1
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0.1,
+          "rec_mass": 0.95,
+          "gt_size": 2,
+          "en_field": "effect"
+        },
+        {
+          "gt": [
+            "cool",
+            "warm"
+          ],
+          "selected": [
+            {
+              "value": "cool",
+              "confidence": 0.7
+            },
+            {
+              "value": "neutral",
+              "confidence": 0.4
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.7,
+          "tp_w": 0.7,
+          "fp_w": 0.4,
+          "rec_mass": 0.7,
+          "gt_size": 2,
+          "en_field": "lighting_tone"
+        },
+        {
+          "gt": [
+            "side light"
+          ],
+          "selected": [
+            {
+              "value": "backlight",
+              "confidence": 0.95
+            },
+            {
+              "value": "ambient light",
+              "confidence": 0.1
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 1.05,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "lighting_direction"
+        },
+        {
+          "gt": [
+            "low angle"
+          ],
+          "selected": [
+            {
+              "value": "eye level",
+              "confidence": 0.8
+            },
+            {
+              "value": "low angle",
+              "confidence": 0.2
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "hit_w": 0.2,
+          "tp_w": 0.2,
+          "fp_w": 0.8,
+          "rec_mass": 0.2,
+          "gt_size": 1,
+          "en_field": "camera_angle"
+        },
+        {
+          "gt": [
+            "truck"
+          ],
+          "selected": [
+            {
+              "value": "push in",
+              "confidence": 0.9
+            },
+            {
+              "value": "static",
+              "confidence": 0.2
+            },
+            {
+              "value": "tracking shot",
+              "confidence": 0.1
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 1.2000000000000002,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "camera_movement"
+        },
+        {
+          "gt": [
+            "frame within frame"
+          ],
+          "selected": [
+            {
+              "value": "center framing",
+              "confidence": 0.9
+            },
+            {
+              "value": "frame within frame",
+              "confidence": 0.85
+            },
+            {
+              "value": "symmetrical",
+              "confidence": 0.4
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 2,
+          "fn": 0,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 1.3,
+          "rec_mass": 0.85,
+          "gt_size": 1,
+          "en_field": "composition"
+        },
+        {
+          "gt": [
+            "freeze frame"
+          ],
+          "selected": [
+            {
+              "value": "real-time",
+              "confidence": 0.9
+            },
+            {
+              "value": "slow motion",
+              "confidence": 0.1
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 1.0,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "time_mode"
+        },
+        {
+          "gt": [
+            "full shot"
+          ],
+          "selected": [
+            {
+              "value": "long shot",
+              "confidence": 0.7
+            },
+            {
+              "value": "full shot",
+              "confidence": 0.6
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "hit_w": 0.6,
+          "tp_w": 0.6,
+          "fp_w": 0.7,
+          "rec_mass": 0.6,
+          "gt_size": 1,
+          "en_field": "shot_size"
+        },
+        {
+          "gt": [
+            "microscopic"
+          ],
+          "selected": [
+            {
+              "value": "normal scale",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "scale"
+        },
+        {
+          "gt": [
+            "normal"
+          ],
+          "selected": [
+            {
+              "value": "low-key",
+              "confidence": 0.9
+            },
+            {
+              "value": "normal",
+              "confidence": 0.1
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "hit_w": 0.1,
+          "tp_w": 0.1,
+          "fp_w": 0.9,
+          "rec_mass": 0.1,
+          "gt_size": 1,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "gt": [
+            "low saturation"
+          ],
+          "selected": [
+            {
+              "value": "desaturated",
+              "confidence": 0.8
+            },
+            {
+              "value": "low saturation",
+              "confidence": 0.6
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "hit_w": 0.6,
+          "tp_w": 0.6,
+          "fp_w": 0.8,
+          "rec_mass": 0.6,
+          "gt_size": 1,
+          "en_field": "color_saturation"
+        },
+        {
+          "gt": [
+            "warm palette"
+          ],
+          "selected": [
+            {
+              "value": "cool palette",
+              "confidence": 0.7
+            },
+            {
+              "value": "monochromatic",
+              "confidence": 0.4
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 1.1,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "color_palette"
+        },
+        {
+          "gt": [
+            "shallow DOF"
+          ],
+          "selected": [
+            {
+              "value": "shallow DOF",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "depth_of_field"
+        },
+        {
+          "gt": [
+            "macro",
+            "wide-angle"
+          ],
+          "selected": [
+            {
+              "value": "standard lens",
+              "confidence": 0.8
+            },
+            {
+              "value": "telephoto",
+              "confidence": 0.15
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 2,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9500000000000001,
+          "rec_mass": 0.0,
+          "gt_size": 2,
+          "en_field": "focal_length"
+        },
+        {
+          "gt": [
+            "daytime"
+          ],
+          "selected": [
+            {
+              "value": "daytime",
+              "confidence": 0.8
+            },
+            {
+              "value": "dusk",
+              "confidence": 0.2
+            },
+            {
+              "value": "dawn",
+              "confidence": 0.1
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 2,
+          "fn": 0,
+          "hit_w": 0.8,
+          "tp_w": 0.8,
+          "fp_w": 0.30000000000000004,
+          "rec_mass": 0.8,
+          "gt_size": 1,
+          "en_field": "time_of_day"
+        },
+        {
+          "gt": [
+            "rainy"
+          ],
+          "selected": [
+            {
+              "value": "snowy",
+              "confidence": 0.95
+            },
+            {
+              "value": "overcast",
+              "confidence": 0.6
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 1.5499999999999998,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "weather"
+        },
+        {
+          "gt": [
+            "none"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "transition"
+        }
+      ]
+    }
+  ]
+}

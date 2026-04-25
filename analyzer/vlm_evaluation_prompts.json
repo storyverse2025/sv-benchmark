@@ -1,6 +1,7 @@
 {
   "system_prompt_file": "vlm_system_prompt.md",
-  "version": "v3",
+  "version": "v4",
+  "cot_enabled": false,
   "n_testcases": 5,
   "bundles": [
     {
