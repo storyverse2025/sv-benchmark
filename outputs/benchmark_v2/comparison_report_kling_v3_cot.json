@@ -1,0 +1,4868 @@
+{
+  "model": "kling",
+  "n_testcases": 8,
+  "confidence_threshold": 0.5,
+  "top_k": 1,
+  "reports": [
+    {
+      "testcase_id": "S2-1-cartoon-living-room-desert-bird-explosion-hovering",
+      "difficulty": "S2",
+      "duration_seconds": 12,
+      "threshold": 0.5,
+      "top_k": 1,
+      "weighted": false,
+      "n_scorable": 26,
+      "n_missing": 0,
+      "accuracy": 0.5,
+      "precision": 0.5,
+      "recall": 0.43333333333333335,
+      "metrics": [
+        {
+          "gt": [
+            "cartoon"
+          ],
+          "selected": [
+            {
+              "value": "surrealist",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "style"
+        },
+        {
+          "gt": [
+            "desert",
+            "living room"
+          ],
+          "selected": [
+            {
+              "value": "living room",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 2,
+          "en_field": "scenes"
+        },
+        {
+          "gt": [
+            "bird"
+          ],
+          "selected": [
+            {
+              "value": "bird",
+              "confidence": 0.99
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.99,
+          "tp_w": 0.99,
+          "fp_w": 0,
+          "rec_mass": 0.99,
+          "gt_size": 1,
+          "en_field": "subjects"
+        },
+        {
+          "gt": [
+            "solid"
+          ],
+          "selected": [
+            {
+              "value": "solid",
+              "confidence": 0.99
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.99,
+          "tp_w": 0.99,
+          "fp_w": 0,
+          "rec_mass": 0.99,
+          "gt_size": 1,
+          "en_field": "physical_state"
+        },
+        {
+          "gt": [
+            "fantasy"
+          ],
+          "selected": [
+            {
+              "value": "dreamlike",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "physical_rule"
+        },
+        {
+          "gt": [
+            "smooth"
+          ],
+          "selected": [
+            {
+              "value": "feathered",
+              "confidence": 0.99
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.99,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "texture"
+        },
+        {
+          "gt": [
+            "opaque"
+          ],
+          "selected": [
+            {
+              "value": "opaque",
+              "confidence": 0.99
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.99,
+          "tp_w": 0.99,
+          "fp_w": 0,
+          "rec_mass": 0.99,
+          "gt_size": 1,
+          "en_field": "opacity"
+        },
+        {
+          "gt": [
+            "encircling"
+          ],
+          "selected": [
+            {
+              "value": "inside-outside",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "spatial_layout"
+        },
+        {
+          "gt": [
+            "hovering"
+          ],
+          "selected": [
+            {
+              "value": "hovering",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "action"
+        },
+        {
+          "gt": [
+            "none"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.99
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.99,
+          "tp_w": 0.99,
+          "fp_w": 0,
+          "rec_mass": 0.99,
+          "gt_size": 1,
+          "en_field": "emotion"
+        },
+        {
+          "gt": [
+            "explosion"
+          ],
+          "selected": [
+            {
+              "value": "explosion",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 1,
+          "en_field": "effect"
+        },
+        {
+          "gt": [
+            "cool",
+            "neutral"
+          ],
+          "selected": [
+            {
+              "value": "multi-color",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 2,
+          "en_field": "lighting_tone"
+        },
+        {
+          "gt": [
+            "front light"
+          ],
+          "selected": [
+            {
+              "value": "top light",
+              "confidence": 0.8
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.8,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "lighting_direction"
+        },
+        {
+          "gt": [
+            "bird's eye"
+          ],
+          "selected": [
+            {
+              "value": "eye level",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "camera_angle"
+        },
+        {
+          "gt": [
+            "orbit",
+            "pan"
+          ],
+          "selected": [
+            {
+              "value": "push in",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 2,
+          "en_field": "camera_movement"
+        },
+        {
+          "gt": [
+            "rule of thirds"
+          ],
+          "selected": [
+            {
+              "value": "center framing",
+              "confidence": 0.99
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.99,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "composition"
+        },
+        {
+          "gt": [
+            "freeze frame"
+          ],
+          "selected": [
+            {
+              "value": "real-time",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "time_mode"
+        },
+        {
+          "gt": [
+            "full shot"
+          ],
+          "selected": [
+            {
+              "value": "full shot",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 1,
+          "en_field": "shot_size"
+        },
+        {
+          "gt": [
+            "normal scale"
+          ],
+          "selected": [
+            {
+              "value": "normal scale",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "scale"
+        },
+        {
+          "gt": [
+            "high-key",
+            "normal"
+          ],
+          "selected": [
+            {
+              "value": "normal",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 2,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "gt": [
+            "low saturation"
+          ],
+          "selected": [
+            {
+              "value": "low saturation",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 1,
+          "en_field": "color_saturation"
+        },
+        {
+          "gt": [
+            "monochromatic"
+          ],
+          "selected": [
+            {
+              "value": "complementary",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "color_palette"
+        },
+        {
+          "gt": [
+            "pan-focus"
+          ],
+          "selected": [
+            {
+              "value": "deep DOF",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "depth_of_field"
+        },
+        {
+          "gt": [
+            "wide-angle"
+          ],
+          "selected": [
+            {
+              "value": "standard lens",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "focal_length"
+        },
+        {
+          "gt": [
+            "night"
+          ],
+          "selected": [
+            {
+              "value": "night",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 1,
+          "en_field": "time_of_day"
+        },
+        {
+          "gt": [
+            "clear"
+          ],
+          "selected": [
+            {
+              "value": "clear",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "weather"
+        }
+      ]
+    },
+    {
+      "testcase_id": "S2-5-oil-painting-warehouse-desert-human-light-effect-dancing",
+      "difficulty": "S2",
+      "duration_seconds": 12,
+      "threshold": 0.5,
+      "top_k": 1,
+      "weighted": false,
+      "n_scorable": 26,
+      "n_missing": 0,
+      "accuracy": 0.5384615384615384,
+      "precision": 0.56,
+      "recall": 0.4375,
+      "metrics": [
+        {
+          "gt": [
+            "oil painting"
+          ],
+          "selected": [
+            {
+              "value": "photorealistic",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "style"
+        },
+        {
+          "gt": [
+            "desert",
+            "warehouse"
+          ],
+          "selected": [
+            {
+              "value": "warehouse",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 2,
+          "en_field": "scenes"
+        },
+        {
+          "gt": [
+            "human"
+          ],
+          "selected": [
+            {
+              "value": "human",
+              "confidence": 0.99
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.99,
+          "tp_w": 0.99,
+          "fp_w": 0,
+          "rec_mass": 0.99,
+          "gt_size": 1,
+          "en_field": "subjects"
+        },
+        {
+          "gt": [
+            "solid"
+          ],
+          "selected": [
+            {
+              "value": "solid",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "physical_state"
+        },
+        {
+          "gt": [
+            "real-world"
+          ],
+          "selected": [
+            {
+              "value": "real-world",
+              "confidence": 0.99
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.99,
+          "tp_w": 0.99,
+          "fp_w": 0,
+          "rec_mass": 0.99,
+          "gt_size": 1,
+          "en_field": "physical_rule"
+        },
+        {
+          "gt": [
+            "hair/fur"
+          ],
+          "selected": [
+            {
+              "value": "fabric",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "texture"
+        },
+        {
+          "gt": [
+            "opaque"
+          ],
+          "selected": [
+            {
+              "value": "opaque",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "opacity"
+        },
+        {
+          "gt": [
+            "inside-outside"
+          ],
+          "selected": [
+            {
+              "value": "inside-outside",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 1,
+          "en_field": "spatial_layout"
+        },
+        {
+          "gt": [
+            "dancing",
+            "falling"
+          ],
+          "selected": [
+            {
+              "value": "dancing",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 2,
+          "en_field": "action"
+        },
+        {
+          "gt": [
+            "subtle sadness"
+          ],
+          "selected": [
+            {
+              "value": "unpredictable",
+              "confidence": 0.8
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "emotion"
+        },
+        {
+          "gt": [
+            "light effect"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "effect"
+        },
+        {
+          "gt": [
+            "neutral"
+          ],
+          "selected": [
+            {
+              "value": "neutral",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 1,
+          "en_field": "lighting_tone"
+        },
+        {
+          "gt": [
+            "top light"
+          ],
+          "selected": [
+            {
+              "value": "ambient light",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "lighting_direction"
+        },
+        {
+          "gt": [
+            "high angle"
+          ],
+          "selected": [
+            {
+              "value": "eye level",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "camera_angle"
+        },
+        {
+          "gt": [
+            "pan",
+            "push in"
+          ],
+          "selected": [
+            {
+              "value": "push in",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 2,
+          "en_field": "camera_movement"
+        },
+        {
+          "gt": [
+            "center framing",
+            "symmetrical"
+          ],
+          "selected": [
+            {
+              "value": "center framing",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 2,
+          "en_field": "composition"
+        },
+        {
+          "gt": [
+            "reverse"
+          ],
+          "selected": [
+            {
+              "value": "real-time",
+              "confidence": 0.99
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.99,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "time_mode"
+        },
+        {
+          "gt": [
+            "close-up",
+            "medium shot"
+          ],
+          "selected": [
+            {
+              "value": "full shot",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 2,
+          "en_field": "shot_size"
+        },
+        {
+          "gt": [
+            "normal scale"
+          ],
+          "selected": [
+            {
+              "value": "normal scale",
+              "confidence": 0.99
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.99,
+          "tp_w": 0.99,
+          "fp_w": 0,
+          "rec_mass": 0.99,
+          "gt_size": 1,
+          "en_field": "scale"
+        },
+        {
+          "gt": [
+            "low-key",
+            "normal"
+          ],
+          "selected": [
+            {
+              "value": "normal",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 2,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "gt": [
+            "desaturated"
+          ],
+          "selected": [
+            {
+              "value": "low saturation",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "color_saturation"
+        },
+        {
+          "gt": [
+            "monochromatic"
+          ],
+          "selected": [
+            {
+              "value": "monochromatic",
+              "confidence": 0.8
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.8,
+          "tp_w": 0.8,
+          "fp_w": 0,
+          "rec_mass": 0.8,
+          "gt_size": 1,
+          "en_field": "color_palette"
+        },
+        {
+          "gt": [
+            "pan-focus"
+          ],
+          "selected": [
+            {
+              "value": "deep DOF",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "depth_of_field"
+        },
+        {
+          "gt": [
+            "standard lens"
+          ],
+          "selected": [
+            {
+              "value": "standard lens",
+              "confidence": 0.8
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.8,
+          "tp_w": 0.8,
+          "fp_w": 0,
+          "rec_mass": 0.8,
+          "gt_size": 1,
+          "en_field": "focal_length"
+        },
+        {
+          "gt": [
+            "night"
+          ],
+          "selected": [
+            {
+              "value": "daytime",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "time_of_day"
+        },
+        {
+          "gt": [
+            "clear"
+          ],
+          "selected": [
+            {
+              "value": "overcast",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "weather"
+        }
+      ]
+    },
+    {
+      "testcase_id": "S3-11-minimalist-desert-natural-element-robot-light-effect",
+      "difficulty": "S3",
+      "duration_seconds": 12,
+      "threshold": 0.5,
+      "top_k": 1,
+      "weighted": false,
+      "n_scorable": 27,
+      "n_missing": 0,
+      "accuracy": 0.48148148148148145,
+      "precision": 0.48148148148148145,
+      "recall": 0.41935483870967744,
+      "metrics": [
+        {
+          "gt": [
+            "minimalist"
+          ],
+          "selected": [
+            {
+              "value": "photorealistic",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "style"
+        },
+        {
+          "gt": [
+            "desert"
+          ],
+          "selected": [
+            {
+              "value": "desert",
+              "confidence": 0.99
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.99,
+          "tp_w": 0.99,
+          "fp_w": 0,
+          "rec_mass": 0.99,
+          "gt_size": 1,
+          "en_field": "scenes"
+        },
+        {
+          "gt": [
+            "bird",
+            "natural element",
+            "robot"
+          ],
+          "selected": [
+            {
+              "value": "robot",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 3,
+          "en_field": "subjects"
+        },
+        {
+          "gt": [
+            "gas"
+          ],
+          "selected": [
+            {
+              "value": "solid",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "physical_state"
+        },
+        {
+          "gt": [
+            "fantasy"
+          ],
+          "selected": [
+            {
+              "value": "sci-fi",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "physical_rule"
+        },
+        {
+          "gt": [
+            "smooth"
+          ],
+          "selected": [
+            {
+              "value": "metallic",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "texture"
+        },
+        {
+          "gt": [
+            "semi-transparent"
+          ],
+          "selected": [
+            {
+              "value": "opaque",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "opacity"
+        },
+        {
+          "gt": [
+            "scattered"
+          ],
+          "selected": [
+            {
+              "value": "encircling",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "spatial_layout"
+        },
+        {
+          "gt": [
+            "running"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.99
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.99,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "action"
+        },
+        {
+          "gt": [
+            "none"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.99
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.99,
+          "tp_w": 0.99,
+          "fp_w": 0,
+          "rec_mass": 0.99,
+          "gt_size": 1,
+          "en_field": "emotion"
+        },
+        {
+          "gt": [
+            "light effect"
+          ],
+          "selected": [
+            {
+              "value": "smoke",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "effect"
+        },
+        {
+          "gt": [
+            "multi-color",
+            "warm"
+          ],
+          "selected": [
+            {
+              "value": "multi-color",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 2,
+          "en_field": "lighting_tone"
+        },
+        {
+          "gt": [
+            "ambient light"
+          ],
+          "selected": [
+            {
+              "value": "side light",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "lighting_direction"
+        },
+        {
+          "gt": [
+            "bird's eye"
+          ],
+          "selected": [
+            {
+              "value": "high angle",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "camera_angle"
+        },
+        {
+          "gt": [
+            "static"
+          ],
+          "selected": [
+            {
+              "value": "static",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "camera_movement"
+        },
+        {
+          "gt": [
+            "center framing"
+          ],
+          "selected": [
+            {
+              "value": "center framing",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "composition"
+        },
+        {
+          "gt": [
+            "reverse"
+          ],
+          "selected": [
+            {
+              "value": "real-time",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "time_mode"
+        },
+        {
+          "gt": [
+            "full shot"
+          ],
+          "selected": [
+            {
+              "value": "full shot",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 1,
+          "en_field": "shot_size"
+        },
+        {
+          "gt": [
+            "microscopic"
+          ],
+          "selected": [
+            {
+              "value": "normal scale",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "scale"
+        },
+        {
+          "gt": [
+            "normal"
+          ],
+          "selected": [
+            {
+              "value": "normal",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 1,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "gt": [
+            "high saturation"
+          ],
+          "selected": [
+            {
+              "value": "high saturation",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 1,
+          "en_field": "color_saturation"
+        },
+        {
+          "gt": [
+            "complementary"
+          ],
+          "selected": [
+            {
+              "value": "complementary",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 1,
+          "en_field": "color_palette"
+        },
+        {
+          "gt": [
+            "deep DOF"
+          ],
+          "selected": [
+            {
+              "value": "deep DOF",
+              "confidence": 0.8
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.8,
+          "tp_w": 0.8,
+          "fp_w": 0,
+          "rec_mass": 0.8,
+          "gt_size": 1,
+          "en_field": "depth_of_field"
+        },
+        {
+          "gt": [
+            "macro",
+            "wide-angle"
+          ],
+          "selected": [
+            {
+              "value": "standard lens",
+              "confidence": 0.8
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.8,
+          "rec_mass": 0.0,
+          "gt_size": 2,
+          "en_field": "focal_length"
+        },
+        {
+          "gt": [
+            "dawn"
+          ],
+          "selected": [
+            {
+              "value": "dusk",
+              "confidence": 0.75
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.75,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "time_of_day"
+        },
+        {
+          "gt": [
+            "clear"
+          ],
+          "selected": [
+            {
+              "value": "clear",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "weather"
+        },
+        {
+          "gt": [
+            "none"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.99
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.99,
+          "tp_w": 0.99,
+          "fp_w": 0,
+          "rec_mass": 0.99,
+          "gt_size": 1,
+          "en_field": "transition"
+        }
+      ]
+    },
+    {
+      "testcase_id": "S3-4-anime-kitchen-human-everyday-object-light-effect",
+      "difficulty": "S3",
+      "duration_seconds": 12,
+      "threshold": 0.5,
+      "top_k": 1,
+      "weighted": false,
+      "n_scorable": 27,
+      "n_missing": 0,
+      "accuracy": 0.6296296296296297,
+      "precision": 0.6296296296296297,
+      "recall": 0.5666666666666667,
+      "metrics": [
+        {
+          "gt": [
+            "anime"
+          ],
+          "selected": [
+            {
+              "value": "photorealistic",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "style"
+        },
+        {
+          "gt": [
+            "kitchen"
+          ],
+          "selected": [
+            {
+              "value": "kitchen",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "scenes"
+        },
+        {
+          "gt": [
+            "bird",
+            "everyday object",
+            "human"
+          ],
+          "selected": [
+            {
+              "value": "everyday object",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 3,
+          "en_field": "subjects"
+        },
+        {
+          "gt": [
+            "liquid"
+          ],
+          "selected": [
+            {
+              "value": "liquid",
+              "confidence": 0.8
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.8,
+          "tp_w": 0.8,
+          "fp_w": 0,
+          "rec_mass": 0.8,
+          "gt_size": 1,
+          "en_field": "physical_state"
+        },
+        {
+          "gt": [
+            "fantasy"
+          ],
+          "selected": [
+            {
+              "value": "fantasy",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 1,
+          "en_field": "physical_rule"
+        },
+        {
+          "gt": [
+            "metallic"
+          ],
+          "selected": [
+            {
+              "value": "metallic",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "texture"
+        },
+        {
+          "gt": [
+            "semi-transparent"
+          ],
+          "selected": [
+            {
+              "value": "opaque",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "opacity"
+        },
+        {
+          "gt": [
+            "vertical"
+          ],
+          "selected": [
+            {
+              "value": "encircling",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "spatial_layout"
+        },
+        {
+          "gt": [
+            "hovering"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "action"
+        },
+        {
+          "gt": [
+            "strong surprise"
+          ],
+          "selected": [
+            {
+              "value": "strong surprise",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "emotion"
+        },
+        {
+          "gt": [
+            "light effect"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "effect"
+        },
+        {
+          "gt": [
+            "cool"
+          ],
+          "selected": [
+            {
+              "value": "cool",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "lighting_tone"
+        },
+        {
+          "gt": [
+            "front light"
+          ],
+          "selected": [
+            {
+              "value": "ambient light",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "lighting_direction"
+        },
+        {
+          "gt": [
+            "bird's eye"
+          ],
+          "selected": [
+            {
+              "value": "high angle",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "camera_angle"
+        },
+        {
+          "gt": [
+            "pan"
+          ],
+          "selected": [
+            {
+              "value": "pan",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 1,
+          "en_field": "camera_movement"
+        },
+        {
+          "gt": [
+            "leading lines"
+          ],
+          "selected": [
+            {
+              "value": "center framing",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "composition"
+        },
+        {
+          "gt": [
+            "real-time"
+          ],
+          "selected": [
+            {
+              "value": "real-time",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "time_mode"
+        },
+        {
+          "gt": [
+            "close-up"
+          ],
+          "selected": [
+            {
+              "value": "close-up",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 1,
+          "en_field": "shot_size"
+        },
+        {
+          "gt": [
+            "normal scale"
+          ],
+          "selected": [
+            {
+              "value": "normal scale",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "scale"
+        },
+        {
+          "gt": [
+            "normal"
+          ],
+          "selected": [
+            {
+              "value": "normal",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 1,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "gt": [
+            "high saturation"
+          ],
+          "selected": [
+            {
+              "value": "low saturation",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "color_saturation"
+        },
+        {
+          "gt": [
+            "cool palette"
+          ],
+          "selected": [
+            {
+              "value": "cool palette",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "color_palette"
+        },
+        {
+          "gt": [
+            "pan-focus"
+          ],
+          "selected": [
+            {
+              "value": "deep DOF",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "depth_of_field"
+        },
+        {
+          "gt": [
+            "standard lens"
+          ],
+          "selected": [
+            {
+              "value": "standard lens",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 1,
+          "en_field": "focal_length"
+        },
+        {
+          "gt": [
+            "daytime"
+          ],
+          "selected": [
+            {
+              "value": "daytime",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 1,
+          "en_field": "time_of_day"
+        },
+        {
+          "gt": [
+            "clear",
+            "overcast"
+          ],
+          "selected": [
+            {
+              "value": "clear",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 2,
+          "en_field": "weather"
+        },
+        {
+          "gt": [
+            "none"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "transition"
+        }
+      ]
+    },
+    {
+      "testcase_id": "S4-2-vintage-film-office-beach-bird-robot-hologram-hovering",
+      "difficulty": "S4",
+      "duration_seconds": 12,
+      "threshold": 0.5,
+      "top_k": 1,
+      "weighted": false,
+      "n_scorable": 27,
+      "n_missing": 0,
+      "accuracy": 0.5925925925925926,
+      "precision": 0.5925925925925926,
+      "recall": 0.45714285714285713,
+      "metrics": [
+        {
+          "gt": [
+            "vintage film"
+          ],
+          "selected": [
+            {
+              "value": "surrealist",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "style"
+        },
+        {
+          "gt": [
+            "beach",
+            "office"
+          ],
+          "selected": [
+            {
+              "value": "beach",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 2,
+          "en_field": "scenes"
+        },
+        {
+          "gt": [
+            "bird",
+            "robot"
+          ],
+          "selected": [
+            {
+              "value": "robot",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 2,
+          "en_field": "subjects"
+        },
+        {
+          "gt": [
+            "rigid body"
+          ],
+          "selected": [
+            {
+              "value": "solid",
+              "confidence": 0.8
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.8,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "physical_state"
+        },
+        {
+          "gt": [
+            "dreamlike"
+          ],
+          "selected": [
+            {
+              "value": "sci-fi",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "physical_rule"
+        },
+        {
+          "gt": [
+            "smooth"
+          ],
+          "selected": [
+            {
+              "value": "smooth",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 1,
+          "en_field": "texture"
+        },
+        {
+          "gt": [
+            "opaque"
+          ],
+          "selected": [
+            {
+              "value": "semi-transparent",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "opacity"
+        },
+        {
+          "gt": [
+            "scattered",
+            "vertical"
+          ],
+          "selected": [
+            {
+              "value": "vertical",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 2,
+          "en_field": "spatial_layout"
+        },
+        {
+          "gt": [
+            "hovering"
+          ],
+          "selected": [
+            {
+              "value": "hovering",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "action"
+        },
+        {
+          "gt": [
+            "none"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "emotion"
+        },
+        {
+          "gt": [
+            "hologram"
+          ],
+          "selected": [
+            {
+              "value": "hologram",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "effect"
+        },
+        {
+          "gt": [
+            "cool",
+            "multi-color",
+            "neutral"
+          ],
+          "selected": [
+            {
+              "value": "cool",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 3,
+          "en_field": "lighting_tone"
+        },
+        {
+          "gt": [
+            "under light"
+          ],
+          "selected": [
+            {
+              "value": "ambient light",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "lighting_direction"
+        },
+        {
+          "gt": [
+            "bird's eye"
+          ],
+          "selected": [
+            {
+              "value": "eye level",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "camera_angle"
+        },
+        {
+          "gt": [
+            "pan",
+            "static"
+          ],
+          "selected": [
+            {
+              "value": "static",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 2,
+          "en_field": "camera_movement"
+        },
+        {
+          "gt": [
+            "center framing"
+          ],
+          "selected": [
+            {
+              "value": "center framing",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "composition"
+        },
+        {
+          "gt": [
+            "reverse"
+          ],
+          "selected": [
+            {
+              "value": "real-time",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "time_mode"
+        },
+        {
+          "gt": [
+            "close-up"
+          ],
+          "selected": [
+            {
+              "value": "full shot",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "shot_size"
+        },
+        {
+          "gt": [
+            "normal scale"
+          ],
+          "selected": [
+            {
+              "value": "normal scale",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "scale"
+        },
+        {
+          "gt": [
+            "low-key",
+            "normal"
+          ],
+          "selected": [
+            {
+              "value": "normal",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 2,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "gt": [
+            "low saturation"
+          ],
+          "selected": [
+            {
+              "value": "low saturation",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 1,
+          "en_field": "color_saturation"
+        },
+        {
+          "gt": [
+            "cool palette"
+          ],
+          "selected": [
+            {
+              "value": "cool palette",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "color_palette"
+        },
+        {
+          "gt": [
+            "pan-focus"
+          ],
+          "selected": [
+            {
+              "value": "deep DOF",
+              "confidence": 0.8
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.8,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "depth_of_field"
+        },
+        {
+          "gt": [
+            "wide-angle"
+          ],
+          "selected": [
+            {
+              "value": "standard lens",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "focal_length"
+        },
+        {
+          "gt": [
+            "dawn"
+          ],
+          "selected": [
+            {
+              "value": "daytime",
+              "confidence": 0.8
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.8,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "time_of_day"
+        },
+        {
+          "gt": [
+            "clear",
+            "foggy"
+          ],
+          "selected": [
+            {
+              "value": "foggy",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 2,
+          "en_field": "weather"
+        },
+        {
+          "gt": [
+            "none"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "transition"
+        }
+      ]
+    },
+    {
+      "testcase_id": "S4-3-anime-city-street-kitchen-robot-insect-jumping",
+      "difficulty": "S4",
+      "duration_seconds": 12,
+      "threshold": 0.5,
+      "top_k": 1,
+      "weighted": false,
+      "n_scorable": 27,
+      "n_missing": 0,
+      "accuracy": 0.4074074074074074,
+      "precision": 0.4074074074074074,
+      "recall": 0.3333333333333333,
+      "metrics": [
+        {
+          "gt": [
+            "anime"
+          ],
+          "selected": [
+            {
+              "value": "photorealistic",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "style"
+        },
+        {
+          "gt": [
+            "city street",
+            "kitchen"
+          ],
+          "selected": [
+            {
+              "value": "kitchen",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 2,
+          "en_field": "scenes"
+        },
+        {
+          "gt": [
+            "insect",
+            "robot"
+          ],
+          "selected": [
+            {
+              "value": "human",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 2,
+          "en_field": "subjects"
+        },
+        {
+          "gt": [
+            "rigid body"
+          ],
+          "selected": [
+            {
+              "value": "solid",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "physical_state"
+        },
+        {
+          "gt": [
+            "dreamlike"
+          ],
+          "selected": [
+            {
+              "value": "dreamlike",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 1,
+          "en_field": "physical_rule"
+        },
+        {
+          "gt": [
+            "glass",
+            "smooth"
+          ],
+          "selected": [
+            {
+              "value": "smooth",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 2,
+          "en_field": "texture"
+        },
+        {
+          "gt": [
+            "semi-transparent"
+          ],
+          "selected": [
+            {
+              "value": "opaque",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "opacity"
+        },
+        {
+          "gt": [
+            "layered/stacked",
+            "vertical"
+          ],
+          "selected": [
+            {
+              "value": "inside-outside",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 2,
+          "en_field": "spatial_layout"
+        },
+        {
+          "gt": [
+            "jumping"
+          ],
+          "selected": [
+            {
+              "value": "dancing",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "action"
+        },
+        {
+          "gt": [
+            "none"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "emotion"
+        },
+        {
+          "gt": [
+            "rain"
+          ],
+          "selected": [
+            {
+              "value": "rain",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "effect"
+        },
+        {
+          "gt": [
+            "multi-color"
+          ],
+          "selected": [
+            {
+              "value": "multi-color",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 1,
+          "en_field": "lighting_tone"
+        },
+        {
+          "gt": [],
+          "selected": [
+            {
+              "value": "ambient light",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0,
+          "gt_size": 0,
+          "en_field": "lighting_direction"
+        },
+        {
+          "gt": [
+            "eye level"
+          ],
+          "selected": [
+            {
+              "value": "eye level",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "camera_angle"
+        },
+        {
+          "gt": [
+            "handheld",
+            "pan"
+          ],
+          "selected": [
+            {
+              "value": "static",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 2,
+          "en_field": "camera_movement"
+        },
+        {
+          "gt": [
+            "center framing",
+            "frame within frame"
+          ],
+          "selected": [
+            {
+              "value": "frame within frame",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 2,
+          "en_field": "composition"
+        },
+        {
+          "gt": [
+            "timelapse"
+          ],
+          "selected": [
+            {
+              "value": "real-time",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "time_mode"
+        },
+        {
+          "gt": [
+            "extreme close-up"
+          ],
+          "selected": [
+            {
+              "value": "full shot",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "shot_size"
+        },
+        {
+          "gt": [
+            "giant"
+          ],
+          "selected": [
+            {
+              "value": "normal scale",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "scale"
+        },
+        {
+          "gt": [
+            "low-key"
+          ],
+          "selected": [
+            {
+              "value": "normal",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "gt": [
+            "desaturated"
+          ],
+          "selected": [
+            {
+              "value": "low saturation",
+              "confidence": 0.75
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.75,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "color_saturation"
+        },
+        {
+          "gt": [
+            "monochromatic"
+          ],
+          "selected": [
+            {
+              "value": "cool palette",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "color_palette"
+        },
+        {
+          "gt": [
+            "pan-focus"
+          ],
+          "selected": [
+            {
+              "value": "deep DOF",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "depth_of_field"
+        },
+        {
+          "gt": [
+            "macro"
+          ],
+          "selected": [
+            {
+              "value": "standard lens",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "focal_length"
+        },
+        {
+          "gt": [
+            "night"
+          ],
+          "selected": [
+            {
+              "value": "night",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "time_of_day"
+        },
+        {
+          "gt": [
+            "clear",
+            "rainy"
+          ],
+          "selected": [
+            {
+              "value": "rainy",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 2,
+          "en_field": "weather"
+        },
+        {
+          "gt": [
+            "none"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "transition"
+        }
+      ]
+    },
+    {
+      "testcase_id": "S5-11-vintage-film-desert-kitchen-living-room-human-mammal-light-effect-jumping",
+      "difficulty": "S5",
+      "duration_seconds": 12,
+      "threshold": 0.5,
+      "top_k": 1,
+      "weighted": false,
+      "n_scorable": 26,
+      "n_missing": 0,
+      "accuracy": 0.4230769230769231,
+      "precision": 0.4230769230769231,
+      "recall": 0.2682926829268293,
+      "metrics": [
+        {
+          "gt": [
+            "vintage film"
+          ],
+          "selected": [
+            {
+              "value": "cinematic",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "style"
+        },
+        {
+          "gt": [
+            "desert",
+            "kitchen",
+            "living room"
+          ],
+          "selected": [
+            {
+              "value": "desert",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 3,
+          "en_field": "scenes"
+        },
+        {
+          "gt": [
+            "human",
+            "mammal",
+            "vehicle"
+          ],
+          "selected": [
+            {
+              "value": "human",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 3,
+          "en_field": "subjects"
+        },
+        {
+          "gt": [
+            "solid"
+          ],
+          "selected": [
+            {
+              "value": "solid",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "physical_state"
+        },
+        {
+          "gt": [
+            "sci-fi"
+          ],
+          "selected": [
+            {
+              "value": "sci-fi",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 1,
+          "en_field": "physical_rule"
+        },
+        {
+          "gt": [
+            "fabric",
+            "hair/fur"
+          ],
+          "selected": [
+            {
+              "value": "fabric",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 2,
+          "en_field": "texture"
+        },
+        {
+          "gt": [
+            "opaque"
+          ],
+          "selected": [
+            {
+              "value": "opaque",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "opacity"
+        },
+        {
+          "gt": [
+            "jumping"
+          ],
+          "selected": [
+            {
+              "value": "running",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "action"
+        },
+        {
+          "gt": [
+            "moderate joy"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "emotion"
+        },
+        {
+          "gt": [
+            "light effect",
+            "rain"
+          ],
+          "selected": [
+            {
+              "value": "light effect",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 2,
+          "en_field": "effect"
+        },
+        {
+          "gt": [
+            "cool",
+            "warm"
+          ],
+          "selected": [
+            {
+              "value": "multi-color",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 2,
+          "en_field": "lighting_tone"
+        },
+        {
+          "gt": [
+            "front light"
+          ],
+          "selected": [
+            {
+              "value": "side light",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "lighting_direction"
+        },
+        {
+          "gt": [
+            "low angle"
+          ],
+          "selected": [
+            {
+              "value": "eye level",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "camera_angle"
+        },
+        {
+          "gt": [
+            "pan",
+            "push in",
+            "static",
+            "whip pan"
+          ],
+          "selected": [
+            {
+              "value": "static",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 3,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 4,
+          "en_field": "camera_movement"
+        },
+        {
+          "gt": [
+            "rule of thirds"
+          ],
+          "selected": [
+            {
+              "value": "center framing",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "composition"
+        },
+        {
+          "gt": [
+            "timelapse"
+          ],
+          "selected": [
+            {
+              "value": "real-time",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "time_mode"
+        },
+        {
+          "gt": [
+            "close-up",
+            "extreme close-up",
+            "extreme long shot",
+            "medium shot"
+          ],
+          "selected": [
+            {
+              "value": "long shot",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 4,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 4,
+          "en_field": "shot_size"
+        },
+        {
+          "gt": [
+            "normal scale"
+          ],
+          "selected": [
+            {
+              "value": "normal scale",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "scale"
+        },
+        {
+          "gt": [
+            "high-key",
+            "normal"
+          ],
+          "selected": [
+            {
+              "value": "low-key",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 2,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "gt": [
+            "low saturation"
+          ],
+          "selected": [
+            {
+              "value": "low saturation",
+              "confidence": 0.75
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.75,
+          "tp_w": 0.75,
+          "fp_w": 0,
+          "rec_mass": 0.75,
+          "gt_size": 1,
+          "en_field": "color_saturation"
+        },
+        {
+          "gt": [
+            "complementary"
+          ],
+          "selected": [
+            {
+              "value": "complementary",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "color_palette"
+        },
+        {
+          "gt": [
+            "pan-focus"
+          ],
+          "selected": [
+            {
+              "value": "deep DOF",
+              "confidence": 0.8
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.8,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "depth_of_field"
+        },
+        {
+          "gt": [
+            "macro"
+          ],
+          "selected": [
+            {
+              "value": "standard lens",
+              "confidence": 0.8
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.8,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "focal_length"
+        },
+        {
+          "gt": [
+            "night"
+          ],
+          "selected": [
+            {
+              "value": "dusk",
+              "confidence": 0.75
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.75,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "time_of_day"
+        },
+        {
+          "gt": [
+            "clear",
+            "rainy"
+          ],
+          "selected": [
+            {
+              "value": "overcast",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 2,
+          "en_field": "weather"
+        },
+        {
+          "gt": [
+            "dissolve"
+          ],
+          "selected": [
+            {
+              "value": "hard cut",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "transition"
+        }
+      ]
+    },
+    {
+      "testcase_id": "S5-9-cartoon-ruins-kitchen-living-room-insect-fictional-creature-human-snow-dialogue",
+      "difficulty": "S5",
+      "duration_seconds": 12,
+      "threshold": 0.5,
+      "top_k": 1,
+      "weighted": false,
+      "n_scorable": 27,
+      "n_missing": 0,
+      "accuracy": 0.3333333333333333,
+      "precision": 0.34615384615384615,
+      "recall": 0.24324324324324326,
+      "metrics": [
+        {
+          "gt": [
+            "cartoon"
+          ],
+          "selected": [
+            {
+              "value": "cartoon",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.9,
+          "tp_w": 0.9,
+          "fp_w": 0,
+          "rec_mass": 0.9,
+          "gt_size": 1,
+          "en_field": "style"
+        },
+        {
+          "gt": [
+            "kitchen",
+            "living room",
+            "ruins"
+          ],
+          "selected": [
+            {
+              "value": "kitchen",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 3,
+          "en_field": "scenes"
+        },
+        {
+          "gt": [
+            "bird",
+            "fictional creature",
+            "human",
+            "insect"
+          ],
+          "selected": [
+            {
+              "value": "human",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 3,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 4,
+          "en_field": "subjects"
+        },
+        {
+          "gt": [],
+          "selected": [
+            {
+              "value": "solid",
+              "confidence": 0.99
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.99,
+          "rec_mass": 0,
+          "gt_size": 0,
+          "en_field": "physical_state"
+        },
+        {
+          "gt": [
+            "real-world"
+          ],
+          "selected": [
+            {
+              "value": "dreamlike",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "physical_rule"
+        },
+        {
+          "gt": [
+            "fabric",
+            "stone"
+          ],
+          "selected": [
+            {
+              "value": "smooth",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 2,
+          "en_field": "texture"
+        },
+        {
+          "gt": [
+            "semi-transparent"
+          ],
+          "selected": [
+            {
+              "value": "opaque",
+              "confidence": 0.99
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.99,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "opacity"
+        },
+        {
+          "gt": [
+            "inside-outside"
+          ],
+          "selected": [
+            {
+              "value": "scattered",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "spatial_layout"
+        },
+        {
+          "gt": [
+            "dialogue",
+            "falling"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 2,
+          "en_field": "action"
+        },
+        {
+          "gt": [
+            "strong sadness"
+          ],
+          "selected": [
+            {
+              "value": "subtle sadness",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "emotion"
+        },
+        {
+          "gt": [
+            "snow"
+          ],
+          "selected": [
+            {
+              "value": "none",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.9,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "effect"
+        },
+        {
+          "gt": [
+            "neutral"
+          ],
+          "selected": [
+            {
+              "value": "cool",
+              "confidence": 0.98
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.98,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "lighting_tone"
+        },
+        {
+          "gt": [
+            "top light"
+          ],
+          "selected": [
+            {
+              "value": "side light",
+              "confidence": 0.8
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.8,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "lighting_direction"
+        },
+        {
+          "gt": [
+            "bird's eye"
+          ],
+          "selected": [
+            {
+              "value": "eye level",
+              "confidence": 0.7
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.7,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "camera_angle"
+        },
+        {
+          "gt": [
+            "crane",
+            "orbit",
+            "push in"
+          ],
+          "selected": [
+            {
+              "value": "static",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 3,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 3,
+          "en_field": "camera_movement"
+        },
+        {
+          "gt": [
+            "center framing"
+          ],
+          "selected": [
+            {
+              "value": "center framing",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "composition"
+        },
+        {
+          "gt": [
+            "freeze frame"
+          ],
+          "selected": [
+            {
+              "value": "real-time",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "time_mode"
+        },
+        {
+          "gt": [
+            "close-up",
+            "extreme long shot",
+            "long shot"
+          ],
+          "selected": [
+            {
+              "value": "full shot",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 3,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 3,
+          "en_field": "shot_size"
+        },
+        {
+          "gt": [
+            "normal scale"
+          ],
+          "selected": [
+            {
+              "value": "normal scale",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "scale"
+        },
+        {
+          "gt": [
+            "normal"
+          ],
+          "selected": [
+            {
+              "value": "normal",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 1,
+          "en_field": "lighting_intensity"
+        },
+        {
+          "gt": [
+            "high saturation"
+          ],
+          "selected": [
+            {
+              "value": "desaturated",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "color_saturation"
+        },
+        {
+          "gt": [
+            "monochromatic"
+          ],
+          "selected": [
+            {
+              "value": "monochromatic",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.95,
+          "tp_w": 0.95,
+          "fp_w": 0,
+          "rec_mass": 0.95,
+          "gt_size": 1,
+          "en_field": "color_palette"
+        },
+        {
+          "gt": [
+            "shallow DOF"
+          ],
+          "selected": [
+            {
+              "value": "deep DOF",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.85,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "depth_of_field"
+        },
+        {
+          "gt": [
+            "standard lens"
+          ],
+          "selected": [
+            {
+              "value": "standard lens",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 1,
+          "en_field": "focal_length"
+        },
+        {
+          "gt": [
+            "daytime"
+          ],
+          "selected": [
+            {
+              "value": "unpredictable",
+              "confidence": 0.9
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "time_of_day"
+        },
+        {
+          "gt": [
+            "clear"
+          ],
+          "selected": [
+            {
+              "value": "clear",
+              "confidence": 0.85
+            }
+          ],
+          "missing": false,
+          "hit": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "hit_w": 0.85,
+          "tp_w": 0.85,
+          "fp_w": 0,
+          "rec_mass": 0.85,
+          "gt_size": 1,
+          "en_field": "weather"
+        },
+        {
+          "gt": [
+            "fade"
+          ],
+          "selected": [
+            {
+              "value": "hard cut",
+              "confidence": 0.95
+            }
+          ],
+          "missing": false,
+          "hit": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "hit_w": 0.0,
+          "tp_w": 0,
+          "fp_w": 0.95,
+          "rec_mass": 0.0,
+          "gt_size": 1,
+          "en_field": "transition"
+        }
+      ]
+    }
+  ]
+}

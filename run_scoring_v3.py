@@ -61,13 +61,21 @@ def init_gemini():
 
 
 def upload_video(client, video_path: str):
-    uploaded = client.files.upload(file=video_path)
-    while uploaded.state.name == "PROCESSING":
-        time.sleep(3)
-        uploaded = client.files.get(name=uploaded.name)
-    if uploaded.state.name != "ACTIVE":
-        raise RuntimeError(f"Video upload failed: {uploaded.state}")
-    return uploaded
+    for attempt in range(2):
+        try:
+            uploaded = client.files.upload(file=video_path)
+            while uploaded.state.name == "PROCESSING":
+                time.sleep(3)
+                uploaded = client.files.get(name=uploaded.name)
+            if uploaded.state.name == "ACTIVE":
+                return uploaded
+            raise RuntimeError(f"Video upload state: {uploaded.state}")
+        except Exception as e:
+            if attempt < 1:
+                logger.warning("Upload retry for %s: %s", os.path.basename(video_path), e)
+                time.sleep(10)
+                continue
+            raise
 
 
 def parse_response(content: str) -> dict:
@@ -125,7 +133,7 @@ def score_video(client, video_file, user_prompt: str, system_prompt: str,
                 config=types.GenerateContentConfig(
                     system_instruction=system_prompt,
                     temperature=0.0,
-                    max_output_tokens=16000,
+                    max_output_tokens=32000,
                 ),
             )
 
@@ -208,16 +216,9 @@ def main():
     videos = sorted(VIDEO_DIR.glob("*.mp4"))
     logger.info("Found %d videos", len(videos))
 
-    # Upload all videos
-    video_files = {}
-    for vpath in videos:
-        logger.info("Uploading %s...", vpath.name)
-        video_files[str(vpath)] = upload_video(gemini, str(vpath))
-    logger.info("All %d videos uploaded", len(video_files))
-
-    # Score each video
-    all_predictions = {}  # {tc_id: {model: raw_prediction}}
-    for vpath in videos:
+    # Upload-then-score one at a time to avoid 503s from bulk uploads
+    all_predictions = {}
+    for i, vpath in enumerate(videos):
         name = vpath.stem
         parts = name.rsplit("_", 1)
         if len(parts) != 2:
@@ -230,13 +231,25 @@ def main():
             logger.warning("No bundle for %s, skipping", tc_id)
             continue
 
-        vfile = video_files[str(vpath)]
+        logger.info("Uploading %s (%d/%d)...", vpath.name, i + 1, len(videos))
+        try:
+            vfile = upload_video(gemini, str(vpath))
+        except Exception as e:
+            logger.error("Upload failed permanently for %s: %s", vpath.name, e)
+            continue
+
         pred = score_video(gemini, vfile, bundle["user_prompt"], system_prompt,
                            tc_id, model_name)
         if pred:
             all_predictions.setdefault(tc_id, {})[model_name] = pred
 
-        time.sleep(2)
+        # Clean up uploaded file
+        try:
+            gemini.files.delete(name=vfile.name)
+        except Exception:
+            pass
+
+        time.sleep(3)
 
     # Save raw predictions (top-3 format)
     for model_name in ["seedance", "kling"]:

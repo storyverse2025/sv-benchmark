@@ -1,0 +1,3802 @@
+{
+  "S1-11-anime-warehouse-fictional-creature-snow": {
+    "reasoning": {
+      "fx_and_style": "The video features a stylized, cinematic 3D animation look with low color saturation, relying mostly on muted browns and grays. A visible rain particle effect falls in the background. The sequence is a single continuous shot with no transitions.",
+      "environment": "The setting is the interior of a warehouse, cluttered with stacked cardboard boxes and shelving units. A large open doorway reveals an overcast, rainy exterior, creating a strong inside-outside spatial dynamic.",
+      "subjects_and_physics": "A pale, smooth-textured humanoid figure stands perfectly still atop a pile of boxes. The subject is solid, opaque, and appears to be of normal scale relative to the surrounding everyday objects.",
+      "camera": "The camera remains completely static at eye level throughout the clip. The composition utilizes the doorway to create a frame within a frame, centering the subject in a long shot. A shallow depth of field blurs the boxes in the immediate foreground.",
+      "lighting": "A strong backlight shines through the open doorway, illuminating the rain and silhouetting the subject against the bright exterior. The overall lighting tone is neutral, with normal intensity balancing the bright outside and darker inside."
+    },
+    "style": [
+      {
+        "value": "cinematic",
+        "confidence": 0.9
+      },
+      {
+        "value": "minimalist",
+        "confidence": 0.4
+      },
+      {
+        "value": "cartoon",
+        "confidence": 0.2
+      }
+    ],
+    "scenes": [
+      {
+        "value": "warehouse",
+        "confidence": 0.95
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "subjects": [
+      {
+        "value": "human",
+        "confidence": 0.7
+      },
+      {
+        "value": "fictional creature",
+        "confidence": 0.4
+      },
+      {
+        "value": "robot",
+        "confidence": 0.2
+      }
+    ],
+    "physical_state": [
+      {
+        "value": "solid",
+        "confidence": 0.99
+      },
+      {
+        "value": "rigid body",
+        "confidence": 0.1
+      },
+      {
+        "value": "soft body",
+        "confidence": 0.05
+      }
+    ],
+    "texture": [
+      {
+        "value": "smooth",
+        "confidence": 0.9
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.1
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "opacity": [
+      {
+        "value": "opaque",
+        "confidence": 0.99
+      },
+      {
+        "value": "semi-transparent",
+        "confidence": 0.05
+      },
+      {
+        "value": "transparent",
+        "confidence": 0.01
+      }
+    ],
+    "spatial_layout": [
+      {
+        "value": "inside-outside",
+        "confidence": 0.95
+      },
+      {
+        "value": "foreground-background",
+        "confidence": 0.9
+      },
+      {
+        "value": "layered/stacked",
+        "confidence": 0.85
+      }
+    ],
+    "action": [
+      {
+        "value": "none",
+        "confidence": 0.99
+      },
+      {
+        "value": "standing",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "emotion": [
+      {
+        "value": "none",
+        "confidence": 0.95
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.1
+      },
+      {
+        "value": "subtle sadness",
+        "confidence": 0.05
+      }
+    ],
+    "effect": [
+      {
+        "value": "rain",
+        "confidence": 0.95
+      },
+      {
+        "value": "none",
+        "confidence": 0.1
+      },
+      {
+        "value": "light effect",
+        "confidence": 0.05
+      }
+    ],
+    "lighting_tone": [
+      {
+        "value": "neutral",
+        "confidence": 0.8
+      },
+      {
+        "value": "cool",
+        "confidence": 0.15
+      },
+      {
+        "value": "warm",
+        "confidence": 0.05
+      }
+    ],
+    "lighting_direction": [
+      {
+        "value": "backlight",
+        "confidence": 0.95
+      },
+      {
+        "value": "ambient light",
+        "confidence": 0.1
+      },
+      {
+        "value": "top light",
+        "confidence": 0.05
+      }
+    ],
+    "camera_angle": [
+      {
+        "value": "eye level",
+        "confidence": 0.9
+      },
+      {
+        "value": "low angle",
+        "confidence": 0.1
+      },
+      {
+        "value": "high angle",
+        "confidence": 0.05
+      }
+    ],
+    "camera_movement": [
+      {
+        "value": "static",
+        "confidence": 0.99
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "composition": [
+      {
+        "value": "frame within frame",
+        "confidence": 0.95
+      },
+      {
+        "value": "center framing",
+        "confidence": 0.9
+      },
+      {
+        "value": "symmetrical",
+        "confidence": 0.6
+      }
+    ],
+    "time_mode": [
+      {
+        "value": "real-time",
+        "confidence": 0.95
+      },
+      {
+        "value": "slow motion",
+        "confidence": 0.1
+      },
+      {
+        "value": "freeze frame",
+        "confidence": 0.05
+      }
+    ],
+    "shot_size": [
+      {
+        "value": "long shot",
+        "confidence": 0.85
+      },
+      {
+        "value": "full shot",
+        "confidence": 0.6
+      },
+      {
+        "value": "extreme long shot",
+        "confidence": 0.1
+      }
+    ],
+    "scale": [
+      {
+        "value": "normal scale",
+        "confidence": 0.95
+      },
+      {
+        "value": "microscopic",
+        "confidence": 0.05
+      },
+      {
+        "value": "giant",
+        "confidence": 0.01
+      }
+    ],
+    "lighting_intensity": [
+      {
+        "value": "normal",
+        "confidence": 0.8
+      },
+      {
+        "value": "low-key",
+        "confidence": 0.3
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "color_saturation": [
+      {
+        "value": "low saturation",
+        "confidence": 0.85
+      },
+      {
+        "value": "desaturated",
+        "confidence": 0.2
+      },
+      {
+        "value": "high saturation",
+        "confidence": 0.05
+      }
+    ],
+    "color_palette": [
+      {
+        "value": "monochromatic",
+        "confidence": 0.7
+      },
+      {
+        "value": "cool palette",
+        "confidence": 0.3
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "depth_of_field": [
+      {
+        "value": "shallow DOF",
+        "confidence": 0.85
+      },
+      {
+        "value": "deep DOF",
+        "confidence": 0.15
+      },
+      {
+        "value": "pan-focus",
+        "confidence": 0.05
+      }
+    ],
+    "focal_length": [
+      {
+        "value": "standard lens",
+        "confidence": 0.8
+      },
+      {
+        "value": "telephoto",
+        "confidence": 0.15
+      },
+      {
+        "value": "wide-angle",
+        "confidence": 0.05
+      }
+    ],
+    "time_of_day": [
+      {
+        "value": "daytime",
+        "confidence": 0.9
+      },
+      {
+        "value": "dawn",
+        "confidence": 0.1
+      },
+      {
+        "value": "dusk",
+        "confidence": 0.05
+      }
+    ],
+    "weather": [
+      {
+        "value": "rainy",
+        "confidence": 0.95
+      },
+      {
+        "value": "overcast",
+        "confidence": 0.8
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "transition": [
+      {
+        "value": "none",
+        "confidence": 0.99
+      },
+      {
+        "value": "hard cut",
+        "confidence": 0.05
+      },
+      {
+        "value": "fade",
+        "confidence": 0.01
+      }
+    ]
+  },
+  "S1-2-cyberpunk-beach-vehicle-water-splash-driving": {
+    "reasoning": {
+      "fx_and_style": "The video exhibits a photorealistic and cinematic visual style with a complementary color palette, contrasting the cool blues of the cloudy sky and wet sand with the warm orange hues of the setting sun. The overall color saturation is relatively low, giving it a slightly muted, atmospheric look. A distinct water splash effect is visible at the base of the subject as it interacts with the environment.",
+      "environment": "The setting is a wide, open beach with wet, rippled sand reflecting the sky. The time of day appears to be dusk, with an overcast sky that still allows the warm light of the sun to break through near the horizon. The spatial layout emphasizes a strong foreground-to-background depth as the view extends toward the distant ocean horizon.",
+      "subjects_and_physics": "The focal subject is a massive, pill-shaped metallic vehicle. It is a solid, rigid body with a smooth, opaque surface. The vehicle operates under sci-fi physical rules, as it is seen hovering steadily above the water and sand without visible conventional propulsion, and its scale is giant compared to a typical real-world vehicle.",
+      "camera": "The shot begins as a full shot of the vehicle and executes a steady push-in, moving directly underneath the structure. This movement shifts the camera angle from eye level to a pronounced low angle. The composition is heavily center-framed and symmetrical, utilizing a wide-angle lens with a deep depth of field to keep both the subject and the distant horizon in view.",
+      "lighting": "The scene is illuminated by naturalistic ambient light and a strong backlight from the setting sun, creating a warm overall tone. The lighting intensity is normal, though it naturally transitions to a darker exposure as the camera moves into the shadow beneath the massive vehicle."
+    },
+    "style": [
+      {
+        "value": "photorealistic",
+        "confidence": 0.95
+      },
+      {
+        "value": "cinematic",
+        "confidence": 0.9
+      },
+      {
+        "value": "minimalist",
+        "confidence": 0.4
+      }
+    ],
+    "scenes": [
+      {
+        "value": "beach",
+        "confidence": 0.98
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "subjects": [
+      {
+        "value": "vehicle",
+        "confidence": 0.95
+      },
+      {
+        "value": "everyday object",
+        "confidence": 0.1
+      },
+      {
+        "value": "robot",
+        "confidence": 0.05
+      }
+    ],
+    "physical_state": [
+      {
+        "value": "solid",
+        "confidence": 0.95
+      },
+      {
+        "value": "rigid body",
+        "confidence": 0.9
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "physical_rule": [
+      {
+        "value": "sci-fi",
+        "confidence": 0.95
+      },
+      {
+        "value": "fantasy",
+        "confidence": 0.1
+      },
+      {
+        "value": "real-world",
+        "confidence": 0.05
+      }
+    ],
+    "texture": [
+      {
+        "value": "metallic",
+        "confidence": 0.95
+      },
+      {
+        "value": "smooth",
+        "confidence": 0.9
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "opacity": [
+      {
+        "value": "opaque",
+        "confidence": 0.98
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "spatial_layout": [
+      {
+        "value": "foreground-background",
+        "confidence": 0.95
+      },
+      {
+        "value": "vertical",
+        "confidence": 0.7
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "action": [
+      {
+        "value": "hovering",
+        "confidence": 0.95
+      },
+      {
+        "value": "none",
+        "confidence": 0.1
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "emotion": [
+      {
+        "value": "none",
+        "confidence": 0.99
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "effect": [
+      {
+        "value": "water splash",
+        "confidence": 0.9
+      },
+      {
+        "value": "none",
+        "confidence": 0.1
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "lighting_tone": [
+      {
+        "value": "warm",
+        "confidence": 0.85
+      },
+      {
+        "value": "neutral",
+        "confidence": 0.3
+      },
+      {
+        "value": "cool",
+        "confidence": 0.1
+      }
+    ],
+    "lighting_direction": [
+      {
+        "value": "backlight",
+        "confidence": 0.9
+      },
+      {
+        "value": "ambient light",
+        "confidence": 0.6
+      },
+      {
+        "value": "side light",
+        "confidence": 0.2
+      }
+    ],
+    "camera_angle": [
+      {
+        "value": "low angle",
+        "confidence": 0.85
+      },
+      {
+        "value": "eye level",
+        "confidence": 0.4
+      },
+      {
+        "value": "high angle",
+        "confidence": 0.05
+      }
+    ],
+    "camera_movement": [
+      {
+        "value": "push in",
+        "confidence": 0.95
+      },
+      {
+        "value": "tracking shot",
+        "confidence": 0.2
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "composition": [
+      {
+        "value": "center framing",
+        "confidence": 0.95
+      },
+      {
+        "value": "symmetrical",
+        "confidence": 0.9
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "time_mode": [
+      {
+        "value": "real-time",
+        "confidence": 0.95
+      },
+      {
+        "value": "slow motion",
+        "confidence": 0.1
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "shot_size": [
+      {
+        "value": "full shot",
+        "confidence": 0.85
+      },
+      {
+        "value": "close-up",
+        "confidence": 0.7
+      },
+      {
+        "value": "extreme close-up",
+        "confidence": 0.2
+      }
+    ],
+    "scale": [
+      {
+        "value": "giant",
+        "confidence": 0.95
+      },
+      {
+        "value": "normal scale",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "lighting_intensity": [
+      {
+        "value": "normal",
+        "confidence": 0.85
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "color_saturation": [
+      {
+        "value": "low saturation",
+        "confidence": 0.85
+      },
+      {
+        "value": "desaturated",
+        "confidence": 0.2
+      },
+      {
+        "value": "high saturation",
+        "confidence": 0.05
+      }
+    ],
+    "color_palette": [
+      {
+        "value": "complementary",
+        "confidence": 0.9
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "depth_of_field": [
+      {
+        "value": "deep DOF",
+        "confidence": 0.9
+      },
+      {
+        "value": "pan-focus",
+        "confidence": 0.3
+      },
+      {
+        "value": "shallow DOF",
+        "confidence": 0.1
+      }
+    ],
+    "focal_length": [
+      {
+        "value": "wide-angle",
+        "confidence": 0.9
+      },
+      {
+        "value": "standard lens",
+        "confidence": 0.2
+      },
+      {
+        "value": "telephoto",
+        "confidence": 0.05
+      }
+    ],
+    "time_of_day": [
+      {
+        "value": "dusk",
+        "confidence": 0.85
+      },
+      {
+        "value": "dawn",
+        "confidence": 0.6
+      },
+      {
+        "value": "daytime",
+        "confidence": 0.1
+      }
+    ],
+    "weather": [
+      {
+        "value": "overcast",
+        "confidence": 0.9
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ]
+  },
+  "S2-1-cartoon-living-room-desert-bird-explosion-hovering": {
+    "reasoning": {
+      "fx_and_style": "The video is rendered entirely in black and white, giving it a monochromatic and somewhat surrealist style. At the very end, a bright, glowing light effect bursts from the bird.",
+      "environment": "The scene begins in an indoor living room with wooden floors and furniture, then seamlessly transitions into an outdoor desert landscape under a starry night sky. The weather appears clear.",
+      "subjects_and_physics": "The focal subject is a stylized, smooth-textured bird that hovers in mid-air, flapping its wings continuously. The physical rules are dreamlike as the indoor floor morphs into sand dunes.",
+      "camera": "The camera starts at a high angle looking down at the bird, then pulls out and tilts up to eye level while keeping the subject in center framing. The shot size remains a full shot of the bird throughout in real-time.",
+      "lighting": "The lighting is neutral due to the black and white palette, with a strong top light initially casting a distinct shadow directly beneath the bird, transitioning to a normal intensity."
+    },
+    "style": [
+      {
+        "value": "black & white",
+        "confidence": 0.99
+      },
+      {
+        "value": "surrealist",
+        "confidence": 0.85
+      },
+      {
+        "value": "cartoon",
+        "confidence": 0.6
+      }
+    ],
+    "scenes": [
+      {
+        "value": "living room",
+        "confidence": 0.95
+      },
+      {
+        "value": "desert",
+        "confidence": 0.95
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "subjects": [
+      {
+        "value": "bird",
+        "confidence": 0.99
+      },
+      {
+        "value": "everyday object",
+        "confidence": 0.8
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "physical_state": [
+      {
+        "value": "solid",
+        "confidence": 0.99
+      },
+      {
+        "value": "soft body",
+        "confidence": 0.05
+      },
+      {
+        "value": "rigid body",
+        "confidence": 0.02
+      }
+    ],
+    "physical_rule": [
+      {
+        "value": "dreamlike",
+        "confidence": 0.95
+      },
+      {
+        "value": "fantasy",
+        "confidence": 0.1
+      },
+      {
+        "value": "sci-fi",
+        "confidence": 0.05
+      }
+    ],
+    "texture": [
+      {
+        "value": "smooth",
+        "confidence": 0.95
+      },
+      {
+        "value": "wooden",
+        "confidence": 0.8
+      },
+      {
+        "value": "fabric",
+        "confidence": 0.7
+      }
+    ],
+    "opacity": [
+      {
+        "value": "opaque",
+        "confidence": 0.99
+      },
+      {
+        "value": "semi-transparent",
+        "confidence": 0.8
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "spatial_layout": [
+      {
+        "value": "foreground-background",
+        "confidence": 0.9
+      },
+      {
+        "value": "inside-outside",
+        "confidence": 0.85
+      },
+      {
+        "value": "vertical",
+        "confidence": 0.5
+      }
+    ],
+    "action": [
+      {
+        "value": "hovering",
+        "confidence": 0.95
+      },
+      {
+        "value": "waving",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "emotion": [
+      {
+        "value": "none",
+        "confidence": 0.95
+      },
+      {
+        "value": "subtle joy",
+        "confidence": 0.05
+      },
+      {
+        "value": "subtle surprise",
+        "confidence": 0.02
+      }
+    ],
+    "effect": [
+      {
+        "value": "light effect",
+        "confidence": 0.95
+      },
+      {
+        "value": "none",
+        "confidence": 0.05
+      },
+      {
+        "value": "magic particles",
+        "confidence": 0.02
+      }
+    ],
+    "lighting_tone": [
+      {
+        "value": "neutral",
+        "confidence": 0.95
+      },
+      {
+        "value": "cool",
+        "confidence": 0.05
+      },
+      {
+        "value": "warm",
+        "confidence": 0.02
+      }
+    ],
+    "lighting_direction": [
+      {
+        "value": "top light",
+        "confidence": 0.9
+      },
+      {
+        "value": "ambient light",
+        "confidence": 0.1
+      },
+      {
+        "value": "front light",
+        "confidence": 0.05
+      }
+    ],
+    "camera_angle": [
+      {
+        "value": "high angle",
+        "confidence": 0.8
+      },
+      {
+        "value": "eye level",
+        "confidence": 0.2
+      },
+      {
+        "value": "low angle",
+        "confidence": 0.05
+      }
+    ],
+    "camera_movement": [
+      {
+        "value": "tracking shot",
+        "confidence": 0.8
+      },
+      {
+        "value": "pull out",
+        "confidence": 0.7
+      },
+      {
+        "value": "pan",
+        "confidence": 0.5
+      }
+    ],
+    "composition": [
+      {
+        "value": "center framing",
+        "confidence": 0.95
+      },
+      {
+        "value": "symmetrical",
+        "confidence": 0.4
+      },
+      {
+        "value": "rule of thirds",
+        "confidence": 0.1
+      }
+    ],
+    "time_mode": [
+      {
+        "value": "real-time",
+        "confidence": 0.95
+      },
+      {
+        "value": "slow motion",
+        "confidence": 0.05
+      },
+      {
+        "value": "timelapse",
+        "confidence": 0.02
+      }
+    ],
+    "shot_size": [
+      {
+        "value": "full shot",
+        "confidence": 0.9
+      },
+      {
+        "value": "medium shot",
+        "confidence": 0.1
+      },
+      {
+        "value": "long shot",
+        "confidence": 0.05
+      }
+    ],
+    "scale": [
+      {
+        "value": "normal scale",
+        "confidence": 0.9
+      },
+      {
+        "value": "giant",
+        "confidence": 0.05
+      },
+      {
+        "value": "microscopic",
+        "confidence": 0.02
+      }
+    ],
+    "lighting_intensity": [
+      {
+        "value": "normal",
+        "confidence": 0.8
+      },
+      {
+        "value": "low-key",
+        "confidence": 0.4
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "color_saturation": [
+      {
+        "value": "desaturated",
+        "confidence": 0.99
+      },
+      {
+        "value": "low saturation",
+        "confidence": 0.05
+      },
+      {
+        "value": "high saturation",
+        "confidence": 0.01
+      }
+    ],
+    "color_palette": [
+      {
+        "value": "monochromatic",
+        "confidence": 0.99
+      },
+      {
+        "value": "cool palette",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "depth_of_field": [
+      {
+        "value": "deep DOF",
+        "confidence": 0.9
+      },
+      {
+        "value": "pan-focus",
+        "confidence": 0.1
+      },
+      {
+        "value": "shallow DOF",
+        "confidence": 0.05
+      }
+    ],
+    "focal_length": [
+      {
+        "value": "standard lens",
+        "confidence": 0.8
+      },
+      {
+        "value": "wide-angle",
+        "confidence": 0.2
+      },
+      {
+        "value": "telephoto",
+        "confidence": 0.05
+      }
+    ],
+    "time_of_day": [
+      {
+        "value": "night",
+        "confidence": 0.9
+      },
+      {
+        "value": "daytime",
+        "confidence": 0.05
+      },
+      {
+        "value": "dusk",
+        "confidence": 0.02
+      }
+    ],
+    "weather": [
+      {
+        "value": "clear",
+        "confidence": 0.95
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "foggy",
+        "confidence": 0.01
+      }
+    ]
+  },
+  "S2-5-oil-painting-warehouse-desert-human-light-effect-dancing": {
+    "reasoning": {
+      "fx_and_style": "The video is presented entirely in black and white, giving it a stark, monochromatic look. There are no visible visual effects or particles added to the scene.",
+      "environment": "The setting is the interior of a large, empty warehouse or hangar with a massive open doorway. Through the doorway, a flat, barren landscape and distant mountains are visible under a dark, clear night sky.",
+      "subjects_and_physics": "A single human figure stands in the center, wearing dark, form-fitting fabric clothing. The person slowly spins in place with arms outstretched, maintaining a solid, opaque physical form at a normal scale.",
+      "camera": "The camera remains completely static throughout the shot. The composition is highly symmetrical, centering the subject within the frame of the large doorway, captured in a full shot with deep depth of field.",
+      "lighting": "A strong, dramatic top light illuminates the subject and the immediate floor area, creating a stark contrast with the dark surroundings. The overall lighting is low-key and neutral in tone due to the black and white presentation."
+    },
+    "style": [
+      {
+        "value": "black & white",
+        "confidence": 0.99
+      },
+      {
+        "value": "cinematic",
+        "confidence": 0.85
+      },
+      {
+        "value": "surrealist",
+        "confidence": 0.6
+      }
+    ],
+    "scenes": [
+      {
+        "value": "warehouse",
+        "confidence": 0.9
+      },
+      {
+        "value": "desert",
+        "confidence": 0.7
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.1
+      }
+    ],
+    "subjects": [
+      {
+        "value": "human",
+        "confidence": 0.99
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "physical_state": [
+      {
+        "value": "solid",
+        "confidence": 0.99
+      },
+      {
+        "value": "rigid body",
+        "confidence": 0.1
+      },
+      {
+        "value": "soft body",
+        "confidence": 0.05
+      }
+    ],
+    "physical_rule": [
+      {
+        "value": "real-world",
+        "confidence": 0.9
+      },
+      {
+        "value": "dreamlike",
+        "confidence": 0.4
+      },
+      {
+        "value": "sci-fi",
+        "confidence": 0.1
+      }
+    ],
+    "texture": [
+      {
+        "value": "fabric",
+        "confidence": 0.9
+      },
+      {
+        "value": "smooth",
+        "confidence": 0.6
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.1
+      }
+    ],
+    "opacity": [
+      {
+        "value": "opaque",
+        "confidence": 0.99
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "spatial_layout": [
+      {
+        "value": "inside-outside",
+        "confidence": 0.95
+      },
+      {
+        "value": "foreground-background",
+        "confidence": 0.9
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.1
+      }
+    ],
+    "action": [
+      {
+        "value": "spinning",
+        "confidence": 0.95
+      },
+      {
+        "value": "dancing",
+        "confidence": 0.7
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "emotion": [
+      {
+        "value": "none",
+        "confidence": 0.9
+      },
+      {
+        "value": "subtle sadness",
+        "confidence": 0.1
+      },
+      {
+        "value": "subtle joy",
+        "confidence": 0.05
+      }
+    ],
+    "effect": [
+      {
+        "value": "none",
+        "confidence": 0.99
+      },
+      {
+        "value": "light effect",
+        "confidence": 0.05
+      },
+      {
+        "value": "smoke",
+        "confidence": 0.02
+      }
+    ],
+    "lighting_tone": [
+      {
+        "value": "neutral",
+        "confidence": 0.95
+      },
+      {
+        "value": "cool",
+        "confidence": 0.1
+      },
+      {
+        "value": "warm",
+        "confidence": 0.05
+      }
+    ],
+    "lighting_direction": [
+      {
+        "value": "top light",
+        "confidence": 0.9
+      },
+      {
+        "value": "front light",
+        "confidence": 0.2
+      },
+      {
+        "value": "ambient light",
+        "confidence": 0.1
+      }
+    ],
+    "camera_angle": [
+      {
+        "value": "eye level",
+        "confidence": 0.9
+      },
+      {
+        "value": "high angle",
+        "confidence": 0.15
+      },
+      {
+        "value": "low angle",
+        "confidence": 0.05
+      }
+    ],
+    "camera_movement": [
+      {
+        "value": "static",
+        "confidence": 0.99
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "composition": [
+      {
+        "value": "center framing",
+        "confidence": 0.95
+      },
+      {
+        "value": "symmetrical",
+        "confidence": 0.9
+      },
+      {
+        "value": "frame within frame",
+        "confidence": 0.85
+      }
+    ],
+    "time_mode": [
+      {
+        "value": "real-time",
+        "confidence": 0.95
+      },
+      {
+        "value": "slow motion",
+        "confidence": 0.1
+      },
+      {
+        "value": "timelapse",
+        "confidence": 0.01
+      }
+    ],
+    "shot_size": [
+      {
+        "value": "full shot",
+        "confidence": 0.95
+      },
+      {
+        "value": "long shot",
+        "confidence": 0.2
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "scale": [
+      {
+        "value": "normal scale",
+        "confidence": 0.99
+      },
+      {
+        "value": "giant",
+        "confidence": 0.02
+      },
+      {
+        "value": "microscopic",
+        "confidence": 0.01
+      }
+    ],
+    "lighting_intensity": [
+      {
+        "value": "low-key",
+        "confidence": 0.9
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "color_saturation": [
+      {
+        "value": "desaturated",
+        "confidence": 0.99
+      },
+      {
+        "value": "low saturation",
+        "confidence": 0.05
+      },
+      {
+        "value": "high saturation",
+        "confidence": 0.01
+      }
+    ],
+    "color_palette": [
+      {
+        "value": "monochromatic",
+        "confidence": 0.99
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "depth_of_field": [
+      {
+        "value": "deep DOF",
+        "confidence": 0.9
+      },
+      {
+        "value": "pan-focus",
+        "confidence": 0.2
+      },
+      {
+        "value": "shallow DOF",
+        "confidence": 0.05
+      }
+    ],
+    "focal_length": [
+      {
+        "value": "standard lens",
+        "confidence": 0.8
+      },
+      {
+        "value": "wide-angle",
+        "confidence": 0.3
+      },
+      {
+        "value": "telephoto",
+        "confidence": 0.05
+      }
+    ],
+    "time_of_day": [
+      {
+        "value": "night",
+        "confidence": 0.9
+      },
+      {
+        "value": "dusk",
+        "confidence": 0.15
+      },
+      {
+        "value": "dawn",
+        "confidence": 0.05
+      }
+    ],
+    "weather": [
+      {
+        "value": "clear",
+        "confidence": 0.85
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.1
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ]
+  },
+  "S3-11-minimalist-desert-natural-element-robot-light-effect": {
+    "reasoning": {
+      "fx_and_style": "The video features a photorealistic and cinematic style with high color saturation. Prominent lens flares and swirling, colorful magic particles appear around the subject. There are no transitions.",
+      "environment": "The setting is a vast desert with rolling sand dunes under a clear sky. The sun is positioned low on the horizon, suggesting dusk or dawn.",
+      "subjects_and_physics": "A single metallic robot stands completely motionless. It is a solid, opaque object of normal scale, situated in a sci-fi or fantasy context due to the magical energy.",
+      "camera": "The camera is entirely static, capturing the subject in an extreme long shot with center framing. A deep depth of field keeps both the subject and the distant dunes in sharp focus.",
+      "lighting": "Warm, directional side light comes from the low sun on the left, casting long shadows to the right. The overall lighting intensity is normal."
+    },
+    "style": [
+      {
+        "value": "cinematic",
+        "confidence": 0.95
+      },
+      {
+        "value": "photorealistic",
+        "confidence": 0.9
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "scenes": [
+      {
+        "value": "desert",
+        "confidence": 0.99
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "subjects": [
+      {
+        "value": "robot",
+        "confidence": 0.98
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "physical_state": [
+      {
+        "value": "solid",
+        "confidence": 0.99
+      },
+      {
+        "value": "rigid body",
+        "confidence": 0.8
+      },
+      {
+        "value": "soft body",
+        "confidence": 0.01
+      }
+    ],
+    "physical_rule": [
+      {
+        "value": "sci-fi",
+        "confidence": 0.85
+      },
+      {
+        "value": "fantasy",
+        "confidence": 0.6
+      },
+      {
+        "value": "dreamlike",
+        "confidence": 0.1
+      }
+    ],
+    "texture": [
+      {
+        "value": "metallic",
+        "confidence": 0.9
+      },
+      {
+        "value": "smooth",
+        "confidence": 0.7
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "opacity": [
+      {
+        "value": "opaque",
+        "confidence": 0.99
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "spatial_layout": [
+      {
+        "value": "foreground-background",
+        "confidence": 0.9
+      },
+      {
+        "value": "encircling",
+        "confidence": 0.75
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "action": [
+      {
+        "value": "none",
+        "confidence": 0.99
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "emotion": [
+      {
+        "value": "none",
+        "confidence": 0.99
+      },
+      {
+        "value": "subtle joy",
+        "confidence": 0.01
+      },
+      {
+        "value": "subtle sadness",
+        "confidence": 0.01
+      }
+    ],
+    "effect": [
+      {
+        "value": "magic particles",
+        "confidence": 0.95
+      },
+      {
+        "value": "light effect",
+        "confidence": 0.8
+      },
+      {
+        "value": "hologram",
+        "confidence": 0.1
+      }
+    ],
+    "lighting_tone": [
+      {
+        "value": "warm",
+        "confidence": 0.9
+      },
+      {
+        "value": "multi-color",
+        "confidence": 0.3
+      },
+      {
+        "value": "neutral",
+        "confidence": 0.05
+      }
+    ],
+    "lighting_direction": [
+      {
+        "value": "side light",
+        "confidence": 0.95
+      },
+      {
+        "value": "backlight",
+        "confidence": 0.2
+      },
+      {
+        "value": "front light",
+        "confidence": 0.05
+      }
+    ],
+    "camera_angle": [
+      {
+        "value": "eye level",
+        "confidence": 0.9
+      },
+      {
+        "value": "low angle",
+        "confidence": 0.15
+      },
+      {
+        "value": "high angle",
+        "confidence": 0.05
+      }
+    ],
+    "camera_movement": [
+      {
+        "value": "static",
+        "confidence": 0.99
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "composition": [
+      {
+        "value": "center framing",
+        "confidence": 0.95
+      },
+      {
+        "value": "symmetrical",
+        "confidence": 0.8
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "time_mode": [
+      {
+        "value": "real-time",
+        "confidence": 0.99
+      },
+      {
+        "value": "slow motion",
+        "confidence": 0.05
+      },
+      {
+        "value": "timelapse",
+        "confidence": 0.01
+      }
+    ],
+    "shot_size": [
+      {
+        "value": "extreme long shot",
+        "confidence": 0.95
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "scale": [
+      {
+        "value": "normal scale",
+        "confidence": 0.95
+      },
+      {
+        "value": "giant",
+        "confidence": 0.05
+      },
+      {
+        "value": "microscopic",
+        "confidence": 0.01
+      }
+    ],
+    "lighting_intensity": [
+      {
+        "value": "normal",
+        "confidence": 0.9
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "color_saturation": [
+      {
+        "value": "high saturation",
+        "confidence": 0.9
+      },
+      {
+        "value": "low saturation",
+        "confidence": 0.05
+      },
+      {
+        "value": "desaturated",
+        "confidence": 0.01
+      }
+    ],
+    "color_palette": [
+      {
+        "value": "complementary",
+        "confidence": 0.9
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "depth_of_field": [
+      {
+        "value": "deep DOF",
+        "confidence": 0.95
+      },
+      {
+        "value": "pan-focus",
+        "confidence": 0.4
+      },
+      {
+        "value": "shallow DOF",
+        "confidence": 0.05
+      }
+    ],
+    "focal_length": [
+      {
+        "value": "wide-angle",
+        "confidence": 0.85
+      },
+      {
+        "value": "standard lens",
+        "confidence": 0.3
+      },
+      {
+        "value": "telephoto",
+        "confidence": 0.05
+      }
+    ],
+    "time_of_day": [
+      {
+        "value": "dusk",
+        "confidence": 0.8
+      },
+      {
+        "value": "dawn",
+        "confidence": 0.6
+      },
+      {
+        "value": "daytime",
+        "confidence": 0.1
+      }
+    ],
+    "weather": [
+      {
+        "value": "clear",
+        "confidence": 0.95
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "transition": [
+      {
+        "value": "none",
+        "confidence": 0.99
+      },
+      {
+        "value": "hard cut",
+        "confidence": 0.01
+      },
+      {
+        "value": "fade",
+        "confidence": 0.01
+      }
+    ]
+  },
+  "S3-4-anime-kitchen-human-everyday-object-light-effect": {
+    "reasoning": {
+      "fx_and_style": "The video is rendered in a 2D anime style with a cool, monochromatic blue color palette and high saturation. A prominent light effect glows from a semi-transparent column rising from a cup. There are no transitions between shots.",
+      "environment": "The setting is an indoor kitchen, featuring a metallic counter, sink, and utensils. The dark ambient lighting and deep shadows suggest it is night time, though the exact weather outside is unpredictable.",
+      "subjects_and_physics": "A human subject enters, showing strong surprise with wide eyes and sweat. He wears a fabric shirt and performs no major action, while a glowing column of liquid hovers upright, acting as a solid or rigid body. This defies real-world physics, indicating a fantasy rule. Everyday objects like a metallic cup are also present.",
+      "camera": "The camera starts with a close-up on the cup, then executes a slow pull out and pan to the right, revealing the character in a medium shot. The composition shifts from center framing to the rule of thirds. A shallow depth of field keeps the background slightly blurred.",
+      "lighting": "The scene features a cool lighting tone, primarily illuminated by the glowing column which acts as a side light on the character's face. The overall lighting intensity is low-key, creating high contrast with the bright focal point."
+    },
+    "style": [
+      {
+        "value": "anime",
+        "confidence": 0.99
+      },
+      {
+        "value": "cinematic",
+        "confidence": 0.1
+      },
+      {
+        "value": "cartoon",
+        "confidence": 0.05
+      }
+    ],
+    "scenes": [
+      {
+        "value": "kitchen",
+        "confidence": 0.95
+      },
+      {
+        "value": "living room",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "subjects": [
+      {
+        "value": "human",
+        "confidence": 0.99
+      },
+      {
+        "value": "everyday object",
+        "confidence": 0.95
+      },
+      {
+        "value": "natural element",
+        "confidence": 0.4
+      }
+    ],
+    "physical_state": [
+      {
+        "value": "solid",
+        "confidence": 0.8
+      },
+      {
+        "value": "liquid",
+        "confidence": 0.6
+      },
+      {
+        "value": "rigid body",
+        "confidence": 0.5
+      }
+    ],
+    "physical_rule": [
+      {
+        "value": "fantasy",
+        "confidence": 0.9
+      },
+      {
+        "value": "sci-fi",
+        "confidence": 0.4
+      },
+      {
+        "value": "dreamlike",
+        "confidence": 0.2
+      }
+    ],
+    "texture": [
+      {
+        "value": "metallic",
+        "confidence": 0.9
+      },
+      {
+        "value": "fabric",
+        "confidence": 0.8
+      },
+      {
+        "value": "smooth",
+        "confidence": 0.7
+      }
+    ],
+    "opacity": [
+      {
+        "value": "semi-transparent",
+        "confidence": 0.9
+      },
+      {
+        "value": "opaque",
+        "confidence": 0.9
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "spatial_layout": [
+      {
+        "value": "foreground-background",
+        "confidence": 0.9
+      },
+      {
+        "value": "left-right",
+        "confidence": 0.8
+      },
+      {
+        "value": "layered/stacked",
+        "confidence": 0.5
+      }
+    ],
+    "action": [
+      {
+        "value": "none",
+        "confidence": 0.8
+      },
+      {
+        "value": "hovering",
+        "confidence": 0.7
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "emotion": [
+      {
+        "value": "strong surprise",
+        "confidence": 0.95
+      },
+      {
+        "value": "moderate surprise",
+        "confidence": 0.1
+      },
+      {
+        "value": "subtle surprise",
+        "confidence": 0.05
+      }
+    ],
+    "effect": [
+      {
+        "value": "light effect",
+        "confidence": 0.95
+      },
+      {
+        "value": "magic particles",
+        "confidence": 0.1
+      },
+      {
+        "value": "none",
+        "confidence": 0.01
+      }
+    ],
+    "lighting_tone": [
+      {
+        "value": "cool",
+        "confidence": 0.95
+      },
+      {
+        "value": "neutral",
+        "confidence": 0.05
+      },
+      {
+        "value": "multi-color",
+        "confidence": 0.01
+      }
+    ],
+    "lighting_direction": [
+      {
+        "value": "side light",
+        "confidence": 0.8
+      },
+      {
+        "value": "front light",
+        "confidence": 0.3
+      },
+      {
+        "value": "ambient light",
+        "confidence": 0.2
+      }
+    ],
+    "camera_angle": [
+      {
+        "value": "eye level",
+        "confidence": 0.7
+      },
+      {
+        "value": "high angle",
+        "confidence": 0.4
+      },
+      {
+        "value": "low angle",
+        "confidence": 0.05
+      }
+    ],
+    "camera_movement": [
+      {
+        "value": "pull out",
+        "confidence": 0.9
+      },
+      {
+        "value": "pan",
+        "confidence": 0.8
+      },
+      {
+        "value": "tracking shot",
+        "confidence": 0.2
+      }
+    ],
+    "composition": [
+      {
+        "value": "rule of thirds",
+        "confidence": 0.8
+      },
+      {
+        "value": "center framing",
+        "confidence": 0.7
+      },
+      {
+        "value": "leading lines",
+        "confidence": 0.1
+      }
+    ],
+    "time_mode": [
+      {
+        "value": "real-time",
+        "confidence": 0.95
+      },
+      {
+        "value": "slow motion",
+        "confidence": 0.05
+      },
+      {
+        "value": "freeze frame",
+        "confidence": 0.01
+      }
+    ],
+    "shot_size": [
+      {
+        "value": "medium shot",
+        "confidence": 0.8
+      },
+      {
+        "value": "close-up",
+        "confidence": 0.7
+      },
+      {
+        "value": "full shot",
+        "confidence": 0.1
+      }
+    ],
+    "scale": [
+      {
+        "value": "normal scale",
+        "confidence": 0.95
+      },
+      {
+        "value": "microscopic",
+        "confidence": 0.01
+      },
+      {
+        "value": "giant",
+        "confidence": 0.01
+      }
+    ],
+    "lighting_intensity": [
+      {
+        "value": "low-key",
+        "confidence": 0.8
+      },
+      {
+        "value": "normal",
+        "confidence": 0.2
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "color_saturation": [
+      {
+        "value": "high saturation",
+        "confidence": 0.8
+      },
+      {
+        "value": "low saturation",
+        "confidence": 0.1
+      },
+      {
+        "value": "desaturated",
+        "confidence": 0.05
+      }
+    ],
+    "color_palette": [
+      {
+        "value": "cool palette",
+        "confidence": 0.9
+      },
+      {
+        "value": "monochromatic",
+        "confidence": 0.8
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "depth_of_field": [
+      {
+        "value": "shallow DOF",
+        "confidence": 0.85
+      },
+      {
+        "value": "deep DOF",
+        "confidence": 0.1
+      },
+      {
+        "value": "pan-focus",
+        "confidence": 0.05
+      }
+    ],
+    "focal_length": [
+      {
+        "value": "standard lens",
+        "confidence": 0.8
+      },
+      {
+        "value": "wide-angle",
+        "confidence": 0.1
+      },
+      {
+        "value": "telephoto",
+        "confidence": 0.05
+      }
+    ],
+    "time_of_day": [
+      {
+        "value": "night",
+        "confidence": 0.8
+      },
+      {
+        "value": "dusk",
+        "confidence": 0.2
+      },
+      {
+        "value": "dawn",
+        "confidence": 0.05
+      }
+    ],
+    "weather": [
+      {
+        "value": "unpredictable",
+        "confidence": 0.9
+      },
+      {
+        "value": "overcast",
+        "confidence": 0.05
+      },
+      {
+        "value": "rainy",
+        "confidence": 0.01
+      }
+    ],
+    "transition": [
+      {
+        "value": "none",
+        "confidence": 0.99
+      },
+      {
+        "value": "hard cut",
+        "confidence": 0.01
+      },
+      {
+        "value": "fade",
+        "confidence": 0.01
+      }
+    ]
+  },
+  "S4-2-vintage-film-office-beach-bird-robot-hologram-hovering": {
+    "reasoning": {
+      "fx_and_style": "The video features a cinematic and sci-fi visual style with a cool, desaturated color palette. The primary visual effects are the glowing, semi-transparent holographic appearance of the central figures and a rainbow light dispersion effect on the surface below them. There are no camera transitions as it is a single continuous shot.",
+      "environment": "The setting is an indoor office environment, specifically focusing on a dark desk surface. Initially, there are papers scattered on the desk, which later disappear to reveal a textured, sand-like surface. The scene is dimly lit, suggesting a nighttime or darkened room setting.",
+      "subjects_and_physics": "The main subjects are a robotic figure and a bird, both appearing as semi-transparent, glowing entities. The robot stands with its arms raised, while the bird hovers above it. The physics lean towards sci-fi due to their holographic nature. The subjects are of normal scale relative to the desk environment.",
+      "camera": "The camera remains completely static throughout the video, positioned at a high angle looking down at the desk. The composition centers the robot and bird in the frame. The shot size is a full shot of the figures, with a deep depth of field keeping the desk and background elements relatively in focus. The time mode is real-time.",
+      "lighting": "The lighting is low-key and moody, with a predominantly cool tone. The primary illumination appears to come from the glowing subjects themselves, acting as a localized light source, while ambient light softly reveals the background office elements."
+    },
+    "style": [
+      {
+        "value": "cinematic",
+        "confidence": 0.9
+      },
+      {
+        "value": "cyberpunk",
+        "confidence": 0.7
+      },
+      {
+        "value": "surrealist",
+        "confidence": 0.5
+      }
+    ],
+    "scenes": [
+      {
+        "value": "office",
+        "confidence": 0.95
+      },
+      {
+        "value": "warehouse",
+        "confidence": 0.05
+      },
+      {
+        "value": "hallway",
+        "confidence": 0.02
+      }
+    ],
+    "subjects": [
+      {
+        "value": "robot",
+        "confidence": 0.98
+      },
+      {
+        "value": "bird",
+        "confidence": 0.95
+      },
+      {
+        "value": "everyday object",
+        "confidence": 0.8
+      }
+    ],
+    "physical_state": [
+      {
+        "value": "solid",
+        "confidence": 0.7
+      },
+      {
+        "value": "rigid body",
+        "confidence": 0.6
+      },
+      {
+        "value": "plasma",
+        "confidence": 0.2
+      }
+    ],
+    "physical_rule": [
+      {
+        "value": "sci-fi",
+        "confidence": 0.95
+      },
+      {
+        "value": "fantasy",
+        "confidence": 0.3
+      },
+      {
+        "value": "dreamlike",
+        "confidence": 0.2
+      }
+    ],
+    "texture": [
+      {
+        "value": "smooth",
+        "confidence": 0.8
+      },
+      {
+        "value": "metallic",
+        "confidence": 0.5
+      },
+      {
+        "value": "glass",
+        "confidence": 0.2
+      }
+    ],
+    "opacity": [
+      {
+        "value": "semi-transparent",
+        "confidence": 0.95
+      },
+      {
+        "value": "transparent",
+        "confidence": 0.2
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "spatial_layout": [
+      {
+        "value": "vertical",
+        "confidence": 0.9
+      },
+      {
+        "value": "layered/stacked",
+        "confidence": 0.6
+      },
+      {
+        "value": "foreground-background",
+        "confidence": 0.2
+      }
+    ],
+    "action": [
+      {
+        "value": "hovering",
+        "confidence": 0.9
+      },
+      {
+        "value": "none",
+        "confidence": 0.8
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "emotion": [
+      {
+        "value": "none",
+        "confidence": 0.95
+      },
+      {
+        "value": "subtle surprise",
+        "confidence": 0.05
+      },
+      {
+        "value": "subtle joy",
+        "confidence": 0.02
+      }
+    ],
+    "effect": [
+      {
+        "value": "hologram",
+        "confidence": 0.98
+      },
+      {
+        "value": "light effect",
+        "confidence": 0.4
+      },
+      {
+        "value": "magic particles",
+        "confidence": 0.1
+      }
+    ],
+    "lighting_tone": [
+      {
+        "value": "cool",
+        "confidence": 0.95
+      },
+      {
+        "value": "neutral",
+        "confidence": 0.1
+      },
+      {
+        "value": "warm",
+        "confidence": 0.02
+      }
+    ],
+    "lighting_direction": [
+      {
+        "value": "ambient light",
+        "confidence": 0.8
+      },
+      {
+        "value": "top light",
+        "confidence": 0.4
+      },
+      {
+        "value": "front light",
+        "confidence": 0.1
+      }
+    ],
+    "camera_angle": [
+      {
+        "value": "high angle",
+        "confidence": 0.95
+      },
+      {
+        "value": "bird's eye",
+        "confidence": 0.2
+      },
+      {
+        "value": "eye level",
+        "confidence": 0.05
+      }
+    ],
+    "camera_movement": [
+      {
+        "value": "static",
+        "confidence": 0.98
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "handheld",
+        "confidence": 0.01
+      }
+    ],
+    "composition": [
+      {
+        "value": "center framing",
+        "confidence": 0.95
+      },
+      {
+        "value": "symmetrical",
+        "confidence": 0.7
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "time_mode": [
+      {
+        "value": "real-time",
+        "confidence": 0.95
+      },
+      {
+        "value": "slow motion",
+        "confidence": 0.05
+      },
+      {
+        "value": "timelapse",
+        "confidence": 0.02
+      }
+    ],
+    "shot_size": [
+      {
+        "value": "full shot",
+        "confidence": 0.85
+      },
+      {
+        "value": "medium shot",
+        "confidence": 0.3
+      },
+      {
+        "value": "long shot",
+        "confidence": 0.1
+      }
+    ],
+    "scale": [
+      {
+        "value": "normal scale",
+        "confidence": 0.95
+      },
+      {
+        "value": "microscopic",
+        "confidence": 0.05
+      },
+      {
+        "value": "giant",
+        "confidence": 0.02
+      }
+    ],
+    "lighting_intensity": [
+      {
+        "value": "low-key",
+        "confidence": 0.95
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "normal",
+        "confidence": 0.01
+      }
+    ],
+    "color_saturation": [
+      {
+        "value": "low saturation",
+        "confidence": 0.85
+      },
+      {
+        "value": "desaturated",
+        "confidence": 0.4
+      },
+      {
+        "value": "high saturation",
+        "confidence": 0.05
+      }
+    ],
+    "color_palette": [
+      {
+        "value": "cool palette",
+        "confidence": 0.95
+      },
+      {
+        "value": "monochromatic",
+        "confidence": 0.6
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "depth_of_field": [
+      {
+        "value": "deep DOF",
+        "confidence": 0.8
+      },
+      {
+        "value": "pan-focus",
+        "confidence": 0.3
+      },
+      {
+        "value": "shallow DOF",
+        "confidence": 0.05
+      }
+    ],
+    "focal_length": [
+      {
+        "value": "standard lens",
+        "confidence": 0.8
+      },
+      {
+        "value": "wide-angle",
+        "confidence": 0.3
+      },
+      {
+        "value": "telephoto",
+        "confidence": 0.05
+      }
+    ],
+    "time_of_day": [
+      {
+        "value": "night",
+        "confidence": 0.8
+      },
+      {
+        "value": "dusk",
+        "confidence": 0.1
+      },
+      {
+        "value": "daytime",
+        "confidence": 0.05
+      }
+    ],
+    "weather": [
+      {
+        "value": "unpredictable",
+        "confidence": 0.9
+      },
+      {
+        "value": "clear",
+        "confidence": 0.05
+      },
+      {
+        "value": "overcast",
+        "confidence": 0.01
+      }
+    ],
+    "transition": [
+      {
+        "value": "none",
+        "confidence": 0.98
+      },
+      {
+        "value": "hard cut",
+        "confidence": 0.05
+      },
+      {
+        "value": "fade",
+        "confidence": 0.02
+      }
+    ]
+  },
+  "S4-3-anime-city-street-kitchen-robot-insect-jumping": {
+    "reasoning": {
+      "fx_and_style": "The video is animated in a 2D anime style with a cool color palette and low saturation. Rain effects are prominent, with falling drops and water streaking down the glass. There are no cuts or transitions.",
+      "environment": "The setting is viewed from outside a window looking into a lit room, establishing an inside-outside layout. It is nighttime and actively raining. The interior resembles an office or utility room with shelves and a plant.",
+      "subjects_and_physics": "A metallic humanoid robot walks into view inside the room, while a large insect climbs up the exterior of the glass window. Both subjects are solid and opaque, operating under sci-fi rules due to the robot's presence.",
+      "camera": "The camera remains completely static at eye level throughout the shot. The composition centers on the window frame, capturing a medium shot with a deep enough depth of field to see both the insect on the glass and the robot inside. The footage plays in real-time.",
+      "lighting": "The scene is illuminated primarily by the ambient light from inside the room, acting as a backlight for the window frame and insect. The overall lighting intensity is normal, with a cool tone dominating the rainy exterior."
+    },
+    "style": [
+      {
+        "value": "anime",
+        "confidence": 0.95
+      },
+      {
+        "value": "cinematic",
+        "confidence": 0.4
+      },
+      {
+        "value": "cartoon",
+        "confidence": 0.2
+      }
+    ],
+    "scenes": [
+      {
+        "value": "office",
+        "confidence": 0.7
+      },
+      {
+        "value": "living room",
+        "confidence": 0.2
+      },
+      {
+        "value": "hallway",
+        "confidence": 0.1
+      }
+    ],
+    "subjects": [
+      {
+        "value": "robot",
+        "confidence": 0.95
+      },
+      {
+        "value": "insect",
+        "confidence": 0.95
+      },
+      {
+        "value": "everyday object",
+        "confidence": 0.8
+      }
+    ],
+    "physical_state": [
+      {
+        "value": "solid",
+        "confidence": 0.99
+      },
+      {
+        "value": "rigid body",
+        "confidence": 0.1
+      },
+      {
+        "value": "soft body",
+        "confidence": 0.05
+      }
+    ],
+    "physical_rule": [
+      {
+        "value": "sci-fi",
+        "confidence": 0.9
+      },
+      {
+        "value": "real-world",
+        "confidence": 0.1
+      },
+      {
+        "value": "fantasy",
+        "confidence": 0.05
+      }
+    ],
+    "texture": [
+      {
+        "value": "metallic",
+        "confidence": 0.9
+      },
+      {
+        "value": "glass",
+        "confidence": 0.9
+      },
+      {
+        "value": "smooth",
+        "confidence": 0.8
+      }
+    ],
+    "opacity": [
+      {
+        "value": "opaque",
+        "confidence": 0.9
+      },
+      {
+        "value": "transparent",
+        "confidence": 0.8
+      },
+      {
+        "value": "semi-transparent",
+        "confidence": 0.5
+      }
+    ],
+    "spatial_layout": [
+      {
+        "value": "inside-outside",
+        "confidence": 0.95
+      },
+      {
+        "value": "foreground-background",
+        "confidence": 0.9
+      },
+      {
+        "value": "layered/stacked",
+        "confidence": 0.6
+      }
+    ],
+    "action": [
+      {
+        "value": "walking",
+        "confidence": 0.9
+      },
+      {
+        "value": "climbing",
+        "confidence": 0.9
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.1
+      }
+    ],
+    "emotion": [
+      {
+        "value": "none",
+        "confidence": 0.9
+      },
+      {
+        "value": "subtle surprise",
+        "confidence": 0.05
+      },
+      {
+        "value": "subtle joy",
+        "confidence": 0.01
+      }
+    ],
+    "effect": [
+      {
+        "value": "rain",
+        "confidence": 0.99
+      },
+      {
+        "value": "water splash",
+        "confidence": 0.2
+      },
+      {
+        "value": "none",
+        "confidence": 0.01
+      }
+    ],
+    "lighting_tone": [
+      {
+        "value": "cool",
+        "confidence": 0.9
+      },
+      {
+        "value": "neutral",
+        "confidence": 0.2
+      },
+      {
+        "value": "warm",
+        "confidence": 0.1
+      }
+    ],
+    "lighting_direction": [
+      {
+        "value": "backlight",
+        "confidence": 0.8
+      },
+      {
+        "value": "ambient light",
+        "confidence": 0.6
+      },
+      {
+        "value": "front light",
+        "confidence": 0.05
+      }
+    ],
+    "camera_angle": [
+      {
+        "value": "eye level",
+        "confidence": 0.95
+      },
+      {
+        "value": "low angle",
+        "confidence": 0.05
+      },
+      {
+        "value": "high angle",
+        "confidence": 0.01
+      }
+    ],
+    "camera_movement": [
+      {
+        "value": "static",
+        "confidence": 0.99
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.1
+      },
+      {
+        "value": "handheld",
+        "confidence": 0.01
+      }
+    ],
+    "composition": [
+      {
+        "value": "center framing",
+        "confidence": 0.9
+      },
+      {
+        "value": "frame within frame",
+        "confidence": 0.8
+      },
+      {
+        "value": "symmetrical",
+        "confidence": 0.5
+      }
+    ],
+    "time_mode": [
+      {
+        "value": "real-time",
+        "confidence": 0.99
+      },
+      {
+        "value": "slow motion",
+        "confidence": 0.05
+      },
+      {
+        "value": "timelapse",
+        "confidence": 0.01
+      }
+    ],
+    "shot_size": [
+      {
+        "value": "medium shot",
+        "confidence": 0.8
+      },
+      {
+        "value": "full shot",
+        "confidence": 0.6
+      },
+      {
+        "value": "close-up",
+        "confidence": 0.2
+      }
+    ],
+    "scale": [
+      {
+        "value": "normal scale",
+        "confidence": 0.9
+      },
+      {
+        "value": "giant",
+        "confidence": 0.05
+      },
+      {
+        "value": "microscopic",
+        "confidence": 0.01
+      }
+    ],
+    "lighting_intensity": [
+      {
+        "value": "normal",
+        "confidence": 0.8
+      },
+      {
+        "value": "low-key",
+        "confidence": 0.4
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.1
+      }
+    ],
+    "color_saturation": [
+      {
+        "value": "low saturation",
+        "confidence": 0.8
+      },
+      {
+        "value": "desaturated",
+        "confidence": 0.3
+      },
+      {
+        "value": "high saturation",
+        "confidence": 0.05
+      }
+    ],
+    "color_palette": [
+      {
+        "value": "cool palette",
+        "confidence": 0.9
+      },
+      {
+        "value": "monochromatic",
+        "confidence": 0.2
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.1
+      }
+    ],
+    "depth_of_field": [
+      {
+        "value": "deep DOF",
+        "confidence": 0.8
+      },
+      {
+        "value": "pan-focus",
+        "confidence": 0.5
+      },
+      {
+        "value": "shallow DOF",
+        "confidence": 0.1
+      }
+    ],
+    "focal_length": [
+      {
+        "value": "standard lens",
+        "confidence": 0.8
+      },
+      {
+        "value": "wide-angle",
+        "confidence": 0.2
+      },
+      {
+        "value": "telephoto",
+        "confidence": 0.1
+      }
+    ],
+    "time_of_day": [
+      {
+        "value": "night",
+        "confidence": 0.9
+      },
+      {
+        "value": "dusk",
+        "confidence": 0.2
+      },
+      {
+        "value": "daytime",
+        "confidence": 0.01
+      }
+    ],
+    "weather": [
+      {
+        "value": "rainy",
+        "confidence": 0.99
+      },
+      {
+        "value": "overcast",
+        "confidence": 0.6
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.1
+      }
+    ],
+    "transition": [
+      {
+        "value": "none",
+        "confidence": 0.99
+      },
+      {
+        "value": "hard cut",
+        "confidence": 0.01
+      },
+      {
+        "value": "fade",
+        "confidence": 0.01
+      }
+    ]
+  },
+  "S5-11-vintage-film-desert-kitchen-living-room-human-mammal-light-effect-jumping": {
+    "reasoning": {
+      "fx_and_style": "The video features a cinematic and photorealistic style with high color saturation, utilizing a complementary palette of deep blues and glowing oranges. A bright, glowing portal acts as a prominent light effect, and the transition between the two distinct environments is achieved through a wipe as the camera passes through the portal.",
+      "environment": "The setting shifts from a dark, nighttime desert to an indoor kitchen. Through the kitchen window, it is visibly rainy outside, establishing the weather for that portion of the scene.",
+      "subjects_and_physics": "The focal subjects are a human man and a dog, both solid and opaque at a normal scale. The man is seen running and jumping, exhibiting a moderate surprise expression, while the dog's hair/fur and the man's fabric clothing provide texture. The presence of a teleportation portal introduces sci-fi physical rules.",
+      "camera": "The shot begins with center framing on the portal from a long shot distance, then executes a continuous push in that transitions into a tracking shot. The camera operates at eye level in real-time, utilizing a standard lens and shifting to a shallow depth of field when close to the dog.",
+      "lighting": "The lighting setup is predominantly low-key, with the glowing portal providing a strong backlight in the initial scene. The overall lighting tone is multi-color, contrasting the cool night sky with the warm portal and indoor lights."
+    },
+    "style": [
+      {
+        "value": "cinematic",
+        "confidence": 0.9
+      },
+      {
+        "value": "photorealistic",
+        "confidence": 0.85
+      },
+      {
+        "value": "surrealist",
+        "confidence": 0.4
+      }
+    ],
+    "scenes": [
+      {
+        "value": "desert",
+        "confidence": 0.95
+      },
+      {
+        "value": "kitchen",
+        "confidence": 0.95
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "subjects": [
+      {
+        "value": "human",
+        "confidence": 0.99
+      },
+      {
+        "value": "mammal",
+        "confidence": 0.95
+      },
+      {
+        "value": "everyday object",
+        "confidence": 0.5
+      }
+    ],
+    "physical_state": [
+      {
+        "value": "solid",
+        "confidence": 0.99
+      },
+      {
+        "value": "soft body",
+        "confidence": 0.05
+      },
+      {
+        "value": "rigid body",
+        "confidence": 0.05
+      }
+    ],
+    "physical_rule": [
+      {
+        "value": "sci-fi",
+        "confidence": 0.9
+      },
+      {
+        "value": "fantasy",
+        "confidence": 0.6
+      },
+      {
+        "value": "dreamlike",
+        "confidence": 0.4
+      }
+    ],
+    "texture": [
+      {
+        "value": "hair/fur",
+        "confidence": 0.95
+      },
+      {
+        "value": "fabric",
+        "confidence": 0.9
+      },
+      {
+        "value": "metallic",
+        "confidence": 0.5
+      }
+    ],
+    "opacity": [
+      {
+        "value": "opaque",
+        "confidence": 0.99
+      },
+      {
+        "value": "transparent",
+        "confidence": 0.5
+      },
+      {
+        "value": "semi-transparent",
+        "confidence": 0.1
+      }
+    ],
+    "action": [
+      {
+        "value": "running",
+        "confidence": 0.85
+      },
+      {
+        "value": "jumping",
+        "confidence": 0.8
+      },
+      {
+        "value": "hovering",
+        "confidence": 0.7
+      }
+    ],
+    "emotion": [
+      {
+        "value": "moderate surprise",
+        "confidence": 0.75
+      },
+      {
+        "value": "strong surprise",
+        "confidence": 0.4
+      },
+      {
+        "value": "subtle surprise",
+        "confidence": 0.3
+      }
+    ],
+    "effect": [
+      {
+        "value": "light effect",
+        "confidence": 0.95
+      },
+      {
+        "value": "magic particles",
+        "confidence": 0.4
+      },
+      {
+        "value": "hologram",
+        "confidence": 0.1
+      }
+    ],
+    "lighting_tone": [
+      {
+        "value": "multi-color",
+        "confidence": 0.85
+      },
+      {
+        "value": "warm",
+        "confidence": 0.6
+      },
+      {
+        "value": "cool",
+        "confidence": 0.3
+      }
+    ],
+    "lighting_direction": [
+      {
+        "value": "backlight",
+        "confidence": 0.8
+      },
+      {
+        "value": "side light",
+        "confidence": 0.5
+      },
+      {
+        "value": "ambient light",
+        "confidence": 0.4
+      }
+    ],
+    "camera_angle": [
+      {
+        "value": "eye level",
+        "confidence": 0.9
+      },
+      {
+        "value": "low angle",
+        "confidence": 0.2
+      },
+      {
+        "value": "high angle",
+        "confidence": 0.1
+      }
+    ],
+    "camera_movement": [
+      {
+        "value": "push in",
+        "confidence": 0.95
+      },
+      {
+        "value": "tracking shot",
+        "confidence": 0.8
+      },
+      {
+        "value": "pan",
+        "confidence": 0.5
+      }
+    ],
+    "composition": [
+      {
+        "value": "center framing",
+        "confidence": 0.9
+      },
+      {
+        "value": "rule of thirds",
+        "confidence": 0.5
+      },
+      {
+        "value": "leading lines",
+        "confidence": 0.3
+      }
+    ],
+    "time_mode": [
+      {
+        "value": "real-time",
+        "confidence": 0.95
+      },
+      {
+        "value": "slow motion",
+        "confidence": 0.1
+      },
+      {
+        "value": "freeze frame",
+        "confidence": 0.05
+      }
+    ],
+    "shot_size": [
+      {
+        "value": "long shot",
+        "confidence": 0.9
+      },
+      {
+        "value": "medium shot",
+        "confidence": 0.85
+      },
+      {
+        "value": "close-up",
+        "confidence": 0.8
+      }
+    ],
+    "scale": [
+      {
+        "value": "normal scale",
+        "confidence": 0.99
+      },
+      {
+        "value": "giant",
+        "confidence": 0.01
+      },
+      {
+        "value": "microscopic",
+        "confidence": 0.01
+      }
+    ],
+    "lighting_intensity": [
+      {
+        "value": "low-key",
+        "confidence": 0.85
+      },
+      {
+        "value": "normal",
+        "confidence": 0.6
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "color_saturation": [
+      {
+        "value": "high saturation",
+        "confidence": 0.85
+      },
+      {
+        "value": "low saturation",
+        "confidence": 0.1
+      },
+      {
+        "value": "desaturated",
+        "confidence": 0.05
+      }
+    ],
+    "color_palette": [
+      {
+        "value": "complementary",
+        "confidence": 0.9
+      },
+      {
+        "value": "monochromatic",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "depth_of_field": [
+      {
+        "value": "shallow DOF",
+        "confidence": 0.85
+      },
+      {
+        "value": "deep DOF",
+        "confidence": 0.4
+      },
+      {
+        "value": "pan-focus",
+        "confidence": 0.1
+      }
+    ],
+    "focal_length": [
+      {
+        "value": "standard lens",
+        "confidence": 0.75
+      },
+      {
+        "value": "wide-angle",
+        "confidence": 0.4
+      },
+      {
+        "value": "telephoto",
+        "confidence": 0.1
+      }
+    ],
+    "time_of_day": [
+      {
+        "value": "night",
+        "confidence": 0.95
+      },
+      {
+        "value": "dusk",
+        "confidence": 0.2
+      },
+      {
+        "value": "dawn",
+        "confidence": 0.1
+      }
+    ],
+    "weather": [
+      {
+        "value": "rainy",
+        "confidence": 0.9
+      },
+      {
+        "value": "overcast",
+        "confidence": 0.6
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "transition": [
+      {
+        "value": "wipe",
+        "confidence": 0.8
+      },
+      {
+        "value": "dissolve",
+        "confidence": 0.4
+      },
+      {
+        "value": "hard cut",
+        "confidence": 0.2
+      }
+    ]
+  },
+  "S5-9-cartoon-ruins-kitchen-living-room-insect-fictional-creature-human-snow-dialogue": {
+    "reasoning": {
+      "fx_and_style": "The video features a 2D cartoon animation style with a predominantly blue, monochromatic and cool color palette. The colors have low saturation. There are subtle snow particle effects falling in the outdoor scene, and the scenes transition via hard cuts.",
+      "environment": "The settings transition from snowy, destroyed city ruins to an indoor kitchen with a large hole in the wall, and finally to a living room. The weather outside is snowy and overcast, and the time appears to be daytime despite the dim look. The spatial layout includes foreground-background depth and inside-outside views through the broken wall.",
+      "subjects_and_physics": "The primary subject is a human male wearing fabric clothing, who is mostly stationary but engages in dialogue. He exhibits strong sadness. In the final scene, an insect is on his shoulder, and a semi-transparent figure lies on the floor, giving a slightly dreamlike feel to the physical rules. The main subject is solid and opaque at a normal scale.",
+      "camera": "The camera employs a consistent, slow push-in movement across all shots. The angles start as high angle and move to eye level, with the subject often center-framed. Shot sizes range from long shots in the ruins to medium shots in the final room. The depth of field is deep, capturing the environments clearly in real-time.",
+      "lighting": "The lighting is characterized by a cool tone, matching the blue color palette. It relies heavily on ambient light, providing a relatively flat, normal intensity illumination across the scenes without harsh directional shadows."
+    },
+    "style": [
+      {
+        "value": "cartoon",
+        "confidence": 0.95
+      },
+      {
+        "value": "minimalist",
+        "confidence": 0.2
+      },
+      {
+        "value": "cinematic",
+        "confidence": 0.1
+      }
+    ],
+    "scenes": [
+      {
+        "value": "ruins",
+        "confidence": 0.95
+      },
+      {
+        "value": "kitchen",
+        "confidence": 0.95
+      },
+      {
+        "value": "living room",
+        "confidence": 0.95
+      }
+    ],
+    "subjects": [
+      {
+        "value": "human",
+        "confidence": 0.98
+      },
+      {
+        "value": "insect",
+        "confidence": 0.9
+      },
+      {
+        "value": "everyday object",
+        "confidence": 0.8
+      }
+    ],
+    "physical_state": [
+      {
+        "value": "solid",
+        "confidence": 0.95
+      },
+      {
+        "value": "soft body",
+        "confidence": 0.05
+      },
+      {
+        "value": "rigid body",
+        "confidence": 0.02
+      }
+    ],
+    "physical_rule": [
+      {
+        "value": "dreamlike",
+        "confidence": 0.85
+      },
+      {
+        "value": "sci-fi",
+        "confidence": 0.1
+      },
+      {
+        "value": "real-world",
+        "confidence": 0.05
+      }
+    ],
+    "texture": [
+      {
+        "value": "fabric",
+        "confidence": 0.9
+      },
+      {
+        "value": "stone",
+        "confidence": 0.85
+      },
+      {
+        "value": "smooth",
+        "confidence": 0.7
+      }
+    ],
+    "opacity": [
+      {
+        "value": "opaque",
+        "confidence": 0.95
+      },
+      {
+        "value": "semi-transparent",
+        "confidence": 0.85
+      },
+      {
+        "value": "transparent",
+        "confidence": 0.05
+      }
+    ],
+    "spatial_layout": [
+      {
+        "value": "inside-outside",
+        "confidence": 0.9
+      },
+      {
+        "value": "foreground-background",
+        "confidence": 0.85
+      },
+      {
+        "value": "encircling",
+        "confidence": 0.6
+      }
+    ],
+    "action": [
+      {
+        "value": "dialogue",
+        "confidence": 0.9
+      },
+      {
+        "value": "none",
+        "confidence": 0.8
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "emotion": [
+      {
+        "value": "strong sadness",
+        "confidence": 0.95
+      },
+      {
+        "value": "moderate sadness",
+        "confidence": 0.1
+      },
+      {
+        "value": "subtle sadness",
+        "confidence": 0.02
+      }
+    ],
+    "effect": [
+      {
+        "value": "snow",
+        "confidence": 0.9
+      },
+      {
+        "value": "none",
+        "confidence": 0.1
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.02
+      }
+    ],
+    "lighting_tone": [
+      {
+        "value": "cool",
+        "confidence": 0.95
+      },
+      {
+        "value": "neutral",
+        "confidence": 0.05
+      },
+      {
+        "value": "warm",
+        "confidence": 0.01
+      }
+    ],
+    "lighting_direction": [
+      {
+        "value": "ambient light",
+        "confidence": 0.85
+      },
+      {
+        "value": "top light",
+        "confidence": 0.1
+      },
+      {
+        "value": "front light",
+        "confidence": 0.05
+      }
+    ],
+    "camera_angle": [
+      {
+        "value": "high angle",
+        "confidence": 0.85
+      },
+      {
+        "value": "eye level",
+        "confidence": 0.15
+      },
+      {
+        "value": "bird's eye",
+        "confidence": 0.05
+      }
+    ],
+    "camera_movement": [
+      {
+        "value": "push in",
+        "confidence": 0.95
+      },
+      {
+        "value": "static",
+        "confidence": 0.1
+      },
+      {
+        "value": "pan",
+        "confidence": 0.05
+      }
+    ],
+    "composition": [
+      {
+        "value": "center framing",
+        "confidence": 0.9
+      },
+      {
+        "value": "rule of thirds",
+        "confidence": 0.1
+      },
+      {
+        "value": "symmetrical",
+        "confidence": 0.05
+      }
+    ],
+    "time_mode": [
+      {
+        "value": "real-time",
+        "confidence": 0.98
+      },
+      {
+        "value": "slow motion",
+        "confidence": 0.02
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ],
+    "shot_size": [
+      {
+        "value": "long shot",
+        "confidence": 0.9
+      },
+      {
+        "value": "full shot",
+        "confidence": 0.85
+      },
+      {
+        "value": "medium shot",
+        "confidence": 0.8
+      }
+    ],
+    "scale": [
+      {
+        "value": "normal scale",
+        "confidence": 0.95
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      },
+      {
+        "value": "giant",
+        "confidence": 0.01
+      }
+    ],
+    "lighting_intensity": [
+      {
+        "value": "normal",
+        "confidence": 0.85
+      },
+      {
+        "value": "low-key",
+        "confidence": 0.1
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "color_saturation": [
+      {
+        "value": "low saturation",
+        "confidence": 0.9
+      },
+      {
+        "value": "desaturated",
+        "confidence": 0.1
+      },
+      {
+        "value": "high saturation",
+        "confidence": 0.01
+      }
+    ],
+    "color_palette": [
+      {
+        "value": "cool palette",
+        "confidence": 0.95
+      },
+      {
+        "value": "monochromatic",
+        "confidence": 0.85
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "depth_of_field": [
+      {
+        "value": "deep DOF",
+        "confidence": 0.9
+      },
+      {
+        "value": "pan-focus",
+        "confidence": 0.1
+      },
+      {
+        "value": "shallow DOF",
+        "confidence": 0.05
+      }
+    ],
+    "focal_length": [
+      {
+        "value": "standard lens",
+        "confidence": 0.85
+      },
+      {
+        "value": "wide-angle",
+        "confidence": 0.15
+      },
+      {
+        "value": "telephoto",
+        "confidence": 0.05
+      }
+    ],
+    "time_of_day": [
+      {
+        "value": "daytime",
+        "confidence": 0.85
+      },
+      {
+        "value": "dawn",
+        "confidence": 0.1
+      },
+      {
+        "value": "dusk",
+        "confidence": 0.05
+      }
+    ],
+    "weather": [
+      {
+        "value": "snowy",
+        "confidence": 0.95
+      },
+      {
+        "value": "overcast",
+        "confidence": 0.8
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.05
+      }
+    ],
+    "transition": [
+      {
+        "value": "hard cut",
+        "confidence": 0.95
+      },
+      {
+        "value": "none",
+        "confidence": 0.05
+      },
+      {
+        "value": "unpredictable",
+        "confidence": 0.01
+      }
+    ]
+  }
+}
